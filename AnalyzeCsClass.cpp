@@ -7,29 +7,11 @@
 #include <format>
 #include <print>
 #include <sstream>
+#include "ClassInfo.hpp"
 
 using namespace std;
+
 namespace fs = std::filesystem;
-
-struct Base {
-	string modifier;    // 访问修饰符 public, private, protected, internal
-	string type;        // 数据类型，若为方法则为返回类型
-	string name;        // 名称
-};
-
-struct Method : public Base {
-    string parameters;  // 参数列表
-};
-
-struct Field : public Base {};
-struct Property : public Base {};
-
-struct ClassInfo {
-    string name;
-    vector<Method> methods;
-    vector<Field> fields;
-    vector<Property> properties;
-};
 
 string read_file(const fs::path& path) {
     ifstream file(path);
@@ -58,36 +40,39 @@ ClassInfo analyze_cs_class(const string& code) {
 
     // 匹配方法
     regex methodRegex(
-        R"((?:public|private|protected|internal)?\s*(?:static\s+)?([\w<>]+)\s+([\w_]+)\s*\(([^)]*)\)\s*\{)"
+        R"((public|private|protected|internal)?\s*(?:static\s+)?([\w<>]+)\s+([\w_]+)\s*\(([^)]*)\)\s*\{)"
     );
     for (sregex_iterator it(code.begin(), code.end(), methodRegex), end; it != end; ++it) {
         Method method;
-        method.type = (*it)[1];
-        method.name = (*it)[2];
-        method.parameters = (*it)[3];
+		method.accessModifier   = (*it)[1];
+        method.type       = (*it)[2];
+        method.name       = (*it)[3];
+        method.parameters = (*it)[4];
         if (!method.type.empty() && method.name != "class")
             info.methods.push_back(method);
     }
 
     // 匹配字段（含类型）
     std::regex fieldRegex(
-        R"((?:public|private|protected|internal|static|readonly|volatile)\s+([\w<>\[\]]+)\s+([A-Za-z_]\w*)\s*(?:=[^;]*)?;)"
+        R"((public|private|protected|internal|static|readonly|volatile)\s+([\w<>\[\]]+)\s+([A-Za-z_]\w*)\s*(?:=[^;]*)?;)"
     );
     for (std::sregex_iterator it(code.begin(), code.end(), fieldRegex), end; it != end; ++it) {
         Field field;
-        field.type = (*it)[1];
-        field.name = (*it)[2];
+		field.accessModifier = (*it)[1];
+        field.type     = (*it)[2];
+        field.name     = (*it)[3];
         info.fields.push_back(field);
     }
 
     // 匹配属性（自动属性、表达式属性等）
     std::regex propertyRegex(
-        R"((?:public|private|protected|internal|static|virtual|override|\s)+([\w<>\[\]]+)\s+([A-Za-z_]\w*)\s*\{\s*(?:get|set|init)\b)"
+        R"((public|private|protected|internal|static|virtual|override)\s+([\w<>\[\]]+)\s+([A-Za-z_]\w*)\s*\{\s*(?:get|set|init)\b)"
     );
     for (std::sregex_iterator it(code.begin(), code.end(), propertyRegex), end; it != end; ++it) {
         Property prop;
-        prop.type = (*it)[1];
-        prop.name = (*it)[2];
+		prop.accessModifier = (*it)[1];
+        prop.type     = (*it)[2];
+        prop.name     = (*it)[3];
         info.properties.push_back(prop);
     }
 
@@ -100,15 +85,15 @@ string format_result(const ClassInfo& info) {
 
     output += "Methods:\n";
     for (auto& m : info.methods)
-        output += format("  {} {}({})\n", m.type, m.name, m.parameters);
+        output += format("\t{}\n", m);
 
     output += "\nProperties:\n";
     for (auto& p : info.properties)
-        output += format("  {} {}\n", p.type, p.name);
+        output += format("\t{}\n", p);
 
     output += "\nFields:\n";
     for (auto& f : info.fields)
-        output += format("  {} {}\n", f.type, f.name);
+        output += format("\t{}\n", f);
 
     return output;
 }

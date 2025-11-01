@@ -129,6 +129,11 @@
   <ItemGroup>
     <ClCompile Include="AnalyzeCsClass.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ClassInfo.hpp" />
+    <ClInclude Include="IOUtils.hpp" />
+    <ClInclude Include="RegexParts.hpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
