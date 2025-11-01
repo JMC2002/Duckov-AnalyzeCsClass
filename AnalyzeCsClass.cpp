@@ -17,21 +17,12 @@ struct Base {
 	string name;        // 名称
 };
 
-struct Method {
-    string returnType;
-    string name;
-    string parameters;
+struct Method : public Base {
+    string parameters;  // 参数列表
 };
 
-struct Field {
-    string type;
-    string name;
-};
-
-struct Property {
-    string type;
-    string name;
-};
+struct Field : public Base {};
+struct Property : public Base {};
 
 struct ClassInfo {
     string name;
@@ -71,10 +62,10 @@ ClassInfo analyze_cs_class(const string& code) {
     );
     for (sregex_iterator it(code.begin(), code.end(), methodRegex), end; it != end; ++it) {
         Method method;
-        method.returnType = (*it)[1];
+        method.type = (*it)[1];
         method.name = (*it)[2];
         method.parameters = (*it)[3];
-        if (!method.returnType.empty() && method.name != "class")
+        if (!method.type.empty() && method.name != "class")
             info.methods.push_back(method);
     }
 
@@ -109,7 +100,7 @@ string format_result(const ClassInfo& info) {
 
     output += "Methods:\n";
     for (auto& m : info.methods)
-        output += format("  {} {}({})\n", m.returnType, m.name, m.parameters);
+        output += format("  {} {}({})\n", m.type, m.name, m.parameters);
 
     output += "\nProperties:\n";
     for (auto& p : info.properties)
