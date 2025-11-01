@@ -1,0 +1,217 @@
+using System;
+using UnityEngine;
+using UnityEngine.UI;
+
+namespace Duckov.MiniGames.BubblePoppers
+{
+	public class Bubble : MiniGameBehaviour
+	{
+		public BubblePopper Master { get; private set; }
+
+		public float Radius
+		{
+			get
+			{
+				return this.radius;
+			}
+		}
+
+		public int ColorIndex
+		{
+			get
+			{
+				return this.colorIndex;
+			}
+		}
+
+		public Color DisplayColor
+		{
+			get
+			{
+				if (this.Master == null)
+				{
+					return Color.white;
+				}
+				return this.Master.GetDisplayColor(this.ColorIndex);
+			}
+		}
+
+		public Vector2Int Coord { get; internal set; }
+
+		public Vector2 MoveDirection { get; internal set; }
+
+		public Vector2 Velocity { get; internal set; }
+
+		public Bubble.Status status { get; private set; }
+
+		private Vector2 gPos
+		{
+			get
+			{
+				return this.graphicsRoot.localPosition;
+			}
+			set
+			{
+				this.graphicsRoot.localPosition = value;
+			}
+		}
+
+		private Vector2 gForce
+		{
+			get
+			{
+				return (new Vector2(Mathf.PerlinNoise(7.3f, Time.time * this.vibrationFrequency) * 2f - 1f, Mathf.PerlinNoise(0.3f, Time.time * this.vibrationFrequency) * 2f - 1f) * this.vibrationAmp - this.gPos) * this.gSpring;
+			}
+		}
+
+		internal void Setup(BubblePopper master, int colorIndex)
+		{
+			this.Master = master;
+			this.colorIndex = colorIndex;
+			this.image.color = this.DisplayColor;
+		}
+
+		internal void Launch(Vector2 direction)
+		{
+			this.MoveDirection = direction;
+			this.status = Bubble.Status.Moving;
+		}
+
+		internal void NotifyExplode(Vector2Int origin)
+		{
+			this.status = Bubble.Status.Explode;
+			Vector2Int v = this.Coord - origin;
+			float magnitude = v.magnitude;
+			this.explodeETA = magnitude * 0.025f;
+			this.Impact(v.normalized * 5f);
+		}
+
+		internal void NotifyAttached(Vector2Int coord)
+		{
+			Vector2 v = this.Master.Layout.CoordToLocalPosition(coord);
+			base.transform.position = this.Master.Layout.transform.localToWorldMatrix.MultiplyPoint(v);
+			this.status = Bubble.Status.Attached;
+			this.Coord = coord;
+		}
+
+		public void NotifyDetached()
+		{
+			this.status = Bubble.Status.Detached;
+			this.Velocity = Vector2.zero;
+			this.explodeCountDown = this.explodeAfterDetachedFor;
+		}
+
+		protected override void OnUpdate(float deltaTime)
+		{
+			this.UpdateLogic(deltaTime);
+			this.UpdateGraphics(deltaTime);
+		}
+
+		private void UpdateLogic(float deltaTime)
+		{
+			if (this.Master == null)
+			{
+				return;
+			}
+			if (this.Master.Busy)
+			{
+				return;
+			}
+			if (this.status == Bubble.Status.Moving)
+			{
+				this.Master.MoveBubble(this, deltaTime);
+			}
+		}
+
+		private void UpdateGraphics(float deltaTime)
+		{
+			if (this.status == Bubble.Status.Explode)
+			{
+				this.explodeETA -= deltaTime;
+				if (this.explodeETA <= 0f)
+				{
+					FXPool.Play(this.explodeFXrefab, base.transform.position, base.transform.rotation, this.DisplayColor);
+					this.Master.Release(this);
+				}
+			}
+			if (this.status == Bubble.Status.Detached)
+			{
+				base.transform.localPosition += this.Velocity * deltaTime;
+				this.Velocity += -Vector2.up * this.gravity;
+				this.explodeCountDown -= deltaTime;
+				if (this.explodeCountDown <= 0f)
+				{
+					this.NotifyExplode(this.Coord);
+				}
+			}
+			this.UpdateElasticMovement(deltaTime);
+		}
+
+		private void UpdateElasticMovement(float deltaTime)
+		{
+			float num = (Vector2.Dot(this.gVelocity, this.gForce.normalized) < 0f) ? this.gDamping : 1f;
+			this.gVelocity += this.gForce * deltaTime;
+			this.gVelocity = Vector2.MoveTowards(this.gVelocity, Vector2.zero, num * this.gVelocity.magnitude * deltaTime);
+			this.gPos += this.gVelocity;
+		}
+
+		public void Impact(Vector2 velocity)
+		{
+			this.gVelocity = velocity;
+		}
+
+		internal void Rest()
+		{
+			this.gPos = Vector2.zero;
+			this.gVelocity = Vector2.zero;
+		}
+
+		[SerializeField]
+		private float radius;
+
+		[SerializeField]
+		private int colorIndex;
+
+		[SerializeField]
+		private float gravity;
+
+		[SerializeField]
+		private float explodeAfterDetachedFor = 1f;
+
+		[SerializeField]
+		private ParticleSystem explodeFXrefab;
+
+		[SerializeField]
+		private Image image;
+
+		[SerializeField]
+		private RectTransform graphicsRoot;
+
+		[SerializeField]
+		private float gSpring = 1f;
+
+		[SerializeField]
+		private float gDamping = 10f;
+
+		[SerializeField]
+		private float vibrationFrequency = 10f;
+
+		[SerializeField]
+		private float vibrationAmp = 4f;
+
+		private float explodeETA;
+
+		private float explodeCountDown;
+
+		private Vector2 gVelocity;
+
+		public enum Status
+		{
+			Idle,
+			Moving,
+			Attached,
+			Detached,
+			Explode
+		}
+	}
+}

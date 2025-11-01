@@ -1,0 +1,41 @@
+Class: Bubble
+
+Methods:
+  void Setup(BubblePopper master, int colorIndex)
+  void Launch(Vector2 direction)
+  void NotifyExplode(Vector2Int origin)
+  void NotifyAttached(Vector2Int coord)
+  void NotifyDetached()
+  void OnUpdate(float deltaTime)
+  void UpdateLogic(float deltaTime)
+  void UpdateGraphics(float deltaTime)
+  void UpdateElasticMovement(float deltaTime)
+  void Impact(Vector2 velocity)
+  void Rest()
+
+Properties:
+  BubblePopper Master
+  float Radius
+  int ColorIndex
+  Color DisplayColor
+  Vector2Int Coord
+  Vector2 MoveDirection
+  Vector2 Velocity
+  Vector2 gPos
+  Vector2 gForce
+
+Fields:
+  float radius
+  int colorIndex
+  float gravity
+  float explodeAfterDetachedFor
+  ParticleSystem explodeFXrefab
+  Image image
+  RectTransform graphicsRoot
+  float gSpring
+  float gDamping
+  float vibrationFrequency
+  float vibrationAmp
+  float explodeETA
+  float explodeCountDown
+  Vector2 gVelocity
