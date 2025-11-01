@@ -59,3 +59,35 @@ struct ClassInfo {
     std::vector<Field> fields;
     std::vector<Property> properties;
 };
+
+template <>
+struct std::formatter<ClassInfo> : std::formatter<std::string> {
+    constexpr auto parse(std::format_parse_context& ctx) { return ctx.begin(); }
+
+    auto format(const ClassInfo& c, std::format_context& ctx) const {
+		std::string 成员前缀 = "  ";
+		std::string 内容前缀 = 成员前缀 + "    ";
+        std::string out = std::format("class {}\n", c.name);
+
+
+        if (!c.fields.empty()) {
+            out += std::format("{}{} 个 Fields:\n", 成员前缀, c.fields.size());
+            for (auto& f : c.fields)
+                out += std::format("{}{}\n", 内容前缀, f);
+        }
+
+        if (!c.properties.empty()) {
+			out += std::format("{}{} 个 Properties:\n", 成员前缀, c.properties.size());
+            for (auto& p : c.properties)
+                out += std::format("{}{}\n", 内容前缀, p);
+        }
+
+        if (!c.methods.empty()) {
+			out += std::format("{}{} 个 Methods:\n", 成员前缀, c.methods.size());
+            for (auto& m : c.methods)
+                out += std::format("{}{}\n", 内容前缀, m);
+        }
+
+        return std::formatter<std::string>::format(out, ctx);
+    }
+};

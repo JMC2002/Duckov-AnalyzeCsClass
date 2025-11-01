@@ -7,6 +7,7 @@
 #include <format>
 #include <print>
 #include <sstream>
+#include <locale>
 #include "ClassInfo.hpp"
 
 using namespace std;
@@ -59,8 +60,8 @@ ClassInfo analyze_cs_class(const string& code) {
     for (std::sregex_iterator it(code.begin(), code.end(), fieldRegex), end; it != end; ++it) {
         Field field;
 		field.accessModifier = (*it)[1];
-        field.type     = (*it)[2];
-        field.name     = (*it)[3];
+        field.type           = (*it)[2];
+        field.name           = (*it)[3];
         info.fields.push_back(field);
     }
 
@@ -80,25 +81,12 @@ ClassInfo analyze_cs_class(const string& code) {
 }
 
 string format_result(const ClassInfo& info) {
-    string output;
-    output += format("Class: {}\n\n", info.name);
-
-    output += "Methods:\n";
-    for (auto& m : info.methods)
-        output += format("\t{}\n", m);
-
-    output += "\nProperties:\n";
-    for (auto& p : info.properties)
-        output += format("\t{}\n", p);
-
-    output += "\nFields:\n";
-    for (auto& f : info.fields)
-        output += format("\t{}\n", f);
-
-    return output;
+	return std::format("{}", info);
 }
 
 int main(int argc, char* argv[]) try {
+    // std::locale::global(std::locale("en_US.UTF-8"));
+
     fs::path input = ".\\test.txt";
     fs::path output = ".\\out.txt";
 
