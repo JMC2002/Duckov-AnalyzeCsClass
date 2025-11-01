@@ -40,6 +40,8 @@ struct std::formatter<Method> : std::formatter<Base> {
         std::string result = std::format("{}", static_cast<const Base&>(m));
         if (!m.parameters.empty())
             result += std::format("({})", m.parameters);
+        else 
+			result += "()";
         return std::formatter<std::string>::format(result, ctx);
     }
 };
