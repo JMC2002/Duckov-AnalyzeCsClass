@@ -20,7 +20,7 @@ struct Base {
     std::string type;              // 数据类型 / 返回类型
     std::string name;              // 名称
 
-    static inline RegexBuilder<Derived> rb 
+    static inline auto rb
                 = RegexBuilder<Derived>()
                  .join(&Base::accessModifier, AccessModifier)
                  .join_with("\\s+", &Base::memberModifier, MemberModifier)
@@ -33,14 +33,14 @@ struct Method : public Base<Method>{
 };
 
 struct Field : public Base<Field>{
-    static inline RegexBuilder<Field> rb 
+    static inline auto rb 
                 = Base<Field>::rb
                  .join_with("\\s*", "=[^>;]*", "?")
                  .join(";", false)
                  .build();
 };
 struct Property : public Base<Property> {
-    static inline RegexBuilder<Property> rb
+    static inline auto rb
                 = Base<Property>::rb
                  .join_with("\\s*", R"(\{\s*(?:get|set|init)\b|=>)", false)
                  .build();
