@@ -35,7 +35,7 @@ struct Method : public Base<Method>{
 struct Field : public Base<Field>{
     static inline RegexBuilder<Field> rb 
                 = Base<Field>::rb
-                 .join_with("\\s*", "=[^;]*", "?")
+                 .join_with("\\s*", "=[^>;]*", "?")
                  .join(";", false)
                  .build();
 };
