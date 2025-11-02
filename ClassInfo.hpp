@@ -39,7 +39,12 @@ struct Field : public Base<Field>{
                  .join(";", false)
                  .build();
 };
-struct Property : public Base<Property> {};
+struct Property : public Base<Property> {
+    static inline RegexBuilder<Property> rb
+                = Base<Property>::rb
+                 .join_with("\\s*", R"(\{\s*(?:get|set|init)\b|=>)", false)
+                 .build();
+};
 
 template <typename Derived>
 struct std::formatter<Base<Derived>> : std::formatter<std::string> {
