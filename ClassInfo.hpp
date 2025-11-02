@@ -11,7 +11,7 @@ constexpr std::string_view AccessModifier = R"(public|private|protected|internal
 constexpr std::string_view MemberModifier = R"((?:(?:static|readonly|volatile|virtual|override|abstract|unsafe)\s+)*)";
 constexpr std::string_view Type = R"([\w<>\[\]]+)";
 constexpr std::string_view Identifier = R"([A-Za-z_]\w*)";
-constexpr std::string_view Parameters = R"(\(([^)]*)\)\s*\{)";
+constexpr std::string_view Parameters = R"([^)]*)";
 
 template <typename Derived>
 struct Base {
