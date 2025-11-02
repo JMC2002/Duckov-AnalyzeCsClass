@@ -52,23 +52,28 @@ ClassInfo analyze_cs_class(const string& code) {
         method.type       = (*it)[2];
         method.name       = (*it)[3];
         method.parameters = (*it)[4];
-        if (!method.type.empty() && method.name != "class")
+        if (!method.type.empty())
             info.methods.push_back(method);
     }
 
-    bench::Timer test1("测试1耗时");
-    info.fields = RegexBuilder<Field>()
-                .join_with("", &Field::accessModifier, AccessModifier)
-                .join(&Field::memberModifier, MemberModifier, "?")
-                .join_with("\\s*", &Field::type, Type)
-                .join(&Field::name, Identifier)
-                .join_with("\\s*", "=[^;]*", "?")
-                .join_with("", ";", false)
-                .build()
+    bench::Timer test0("测试0耗时");
+    info.fields = Field::rb
                 .match(code)
                 | ranges::to<std::vector>();
-    test1.stop();
+    test0.stop();
 
+    //bench::Timer test1("测试1耗时");
+    //info.fields = RegexBuilder<Field>()
+    //    .join_with("", &Field::accessModifier, AccessModifier)
+    //    .join(&Field::memberModifier, MemberModifier, "?")
+    //    .join_with("\\s*", &Field::type, Type)
+    //    .join(&Field::name, Identifier)
+    //    .join_with("\\s*", "=[^;]*", "?")
+    //    .join_with("", ";", false)
+    //    .build()
+    //    .match(code)
+    //    | ranges::to<std::vector>();
+    //test1.stop();
 
     //auto rb = RegexBuilder<Field>()
     //    .join_with("", &Field::accessModifier, AccessModifier)
@@ -160,6 +165,6 @@ int main(int argc, char* argv[]) try {
 
 }
 catch (const exception& e) {
-    cerr << "❌ 错误: " << e.what() << "\n";
+    cerr << "错误: " << e.what() << "\n";
     return 1;
 }

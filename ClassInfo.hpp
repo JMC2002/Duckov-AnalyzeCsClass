@@ -3,27 +3,51 @@
 #include <vector>
 #include <format>
 
+#include "RegexBuilder.hpp"
+
+using namespace std::literals;
+
+constexpr std::string_view AccessModifier = R"(public|private|protected|internal)";
+constexpr std::string_view MemberModifier = R"((?:static|readonly|volatile|virtual|override|abstract|unsafe)\s+)";
+constexpr std::string_view Type = R"([\w<>\[\]]+)";
+constexpr std::string_view Identifier = R"([A-Za-z_]\w*)";
+constexpr std::string_view Parameters = R"(\(([^)]*)\)\s*\{)";
+
+template <typename Derived>
 struct Base {
     std::string accessModifier;    // public, private, protected, internal
     std::string memberModifier;    // static, virtual, override, sealed, abstract, unsafe
     std::string type;              // 数据类型 / 返回类型
     std::string name;              // 名称
+
+    static inline RegexBuilder<Derived> rb 
+                = RegexBuilder<Derived>()
+                 .join(&Base::accessModifier, AccessModifier)
+                 .join_with("\\s+", &Base::memberModifier, MemberModifier, "?")
+                 .join_with("\\s*", &Base::type, Type)
+                 .join_with("\\s+", &Base::name, Identifier);
 };
 
-struct Method : public Base {
+struct Method : public Base<Method>{
     std::string parameters;
 };
 
-struct Field : public Base {};
-struct Property : public Base {};
+struct Field : public Base<Field>{
+    static inline RegexBuilder<Field> rb 
+                = Base<Field>::rb
+                 .join_with("\\s*", "=[^;]*", "?")
+                 .join(";", false)
+                 .build();
+};
+struct Property : public Base<Property> {};
 
-template <>
-struct std::formatter<Base> : std::formatter<std::string> {
+template <typename Derived>
+struct std::formatter<Base<Derived>> : std::formatter<std::string> {
     // 允许格式说明符（这里我们忽略它）
     constexpr auto parse(std::format_parse_context& ctx) { return ctx.begin(); }
 
     // 实际的格式化输出逻辑
-    auto format(const Base& b, std::format_context& ctx) const {
+    auto format(const Base<Derived>& b, std::format_context& ctx) const {
         std::string result;
         if (!b.accessModifier.empty())
             result += b.accessModifier + " ";
@@ -35,9 +59,9 @@ struct std::formatter<Base> : std::formatter<std::string> {
 };
 
 template <>
-struct std::formatter<Method> : std::formatter<Base> {
+struct std::formatter<Method> : std::formatter<Base<Method>> {
     auto format(const Method& m, std::format_context& ctx) const {
-        std::string result = std::format("{}", static_cast<const Base&>(m));
+        std::string result = std::format("{}", static_cast<const Base<Method>&>(m));
         if (!m.parameters.empty())
             result += std::format("({})", m.parameters);
         else 
@@ -47,10 +71,10 @@ struct std::formatter<Method> : std::formatter<Base> {
 };
 
 template <>
-struct std::formatter<Field> : std::formatter<Base> {};
+struct std::formatter<Field> : std::formatter<Base<Field>> {};
 
 template <>
-struct std::formatter<Property> : std::formatter<Base> {};
+struct std::formatter<Property> : std::formatter<Base<Property>> {};
 
 
 struct ClassInfo {

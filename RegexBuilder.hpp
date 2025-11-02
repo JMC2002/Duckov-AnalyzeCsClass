@@ -8,21 +8,14 @@
 #include <ranges>
 #include <algorithm>
 
-#include "ClassInfo.hpp"
 #include "Logger.hpp"
 using namespace std::literals;
-
-constexpr std::string_view AccessModifier = R"(public|private|protected|internal)";
-constexpr std::string_view MemberModifier = R"(static|readonly|volatile|virtual|override|abstract|unsafe)";
-constexpr std::string_view Type           = R"([\w<>\[\]]+)";
-constexpr std::string_view Identifier     = R"([A-Za-z_]\w*)";
-constexpr std::string_view Parameters     = R"(\(([^)]*)\)\s*\{)";
 
 template <typename  T, typename Member = std::string>
     requires std::is_assignable_v<Member&, const Member&>
 struct RegexPart {
-    std::string pattern;      // 实际的正则内容
-    std::string suffix;       // 后缀，如?、+等
+    std::string_view pattern;      // 实际的正则内容
+    std::string_view suffix;       // 后缀，如?、+等
 
     bool grouped;      // 是否加分组
 
@@ -53,13 +46,13 @@ struct RegexPart {
 
     std::string toRegex()const {
         if (!grouped)
-            return pattern;
+            return std::string(pattern);
 
         return "("s
              + (capturing() ? "" : "?:")
-             + pattern
+             + std::string(pattern)
              + ")"
-             + suffix;
+             + std::string(suffix);
     }
 
     bool capturing()const noexcept {
@@ -80,11 +73,8 @@ class RegexBuilder {
 public:
     std::string pattern;
     // 设置前缀
-    RegexBuilder(std::string_view prefix = ""sv, std::string_view default_delimiter = R"(\s+)"sv)
+    RegexBuilder(std::string_view prefix = ""sv, std::string_view default_delimiter = ""sv)
         : pattern(prefix), default_delimiter(default_delimiter) {}
-
-    //template <typename... Val>
-
 
     template <typename... Val>
         requires(sizeof...(Val) >= 1)
