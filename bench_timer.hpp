@@ -52,6 +52,4 @@ namespace bench {
 
 #define BENCH_DEBUG(name) \
     ::bench::Timer CONCAT(_bench_debug_timer_instance_, __LINE__){ name, simplelog::Level::DEBUG }
-
-
 } // namespace bench
