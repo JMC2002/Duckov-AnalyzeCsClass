@@ -23,7 +23,7 @@ struct Base {
     static inline RegexBuilder<Derived> rb 
                 = RegexBuilder<Derived>()
                  .join(&Base::accessModifier, AccessModifier)
-                 .join_with("\\s+", &Base::memberModifier, MemberModifier, "?")
+                 .join_with("\\s+", &Base::memberModifier, MemberModifier)
                  .join_with("\\s*", &Base::type, Type)
                  .join_with("\\s+", &Base::name, Identifier);
 };
