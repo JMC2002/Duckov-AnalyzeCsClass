@@ -82,8 +82,7 @@ template <>
 struct std::formatter<Property> : std::formatter<Base<Property>> {};
 
 
-struct ClassInfo {
-    std::string name;
+struct ClassInfo : public Base<ClassInfo> {
     std::vector<Method> methods;
     std::vector<Field> fields;
     std::vector<Property> properties;
