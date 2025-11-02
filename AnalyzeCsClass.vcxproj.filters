@@ -26,7 +26,7 @@
     <ClInclude Include="IOUtils.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="RegexParts.hpp">
+    <ClInclude Include="RegexBuilder.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Logger.hpp">

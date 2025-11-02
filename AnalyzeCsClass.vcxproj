@@ -145,7 +145,7 @@
     <ClInclude Include="ClassInfo.hpp" />
     <ClInclude Include="IOUtils.hpp" />
     <ClInclude Include="Logger.hpp" />
-    <ClInclude Include="RegexParts.hpp" />
+    <ClInclude Include="RegexBuilder.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

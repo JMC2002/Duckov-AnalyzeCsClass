@@ -22,7 +22,7 @@ namespace simplelog {
         FATAL
     };
 
-#define LOG_LEVEL Level::TRACE     // 开始打印的等级
+#define LOG_LEVEL Level::DEBUG     // 开始打印的等级
 #define ST_LEVEL  Level::ERROR     // 打印栈踪的起始等级
 
     enum class FunctionFormat {

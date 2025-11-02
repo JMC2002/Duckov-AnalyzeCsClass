@@ -9,6 +9,9 @@
 #include <sstream>
 #include <locale>
 #include "ClassInfo.hpp"
+#include "Logger.hpp"
+#include "bench_timer.hpp"
+#include "RegexBuilder.hpp"
 
 using namespace std;
 
@@ -53,6 +56,43 @@ ClassInfo analyze_cs_class(const string& code) {
             info.methods.push_back(method);
     }
 
+    bench::Timer test1("测试1耗时");
+    info.fields = RegexBuilder<Field>()
+                .join_with("", &Field::accessModifier, AccessModifier)
+                .join(&Field::memberModifier, MemberModifier, "?")
+                .join_with("\\s*", &Field::type, Type)
+                .join(&Field::name, Identifier)
+                .join_with("\\s*", "=[^;]*", "?")
+                .join_with("", ";", false)
+                .build()
+                .match(code)
+                | ranges::to<std::vector>();
+    test1.stop();
+
+
+    //auto rb = RegexBuilder<Field>()
+    //    .join_with("", &Field::accessModifier, AccessModifier)
+    //    .join(&Field::memberModifier, MemberModifier, "?")
+    //    .join_with("\\s*", &Field::type, Type)
+    //    .join(&Field::name, Identifier)
+    //    .join_with("\\s*", "=[^;]*", "?")
+    //    .join_with("", ";", false)
+    //    .build();
+    //LOG_INFO("{}", rb.pattern);
+    //auto r = rb.match(code);
+    //LOG_INFO("test");
+    //try {
+    //    info.fields = r | std::ranges::to<vector<Field>>();
+    //}
+    //catch (const exception& e) {
+    //    LOG_FATAL(e.what());
+    //}
+
+    //LOG_INFO("test2");
+
+    std::vector<Field> fields;
+    // fields.reserve(info.fields.size());
+    bench::Timer test2("测试2");
     // 匹配字段（含类型）
     std::regex fieldRegex(
         R"((public|private|protected|internal|static|readonly|volatile)\s+([\w<>\[\]]+)\s+([A-Za-z_]\w*)\s*(?:=[^;]*)?;)"
@@ -62,8 +102,9 @@ ClassInfo analyze_cs_class(const string& code) {
 		field.accessModifier = (*it)[1];
         field.type           = (*it)[2];
         field.name           = (*it)[3];
-        info.fields.push_back(field);
+        fields.push_back(field);
     }
+    test2.stop();
 
     // 匹配属性（自动属性、表达式属性等）
     std::regex propertyRegex(
@@ -87,18 +128,34 @@ string format_result(const ClassInfo& info) {
 int main(int argc, char* argv[]) try {
     // std::locale::global(std::locale("en_US.UTF-8"));
 
+    // ::simplelog::defaultLogger().log(::simplelog::Level::INFO, "你好");
+    // LOG_DEBUG("debug测试");
+    // LOG_ERROR("error测试");
+    // LOG_FATAL("fatal测试");
+    LOG_INFO("info测试");
+    LOG_INFO("1 + 1 = {}", 1 + 1);
+    LOG_TRACE("trace测试");
+
     fs::path input = ".\\test.txt";
     fs::path output = ".\\out.txt";
 
-    println("📖 正在读取 {}", input.string());
+    BENCH_SCOPE("总耗时");
+
+    println("正在读取 {}", input.string());
+    bench::Timer timer("读取耗时");
     string code = read_file(input);
-    println("🔍 正在分析类结构...");
+    timer.stop();
+
+    println("正在分析类结构...");
+
+    BENCH_SCOPE("分析耗时", simplelog::Level::DEBUG);
+    BENCH_DEBUG("分析耗时2");
     ClassInfo info = analyze_cs_class(code);
     string result = format_result(info);
     write_file(output, result);
 
-    println("✅ 已分析类: {}", info.name);
-    println("📄 结果已写入: {}", output.string());
+    println("已分析类: {}", info.name);
+    println("结果已写入: {}", output.string());
     return 0;
 
 }
