@@ -22,6 +22,9 @@ namespace simplelog {
         FATAL
     };
 
+#define LOG_LEVEL Level::TRACE     // 开始打印的等级
+#define ST_LEVEL  Level::ERROR     // 打印栈踪的起始等级
+
     enum class FunctionFormat {
         None,   // 不显示函数名
         Short,  // 只显示函数名
@@ -51,7 +54,7 @@ namespace simplelog {
     class Logger {
     public:
         Logger(std::ostream& os = std::clog)
-            : out(os), minLevel(Level::TRACE), printStacktraceFrom(Level::ERROR) {
+            : out(os), minLevel(LOG_LEVEL), printStacktraceFrom(ST_LEVEL) {
         }
 
         void setMinLevel(Level lvl) noexcept {
@@ -175,12 +178,16 @@ namespace simplelog {
         return logger;
     }
 
-    // 宏封装（自动捕获 source_location）
-#define LOG_TRACE(fmt, ...) ::simplelog::defaultLogger().log(::simplelog::Level::TRACE, fmt, std::source_location::current() __VA_OPT__(,) __VA_ARGS__)
-#define LOG_DEBUG(fmt, ...) ::simplelog::defaultLogger().log(::simplelog::Level::DEBUG, fmt, std::source_location::current() __VA_OPT__(,) __VA_ARGS__)
-#define LOG_INFO(fmt,  ...) ::simplelog::defaultLogger().log(::simplelog::Level::INFO,  fmt, std::source_location::current() __VA_OPT__(,) __VA_ARGS__)
-#define LOG_WARN(fmt,  ...) ::simplelog::defaultLogger().log(::simplelog::Level::WARN,  fmt, std::source_location::current() __VA_OPT__(,) __VA_ARGS__)
-#define LOG_ERROR(fmt, ...) ::simplelog::defaultLogger().log(::simplelog::Level::ERROR, fmt, std::source_location::current() __VA_OPT__(,) __VA_ARGS__)
-#define LOG_FATAL(fmt, ...) ::simplelog::defaultLogger().log(::simplelog::Level::FATAL, fmt, std::source_location::current() __VA_OPT__(,) __VA_ARGS__)
 
+    // 宏封装（自动捕获 source_location）
+// TRACE
+#define LOG_IMPL(lvl, fmt, ...) \
+    ::simplelog::defaultLogger().log(lvl, fmt, std::source_location::current() __VA_OPT__(,) __VA_ARGS__)
+
+#define LOG_TRACE(fmt, ...) LOG_IMPL(::simplelog::Level::TRACE, fmt __VA_OPT__(,) __VA_ARGS__)
+#define LOG_DEBUG(fmt, ...) LOG_IMPL(::simplelog::Level::DEBUG, fmt __VA_OPT__(,) __VA_ARGS__)
+#define LOG_INFO(fmt, ...) LOG_IMPL(::simplelog::Level::INFO, fmt __VA_OPT__(,) __VA_ARGS__)
+#define LOG_WARN(fmt, ...) LOG_IMPL(::simplelog::Level::WARN, fmt __VA_OPT__(,) __VA_ARGS__)
+#define LOG_ERROR(fmt, ...) LOG_IMPL(::simplelog::Level::ERROR, fmt __VA_OPT__(,) __VA_ARGS__)
+#define LOG_FATAL(fmt, ...) LOG_IMPL(::simplelog::Level::FATAL, fmt __VA_OPT__(,) __VA_ARGS__)
 } // namespace simplelog
