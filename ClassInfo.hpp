@@ -9,17 +9,18 @@
 using namespace std::literals;
 
 constexpr std::string_view Type = R"([\w<>.,\[\]\s?]+)";
+constexpr std::string_view AntiConstType = R"((?!const\b|event\b)[\w<>.,\[\]\s?]+)";
 constexpr std::string_view Identifier = R"([A-Za-z_]\w*)";
 constexpr std::string_view GenericName = R"([A-Za-z_]\w*(?:<[\w,\s<>]+>)?)";
 constexpr std::string_view Parameters = R"([^)]*)";
 
 // 暂时不匹配没有modifier的语句
 constexpr std::string_view FieldModifier     = R"((?:(?:new|public|protected|internal|private|static|readonly|volatile|unsafe)\s+)+)";
-constexpr std::string_view EventModifier     = R"((?:(?:new|public|protected|internal|private|static|readonly|volatile|unsafe)\s+)+\s*event)";
+constexpr std::string_view EventModifier     = R"((?:(?:new|public|protected|internal|private|static|readonly|volatile|unsafe)\s+)+\s*event\s+)";
 constexpr std::string_view ClassModifier     = R"((?:(?:new|public|protected|internal|private|abstract|sealed|static|unsafe)\s+)+)";
 // Method、Property、Event的Modifier限制都一样
 constexpr std::string_view Modifier    = R"((?:(?:new|public|protected|internal|private|static|virtual|sealed|override|abstract|extern|readonly|unsafe)\s+)+)";
-constexpr std::string_view ConstantModifier  = R"((?:(?:new|public|protected|internal|private)\s+)*\s*const)";
+constexpr std::string_view ConstantModifier  = R"((?:(?:new|public|protected|internal|private)\s+)*\s*const\s+)";
 constexpr std::string_view Super = R"((?:\s*:\s*[\w<>,\.\s]*)?)";
 
 template <typename T>
@@ -32,7 +33,7 @@ struct Base {
     std::string name;              // 名称
 
     static inline constexpr std::string_view modifierRe   = Modifier;
-    static inline constexpr std::string_view typeRe       = Type;
+    static inline constexpr std::string_view typeRe       = AntiConstType;
     static inline constexpr std::string_view identifierRe = Identifier;
 
     static auto& getBuilder() {
@@ -70,6 +71,7 @@ struct Field : public Base<Field>{
 
 struct Constant : public Base<Constant> {
     static inline constexpr std::string_view modifierRe = ConstantModifier;
+    static inline constexpr std::string_view typeRe = Type;    // 默认情况不会匹配event和const
     static auto& getBuilder() {
         static auto rb = Base<Constant>::getBuilder()
                         .join_with("\\s*", "=[^>;]*", "?")
@@ -90,6 +92,7 @@ struct Property : public Base<Property> {
 
 struct Event : public Base<Event> {
     static inline constexpr std::string_view modifierRe = EventModifier;
+    static inline constexpr std::string_view typeRe = Type;
 
     static auto& getBuilder() {
         static auto rb = Base<Event>::getBuilder()
