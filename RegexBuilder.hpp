@@ -22,7 +22,9 @@ struct RegexPart {
     using FieldType = std::remove_cvref_t<Member>;
     std::optional<FieldType T::*> member; // 捕获的目标
 
-    RegexPart(std::string_view pattern, bool grouped)
+    template<typename B>    // 防止const char*匹配到bool
+        requires std::is_same_v<std::remove_cvref_t<B>, bool>
+    RegexPart(std::string_view pattern, B grouped)
         : pattern(pattern), grouped(grouped) {
         LOG_TRACE("调用构造1，pattern = {}, grouped = {}", pattern, grouped);
     }
@@ -33,10 +35,6 @@ struct RegexPart {
         LOG_TRACE("调用构造2，pattern = {}, suffix = {}", pattern, suffix.size() ? suffix : "空"sv);
         this->suffix = suffix;
     }
-
-    // 显式重载const char*，防止被匹配到bool
-    RegexPart(std::string_view pattern, const char* suffix = "")
-        : RegexPart(pattern, std::string_view(suffix)) {}
 
     RegexPart(Member T::* mem, std::string_view pattern, std::string_view suffix = ""sv)
         : RegexPart(pattern, suffix) {
