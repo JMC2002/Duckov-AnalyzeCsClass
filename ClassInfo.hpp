@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include <format>
+#include <variant>
 
 #include "RegexBuilder.hpp"
 
@@ -20,6 +21,9 @@ constexpr std::string_view ClassModifier     = R"((?:(?:new|public|protected|int
 constexpr std::string_view Modifier    = R"((?:(?:new|public|protected|internal|private|static|virtual|sealed|override|abstract|extern|readonly|unsafe)\s+)+)";
 constexpr std::string_view ConstantModifier  = R"((?:(?:new|public|protected|internal|private)\s+)*\s*const)";
 constexpr std::string_view Super = R"((?:\s*:\s*[\w<>,\.\s]*)?)";
+
+template <typename T>
+using RegexMatchView = decltype(std::declval<RegexBuilder<T>>().match(std::declval<std::string>()));
 
 template <typename Derived>
 struct Base {
@@ -128,6 +132,33 @@ struct std::formatter<Field> : std::formatter<Base<Field>> {};
 template <>
 struct std::formatter<Property> : std::formatter<Base<Property>> {};
 
+template <>
+struct std::formatter<Constant> : std::formatter<Base<Constant>> {};
+
+template <>
+struct std::formatter<Event> : std::formatter<Base<Event>> {};
+
+
+// 存储view很影响format性能，留作备用
+//using AnyMatchView = std::variant<
+//    RegexMatchView<Method>,
+//    RegexMatchView<Field>,
+//    RegexMatchView<Property>,
+//    RegexMatchView<Constant>,
+//    RegexMatchView<Event>
+//>;
+//
+//using MemberArr = std::array<std::pair<std::string_view, std::optional<AnyMatchView>>, std::variant_size_v<AnyMatchView>>;
+
+using AnyMatchView = std::variant<
+    std::vector<Method>,
+    std::vector<Field>,
+    std::vector<Property>,
+    std::vector<Constant>,
+    std::vector<Event>
+>;
+
+using MemberArr = std::array<std::pair<std::string_view, AnyMatchView>, std::variant_size_v<AnyMatchView>>;
 
 struct ClassInfo : public Base<ClassInfo> {
     static inline constexpr std::string_view modifierRe = ClassModifier;
@@ -135,24 +166,32 @@ struct ClassInfo : public Base<ClassInfo> {
     static inline constexpr std::string_view identifierRe = GenericName;
 
     std::string super;            // 父类
-
+    
     static auto& getBuilder() {
         static auto rb = Base<ClassInfo>::getBuilder()
-                        .join_with("\\s*", &ClassInfo::super, Super)
-                        .join_with("\\s*", "\\{", false)
-                        .build();
+            .join_with("\\s*", &ClassInfo::super, Super)
+            .join_with("\\s*", "\\{", false)
+            .build();
         return rb;
     }
 
+    MemberArr members;
+    ClassInfo() = default;
+    ClassInfo(const std::string& code) {
+        auto r = ClassInfo::getBuilder().match(code) | std::ranges::to<std::vector>();
+        if (r.size() && r[0].name.size())
+            *this = r[0];
+        else {
+            LOG_WARN("未找到 class 定义");
+        }
 
-    std::vector<Method> methods;
-    std::vector<Field> fields;
-    std::vector<Property> properties;
-    std::vector<Constant> constants;
-    std::vector<Event> events;
-
-    void match(const std::string& code) {
-
+        members = MemberArr{
+            std::pair{   "Method"sv,   Method::getBuilder().match(code) | std::ranges::to<std::vector>() },
+            std::pair{    "Field"sv,    Field::getBuilder().match(code) | std::ranges::to<std::vector>() },
+            std::pair{ "Property"sv, Property::getBuilder().match(code) | std::ranges::to<std::vector>() },
+            std::pair{ "Constant"sv, Constant::getBuilder().match(code) | std::ranges::to<std::vector>() },
+            std::pair{    "Event"sv,    Event::getBuilder().match(code) | std::ranges::to<std::vector>() },
+        };
     }
 };
 
@@ -168,22 +207,13 @@ struct std::formatter<ClassInfo> : std::formatter<std::string> {
             out += std::format("{}", c.super);
         out += '\n';
 
-        if (!c.fields.empty()) {
-            out += std::format("{}{} 个 Fields:\n", 成员前缀, c.fields.size());
-            for (auto& f : c.fields)
-                out += std::format("{}{}\n", 内容前缀, f);
-        }
-
-        if (!c.properties.empty()) {
-			out += std::format("{}{} 个 Properties:\n", 成员前缀, c.properties.size());
-            for (auto& p : c.properties)
-                out += std::format("{}{}\n", 内容前缀, p);
-        }
-
-        if (!c.methods.empty()) {
-			out += std::format("{}{} 个 Methods:\n", 成员前缀, c.methods.size());
-            for (auto& m : c.methods)
-                out += std::format("{}{}\n", 内容前缀, m);
+        for (auto&& [name, m] : c.members) {
+            std::visit([&](auto&& v) {
+                if (v.empty()) return;
+                out += std::format("{}{} 个 {}:\n", 成员前缀, v.size(), name);
+                for (auto&& mem : v)
+                    out += std::format("{}{}\n", 内容前缀, mem);
+                }, m);
         }
 
         return std::formatter<std::string>::format(out, ctx);
