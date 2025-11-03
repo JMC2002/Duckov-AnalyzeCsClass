@@ -33,9 +33,9 @@ struct Base {
 
     static auto& getBuilder() {
         static auto rb = RegexBuilder<Derived>()
-                              .join(&Derived::modifier, modifierRe)
-                              .join_with("\\s*", &Derived::type, typeRe)
-                              .join_with("\\s+", &Derived::name, identifierRe);
+                              .join(&Derived::modifier, Derived::modifierRe)
+                              .join_with("\\s*", &Derived::type, Derived::typeRe)
+                              .join_with("\\s+", &Derived::name, Derived::identifierRe);
         return rb;
     }
 };                                                               
@@ -64,7 +64,7 @@ struct Field : public Base<Field>{
     }
 };
 
-struct Constant : public Base<Field> {
+struct Constant : public Base<Constant> {
     static inline constexpr std::string_view modifierRe = ConstantModifier;
     static auto& getBuilder() {
         static auto rb = Base<Constant>::getBuilder()
