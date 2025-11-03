@@ -36,7 +36,7 @@ namespace bench {
         }
 
     private:
-        std::string_view name_;
+        std::string name_;
         simplelog::Level level_;
         std::source_location loc_;
         clock::time_point start_;
