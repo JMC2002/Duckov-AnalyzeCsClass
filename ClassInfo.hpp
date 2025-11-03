@@ -165,6 +165,7 @@ struct ClassInfo : public Base<ClassInfo> {
     static inline constexpr std::string_view typeRe = "class";
     static inline constexpr std::string_view identifierRe = GenericName;
 
+    std::string namespaceName; // 命名空间
     std::string super;            // 父类
     
     static auto& getBuilder() {
@@ -178,12 +179,20 @@ struct ClassInfo : public Base<ClassInfo> {
     MemberArr members;
     ClassInfo() = default;
     ClassInfo(const std::string& code) {
+
         auto r = ClassInfo::getBuilder().match(code) | std::ranges::to<std::vector>();
         if (r.size() && r[0].name.size())
             *this = r[0];
         else {
             LOG_WARN("未找到 class 定义");
         }
+
+        if (auto ns = matchNamespace(code)) {
+            namespaceName = *ns;
+            LOG_DEBUG("namespace : {}", namespaceName);
+        }
+        else
+            LOG_DEBUG("没找到namespace");
 
         members = MemberArr{
             std::pair{   "Method"sv,   Method::getBuilder().match(code) | std::ranges::to<std::vector>() },
@@ -192,6 +201,14 @@ struct ClassInfo : public Base<ClassInfo> {
             std::pair{ "Constant"sv, Constant::getBuilder().match(code) | std::ranges::to<std::vector>() },
             std::pair{    "Event"sv,    Event::getBuilder().match(code) | std::ranges::to<std::vector>() },
         };
+    }
+
+    static std::optional<std::string> matchNamespace(const std::string& code) {
+        static const std::regex nsRe(R"(namespace\s+([\w\.]+)\s*\{)");
+        std::smatch m;
+        if (std::regex_search(code, m, nsRe))
+            return m[1].str();
+        return std::nullopt;
     }
 };
 
@@ -202,7 +219,11 @@ struct std::formatter<ClassInfo> : std::formatter<std::string> {
     auto format(const ClassInfo& c, std::format_context& ctx) const {
 		std::string 成员前缀 = "  ";
 		std::string 内容前缀 = 成员前缀 + "    ";
-        std::string out = std::format("{}class {}", c.modifier, c.name);
+        std::string out;
+        if (!c.namespaceName.empty())
+            out += std::format("namespace {}\n", c.namespaceName);
+        
+        out += std::format("{}class {}", c.modifier, c.name);
         if (c.super.size())
             out += std::format("{}", c.super);
         out += '\n';
