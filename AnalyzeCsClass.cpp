@@ -1,13 +1,6 @@
-﻿#include <iostream>
-#include <fstream>
-#include <string>
-#include <regex>
-#include <vector>
+﻿#include <fstream>
 #include <filesystem>
 #include <format>
-#include <print>
-#include <sstream>
-#include <locale>
 
 #include "ClassInfo.hpp"
 #include "Logger.hpp"
