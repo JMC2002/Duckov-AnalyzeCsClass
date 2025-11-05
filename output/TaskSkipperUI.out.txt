@@ -1,0 +1,25 @@
+public class TaskSkipperUI: MonoBehaviour
+
+  9 ¸ö Method:
+      private void Awake()
+      private void OnAnyButton(InputControl control)
+      private void OnDestroy()
+      private void OnInteractInputContext(InputAction.CallbackContext context)
+      private void Update()
+      private void Show()
+      private void UpdatePressing()
+      private void UpdateFill()
+      private void UpdateCanvasGroup()
+  12 ¸ö Field:
+      private TaskList target
+      private CanvasGroup canvasGroup
+      private Image fill
+      private float totalTime
+      private float hideAfterSeconds
+      private float pressTime
+      private float alpha
+      private float hideTimer
+      private bool show
+      private IDisposable anyButtonListener
+      private bool pressing
+      private bool skipped

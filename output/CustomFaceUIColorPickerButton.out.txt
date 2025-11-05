@@ -1,0 +1,14 @@
+public class CustomFaceUIColorPickerButton: MonoBehaviour
+
+  4 ¸ö Method:
+      public void Init(CustomFaceUIColorPicker _master, Color _color)
+      private void Awake()
+      private void OnClick()
+      public void SetSelection(bool selected)
+  4 ¸ö Field:
+      private CustomFaceUIColorPicker master
+      private Color color
+      public Button button
+      public Image selectedFrameImage
+  1 ¸ö Property:
+      public Color Color

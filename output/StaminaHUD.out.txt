@@ -1,0 +1,15 @@
+public class StaminaHUD: MonoBehaviour
+
+  3 ¸ö Method:
+      private void Update()
+      private void SetColor()
+      private void UpdateAlpha(float deltaTime)
+  6 ¸ö Field:
+      private CharacterMainControl characterMainControl
+      private float percent
+      public CanvasGroup canvasGroup
+      private float targetAlpha
+      public ProceduralImage fillImage
+      public Gradient glowColor
+  1 ¸ö Property:
+      private Item item

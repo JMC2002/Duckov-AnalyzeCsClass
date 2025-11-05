@@ -1,0 +1,7 @@
+public class QuestRequiredItem: MonoBehaviour
+
+  1 ¸ö Method:
+      public void Set(int itemTypeID, int count = 1)
+  2 ¸ö Field:
+      private Image icon
+      private TextMeshProUGUI text

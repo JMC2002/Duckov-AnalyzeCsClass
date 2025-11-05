@@ -1,0 +1,54 @@
+namespace Duckov.MiniGames
+public class MiniGame: MonoBehaviour
+
+  4 个 ClassLike:
+      public enum TickTiming
+      public enum Button
+      public class ButtonStatus
+      public struct MiniGameInputEventContext
+  17 个 Method:
+      public void SetRenderTexture(RenderTexture texture)
+      public RenderTexture CreateAndSetRenderTexture(int width, int height)
+      private void Awake()
+      public void SetInputAxis(Vector2 axis, int index = 0)
+      public void SetButton(Button button, bool down)
+      public bool GetButton(Button button)
+      public bool GetButtonDown(Button button)
+      public bool GetButtonUp(Button button)
+      public Vector2 GetAxis(int index = 0)
+      private void Tick(float deltaTime)
+      private void UpdateLogic(float deltaTime)
+      private void Cleanup()
+      private void Update()
+      private void FixedUpdate()
+      private void LateUpdate()
+      public void ClearInput()
+      internal void SetConsole(GamingConsole console)
+  21 个 Field:
+      public bool pressed
+      public bool justPressed
+      public bool justReleased
+      public bool isButtonEvent
+      public Button button
+      public bool pressing
+      public bool buttonDown
+      public bool buttonUp
+      public bool isAxisEvent
+      public int axisIndex
+      public Vector2 axisValue
+      private string id
+      public TickTiming tickTiming
+      private Camera camera
+      private Camera uiCamera
+      private RenderTexture renderTexture
+      public static Action<MiniGame, float> onUpdateLogic
+      private GamingConsole console
+      private Vector2 inputAxis_0
+      private Vector2 inputAxis_1
+      public static event Action<MiniGame, MiniGameInputEventContext> OnInput
+  5 个 Property:
+      public string ID
+      public Camera Camera
+      public Camera UICamera
+      public RenderTexture RenderTexture
+      public GamingConsole Console

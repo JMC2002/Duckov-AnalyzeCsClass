@@ -1,0 +1,29 @@
+namespace Duckov.Rules
+public class GameRulesManager: MonoBehaviour
+
+  1 个 ClassLike:
+      private struct RuleIndexFileEntry
+  8 个 Method:
+      public static void NotifyRuleChanged()
+      public static RuleIndex GetRuleIndexOfSaveSlot(int slot)
+      private void Awake()
+      private void OnDestroy()
+      private void OnSetFile()
+      private void ReloadCustomRuleSet()
+      private void OnCollectSaveData()
+      internal static string GetRuleIndexDisplayNameOfSlot(int slotIndex)
+  5 个 Field:
+      public RuleIndex index
+      public RulesetFile file
+      private Ruleset customRuleSet
+      private RuleIndexFileEntry[] entries
+      public static event Action OnRuleChanged
+  5 个 Property:
+      public static GameRulesManager Instance
+      public static Ruleset Current
+      private Ruleset mCurrent
+      public static RuleIndex SelectedRuleIndex
+      private Ruleset CustomRuleSet
+  2 个 Constant:
+      private const string SelectedRuleIndexSaveKey
+      private const string CustomRuleSetKey

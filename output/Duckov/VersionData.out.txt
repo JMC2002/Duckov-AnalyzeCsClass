@@ -1,0 +1,9 @@
+namespace Duckov
+public struct VersionData
+  1 ¸ö Method:
+      public override string ToString()
+  4 ¸ö Field:
+      public int mainVersion
+      public int subVersion
+      public int buildVersion
+      public string suffix

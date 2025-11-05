@@ -1,0 +1,4 @@
+public struct CustomFacePartMeta
+  2 ¸ö Field:
+      public int id
+      public CustomFacePart part

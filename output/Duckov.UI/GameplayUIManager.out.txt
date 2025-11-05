@@ -1,0 +1,23 @@
+namespace Duckov.UI
+public class GameplayUIManager: MonoBehaviour
+
+  3 ¸ö Method:
+      private void Awake()
+      public static UniTask TemporaryHide()
+      public static UniTask ReverseTemporaryHide()
+  8 ¸ö Field:
+      private static GameplayUIManager instance
+      private CanvasGroup canvasGroup
+      private FadeGroup fadeGroup
+      private List<GameObject> setActiveOnAwake
+      private PrefabPool<ItemDisplay> itemDisplayPool
+      private PrefabPool<SlotDisplay> slotDisplayPool
+      private PrefabPool<InventoryEntry> inventoryEntryPool
+      private SplitDialogue _splitDialogue
+  6 ¸ö Property:
+      public static GameplayUIManager Instance
+      public View ActiveView
+      public PrefabPool<ItemDisplay> ItemDisplayPool
+      public PrefabPool<SlotDisplay> SlotDisplayPool
+      public PrefabPool<InventoryEntry> InventoryEntryPool
+      public SplitDialogue SplitDialogue

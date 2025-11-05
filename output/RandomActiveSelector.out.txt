@@ -1,0 +1,12 @@
+public class RandomActiveSelector: MonoBehaviour
+
+  3 ¸ö Method:
+      private void Awake()
+      private void Update()
+      private void Set()
+  5 ¸ö Field:
+      public float activeChance
+      private int activeIndex
+      private int guid
+      private bool setted
+      public List<GameObject> selections

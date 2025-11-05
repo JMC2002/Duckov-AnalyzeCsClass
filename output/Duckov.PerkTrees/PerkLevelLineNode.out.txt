@@ -1,0 +1,9 @@
+namespace Duckov.PerkTrees
+public class PerkLevelLineNode: PerkRelationNodeBase
+
+  1 ¸ö Field:
+      public Vector2 cachedPosition
+  3 ¸ö Property:
+      public string DisplayName
+      public override int maxInConnections
+      public override int maxOutConnections

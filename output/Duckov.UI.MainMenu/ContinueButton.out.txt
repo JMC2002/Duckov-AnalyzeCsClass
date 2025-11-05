@@ -1,0 +1,19 @@
+namespace Duckov.UI.MainMenu
+public class ContinueButton: MonoBehaviour
+
+  6 ¸ö Method:
+      private void Awake()
+      private void OnDestroy()
+      private void OnSetLanguage(SystemLanguage language)
+      private void OnButtonClicked()
+      private void Start()
+      private void Refresh()
+  5 ¸ö Field:
+      private Button button
+      private TextMeshProUGUI text
+      private string text_NewGame
+      private string text_Continue
+      private SceneReference overrideCurtainScene
+  2 ¸ö Property:
+      private string Text_NewGame
+      private string Text_Continue

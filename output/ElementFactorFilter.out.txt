@@ -1,0 +1,15 @@
+public class ElementFactorFilter: EffectFilter
+
+  1 个 ClassLike:
+      public enum ElementFactorFilterTypes
+  2 个 Method:
+      protected override bool OnEvaluate(EffectTriggerEventContext context)
+      private void OnDestroy()
+  4 个 Field:
+      public ElementFactorFilterTypes type
+      public float compareTo
+      public ElementTypes element
+      private CharacterMainControl _mainControl
+  2 个 Property:
+      public override string DisplayName
+      private CharacterMainControl MainControl

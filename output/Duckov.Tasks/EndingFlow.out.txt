@@ -1,0 +1,10 @@
+namespace Duckov.Tasks
+public class EndingFlow: MonoBehaviour
+
+  3 ¸ö Method:
+      private void Start()
+      private async UniTask Task()
+      private async UniTask WaitForTaskBehaviour(MonoBehaviour mono)
+  2 ¸ö Field:
+      private UnityEvent onBegin
+      private UnityEvent onEnd

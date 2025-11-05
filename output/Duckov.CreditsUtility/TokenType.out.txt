@@ -1,0 +1,2 @@
+namespace Duckov.CreditsUtility
+public enum TokenType

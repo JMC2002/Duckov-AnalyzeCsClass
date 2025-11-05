@@ -1,0 +1,11 @@
+public class IndicatorHUD: MonoBehaviour
+
+  4 ¸ö Method:
+      private void Start()
+      private void Awake()
+      private void OnDestroy()
+      private void Toggle(UIInputEventData data)
+  3 ¸ö Field:
+      public GameObject mapIndicator
+      public GameObject toggleParent
+      public bool startActive

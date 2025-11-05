@@ -1,0 +1,19 @@
+public class DamageReceiver: MonoBehaviour
+
+  5 ¸ö Method:
+      private void Start()
+      private void OnDestroy()
+      public bool Hurt(DamageInfo damageInfo)
+      public bool AddBuff(Buff buffPfb, CharacterMainControl fromWho)
+      public void OnDead(DamageInfo dmgInfo)
+  6 ¸ö Field:
+      public bool useSimpleHealth
+      public Health health
+      public HealthSimpleBase simpleHealth
+      public bool isHalfObsticle
+      public UnityEvent<DamageInfo> OnHurtEvent
+      public UnityEvent<DamageInfo> OnDeadEvent
+  3 ¸ö Property:
+      public Teams Team
+      public bool IsMainCharacter
+      public bool IsDead

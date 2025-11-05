@@ -1,0 +1,14 @@
+public class ViewTabDisplayEntry: MonoBehaviour
+
+  7 ¸ö Method:
+      private void Awake()
+      private void OnDestroy()
+      private void Start()
+      private void OnViewClose(ManagedUIElement element)
+      private void OnViewOpen(ManagedUIElement element)
+      private void ShowIndicator()
+      private void HideIndicator()
+  3 ¸ö Field:
+      private string viewTypeName
+      private GameObject indicator
+      private PunchReceiver punch

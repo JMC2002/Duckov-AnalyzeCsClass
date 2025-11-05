@@ -1,0 +1,9 @@
+public class DecalAtlasSelector: MonoBehaviour
+
+  1 ¸ö Method:
+      private void OnValidate()
+  4 ¸ö Field:
+      public int rows
+      public int columns
+      public int index
+      private DecalProjector projector

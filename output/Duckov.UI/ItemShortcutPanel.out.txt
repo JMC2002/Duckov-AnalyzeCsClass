@@ -1,0 +1,14 @@
+namespace Duckov.UI
+public class ItemShortcutPanel: MonoBehaviour
+
+  4 ¸ö Method:
+      private void Awake()
+      private void OnDestroy()
+      private void OnLevelInitialized()
+      private void Initialize()
+  2 ¸ö Field:
+      private ItemShortcutButton[] buttons
+      private bool initialized
+  2 ¸ö Property:
+      public Inventory Target
+      public CharacterMainControl Character

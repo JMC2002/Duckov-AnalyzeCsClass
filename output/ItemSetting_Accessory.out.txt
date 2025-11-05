@@ -1,0 +1,17 @@
+public class ItemSetting_Accessory: ItemSettingBase
+
+  8 ¸ö Method:
+      public override void SetMarkerParam(Item selfItem)
+      public override void OnInit()
+      private void OnPluggedIntoSlot(Item selfItem)
+      private void OnUnpluggedIntoSlot(Item selfItem)
+      private void OnDestroy()
+      private void OnMasterCreateAgent(Item _masterItem, ItemAgent newAgnet)
+      private void CreateAccessory(DuckovItemAgent parentAgent)
+      private void DestroyAccessory()
+  5 ¸ö Field:
+      private AccessoryBase accessoryPfb
+      public ADSAimMarker overrideAdsAimMarker
+      private AccessoryBase accessoryInstance
+      private bool created
+      private Item masterItem

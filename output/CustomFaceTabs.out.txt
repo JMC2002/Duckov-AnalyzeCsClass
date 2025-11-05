@@ -1,0 +1,11 @@
+public class CustomFaceTabs: MonoBehaviour, IPointerClickHandler, IEventSystemHandler
+
+  2 ¸ö Method:
+      public void OnPointerClick(PointerEventData eventData)
+      public void SetSelectVisual(bool selected)
+  5 ¸ö Field:
+      public CustomFaceUI master
+      public List<GameObject> panels
+      public ProceduralImage background
+      public Color normalColor
+      public Color selectedColor

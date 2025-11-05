@@ -1,0 +1,5 @@
+public class PreUnlockPerkTree: MonoBehaviour
+
+  2 ¸ö Method:
+      public void Start()
+      private void Update()

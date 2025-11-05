@@ -1,0 +1,15 @@
+public class DPSDisplayer: MonoBehaviour
+
+  6 ¸ö Method:
+      private void Awake()
+      private void Update()
+      private void OnDestroy()
+      private void OnHurt(Health health, DamageInfo dmgInfo)
+      private void RefreshDisplay()
+      private float CalculateDPS()
+  5 ¸ö Field:
+      private TextMeshPro dpsText
+      private bool empty
+      private float totalDamage
+      private float firstTimeMarker
+      private float lastTimeMarker

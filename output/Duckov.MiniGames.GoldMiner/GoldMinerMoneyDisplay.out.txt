@@ -1,0 +1,9 @@
+namespace Duckov.MiniGames.GoldMiner
+public class GoldMinerMoneyDisplay: MonoBehaviour
+
+  1 ¸ö Method:
+      private void Update()
+  3 ¸ö Field:
+      private GoldMiner master
+      private TextMeshProUGUI text
+      private string format

@@ -1,0 +1,18 @@
+public class TimeOfDayAlert: MonoBehaviour
+
+  6 ¸ö Method:
+      private void Awake()
+      private void OnDestroy()
+      private void Update()
+      private void OnAlertTriggered()
+      public static void EnterAlertTrigger()
+      public static void LeaveAlertTrigger()
+  8 ¸ö Field:
+      private CanvasGroup canvasGroup
+      public TextMeshProUGUI text
+      private ColorPunch blinkPunch
+      public string nearNightKey
+      public string inNightKey
+      private float stayTime
+      private float timer
+      public static event Action OnAlertTriggeredEvent

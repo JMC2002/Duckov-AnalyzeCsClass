@@ -1,0 +1,7 @@
+public class ShowLocationInMap: MonoBehaviour
+
+  1 ¸ö Field:
+      private string displayName
+  2 ¸ö Property:
+      public string DisplayName
+      public string DisplayNameRaw

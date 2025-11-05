@@ -1,0 +1,26 @@
+namespace Duckov.Scenes
+public class SubSceneEntry
+  2 个 ClassLike:
+      public class Location
+      public class TeleporterInfo
+  1 个 Method:
+      internal bool TryGetCachedPosition(string locationPath, out Vector3 result)
+  10 个 Field:
+      public string path
+      public Vector3 position
+      public bool showInMap
+      private string displayName
+      public Vector3 position
+      public MultiSceneLocation target
+      public Vector3 nearestTeleporterPositionToTarget
+      public string sceneID
+      private string overrideAmbientSound
+      private bool isInDoor
+  7 个 Property:
+      public string DisplayName
+      public string DisplayNameRaw
+      public string AmbientSound
+      public bool IsInDoor
+      public SceneInfoEntry Info
+      public SceneReference SceneReference
+      public string DisplayName

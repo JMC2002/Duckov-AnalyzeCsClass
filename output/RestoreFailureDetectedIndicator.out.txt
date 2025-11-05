@@ -1,0 +1,8 @@
+public class RestoreFailureDetectedIndicator: MonoBehaviour
+
+  3 ¸ö Method:
+      private void OnEnable()
+      private void OnDisable()
+      private void Refresh()
+  1 ¸ö Field:
+      private FadeGroup fadeGroup

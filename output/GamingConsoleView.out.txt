@@ -1,0 +1,23 @@
+public class GamingConsoleView: View
+
+  8 ¸ö Method:
+      protected override void OnOpen()
+      protected override void OnClose()
+      private void SetTarget(GamingConsole target)
+      private void Setup(GamingConsole target)
+      private void OnTargetContentChanged(GamingConsole console)
+      private void RefreshConsole()
+      internal static void Show(GamingConsole console)
+      protected override void OnDestroy()
+  9 ¸ö Field:
+      private FadeGroup fadeGroup
+      private InventoryDisplay characterInventory
+      private InventoryDisplay petInventory
+      private InventoryDisplay storageInventory
+      private SlotDisplay monitorSlotDisplay
+      private SlotDisplay consoleSlotDisplay
+      private ItemSlotCollectionDisplay consoleSlotCollectionDisplay
+      private GamingConsole target
+      private bool isBeingDestroyed
+  1 ¸ö Property:
+      public static GamingConsoleView Instance

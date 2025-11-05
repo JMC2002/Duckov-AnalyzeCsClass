@@ -1,0 +1,17 @@
+public class InventoryFilterDisplay: MonoBehaviour, ISingleSelectionMenu<InventoryFilterDisplayEntry>
+
+  6 ¸ö Method:
+      private void Awake()
+      public void Setup(InventoryDisplay target)
+      private void OnEntryClicked(InventoryFilterDisplayEntry entry, PointerEventData data)
+      internal void Select(int i)
+      public InventoryFilterDisplayEntry GetSelection()
+      public bool SetSelection(InventoryFilterDisplayEntry selection)
+  5 ¸ö Field:
+      private InventoryFilterDisplayEntry template
+      private PrefabPool<InventoryFilterDisplayEntry> _pool
+      private InventoryDisplay targetDisplay
+      private InventoryFilterProvider provider
+      private InventoryFilterDisplayEntry selection
+  1 ¸ö Property:
+      private PrefabPool<InventoryFilterDisplayEntry> Pool

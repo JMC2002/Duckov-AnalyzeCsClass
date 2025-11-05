@@ -1,0 +1,8 @@
+public class AT_SetBlackScreen: ActionTask
+
+  2 ¸ö Method:
+      protected override void OnExecute()
+      protected override void OnUpdate()
+  2 ¸ö Field:
+      public bool show
+      private UniTask task

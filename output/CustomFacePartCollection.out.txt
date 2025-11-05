@@ -1,0 +1,11 @@
+public class CustomFacePartCollection
+  5 ¸ö Method:
+      public void Clear()
+      public CustomFacePart GetNextOrPrevPrefab(int currentID, int direction)
+      public CustomFacePart GetPartPrefab(int id)
+      public void Sort()
+      public void AddNewCollection(CustomFacePart newPart)
+  1 ¸ö Field:
+      private List<CustomFacePartMeta> parts
+  1 ¸ö Property:
+      public int totalCount

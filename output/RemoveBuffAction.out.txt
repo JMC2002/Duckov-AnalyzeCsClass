@@ -1,0 +1,9 @@
+public class RemoveBuffAction: EffectAction
+
+  1 ¸ö Method:
+      protected override void OnTriggered(bool positive)
+  2 ¸ö Field:
+      public int buffID
+      public bool removeOneLayer
+  1 ¸ö Property:
+      private CharacterMainControl MainControl

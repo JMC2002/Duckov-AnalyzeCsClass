@@ -1,0 +1,14 @@
+public class UIShadowOptions: OptionsProviderBase
+
+  4 ¸ö Method:
+      public static void Apply()
+      public override string GetCurrentOption()
+      public override string[] GetOptions()
+      public override void Set(int index)
+  4 ¸ö Property:
+      public override string Key
+      public static bool Active
+      public string ActiveText
+      public string InactiveText
+  1 ¸ö Constant:
+      private const string key

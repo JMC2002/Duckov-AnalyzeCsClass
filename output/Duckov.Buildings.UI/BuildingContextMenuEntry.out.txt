@@ -1,0 +1,9 @@
+namespace Duckov.Buildings.UI
+public class BuildingContextMenuEntry: MonoBehaviour, IPointerClickHandler, IEventSystemHandler
+
+  2 ¸ö Method:
+      private void OnEnable()
+      public void OnPointerClick(PointerEventData eventData)
+  2 ¸ö Field:
+      private TextMeshProUGUI text
+      private string textKey

@@ -1,0 +1,7 @@
+public class ScrollViewEventReceiver: MonoBehaviour, IScrollHandler, IEventSystemHandler
+
+  2 ¸ö Method:
+      private void Awake()
+      public void OnScroll(PointerEventData eventData)
+  1 ¸ö Field:
+      private ScrollRect scrollRect

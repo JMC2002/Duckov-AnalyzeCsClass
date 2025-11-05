@@ -1,0 +1,14 @@
+namespace Duckov.Options.UI
+public class RuleEntry_Int: MonoBehaviour
+
+  6 ¸ö Method:
+      private void Awake()
+      private void OnRuleChanged()
+      private void OnValueChanged(float value)
+      public void RefreshValue()
+      protected void SetValue(Ruleset ruleset, int value)
+      protected int GetValue(Ruleset ruleset)
+  3 ¸ö Field:
+      private SliderWithTextField slider
+      private string fieldName
+      private FieldInfo field

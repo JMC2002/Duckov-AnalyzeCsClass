@@ -1,0 +1,7 @@
+public class PlayHurtEventProxy: MonoBehaviour
+
+  1 ¸ö Method:
+      public void Play(bool crit)
+  2 ¸ö Field:
+      private string critSfx
+      private string nonCritSfx

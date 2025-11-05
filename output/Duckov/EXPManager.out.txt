@@ -1,0 +1,34 @@
+namespace Duckov
+public class EXPManager: MonoBehaviour, ISaveDataProvider
+
+  12 个 Method:
+      private static void OnLevelChanged(int oldLevel, int newLevel)
+      public static bool AddExp(int amount)
+      private void CacheExp()
+      public object GenerateSaveData()
+      public void SetupSaveData(object data)
+      private void Load()
+      private void Save()
+      private void Awake()
+      private void Start()
+      private void OnDestroy()
+      private void OnNewRaid(RaidUtilities.RaidInfo info)
+      public int LevelFromExp(long exp)
+  7 个 Field:
+      private static EXPManager instance
+      private string levelChangeNotificationFormatKey
+      private List<long> levelExpDefinition
+      private long point
+      public static Action<long> onExpChanged
+      public static Action<int, int> onLevelChanged
+      private long cachedExp
+  6 个 Property:
+      public static EXPManager Instance
+      private string LevelChangeNotificationFormat
+      public static long EXP
+      public static int Level
+      public static long CachedExp
+      private string realKey
+  2 个 Constant:
+      private const string prefixKey
+      private const string key

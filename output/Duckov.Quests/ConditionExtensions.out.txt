@@ -1,0 +1,4 @@
+namespace Duckov.Quests
+public static class ConditionExtensions
+  1 ¸ö Method:
+      public static bool Satisfied(this IEnumerable<Condition> conditions)

@@ -1,0 +1,9 @@
+public class UVCylinder: MonoBehaviour
+
+  1 ¸ö Method:
+      private void Generate()
+  4 ¸ö Field:
+      public float radius
+      public float height
+      public int subdivision
+      private Mesh mesh

@@ -1,0 +1,13 @@
+public class BowAnimation: MonoBehaviour
+
+  4 ¸ö Method:
+      private void Start()
+      private void OnDestroy()
+      private void OnShoot()
+      private void OnLoaded()
+  5 ¸ö Field:
+      public ItemAgent_Gun gunAgent
+      public Animator animator
+      private int hash_Loaded
+      private int hash_Aiming
+      private int hash_Shoot

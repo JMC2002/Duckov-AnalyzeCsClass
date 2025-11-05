@@ -1,0 +1,13 @@
+namespace Duckov.PerkTrees
+public class PerkRelationNode: PerkRelationNodeBase
+
+  3 ¸ö Method:
+      internal void SetDirty()
+      public override void OnDestroy()
+      internal void NotifyIncomingStateChanged()
+  5 ¸ö Field:
+      public Perk relatedNode
+      public Vector2 cachedPosition
+      private bool dirty
+      internal bool isDuplicate
+      internal bool isInvalid

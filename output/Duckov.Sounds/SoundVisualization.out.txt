@@ -1,0 +1,18 @@
+namespace Duckov.Sounds
+public class SoundVisualization: MonoBehaviour
+
+  6 ¸ö Method:
+      private void Awake()
+      private void OnDestroy()
+      private void Update()
+      private void OnHeardSound(AISound sound)
+      private void Trigger(AISound sound)
+      private void RefreshEntryPosition(SoundDisplay e)
+  5 ¸ö Field:
+      private RectTransform layoutCenter
+      private SoundDisplay displayTemplate
+      private float retriggerDistanceThreshold
+      private float displayOffset
+      private PrefabPool<SoundDisplay> _displayPool
+  1 ¸ö Property:
+      private PrefabPool<SoundDisplay> DisplayPool

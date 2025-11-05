@@ -1,0 +1,3 @@
+public static class CharacterMainControlExtensions
+  1 ¸ö Method:
+      public static bool IsMainCharacter(this CharacterMainControl character)

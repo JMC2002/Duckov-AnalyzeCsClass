@@ -1,0 +1,35 @@
+public class CharacterAnimationControl: MonoBehaviour
+
+  13 ¸ö Method:
+      private void InitHash()
+      private void SetAnimatorBool(int hash, bool value)
+      private void SetAnimatorFloat(int hash, float value)
+      private void SetAnimatorInteger(int hash, int value)
+      private void SetAnimatorTrigger(int hash)
+      private void Awake()
+      private void OnDestroy()
+      private void OnCharacterSet()
+      private void Start()
+      private void SetAttackLayerWeight(float weight)
+      private void Update()
+      private void UpdateAttackLayerWeight()
+      public void OnAttack()
+  18 ¸ö Field:
+      public CharacterMainControl characterMainControl
+      public CharacterModel characterModel
+      public Animator animator
+      public float attackTime
+      private int attackLayer
+      private bool attacking
+      private float attackTimer
+      private bool hasAnimationIfDashCanControl
+      public AnimationCurve attackLayerWeightCurve
+      private int hash_MoveSpeed
+      private int hash_MoveDirX
+      private int hash_MoveDirY
+      private int hash_RightHandOut
+      private int hash_HandState
+      private int hash_Dashing
+      private int hash_Attack
+      private float weight
+      private DuckovItemAgent holdAgent

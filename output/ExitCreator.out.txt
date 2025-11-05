@@ -1,0 +1,17 @@
+public class ExitCreator: MonoBehaviour
+
+  4 ¸ö Method:
+      public void Spawn()
+      private bool IsPathCompitable(SubSceneEntry.Location location)
+      private void CreateExit(Vector3 position, int sceneBuildIndex, int debugIndex)
+      private void SpawnMapElement(Vector3 position, int sceneBuildIndex, int debugIndex)
+  6 ¸ö Field:
+      public GameObject exitPrefab
+      public string exitNameKey
+      private Sprite icon
+      private Color iconColor
+      private Color shadowColor
+      private float shadowDistance
+  2 ¸ö Property:
+      private int minExitCount
+      private int maxExitCount

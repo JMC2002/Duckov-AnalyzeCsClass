@@ -1,0 +1,30 @@
+namespace Duckov.UI.Animations
+public class RectTransformFade: FadeElement
+
+  9 ¸ö Method:
+      private void Initialize()
+      private void CachePose()
+      private void Awake()
+      private void OnValidate()
+      protected override async UniTask HideTask(int token)
+      protected override async UniTask ShowTask(int token)
+      protected override void OnSkipHide()
+      private void OnDestroy()
+      protected override void OnSkipShow()
+  12 ¸ö Field:
+      private bool debug
+      private RectTransform rectTransform
+      private float duration
+      private Vector2 offset
+      private float uniformScale
+      private float rotateZ
+      private AnimationCurve showingAnimationCurve
+      private AnimationCurve hidingAnimationCurve
+      private Vector2 cachedAnchordPosition
+      private Vector3 cachedScale
+      private Vector3 cachedRotation
+      private bool initialized
+  3 ¸ö Property:
+      private Vector2 TargetAnchoredPosition
+      private Vector3 TargetScale
+      private Vector3 TargetRotation

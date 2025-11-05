@@ -1,0 +1,8 @@
+public class OcclusionFadeTrigger: MonoBehaviour
+
+  3 ¸ö Method:
+      private void Awake()
+      public void Enter()
+      public void Leave()
+  1 ¸ö Field:
+      public OcclusionFadeObject parent

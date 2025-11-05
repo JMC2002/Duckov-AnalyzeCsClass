@@ -1,0 +1,103 @@
+public class LevelManager: MonoBehaviour
+
+  1 个 ClassLike:
+      public struct LevelInfo
+  24 个 Method:
+      private void Start()
+      private void OnDestroy()
+      private void OnNewBoot()
+      private void StartInit(SceneLoadingContext context)
+      private async UniTaskVoid InitLevel(SceneLoadingContext context)
+      private async UniTask CreateMate()
+      private async UniTask WaitForOtherInitialization()
+      private void HandleRaidInitialization()
+      public void RefreshMainCharacterFace()
+      private async UniTask CreateMainCharacterAsync(Vector3 position, Quaternion rotation)
+      private void SetCharacterItemsInspected()
+      private static void SetInstance()
+      private async UniTask<Item> LoadOrCreateCharacterItemInstance()
+      public void NotifyEvacuated(EvacuationInfo info)
+      public void NotifySaveBeforeLoadScene(bool saveToFile)
+      private void OnMainCharacterDie(DamageInfo dmgInfo)
+      private async UniTaskVoid CharacterDieTask(DamageInfo dmgInfo)
+      internal void SaveMainCharacter()
+      private void CreateMainCharacterMapElement()
+      private void OnSubSceneLoaded()
+      private bool IsPathCompatible(SubSceneEntry.Location location, string keyWord)
+      public void TestTeleport()
+      private LevelInfo mGetInfo()
+      public static LevelInfo GetCurrentLevelInfo()
+  44 个 Field:
+      public bool isBaseLevel
+      public string sceneName
+      public string activeSubSceneID
+      private Transform _lootBoxInventoriesParent
+      private Dictionary<int, Inventory> _lootBoxInventories
+      private Transform defaultStartPos
+      private static LevelManager instance
+      private InputManager inputManager
+      private CharacterCreator characterCreator
+      private ExitCreator exitCreator
+      private ExplosionManager explosionManager
+      private CharacterModel characterModel
+      private CharacterMainControl mainCharacter
+      private CharacterMainControl petCharacter
+      private GameCamera gameCamera
+      private FogOfWarManager fowManager
+      private TimeOfDayController timeOfDayController
+      private AIMainBrain aiMainBrain
+      private CharacterRandomPreset matePreset
+      private bool initingLevel
+      private bool isNewRaidLevel
+      private bool afterInit
+      private CharacterRandomPreset petPreset
+      private Sprite characterMapIcon
+      private Color characterMapIconColor
+      private Color characterMapShadowColor
+      private MultiSceneLocation testTeleportTarget
+      public SkillBase defaultSkill
+      private PetProxy petProxy
+      private CustomFaceManager customFaceManager
+      private BulletPool bulletPool
+      private string _levelInitializingComment
+      public static int loadLevelBeaconIndex
+      private bool levelInited
+      private float levelStartTime
+      private static Ruleset rule
+      private bool dieTask
+      public static event Action OnLevelBeginInitializing
+      public static event Action OnLevelInitialized
+      public static event Action OnAfterLevelInitialized
+      public static event Action<string> OnLevelInitializingCommentChanged
+      public static event Action<EvacuationInfo> OnEvacuated
+      public static event Action<DamageInfo> OnMainCharacterDead
+      public static event Action OnNewGameReport
+  25 个 Property:
+      public static LevelManager Instance
+      public static Transform LootBoxInventoriesParent
+      public static Dictionary<int, Inventory> LootBoxInventories
+      public bool IsRaidMap
+      public bool IsBaseLevel
+      public InputManager InputManager
+      public CharacterCreator CharacterCreator
+      public ExitCreator ExitCreator
+      public ExplosionManager ExplosionManager
+      private int characterItemTypeID
+      public CharacterMainControl MainCharacter
+      public CharacterMainControl PetCharacter
+      public GameCamera GameCamera
+      public FogOfWarManager FogOfWarManager
+      public TimeOfDayController TimeOfDayController
+      public AIMainBrain AIMainBrain
+      public static bool LevelInitializing
+      public static bool AfterInit
+      public PetProxy PetProxy
+      public BulletPool BulletPool
+      public CustomFaceManager CustomFaceManager
+      public static string LevelInitializingComment
+      public static bool LevelInited
+      public float LevelTime
+      public static Ruleset Rule
+  2 个 Constant:
+      public const string MainCharacterItemSaveKey
+      public const string MainCharacterHealthSaveKey

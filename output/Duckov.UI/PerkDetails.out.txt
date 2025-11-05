@@ -1,0 +1,41 @@
+namespace Duckov.UI
+public class PerkDetails: MonoBehaviour
+
+  12 ¸ö Method:
+      private void Awake()
+      private void OnActivateButtonClicked()
+      private void OnBeginButtonClicked()
+      private void OnEnable()
+      public void Setup(Perk perk, bool editable = false)
+      private void RegisterEvents()
+      private void OnTargetStateChanged(Perk perk, bool arg2)
+      private void UnregisterEvents()
+      private void Refresh()
+      private void SetupActivationInfo()
+      private void Update()
+      private void UpdateCountDown()
+  21 ¸ö Field:
+      private FadeGroup content
+      private FadeGroup placeHolder
+      private TextMeshProUGUI text_Name
+      private TextMeshProUGUI text_Description
+      private Image icon
+      private TrueShadow iconShadow
+      private GameObject unlockedIndicator
+      private GameObject activationInfoParent
+      private TextMeshProUGUI text_RequireLevel
+      private CostDisplay costDisplay
+      private Color normalTextColor
+      private Color unsatisfiedTextColor
+      private Button activateButton
+      private Button beginButton
+      private GameObject buttonUnsatisfiedPlaceHolder
+      private GameObject buttonUnavaliablePlaceHolder
+      private GameObject inProgressPlaceHolder
+      private Image progressFillImage
+      private TextMeshProUGUI countDownText
+      private Perk showingPerk
+      private bool editable
+  2 ¸ö Property:
+      private string RequireLevelFormatKey
+      private string RequireLevelFormat

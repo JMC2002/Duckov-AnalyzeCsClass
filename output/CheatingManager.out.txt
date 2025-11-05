@@ -1,0 +1,23 @@
+public class CheatingManager: MonoBehaviour
+
+  12 ¸ö Method:
+      private void Awake()
+      private void Update()
+      private void UpdateTyping()
+      private void LogCurrentTypingID()
+      private void TypeOne(int i)
+      private void SetTypedItem(int id)
+      private void LockItem()
+      public void CreateItem(int id, int quantity = 1)
+      private async UniTaskVoid CreateItemAsync(int id, int quantity = 1)
+      private void ToggleTypeing()
+      public void ToggleInvincible()
+      public void CheatMove()
+  5 ¸ö Field:
+      private static CheatingManager _instance
+      private bool isInvincible
+      private bool typing
+      private int typingID
+      private int lockedItem
+  1 ¸ö Property:
+      public static CheatingManager Instance

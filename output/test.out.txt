@@ -1,0 +1,98 @@
+namespace Duckov
+public class AudioManager: MonoBehaviour
+	
+  3 个 ClassLike:
+      public class Bus
+      public enum FootStepMaterialType
+      public enum VoiceType
+  43 个 Method:
+      private IEnumerable<AudioManager.Bus> AllBueses()
+      public static EventInstance? Post(string eventName, GameObject gameObject)
+      public static EventInstance? PostCustomSFX(string filePath, GameObject gameObject = null, bool loop = false)
+      public static EventInstance? Post(string eventName)
+      public static EventInstance? Post(string eventName, Vector3 position)
+      internal static EventInstance? PostQuak(string soundKey, AudioManager.VoiceType voiceType, GameObject gameObject)
+      public static void PostHitMarker(bool crit)
+      public static void PostKillMarker(bool crit = false)
+      private void Awake()
+      private void OnDestroy()
+      private void OnOptionsChanged(string key)
+      public static AudioManager.Bus GetBus(string name)
+      private void OnStartedLoadingScene(SceneLoadingContext context)
+      private void OnLevelInitialized()
+      private void Start()
+      private void OnHealthDead(Health health, DamageInfo info)
+      private void OnPutItem(Item item, bool pickup = false)
+      public static void PlayPutItemSFX(Item item, bool pickup = false)
+      private void OnSubSceneLoaded(MultiSceneCore core, Scene scene)
+      public static bool TryCreateEventInstance(string eventPath, out EventInstance eventInstance)
+      public static EventInstance? PlayCustomBGM(string filePath, bool loop = true)
+      public static EventInstance? PlayBGM(string name)
+      public static void StopBGM()
+      public static void PlayStringer(string key)
+      private void OnBulletFlyby(Vector3 vector)
+      public static void SetState(string stateGroup, string state)
+      public static string GetState(string stateGroup)
+      private void Update()
+      private void UpdateListener()
+      private void UpdateBuses()
+      private void ApplyBuses()
+      private void OnFootStepSound(Vector3 position, CharacterSoundMaker.FootStepTypes type, CharacterMainControl character)
+      private void MSetParameter(GameObject gameObject, string parameterName, string value)
+      private EventInstance? MPost(string eventName, GameObject gameObject = null)
+      private EventInstance? MPostCustomSFX(string filePath, GameObject gameObject = null, bool loop = false)
+      private EventInstance? MPost(string eventName, Vector3 position)
+      public static void StopAll(GameObject gameObject, FMOD.Studio.STOP_MODE mode = FMOD.Studio.STOP_MODE.IMMEDIATE)
+      internal void MSetRTPC(string key, float value, GameObject gameObject = null)
+      internal static void SetRTPC(string key, float value, GameObject gameObject = null)
+      public static void SetVoiceType(GameObject gameObject, AudioManager.VoiceType voiceType)
+      public void Apply()
+      internal void LoadOptions()
+      internal void NotifyOptionsChanged(string key)
+  14 个 Field:
+      private AudioObject ambientSource
+      private AudioObject bgmSource
+      private AudioObject stingerSource
+      private AudioManager.Bus masterBus
+      private AudioManager.Bus sfxBus
+      private AudioManager.Bus musicBus
+      private static Transform _soundSourceParent
+      private static ObjectPool<GameObject> _soundSourcePool
+      private static bool playingBGM
+      private static EventInstance bgmEvent
+      private string volumeRTPC
+      private float volume
+      private bool mute
+      private float appliedVolume
+  13 个 Property:
+      public static AudioManager Instance
+      public static bool IsStingerPlaying
+      private Transform listener
+      private static Transform SoundSourceParent
+      private static ObjectPool<GameObject> SoundSourcePool
+      public static bool PlayingBGM
+      private static bool LogEvent
+      public static bool Initialized
+      public string Name
+      public float Volume
+      public bool Mute
+      public bool Dirty
+      private string SaveKey
+  17 个 Constant:
+      private const string path_hitmarker_norm
+      private const string path_hitmarker_crit
+      private const string path_killmarker_norm
+      private const string path_killmarker_crit
+      private const string path_music_death
+      private const string path_bullet_flyby
+      private const string path_pickup_item_fmt_soundkey
+      private const string path_put_item_fmt_soundkey
+      private const string path_ambient_fmt_soundkey
+      private const string path_music_loop_fmt_soundkey
+      private const string path_footstep_fmt_soundkey
+      public const string path_reload_fmt_soundkey
+      public const string path_shoot_fmt_gunkey
+      public const string path_task_finished
+      public const string path_building_built
+      public const string path_gun_unload
+      public const string path_stinger_fmt_key

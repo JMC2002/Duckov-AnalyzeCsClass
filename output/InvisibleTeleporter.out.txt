@@ -1,0 +1,13 @@
+public class InvisibleTeleporter: MonoBehaviour, IDrawGizmos
+
+  3 ¸ö Method:
+      public void Teleport()
+      private void LateUpdate()
+      public void DrawGizmos()
+  3 ¸ö Field:
+      private Transform target
+      private Vector3 position
+      private Space space
+  2 ¸ö Property:
+      private bool UsePosition
+      private Vector3 TargetWorldPosition

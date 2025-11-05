@@ -1,0 +1,4 @@
+public struct EvacuationInfo
+  2 ¸ö Field:
+      public string subsceneID
+      public Vector3 position

@@ -1,0 +1,18 @@
+namespace Duckov.Buffs
+public class CharacterBuffManager: MonoBehaviour
+
+  8 ¸ö Method:
+      private void Awake()
+      public void AddBuff(Buff buffPrefab, CharacterMainControl fromWho, int overrideWeaponID = 0)
+      public void RemoveBuff(int buffID, bool removeOneLayer)
+      public void RemoveBuffsByTag(Buff.BuffExclusiveTags buffTag, bool removeOneLayer)
+      public bool HasBuff(int buffID)
+      public Buff GetBuffByTag(Buff.BuffExclusiveTags tag)
+      public void RemoveBuff(Buff toRemove, bool oneLayer)
+      private void Update()
+  2 ¸ö Field:
+      private CharacterMainControl master
+      private ReadOnlyCollection<Buff> _readOnlyBuffsCollection
+  2 ¸ö Property:
+      public CharacterMainControl Master
+      public ReadOnlyCollection<Buff> Buffs

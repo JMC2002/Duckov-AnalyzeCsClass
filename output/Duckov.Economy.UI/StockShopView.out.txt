@@ -1,0 +1,72 @@
+namespace Duckov.Economy.UI
+public class StockShopView: View, ISingleSelectionMenu<StockShopItemEntry>
+
+  23 ¸ö Method:
+      protected override void Awake()
+      protected override void OnDestroy()
+      private void OnFastPick(UIInputEventData data)
+      private void FixedUpdate()
+      private void RefreshCountDown()
+      private void OnInteractionButtonClicked()
+      private async UniTask BuyTask(int itemTypeID)
+      private void OnEnable()
+      private void OnDisable()
+      private void OnNextPage(UIInputEventData data)
+      private void OnPreviousPage(UIInputEventData data)
+      private void OnAfterItemSold(StockShop shop)
+      private void OnItemUnlockStateChanged(int itemTypeID)
+      private void OnItemUIUtilitiesSelectionChanged()
+      private void OnSelectionChanged()
+      private void RefreshStockText()
+      public StockShopItemEntry GetSelection()
+      public bool SetSelection(StockShopItemEntry selection)
+      internal void Setup(StockShop target)
+      private void RefreshInteractionButton()
+      protected override void OnOpen()
+      protected override void OnClose()
+      internal void SetupAndShow(StockShop stockShop)
+  34 ¸ö Field:
+      private FadeGroup fadeGroup
+      private FadeGroup detailsFadeGroup
+      private ItemDetailsDisplay details
+      private InventoryDisplay playerInventoryDisplay
+      private InventoryDisplay petInventoryDisplay
+      private InventoryDisplay playerStorageDisplay
+      private StockShopItemEntry entryTemplate
+      private TextMeshProUGUI stockText
+      private string stockTextKey
+      private string stockTextFormat
+      private TextMeshProUGUI merchantNameText
+      private Button interactionButton
+      private Image interactionButtonImage
+      private Color buttonColor_Interactable
+      private Color buttonColor_NotInteractable
+      private TextMeshProUGUI interactionText
+      private GameObject cashOnlyIndicator
+      private GameObject cannotSellIndicator
+      private string textBuy
+      private string textSoldOut
+      private string textSell
+      private string textUnlock
+      private string textLocked
+      private GameObject priceDisplay
+      private TextMeshProUGUI priceText
+      private GameObject lockDisplay
+      private FadeGroup clickBlockerFadeGroup
+      private TextMeshProUGUI refreshCountDown
+      private string sfx_Buy
+      private string sfx_Sell
+      private PrefabPool<StockShopItemEntry> _entryPool
+      private StockShop target
+      private StockShopItemEntry selectedItem
+      public Action onSelectionChanged
+  9 ¸ö Property:
+      public static StockShopView Instance
+      private string TextBuy
+      private string TextSoldOut
+      private string TextSell
+      private string TextUnlock
+      private string TextLocked
+      private PrefabPool<StockShopItemEntry> EntryPool
+      private UnityEngine.Object Selection
+      public StockShop Target

@@ -1,0 +1,59 @@
+namespace Duckov.MiniGames.GoldMiner
+public class GoldMinerRunData
+  12 个 Method:
+      public GoldMinerArtifact AttachArtifactFromPrefab(GoldMinerArtifact prefab)
+      private void AttachArtifact(GoldMinerArtifact artifact)
+      public bool DetachArtifact(GoldMinerArtifact artifact)
+      public int GetArtifactCount(string id)
+      public void ActivateStrengthPotion()
+      public void DeactivateStrengthPotion()
+      public void ActivateEagleEye()
+      public void DeactivateEagleEye()
+      internal void Cleanup()
+      public bool IsGold(GoldMinerEntity entity)
+      public bool IsRock(GoldMinerEntity entity)
+      internal bool IsPig(GoldMinerEntity entity)
+  30 个 Field:
+      public readonly GoldMiner master
+      public int money
+      public int bomb
+      public int strengthPotion
+      public int eagleEyePotion
+      public int shopTicket
+      public int shopCapacity
+      public float levelScoreFactor
+      public Stat maxStamina
+      public Stat extraStamina
+      public Stat staminaDrain
+      public Stat gameSpeedFactor
+      public Stat emptySpeed
+      public Stat strength
+      public Stat scoreFactorBase
+      public Stat rockValueFactor
+      public Stat goldValueFactor
+      public Stat charm
+      public Stat shopRefreshPrice
+      public Stat shopRefreshPriceIncrement
+      public Stat shopRefreshChances
+      public Stat shopPriceCut
+      public Stat defuse
+      public float extraRocks
+      public float extraGold
+      public float extraDiamond
+      private Modifier strengthPotionModifier
+      private Modifier eagleEyeModifier
+      internal int targetScore
+      internal int minMoneySum
+  9 个 Property:
+      public int seed
+      public System.Random shopRandom
+      public System.Random levelRandom
+      public float GameSpeedFactor
+      public float stamina
+      public bool gameOver
+      public int level
+      public bool StrengthPotionActivated
+      public bool EagleEyeActivated
+  2 个 Constant:
+      public const int shopDefaultItemAmount
+      public const int shopMaxItemAmount

@@ -1,0 +1,10 @@
+public class RequireInLevelDataBool: Condition
+
+  2 ¸ö Method:
+      public override bool Evaluate()
+      private void InitKeyHash()
+  4 ¸ö Field:
+      public string keyString
+      private int keyHash
+      private bool keyHashInited
+      private bool isEmptyString

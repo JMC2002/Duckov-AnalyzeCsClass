@@ -1,0 +1,11 @@
+public class LoopSoundWithObject: MonoBehaviour
+
+  4 ¸ö Method:
+      private void Start()
+      public void Stop()
+      private void OnDestroy()
+      private void OnDisable()
+  3 ¸ö Field:
+      public string sfx
+      private EventInstance? eventInstance
+      private bool stoped

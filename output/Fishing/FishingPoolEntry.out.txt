@@ -1,0 +1,8 @@
+namespace Fishing
+internal struct FishingPoolEntry
+  2 ¸ö Field:
+      private int id
+      private float weight
+  2 ¸ö Property:
+      public int ID
+      public float Weight

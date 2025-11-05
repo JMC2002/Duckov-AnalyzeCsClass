@@ -1,0 +1,45 @@
+namespace Duckov.UI
+public class FormulasRegisterView: View
+
+  20 ¸ö Method:
+      protected override void Awake()
+      private void OnInventoryItemDoubleClicked(InventoryDisplay display, InventoryEntry entry, PointerEventData data)
+      private void OnSlotDoubleClicked(SlotDisplay display)
+      private void OnSubmitButtonClicked()
+      private void IndicateSuccess()
+      private async UniTask SuccessIndicationTask()
+      private void HideSuccessIndication()
+      private bool EntryFunc_ShouldHighligh(Item e)
+      private bool EntryFunc_CanOperate(Item e)
+      protected override void OnOpen()
+      protected override void OnClose()
+      private void RegisterEvents()
+      private void UnregisterEvents()
+      private void OnSlotContentChanged(Slot slot)
+      private void RefreshRecordExistsIndicator()
+      private bool IsFormulaItem(Item item)
+      public static string GetFormulaID(Item item)
+      private void OnItemSelectionChanged()
+      public static void Show(ICollection<Tag> requireTags = null)
+      private static void SetupTags(ICollection<Tag> requireTags = null)
+  15 ¸ö Field:
+      private FadeGroup fadeGroup
+      private InventoryDisplay inventoryDisplay
+      private InventoryDisplay playerStorageInventoryDisplay
+      private ItemDetailsDisplay detailsDisplay
+      private FadeGroup detailsFadeGroup
+      private Button submitButton
+      private Tag formulaTag
+      private Item keySlotItem
+      private string slotKey
+      private SlotDisplay registerSlotDisplay
+      private GameObject recordExistsIndicator
+      private FadeGroup succeedIndicator
+      private float successIndicationTime
+      private string sfx_Register
+      private string formulaUnlockedFormatKey
+  4 ¸ö Property:
+      public static FormulasRegisterView Instance
+      private string FormulaUnlockedNotificationFormat
+      private Item CharacterItem
+      private Slot SubmitItemSlot

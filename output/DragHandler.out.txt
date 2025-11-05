@@ -1,0 +1,6 @@
+public class DragHandler: MonoBehaviour, IDragHandler, IEventSystemHandler
+
+  1 ¸ö Method:
+      public void OnDrag(PointerEventData eventData)
+  1 ¸ö Field:
+      public UnityEvent<PointerEventData> onDrag

@@ -1,0 +1,6 @@
+public class Condition_HasBeenToScene: Condition
+
+  1 ¸ö Method:
+      public override bool Evaluate()
+  1 ¸ö Field:
+      public string sceneID

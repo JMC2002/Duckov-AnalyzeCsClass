@@ -1,0 +1,14 @@
+public class CustomFacePartUtility
+  4 ¸ö Method:
+      public int GetCurrentPartID()
+      public string GetCurrentPartName()
+      public void ChangePart(CustomFacePart newInstance)
+      public void RefreshThisPart()
+  5 ¸ö Field:
+      public CustomFaceInstance parent
+      public CustomFacePartTypes partType
+      public CustomFacePartInfo partInfo
+      public Transform socket
+      private CustomFacePart facePartInstance
+  1 ¸ö Property:
+      public CustomFacePart PartInstance

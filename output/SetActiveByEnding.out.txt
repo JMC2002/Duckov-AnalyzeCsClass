@@ -1,0 +1,7 @@
+public class SetActiveByEnding: MonoBehaviour
+
+  1 ¸ö Method:
+      private void Start()
+  2 ¸ö Field:
+      public GameObject target
+      public List<int> endingIndexs

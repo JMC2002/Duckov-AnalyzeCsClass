@@ -1,0 +1,29 @@
+namespace Duckov.UI
+public class KontextMenu: MonoBehaviour
+
+  11 ¸ö Method:
+      private void Awake()
+      private void OnDestroy()
+      private void Update()
+      public void InstanceShow(object target, RectTransform targetRectTransform, params KontextMenuDataEntry[] entries)
+      public void InstanceShow(object target, Vector2 screenPoint, params KontextMenuDataEntry[] entries)
+      private void Clear()
+      private void Setup(IEnumerable<KontextMenuDataEntry> entries)
+      public void InstanceHide()
+      public static void Show(object target, RectTransform watchRectTransform, params KontextMenuDataEntry[] entries)
+      public static void Show(object target, Vector2 position, params KontextMenuDataEntry[] entries)
+      public static void Hide(object target)
+  10 ¸ö Field:
+      private static KontextMenu instance
+      private RectTransform rectTransform
+      private KontextMenuEntry entryPrefab
+      private FadeGroup fadeGroup
+      private float positionMoveCloseThreshold
+      private object target
+      private bool isWatchingRectTransform
+      private RectTransform watchRectTransform
+      private Vector3 cachedTransformPosition
+      private PrefabPool<KontextMenuEntry> _entryPool
+  2 ¸ö Property:
+      private Transform ContentRoot
+      private PrefabPool<KontextMenuEntry> EntryPool

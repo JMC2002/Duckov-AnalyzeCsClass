@@ -1,0 +1,7 @@
+namespace Duckov.PerkTrees.Behaviours
+public class UnlockFormula: PerkBehaviour
+
+  1 ¸ö Method:
+      protected override void OnUnlocked()
+  1 ¸ö Property:
+      private IEnumerable<string> FormulasToUnlock

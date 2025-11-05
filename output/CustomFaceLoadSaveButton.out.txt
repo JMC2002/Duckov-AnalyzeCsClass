@@ -1,0 +1,14 @@
+public class CustomFaceLoadSaveButton: MonoBehaviour, IPointerClickHandler, IEventSystemHandler
+
+  4 ¸ö Method:
+      private void Awake()
+      public void Init(CustomFaceSaveLoad _master, int _index, string name)
+      public void SetSelection(bool selected)
+      public void OnPointerClick(PointerEventData eventData)
+  6 ¸ö Field:
+      public Color selectedColor
+      public Color unselectedColor
+      public Image image
+      public CustomFaceSaveLoad master
+      public int index
+      public TextMeshProUGUI text

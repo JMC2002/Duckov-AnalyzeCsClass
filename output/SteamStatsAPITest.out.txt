@@ -1,0 +1,12 @@
+public class SteamStatsAPITest: MonoBehaviour
+
+  6 ¸ö Method:
+      private void Awake()
+      private void OnUserStatStored(UserStatsStored_t param)
+      private void OnUserStatReceived(UserStatsReceived_t param)
+      private void Start()
+      private void Test()
+      private void GetGlobalStat()
+  2 ¸ö Field:
+      private Callback<UserStatsReceived_t> onStatsReceivedCallback
+      private Callback<UserStatsStored_t> onStatsStoredCallback

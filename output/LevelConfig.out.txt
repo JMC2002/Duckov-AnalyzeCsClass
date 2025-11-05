@@ -1,0 +1,24 @@
+public class LevelConfig: MonoBehaviour
+
+  2 ¸ö Method:
+      private void Awake()
+      private static void SetInstance()
+  9 ¸ö Field:
+      private static LevelConfig instance
+      private bool isBaseLevel
+      private bool isRaidMap
+      private bool spawnTomb
+      private int minExitCount
+      private int maxExitCount
+      public TimeOfDayConfig timeOfDayConfig
+      private float lootBoxHighQualityChanceMultiplier
+      private float lootboxItemCountMultiplier
+  8 ¸ö Property:
+      public static LevelConfig Instance
+      public float LootBoxQualityLowPercent
+      public float LootboxItemCountMultiplier
+      public static bool IsBaseLevel
+      public static bool IsRaidMap
+      public static int MinExitCount
+      public static bool SpawnTomb
+      public static int MaxExitCount

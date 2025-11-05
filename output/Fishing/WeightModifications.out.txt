@@ -1,0 +1,5 @@
+namespace Fishing
+public struct WeightModifications
+  2 ¸ö Field:
+      public int id
+      public float addAmount

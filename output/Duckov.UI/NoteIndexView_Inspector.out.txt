@@ -1,0 +1,14 @@
+namespace Duckov.UI
+public class NoteIndexView_Inspector: MonoBehaviour
+
+  3 ¸ö Method:
+      private void Awake()
+      internal void Setup(Note value)
+      private void SetupContent(Note value)
+  6 ¸ö Field:
+      private FadeGroup placeHolder
+      private FadeGroup content
+      private TextMeshProUGUI textTitle
+      private TextMeshProUGUI textContent
+      private Image image
+      private Note note

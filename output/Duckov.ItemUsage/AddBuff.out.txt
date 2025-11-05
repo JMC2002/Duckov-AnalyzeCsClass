@@ -1,0 +1,12 @@
+namespace Duckov.ItemUsage
+public class AddBuff: UsageBehavior
+
+  2 ¸ö Method:
+      public override bool CanBeUsed(Item item, object user)
+      protected override void OnUse(Item item, object user)
+  3 ¸ö Field:
+      public Buff buffPrefab
+      public float chance
+      private string chanceKey
+  1 ¸ö Property:
+      public override DisplaySettingsData DisplaySettings

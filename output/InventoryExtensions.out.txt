@@ -1,0 +1,3 @@
+public static class InventoryExtensions
+  1 ¸ö Method:
+      private static void Sort(this Inventory inventory, Comparison<Item> comparison)

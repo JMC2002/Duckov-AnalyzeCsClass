@@ -1,0 +1,44 @@
+namespace Duckov.Quests.UI
+public class QuestView: View, ISingleSelectionMenu<QuestEntry>, IQuestSortable
+
+  1 个 ClassLike:
+      public enum ShowContent
+  17 个 Method:
+      public void Setup()
+      private void Setup(QuestManager target)
+      public static void Show()
+      protected override void OnOpen()
+      protected override void OnClose()
+      protected override void Awake()
+      private void OnEnable()
+      private void OnDisable()
+      private void RegisterStaticEvents()
+      private void UnregisterStaticEvents()
+      private void RefreshEntryList()
+      private void RefreshDetails()
+      public void SetShowingContent(ShowContent flags)
+      public void ShowActiveQuests()
+      public void ShowHistoryQuests()
+      public QuestEntry GetSelection()
+      public bool SetSelection(QuestEntry selection)
+  11 个 Field:
+      private QuestEntry questEntry
+      private Transform questEntryParent
+      private GameObject entryListPlaceHolder
+      private QuestViewDetails details
+      private FadeGroup fadeGroup
+      private QuestManager target
+      private ShowContent showingContentType
+      private Quest.SortingMode _sortingMode
+      private bool _sortRevert
+      private PrefabPool<QuestEntry> _questEntryPool
+      private QuestEntry selectedQuestEntry
+  8 个 Property:
+      public static QuestView Instance
+      public ShowContent ShowingContentType
+      public Quest.SortingMode SortingMode
+      public bool SortRevert
+      public IList<Quest> ShowingContent
+      private PrefabPool<QuestEntry> QuestEntryPool
+      private QuestEntry SelectedQuestEntry
+      public Quest SelectedQuest

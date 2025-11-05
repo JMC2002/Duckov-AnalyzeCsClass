@@ -1,0 +1,7 @@
+public class DamageToSelf: MonoBehaviour
+
+  2 ¸ö Method:
+      private void Start()
+      private void Update()
+  1 ¸ö Field:
+      public DamageInfo dmg

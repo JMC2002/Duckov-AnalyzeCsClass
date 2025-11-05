@@ -1,0 +1,2 @@
+namespace Duckov
+public enum Platform

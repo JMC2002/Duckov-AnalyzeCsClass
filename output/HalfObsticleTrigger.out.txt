@@ -1,0 +1,7 @@
+public class HalfObsticleTrigger: MonoBehaviour
+
+  2 ¸ö Method:
+      private void OnTriggerEnter(Collider other)
+      private void OnTriggerExit(Collider other)
+  1 ¸ö Field:
+      public HalfObsticle parent

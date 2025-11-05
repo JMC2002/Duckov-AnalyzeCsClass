@@ -1,0 +1,14 @@
+public class SceneInfoEntry
+  4 ¸ö Field:
+      private string id
+      private SceneReference sceneReference
+      private string displayName
+      private string description
+  7 ¸ö Property:
+      public int BuildIndex
+      public string ID
+      public SceneReference SceneReference
+      public string Description
+      public string DisplayName
+      public string DisplayNameRaw
+      public bool IsLoaded

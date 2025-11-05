@@ -1,0 +1,9 @@
+public class DestroyOvertime: MonoBehaviour
+
+  4 ¸ö Method:
+      private void Awake()
+      private void Update()
+      private void OnValidate()
+      private void ProcessParticleSystem()
+  1 ¸ö Field:
+      public float life

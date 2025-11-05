@@ -1,0 +1,9 @@
+public class SteamLogoImage: MonoBehaviour
+
+  2 ¸ö Method:
+      private void Start()
+      private void Refresh()
+  3 ¸ö Field:
+      private Image image
+      private Sprite steamLogo
+      private Sprite steamChinaLogo

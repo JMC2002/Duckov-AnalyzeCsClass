@@ -1,0 +1,32 @@
+public class BaseBGMSelector: MonoBehaviour
+
+  1 个 ClassLike:
+      public struct Entry
+  12 个 Method:
+      private void Awake()
+      private void OnDestroy()
+      private void ScanCustomBGM()
+      private static void ParseMusicFileName(string fileName, out string musicName, out string authorName)
+      private void Update()
+      private void Load(bool play = false)
+      private void Save()
+      public void Set(int index, bool showInfo = false, bool play = true)
+      public void Set(string switchName)
+      public int GetIndex(string switchName)
+      public void SetNext()
+      public void SetPrevious()
+  9 个 Field:
+      public string musicName
+      public string author
+      public string switchName
+      public string filePath
+      private string switchGroupName
+      private DialogueBubbleProxy proxy
+      public List<Entry> entries
+      private int index
+      private bool waitForStinger
+  2 个 Property:
+      private string BGMInfoFormatKey
+      private string BGMInfoFormat
+  1 个 Constant:
+      private const string savekey

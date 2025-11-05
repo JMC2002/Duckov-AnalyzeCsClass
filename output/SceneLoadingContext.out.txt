@@ -1,0 +1,5 @@
+public struct SceneLoadingContext
+  3 ¸ö Field:
+      public string sceneName
+      public bool useLocation
+      public MultiSceneLocation location

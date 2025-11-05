@@ -1,0 +1,12 @@
+public class AISpecialAttachment_SpawnItemOnCritKill: AISpecialAttachmentBase
+
+  4 ¸ö Method:
+      protected override void OnInited()
+      private async UniTaskVoid SpawnItem()
+      private void OnDestroy()
+      private void BeforeCharacterSpawnLootOnDead(DamageInfo dmgInfo)
+  4 ¸ö Field:
+      public int itemToSpawn
+      private Item itemInstance
+      private bool hasDead
+      public bool inverse

@@ -1,0 +1,24 @@
+public class TimeOfDayDisplay: MonoBehaviour
+
+  5 ¸ö Method:
+      private void Start()
+      private void Update()
+      private void RefreshStormText(Weather _weather)
+      private void RefreshPhase(TimePhaseTags _phase)
+      private void RefreshWeather(Weather _weather)
+  15 ¸ö Field:
+      private TimePhaseTags currentPhaseTag
+      private Weather currentWeather
+      public TextMeshProUGUI phaseText
+      public TextMeshProUGUI weatherText
+      public TextMeshProUGUI stormTitleText
+      public TextMeshProUGUI stormText
+      public string StormComingETAKey
+      public string StormComingOneDayKey
+      public string StormPhaseIIETAKey
+      public string StormOverETAKey
+      public GameObject stormDescObject
+      private float refreshTimeSpace
+      private float refreshTimer
+      public Animator stormIndicatorAnimator
+      public ProceduralImage stormFillImage

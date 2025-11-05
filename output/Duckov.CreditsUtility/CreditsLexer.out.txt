@@ -1,0 +1,13 @@
+namespace Duckov.CreditsUtility
+public class CreditsLexer: IEnumerable<Token>, IEnumerable
+
+  5 ¸ö Method:
+      public void Reset()
+      private void TrimLeft()
+      public Token Next()
+      private string ConvertEscapes(string raw)
+      public IEnumerator<Token> GetEnumerator()
+  3 ¸ö Field:
+      private readonly string content
+      private ushort cursor
+      private ushort lineBegin

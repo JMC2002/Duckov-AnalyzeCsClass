@@ -1,0 +1,15 @@
+public class CharacterTouchInputControl: MonoBehaviour
+
+  10 ¸ö Method:
+      public void SetMoveInput(Vector2 axisInput, bool holding)
+      public void SetRunInput(bool holding)
+      public void SetAdsInput(bool holding)
+      public void SetGunAimInput(Vector2 axisInput, bool holding)
+      public void SetCharacterSkillAimInput(Vector2 axisInput, bool holding)
+      public void StartCharacterSkillAim()
+      public void CharacterSkillRelease(bool trigger)
+      public void SetItemSkillAimInput(Vector2 axisInput, bool holding)
+      public void StartItemSkillAim()
+      public void ItemSkillRelease(bool trigger)
+  1 ¸ö Field:
+      public InputManager characterInputManager

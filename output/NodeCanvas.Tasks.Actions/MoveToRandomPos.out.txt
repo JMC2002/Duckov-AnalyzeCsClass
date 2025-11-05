@@ -1,0 +1,25 @@
+namespace NodeCanvas.Tasks.Actions
+public class MoveToRandomPos: ActionTask<AICharacterController>
+
+  6 ¸ö Method:
+      protected override string OnInit()
+      protected override void OnExecute()
+      protected override void OnUpdate()
+      protected override void OnStop()
+      protected override void OnPause()
+      private Vector3 RandomPoint()
+  14 ¸ö Field:
+      public bool useTransform
+      public bool setAimToPos
+      public BBParameter<Vector3> aimPos
+      public BBParameter<Vector3> centerPos
+      public BBParameter<Transform> centerTransform
+      public BBParameter<float> radius
+      public BBParameter<float> avoidRadius
+      public float randomAngle
+      public BBParameter<float> overTime
+      public bool overTimeReturnSuccess
+      private Vector3 targetPoint
+      public bool failIfNoPath
+      public bool retryIfNotFound
+      public bool syncDirectionIfNoAimTarget

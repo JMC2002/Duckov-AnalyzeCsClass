@@ -1,0 +1,9 @@
+namespace Duckov.Endowment.UI
+public class EndowmentDisplay: MonoBehaviour
+
+  2 ¸ö Method:
+      private void Refresh()
+      private void OnEnable()
+  2 ¸ö Field:
+      private TextMeshProUGUI displayNameText
+      private TextMeshProUGUI descriptionsText

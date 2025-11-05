@@ -1,0 +1,24 @@
+namespace SodaCraft
+public class SunFogTD: VolumeComponent, IPostProcessComponent
+
+  3 ¸ö Method:
+      public bool IsActive()
+      public bool IsTileCompatible()
+      public override void Override(VolumeComponent state, float interpFactor)
+  16 ¸ö Field:
+      public BoolParameter enable
+      public ColorParameter fogColor
+      public ColorParameter sunColor
+      public FloatRangeParameter clipPlanes
+      public Vector2Parameter sunPoint
+      public FloatParameter sunSize
+      public ClampedFloatParameter sunPower
+      public ClampedFloatParameter sunAlphaGain
+      private int fogColorHash
+      private int sunColorHash
+      private int nearDistanceHash
+      private int farDistanceHash
+      private int sunPointHash
+      private int sunSizeHash
+      private int sunPowerHash
+      private int sunAlphaGainHash

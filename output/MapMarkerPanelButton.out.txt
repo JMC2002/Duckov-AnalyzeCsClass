@@ -1,0 +1,10 @@
+public class MapMarkerPanelButton: MonoBehaviour
+
+  1 ¸ö Method:
+      public void Setup(UnityAction action, bool selected)
+  3 ¸ö Field:
+      private GameObject selectionIndicator
+      private Image image
+      private Button button
+  1 ¸ö Property:
+      public Image Image

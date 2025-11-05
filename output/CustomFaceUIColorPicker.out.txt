@@ -1,0 +1,22 @@
+public class CustomFaceUIColorPicker: MonoBehaviour
+
+  5 ¸ö Method:
+      private void Awake()
+      private void OnPickToggleBtnClicked()
+      public void Init(CustomFaceUI _master, string titleKey)
+      private void UpdateSelection()
+      public void SetColor(Color _color)
+  10 ¸ö Field:
+      public CustomFaceUI master
+      public CustomFaceUIColorPickerButton singleButton
+      public Transform buttonParent
+      public TextLocalizor titleText
+      public GimpPalette gimpPalette
+      public Image colorDisplay
+      public Button pickerToggleBtn
+      private List<CustomFaceUIColorPickerButton> buttons
+      private bool created
+      private Color currentColor
+  2 ¸ö Property:
+      public IEnumerable<Color> colors
+      public Color CurrentColor

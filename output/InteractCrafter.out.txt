@@ -1,0 +1,8 @@
+public class InteractCrafter: InteractableBase
+
+  3 ¸ö Method:
+      protected override void Awake()
+      protected override void OnInteractFinished()
+      private bool FilterCraft(CraftingFormula formula)
+  1 ¸ö Field:
+      public string requireTag

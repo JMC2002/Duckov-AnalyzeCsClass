@@ -1,0 +1,19 @@
+namespace Duckov.UI
+public class ScrollViewBorderFrame: MonoBehaviour
+
+  6 ¸ö Method:
+      private void OnEnable()
+      private void OnDisable()
+      private void Start()
+      private void Refresh(Vector2 scrollPos)
+      static void SetAlpha(Graphic graphic, float a)
+      private void Refresh()
+  8 ¸ö Field:
+      private ScrollRect scrollRect
+      private float maxAlpha
+      private float extendThreshold
+      private float extendOffset
+      private Graphic upGraphic
+      private Graphic downGraphic
+      private Graphic leftGraphic
+      private Graphic rightGraphic

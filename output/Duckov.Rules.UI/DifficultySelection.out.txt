@@ -1,0 +1,45 @@
+namespace Duckov.Rules.UI
+public class DifficultySelection: MonoBehaviour
+
+  1 个 ClassLike:
+      public struct SettingEntry
+  14 个 Method:
+      private void Awake()
+      private void OnConfirmButtonClicked()
+      public async UniTask Execute()
+      private bool CheckUnlocked(SettingEntry setting)
+      public static void UnlockRage()
+      public bool GetRageUnlocked(bool isFirstSelect)
+      private bool CheckShouldDisplay(SettingEntry setting)
+      private async UniTask<RuleIndex> WaitForConfirmation()
+      internal void NotifySelected(DifficultySelection_Entry entry)
+      private void ShowCustomRuleSetupPanel()
+      internal void NotifyEntryPointerEnter(DifficultySelection_Entry entry)
+      internal void NotifyEntryPointerExit(DifficultySelection_Entry entry)
+      private void RefreshDescription()
+      internal void SkipHide()
+  14 个 Field:
+      public RuleIndex ruleIndex
+      public Sprite icon
+      public bool recommended
+      private FadeGroup fadeGroup
+      private TextMeshProUGUI textDescription
+      private string description_PlaceHolderKey
+      private Button confirmButton
+      private FadeGroup customPanel
+      private DifficultySelection_Entry entryTemplate
+      private GameObject achievementDisabledIndicator
+      private GameObject selectedCustomDifficultyBefore
+      private PrefabPool<DifficultySelection_Entry> _entryPool
+      private SettingEntry[] displaySettings
+      private bool confirmed
+  9 个 Property:
+      private string TitleKey
+      public string Title
+      private string DescriptionKey
+      public string Description
+      private PrefabPool<DifficultySelection_Entry> EntryPool
+      public static bool CustomDifficultyMarker
+      public RuleIndex SelectedRuleIndex
+      public DifficultySelection_Entry SelectedEntry
+      public DifficultySelection_Entry HoveringEntry

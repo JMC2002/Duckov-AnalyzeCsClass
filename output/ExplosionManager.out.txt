@@ -1,0 +1,14 @@
+public class ExplosionManager: MonoBehaviour
+
+  3 ¸ö Method:
+      private void Awake()
+      public void CreateExplosion(Vector3 center, float radius, DamageInfo dmgInfo, ExplosionFxTypes fxType = ExplosionFxTypes.normal, float shakeStrength = 1f, bool canHurtSelf = true)
+      private bool CheckObsticle(Vector3 startPoint, Vector3 endPoint)
+  7 ¸ö Field:
+      private LayerMask damageReceiverLayers
+      private LayerMask obsticleLayers
+      private List<Health> damagedHealth
+      private Collider[] colliders
+      public GameObject normalFxPfb
+      public GameObject flashFxPfb
+      private RaycastHit[] ObsHits

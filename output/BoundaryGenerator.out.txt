@@ -1,0 +1,21 @@
+public class BoundaryGenerator: MonoBehaviour
+
+  9 ¸ö Method:
+      public void UpdateColliderParameters()
+      private void DestroyAllChildren()
+      public void UpdateColliders()
+      public void SetYtoZero()
+      public void OnPointsUpdated(bool OnValidate = false)
+      public void RemoveAllPoints()
+      public void RespawnColliders()
+      private void OnValidate()
+      public void OnDrawGizmos()
+  8 ¸ö Field:
+      public List<Vector3> points
+      public int lastSelectedPointIndex
+      public float colliderHeight
+      public float yOffset
+      public float colliderThickness
+      public bool inverseFaceDirection
+      public bool provideContects
+      private List<BoxCollider> colliderObjects

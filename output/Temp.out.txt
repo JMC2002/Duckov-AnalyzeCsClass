@@ -1,0 +1,4 @@
+public class Temp: MonoBehaviour
+
+  1 ¸ö Method:
+      private void Calculate(float fps = 100f)

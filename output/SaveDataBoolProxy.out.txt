@@ -1,0 +1,7 @@
+public class SaveDataBoolProxy: MonoBehaviour
+
+  1 ¸ö Method:
+      public void Save()
+  2 ¸ö Field:
+      public string key
+      public bool value

@@ -1,0 +1,13 @@
+namespace Duckov.MiniGames.Examples.HelloWorld
+public class Move: MiniGameBehaviour
+
+  5 ¸ö Method:
+      private void Awake()
+      protected override void OnUpdate(float deltaTime)
+      private bool CanJump()
+      private void OnCollisionEnter(Collision collision)
+      private void OnCollisionExit(Collision collision)
+  3 ¸ö Field:
+      private Rigidbody rigidbody
+      private float speed
+      private float jumpSpeed

@@ -1,0 +1,6 @@
+public class AT_InteractWithMainCharacter: ActionTask
+
+  1 ¸ö Method:
+      protected override void OnExecute()
+  1 ¸ö Field:
+      public InteractableBase interactable

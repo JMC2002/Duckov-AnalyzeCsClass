@@ -1,0 +1,19 @@
+public class ActionProgressHUD: MonoBehaviour
+
+  4 ¸ö Method:
+      public void Update()
+      private void OnDestroy()
+      private void OnActionStart(CharacterActionBase action)
+      private void OnActionFinish(CharacterActionBase action)
+  9 ¸ö Field:
+      public CharacterActionBase.ActionPriorities specificActionType
+      public ProceduralImage fillImage
+      public CanvasGroup parentCanvasGroup
+      private CharacterMainControl characterMainControl
+      private IProgress currentProgressInterface
+      private float targetAlpha
+      private bool inProgress
+      public UnityEvent OnFinishEvent
+      public GameObject stopIndicator
+  1 ¸ö Property:
+      public bool InProgress

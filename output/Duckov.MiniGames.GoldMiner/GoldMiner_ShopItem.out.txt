@@ -1,0 +1,15 @@
+namespace Duckov.MiniGames.GoldMiner
+public class GoldMiner_ShopItem: MonoBehaviour
+
+  1 ¸ö Method:
+      public void OnBought(GoldMiner target)
+  4 ¸ö Field:
+      private Sprite icon
+      private string displayNameKey
+      private int basePrice
+      public UnityEvent<GoldMiner> onBought
+  4 ¸ö Property:
+      public Sprite Icon
+      public string DisplayNameKey
+      public string DisplayName
+      public int BasePrice

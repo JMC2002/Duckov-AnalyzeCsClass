@@ -1,0 +1,11 @@
+public class ProceduralImageHashProvider: MonoBehaviour, ITrueShadowCustomHashProvider
+
+  5 ¸ö Method:
+      private void Awake()
+      private void Refresh()
+      private void OnValidate()
+      private void OnRectTransformDimensionsChange()
+      private int Hash()
+  2 ¸ö Field:
+      private ProceduralImage proceduralImage
+      private TrueShadow trueShadow

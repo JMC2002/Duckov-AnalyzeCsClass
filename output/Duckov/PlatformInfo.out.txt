@@ -1,0 +1,12 @@
+namespace Duckov
+public static class PlatformInfo
+  2 ¸ö Method:
+      public static string GetID()
+      public static string GetDisplayName()
+  2 ¸ö Field:
+      private static Func<string> _getIDFunc
+      private static Func<string> _getDisplayNameFunc
+  3 ¸ö Property:
+      public static Platform Platform
+      public static Func<string> GetIDFunc
+      public static Func<string> GetDisplayNameFunc

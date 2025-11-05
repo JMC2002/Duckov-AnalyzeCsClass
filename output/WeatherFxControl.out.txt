@@ -1,0 +1,24 @@
+public class WeatherFxControl: MonoBehaviour
+
+  6 ¸ö Method:
+      private void Start()
+      private void Init()
+      private void OnSubSceneChanged()
+      private void Update()
+      private void SetFxActive(bool active)
+      private void OnDestroy()
+  14 ¸ö Field:
+      public ParticleSystem[] rainyFxParticles
+      public float[] rainingParticleRate
+      public Weather targetWeather
+      private float targetParticleRate
+      private float lerpValue
+      public float lerpTime
+      public float deactiveDelay
+      private float overTimer
+      private bool fxActive
+      private bool inited
+      private EventInstance? weatherSoundInstace
+      public string rainSoundKey
+      private bool audioPlaying
+      public bool onlyOutDoor

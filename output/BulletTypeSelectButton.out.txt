@@ -1,0 +1,17 @@
+public class BulletTypeSelectButton: MonoBehaviour
+
+  4 ¸ö Method:
+      public void SetSelection(bool selected)
+      public void Init(int id, int count)
+      public void RefreshContent()
+      public string GetBulletName(int id)
+  7 ¸ö Field:
+      private int bulletTypeID
+      private int bulletCount
+      public BulletTypeHUD bulletTypeHUD
+      public TextMeshProUGUI nameText
+      public TextMeshProUGUI countText
+      public TrueShadow selectShadow
+      public GameObject indicator
+  1 ¸ö Property:
+      public int BulletTypeID

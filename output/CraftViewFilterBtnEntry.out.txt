@@ -1,0 +1,12 @@
+public class CraftViewFilterBtnEntry: MonoBehaviour, IPointerClickHandler, IEventSystemHandler
+
+  2 ¸ö Method:
+      public void OnPointerClick(PointerEventData eventData)
+      public void Setup(CraftView master, CraftView.FilterInfo filterInfo, int index, bool selected)
+  6 ¸ö Field:
+      private Image icon
+      private TextMeshProUGUI displayNameText
+      private GameObject selectedIndicator
+      private CraftView.FilterInfo info
+      private CraftView master
+      private int index

@@ -1,0 +1,12 @@
+public class RuleEntry_Bool: OptionsProviderBase
+
+  4 ¸ö Method:
+      private void Awake()
+      public override string GetCurrentOption()
+      public override string[] GetOptions()
+      public override void Set(int index)
+  2 ¸ö Field:
+      private string fieldName
+      private FieldInfo field
+  1 ¸ö Property:
+      public override string Key

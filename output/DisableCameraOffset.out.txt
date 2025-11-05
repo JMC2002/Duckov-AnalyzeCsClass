@@ -1,0 +1,15 @@
+public class DisableCameraOffset: OptionsProviderBase
+
+  6 ¸ö Method:
+      public override string[] GetOptions()
+      public override string GetCurrentOption()
+      public override void Set(int index)
+      private void Awake()
+      private void OnDestroy()
+      private void RefreshOnLevelInited()
+  3 ¸ö Field:
+      public string onKey
+      public string offKey
+      public static bool disableCameraOffset
+  1 ¸ö Property:
+      public override string Key

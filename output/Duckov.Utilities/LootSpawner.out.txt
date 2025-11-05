@@ -1,0 +1,29 @@
+namespace Duckov.Utilities
+public class LootSpawner: MonoBehaviour
+
+  1 个 ClassLike:
+      private struct Entry
+  6 个 Method:
+      public void CalculateChances()
+      private void Start()
+      private int GetKey()
+      public async UniTask Setup()
+      public static int[] Search(ItemFilter filter)
+      private void OnValidate()
+  13 个 Field:
+      public int itemTypeID
+      public float spawnChance
+      public bool randomGenrate
+      public bool randomFromPool
+      private Vector2Int randomCount
+      private RandomContainer<Tag> tags
+      private List<Tag> excludeTags
+      private RandomContainer<int> qualities
+      private RandomContainer<Entry> randomPool
+      private List<int> fixedItems
+      private Points points
+      private bool loading
+      private List<int> typeIds
+  2 个 Property:
+      public bool RandomFromPool
+      public bool RandomButNotFromPool

@@ -1,0 +1,12 @@
+namespace Duckov.UI
+public class PerkLineEntry: MonoBehaviour
+
+  2 ¸ö Method:
+      internal void Setup(PerkTreeView perkTreeView, PerkLevelLineNode cur)
+      internal Vector2 GetLayoutPosition()
+  3 ¸ö Field:
+      private TextMeshProUGUI label
+      private RectTransform _rectTransform
+      private PerkLevelLineNode target
+  1 ¸ö Property:
+      public RectTransform RectTransform

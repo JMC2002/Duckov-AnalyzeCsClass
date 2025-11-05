@@ -1,0 +1,7 @@
+public class TimeOfDayEntry: MonoBehaviour
+
+  2 ¸ö Method:
+      private void Start()
+      public TimeOfDayPhase GetPhase(TimePhaseTags timePhaseTags)
+  1 ¸ö Field:
+      private List<TimeOfDayPhase> phases

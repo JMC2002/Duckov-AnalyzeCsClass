@@ -1,0 +1,11 @@
+namespace Duckov.UI.Animations
+public class AnchoredPositionLooper: LooperElement
+
+  2 ¸ö Method:
+      private void Awake()
+      protected override void OnTick(LooperClock clock, float t)
+  4 ¸ö Field:
+      private Vector2 anchoredPositionA
+      private Vector2 anchoredPositionB
+      private AnimationCurve curve
+      private RectTransform rectTransform

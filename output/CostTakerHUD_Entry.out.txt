@@ -1,0 +1,18 @@
+public class CostTakerHUD_Entry: MonoBehaviour
+
+  5 个 Method:
+      private void Awake()
+      private void LateUpdate()
+      internal void Setup(CostTaker cur)
+      private void UpdatePosition()
+      private void UpdateFadeGroup()
+  4 个 Field:
+      private RectTransform rectTransform
+      private TextMeshProUGUI nameText
+      private CostDisplay costDisplay
+      private FadeGroup fadeGroup
+  1 个 Property:
+      public CostTaker Target
+  2 个 Constant:
+      private const float HideDistance
+      private const float HideDistanceYLimit

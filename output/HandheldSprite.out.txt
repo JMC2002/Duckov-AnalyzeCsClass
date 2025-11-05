@@ -1,0 +1,7 @@
+public class HandheldSprite: MonoBehaviour
+
+  1 ¸ö Method:
+      private void Start()
+  2 ¸ö Field:
+      public DuckovItemAgent agent
+      public SpriteRenderer spriteRenderer

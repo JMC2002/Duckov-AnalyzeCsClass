@@ -1,0 +1,24 @@
+public class ItemAgent_Kazoo: DuckovItemAgent
+
+  7 ¸ö Method:
+      private void Update()
+      private void LateUpdate()
+      public void OnTriggerUpdate(bool trigger, bool triggerThisFrame, bool releaseThisFrame)
+      protected override void OnInitialize()
+      private void SyncUi(Transform parent)
+      protected override void OnDestroy()
+      private void OnDisable()
+  13 ¸ö Field:
+      private string audioEvent
+      private EventInstance? currentEvent
+      private bool currentMakingSound
+      private bool targetMakingSound
+      private float makeAiSoundCoolTimer
+      private float makeAiSoundCoolTime
+      public float maxScale
+      public float maxSoundRange
+      private Camera camera
+      private bool holderInited
+      private GameObject uiInstance
+      private float zOffset
+      private ParticleSystem particle

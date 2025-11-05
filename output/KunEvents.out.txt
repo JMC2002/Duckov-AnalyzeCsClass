@@ -1,0 +1,14 @@
+public class KunEvents: MonoBehaviour
+
+  2 ¸ö Method:
+      private void Awake()
+      public void Check()
+  8 ¸ö Field:
+      private int hairID
+      private int armorID
+      public DialogueBubbleProxy dialogueBubbleProxy
+      public string notRight
+      public string onlyRightFace
+      public string onlyRightCloth
+      public string allRight
+      public GameObject setActiveObject

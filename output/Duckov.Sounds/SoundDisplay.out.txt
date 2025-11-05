@@ -1,0 +1,18 @@
+namespace Duckov.Sounds
+public class SoundDisplay: MonoBehaviour
+
+  2 ¸ö Method:
+      internal void Trigger(AISound sound)
+      private void Update()
+  8 ¸ö Field:
+      private Image image
+      private float removeRecordAfterTime
+      private float triggerVelocity
+      private float gravity
+      private float untriggerVelocity
+      private float value
+      private float velocity
+      private AISound sound
+  2 ¸ö Property:
+      public float Value
+      public AISound CurrentSount

@@ -1,0 +1,8 @@
+public class SavesCounter
+  4 ¸ö Method:
+      public static int AddCount(string countKey)
+      public static int GetCount(string countKey)
+      public static int AddKillCount(string key)
+      public static int GetKillCount(string key)
+  1 ¸ö Field:
+      public static Action<string, int> OnKillCountChanged

@@ -1,0 +1,4 @@
+public class OnPointerClick: MonoBehaviour, IPointerClickHandler, IEventSystemHandler
+
+  1 ¸ö Field:
+      public UnityEvent<PointerEventData> onPointerClick

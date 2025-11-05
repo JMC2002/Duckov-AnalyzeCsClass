@@ -1,0 +1,7 @@
+public class UIButtonRevertBinding: MonoBehaviour
+
+  2 ¸ö Method:
+      private void Awake()
+      public void OnBtnClick()
+  1 ¸ö Field:
+      private Button button

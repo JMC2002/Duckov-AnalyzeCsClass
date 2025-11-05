@@ -1,0 +1,10 @@
+namespace Duckov
+public class CursorData
+  1 ¸ö Method:
+      internal void Apply(int frame)
+  3 ¸ö Field:
+      public Texture2D[] textures
+      public Vector2 hotspot
+      public float fps
+  1 ¸ö Property:
+      public Texture2D texture

@@ -1,0 +1,9 @@
+public class InteractableCarriable: InteractableBase
+
+  4 ¸ö Method:
+      protected override void Start()
+      protected override bool IsInteractable()
+      protected override void OnInteractStart(CharacterMainControl character)
+      protected override void OnInteractFinished()
+  1 ¸ö Field:
+      public Carriable carryTarget

@@ -1,0 +1,13 @@
+namespace Duckov.Quests.Relations
+public class QuestRelationNode: QuestRelationNodeBase
+
+  3 ¸ö Method:
+      private void SelectQuest()
+      public List<int> GetParents()
+      public List<int> GetChildren()
+  3 ¸ö Field:
+      public int questID
+      private static QuestCollection _questCollection
+      internal bool isDuplicate
+  1 ¸ö Property:
+      private static QuestCollection QuestCollection

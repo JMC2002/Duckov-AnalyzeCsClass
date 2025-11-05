@@ -1,0 +1,11 @@
+public class UnlockStockShopItem: PerkBehaviour
+
+  2 ¸ö Method:
+      private void Start()
+      protected override void OnUnlocked()
+  1 ¸ö Field:
+      private int itemTypeID
+  3 ¸ö Property:
+      private string DescriptionFormat
+      public override string Description
+      private string ItemDisplayName

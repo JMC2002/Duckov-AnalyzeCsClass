@@ -1,0 +1,12 @@
+public class CameraShaker: MonoBehaviour
+
+  1 ¸ö ClassLike:
+      public enum CameraShakeTypes
+  2 ¸ö Method:
+      private void Awake()
+      public static void Shake(Vector3 velocity, CameraShakeTypes shakeType)
+  4 ¸ö Field:
+      private static CameraShaker _instance
+      public CinemachineImpulseSource recoilSource
+      public CinemachineImpulseSource meleeAttackSource
+      public CinemachineImpulseSource explosionSource

@@ -1,0 +1,37 @@
+public class GameManager: MonoBehaviour
+
+  3 ¸ö Method:
+      private void Awake()
+      private void Update()
+      public static void TimeTravelDetected()
+  14 ¸ö Field:
+      private static GameManager _instance
+      private AudioManager audioManager
+      private UIInputManager uiInputManager
+      private GameRulesManager difficultyManager
+      private PauseMenu pauseMenu
+      private SceneLoader sceneLoader
+      private BlackScreen blackScreen
+      private EventSystem eventSystem
+      private PlayerInput mainPlayerInput
+      private NightVisionVisual nightVision
+      private ModManager modManager
+      private NoteIndex noteIndex
+      private AchievementManager achievementManager
+      public static bool newBoot
+  15 ¸ö Property:
+      public static GameManager Instance
+      public static bool Paused
+      public static AudioManager AudioManager
+      public static UIInputManager UiInputManager
+      public static PauseMenu PauseMenu
+      public static GameRulesManager DifficultyManager
+      public static SceneLoader SceneLoader
+      public static BlackScreen BlackScreen
+      public static EventSystem EventSystem
+      public static NightVisionVisual NightVision
+      public static bool BloodFxOn
+      public static PlayerInput MainPlayerInput
+      public static ModManager ModManager
+      public static NoteIndex NoteIndex
+      public static AchievementManager AchievementManager

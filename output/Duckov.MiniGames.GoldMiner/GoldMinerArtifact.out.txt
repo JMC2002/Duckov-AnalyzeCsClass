@@ -1,0 +1,27 @@
+namespace Duckov.MiniGames.GoldMiner
+public class GoldMinerArtifact: MiniGameBehaviour
+
+  3 ¸ö Method:
+      public void Attach(GoldMiner master)
+      public void Detatch(GoldMiner master)
+      private void OnDestroy()
+  8 ¸ö Field:
+      private string id
+      private Sprite icon
+      private bool allowMultiple
+      private int basePrice
+      private int quality
+      private GoldMiner master
+      public Action<GoldMinerArtifact> OnAttached
+      public Action<GoldMinerArtifact> OnDetached
+  10 ¸ö Property:
+      private string displayNameKey
+      private string descriptionKey
+      public bool AllowMultiple
+      public string DisplayName
+      public string Description
+      public int Quality
+      public int BasePrice
+      public string ID
+      public Sprite Icon
+      public GoldMiner Master

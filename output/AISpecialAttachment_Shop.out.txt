@@ -1,0 +1,6 @@
+public class AISpecialAttachment_Shop: AISpecialAttachmentBase
+
+  1 ¸ö Method:
+      protected override void OnInited()
+  1 ¸ö Field:
+      public GameObject shop

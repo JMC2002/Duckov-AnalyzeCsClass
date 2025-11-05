@@ -1,0 +1,15 @@
+namespace Dialogues
+public class LocalizedStatementSequence: DTNode
+
+  4 ¸ö Method:
+      protected override Status OnExecute(Component agent, IBlackboard bb)
+      private void Begin()
+      private void Next()
+      private void OnStatementFinish()
+  4 ¸ö Field:
+      public BBParameter<string> keyPrefix
+      public BBParameter<int> beginIndex
+      public BBParameter<int> endIndex
+      private int index
+  1 ¸ö Property:
+      public override bool requireActorSelection

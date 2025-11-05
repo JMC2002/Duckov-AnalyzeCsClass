@@ -1,0 +1,101 @@
+public class AICharacterController: MonoBehaviour
+
+  25 ¸ö Method:
+      public void Init(CharacterMainControl _characterMainControl, Vector3 patrolCenter, AudioManager.VoiceType voiceType = AudioManager.VoiceType.Duck, AudioManager.FootStepMaterialType footStepMatType = AudioManager.FootStepMaterialType.organic)
+      public float NightReactionTimeMultiplier()
+      public void AddItemSkill(ItemSetting_Skill skill)
+      public ItemSetting_Skill GetItemSkill(bool random)
+      public void CheckAndAddDrugItem(Item targetItem)
+      public Item GetDrugItem()
+      private void Update()
+      public void SetNoticedToTarget(DamageReceiver target)
+      private void OnEnable()
+      private void OnDisable()
+      private void OnDestroy()
+      private void OnSound(AISound sound)
+      private void OnHurt(DamageInfo dmgInfo)
+      public bool IsHurt(float timeThreshold, int damageThreshold, ref DamageInfo dmgInfo)
+      public bool isNoticing(float timeThreshold)
+      public void MoveToPos(Vector3 pos)
+      public bool HasPath()
+      public bool WaitingForPathResult()
+      public void StopMove()
+      public bool IsMoving()
+      public bool ReachedEndOfPath()
+      public void SetTarget(Transform _aimTarget)
+      public void SetAimInput(Vector3 aimInput, AimTypes aimType)
+      public void PutBackWeapon()
+      public void TakeOutWeapon()
+  67 ¸ö Field:
+      public DamageReceiver searchedEnemy
+      public InteractablePickup searchedPickup
+      private DamageReceiver cachedSearchedEnemy
+      private CharacterMainControl characterMainControl
+      private AI_PathControl pathControl
+      public CharacterSpawnerGroup group
+      public CharacterMainControl leader
+      public AICharacterController leaderAI
+      public bool shootCanMove
+      public bool defaultWeaponOut
+      private float updateValueTimer
+      public float patrolTurnSpeed
+      public float combatTurnSpeed
+      private Stat rotateSpeedStat
+      public bool hasSkill
+      public SkillBase skillPfb
+      public SkillBase skillInstance
+      public Vector2 skillCoolTimeRange
+      public float skillSuccessChance
+      public float nextReleaseSkillTimeMarker
+      private float noticeTimeMarker
+      public bool noticed
+      public float sightDistance
+      public float forceTracePlayerDistance
+      public float sightAngle
+      public float baseReactionTime
+      public float nightReactionTimeFactor
+      public float reactionTime
+      public float shootDelay
+      public float scatterMultiIfTargetRunning
+      public float scatterMultiIfOffScreen
+      public Vector2 shootTimeRange
+      public Vector2 shootTimeSpaceRange
+      public Vector2 combatMoveTimeRange
+      public bool canDash
+      public Vector2 dashCoolTimeRange
+      private Vector3 noticeFromPos
+      public int wantItem
+      private Vector3 noticeFromDirection
+      private float combatWithTargetTimer
+      private bool weaponOut
+      private CharacterMainControl noticeFromCharacter
+      public float hearingAbility
+      public float traceTargetChance
+      public Transform aimTarget
+      private bool aimingRuningMainCharacter
+      public float patrolRange
+      public Vector3 patrolPosition
+      public float combatMoveRange
+      public float forgetTime
+      public bool canTalk
+      public bool alert
+      public BehaviourTree patrolTree
+      public BehaviourTree alertTree
+      public BehaviourTree combatTree
+      public BehaviourTree combat_Attack_Tree
+      public float hurtTimeMarker
+      public DamageInfo lastDamageInfo
+      public bool hasObsticleToTarget
+      public GameObject hideIfFoundEnemy
+      private Modifier scatterMultiplierModifier
+      private Stat scatterMultiplierStat
+      private float scatterModifierMultiplier
+      public float itemSkillChance
+      public float itemSkillCoolTime
+      private GameCamera gameCamera
+      public GameObject foundDangerObject
+  4 ¸ö Property:
+      public CharacterMainControl CharacterMainControl
+      public Vector3 NoticeFromPos
+      public Vector3 NoticeFromDirection
+      public CharacterMainControl NoticeFromCharacter

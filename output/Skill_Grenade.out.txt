@@ -1,0 +1,20 @@
+public class Skill_Grenade: SkillBase
+
+  2 ¸ö Method:
+      public override void OnRelease()
+      public Vector3 CalculateVelocity(Vector3 start, Vector3 target, float verticleSpeed)
+  14 ¸ö Field:
+      public bool canControlCastDistance
+      public float delay
+      public bool delayFromCollide
+      public Grenade grenadePfb
+      public bool createPickup
+      public bool isLandmine
+      public float landmineTriggerRange
+      public bool createExplosion
+      public bool canHurtSelf
+      public float explosionShakeStrength
+      public DamageInfo damageInfo
+      public int blastCount
+      public float blastAngle
+      public float blastDelayTimeSpace

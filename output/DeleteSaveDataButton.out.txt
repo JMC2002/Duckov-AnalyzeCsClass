@@ -1,0 +1,20 @@
+public class DeleteSaveDataButton: MonoBehaviour, IPointerDownHandler, IEventSystemHandler, IPointerUpHandler
+
+  8 ¸ö Method:
+      public void OnPointerDown(PointerEventData eventData)
+      public void OnPointerUp(PointerEventData eventData)
+      private void Start()
+      private void Update()
+      private void Execute()
+      private async UniTask NotifySaveDeleted()
+      private void DeleteCurrentSaveData()
+      private void RefreshProgressBar()
+  5 ¸ö Field:
+      private float totalTime
+      private Image barFill
+      private FadeGroup saveDeletedNotifierFadeGroup
+      private float timeWhenStartedHolding
+      private bool holding
+  2 ¸ö Property:
+      private float TimeSinceStartedHolding
+      private float T

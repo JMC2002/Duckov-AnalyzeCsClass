@@ -1,0 +1,4 @@
+public class ItemSetting_Bullet: ItemSettingBase
+
+  1 ¸ö Method:
+      public override void SetMarkerParam(Item selfItem)

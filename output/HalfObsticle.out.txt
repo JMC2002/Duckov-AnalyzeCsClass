@@ -1,0 +1,16 @@
+public class HalfObsticle: MonoBehaviour
+
+  5 ¸ö Method:
+      private void Awake()
+      private void OnValidate()
+      public void Dead(DamageInfo dmgInfo)
+      public void OnTriggerEnter(Collider other)
+      public void OnTriggerExit(Collider other)
+  7 ¸ö Field:
+      public Outlinable outline
+      public HealthSimpleBase health
+      public List<GameObject> parts
+      public GameObject defaultVisuals
+      public GameObject deadVisuals
+      public Collider airWallCollider
+      private bool dead

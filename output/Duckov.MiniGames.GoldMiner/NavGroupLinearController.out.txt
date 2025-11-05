@@ -1,0 +1,13 @@
+namespace Duckov.MiniGames.GoldMiner
+public class NavGroupLinearController: MiniGameBehaviour
+
+  3 ¸ö Method:
+      private void Awake()
+      private void OnLevelBegin(GoldMiner miner)
+      private void OnNavGroupChanged()
+  5 ¸ö Field:
+      private GoldMiner master
+      private NavGroup navGroup
+      private NavGroup otherNavGroup
+      private bool setActiveWhenLevelBegin
+      private bool changeLock

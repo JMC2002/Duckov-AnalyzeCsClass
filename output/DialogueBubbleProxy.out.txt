@@ -1,0 +1,10 @@
+public class DialogueBubbleProxy: MonoBehaviour
+
+  3 ¸ö Method:
+      public void Pop()
+      public void Pop(string text, float speed = -1f)
+      private void OnDrawGizmos()
+  3 ¸ö Field:
+      public string textKey
+      public float yOffset
+      public float duration

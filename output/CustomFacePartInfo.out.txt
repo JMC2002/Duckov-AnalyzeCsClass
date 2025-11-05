@@ -1,0 +1,10 @@
+public struct CustomFacePartInfo
+  8 ¸ö Field:
+      public float radius
+      public Color color
+      public float height
+      public float heightOffset
+      public float scale
+      public float twist
+      public float distanceAngle
+      public float leftRightAngle

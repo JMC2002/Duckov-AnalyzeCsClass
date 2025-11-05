@@ -1,0 +1,6 @@
+public class SfxOnClick: MonoBehaviour, IPointerClickHandler, IEventSystemHandler
+
+  1 ¸ö Method:
+      public void OnPointerClick(PointerEventData eventData)
+  1 ¸ö Field:
+      private string sfx

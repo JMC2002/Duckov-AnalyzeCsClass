@@ -1,0 +1,21 @@
+namespace Duckov.Buildings
+public class BuildingEffect: MonoBehaviour
+
+  1 ¸ö ClassLike:
+      public struct ModifierDescription
+  10 ¸ö Method:
+      private void Awake()
+      private void OnDestroy()
+      private void OnLevelInitialized()
+      private void Start()
+      private void OnBuildingStatusChanged()
+      private void Refresh()
+      private bool IsBuildingConstructed()
+      private void DisableEffects()
+      private void EnableEffects()
+      private void Apply(ModifierDescription description)
+  4 ¸ö Field:
+      public string stat
+      public ModifierType type
+      public float value
+      private string buildingID

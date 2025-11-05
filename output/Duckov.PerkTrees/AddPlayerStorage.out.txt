@@ -1,0 +1,13 @@
+namespace Duckov.PerkTrees
+public class AddPlayerStorage: PerkBehaviour
+
+  4 ¸ö Method:
+      protected override void OnAwake()
+      protected override void OnOnDestroy()
+      private void OnRecalculatePlayerStorage(PlayerStorage.StorageCapacityCalculationHolder holder)
+      protected override void OnUnlocked()
+  1 ¸ö Field:
+      private int addCapacity
+  2 ¸ö Property:
+      private string DescriptionFormat
+      public override string Description

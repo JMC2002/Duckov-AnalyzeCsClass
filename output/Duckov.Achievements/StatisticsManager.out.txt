@@ -1,0 +1,14 @@
+namespace Duckov.Achievements
+public class StatisticsManager: MonoBehaviour
+
+  8 ¸ö Method:
+      private static string GetSaveKey(string statisticsKey)
+      private static long Get(string key)
+      private static void Set(string key, long value)
+      public static void Add(string key, long value = 1L)
+      private void Awake()
+      private void OnDestroy()
+      private void RegisterEvents()
+      private void UnregisterEvents()
+  1 ¸ö Field:
+      public static event Action<string, long, long> OnStatisticsChanged

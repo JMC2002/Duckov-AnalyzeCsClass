@@ -1,0 +1,7 @@
+namespace Duckov.Quests
+public class Condition: MonoBehaviour
+
+  1 ¸ö Method:
+      public virtual bool Evaluate()
+  1 ¸ö Property:
+      public virtual string DisplayText

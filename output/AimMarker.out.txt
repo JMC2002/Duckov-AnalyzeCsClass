@@ -1,0 +1,43 @@
+public class AimMarker: MonoBehaviour
+
+  11 ¸ö Method:
+      private void Awake()
+      private void Start()
+      private void OnDestroy()
+      private void Update()
+      private void LateUpdate()
+      public void SetAimMarkerPosScreenSpace(Vector3 pos)
+      private void OnStartAdsWithGun(ItemAgent_Gun gun)
+      private void SwitchAdsAimMarker(ADSAimMarker newAimMarkerPfb)
+      private void SetAimMarkerColor(Color col)
+      private void OnKill(Health _health, DamageInfo dmgInfo)
+      private void OnMainCharacterShoot(ItemAgent_Gun gunAgnet)
+  26 ¸ö Field:
+      public RectTransform aimMarkerUI
+      public List<Image> aimMarkerImages
+      public RectTransform left
+      public RectTransform right
+      public RectTransform up
+      public RectTransform down
+      private float scatter
+      private float minScatter
+      public CanvasGroup rootCanvasGroup
+      public CanvasGroup normalAimCanvasGroup
+      public Animator aimMarkerAnimator
+      public ActionProgressHUD reloadProgressBar
+      public UnityEvent onShoot
+      private ADSAimMarker currentAdsAimMarker
+      private ADSAimMarker defaultAdsAimMarker
+      private readonly int inProgressHash
+      private readonly int killMarkerHash
+      private TextMeshProUGUI distanceText
+      private TrueShadow distanceGlow
+      private Color distanceTextColorFull
+      private Color distanceTextColorHalf
+      private Color distanceTextColorOver
+      private float adsValue
+      private float killMarkerTime
+      private float killMarkerTimer
+      private Camera _cam
+  1 ¸ö Property:
+      private Camera MainCam

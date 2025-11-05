@@ -1,0 +1,7 @@
+namespace Duckov.MiniGames.GoldMiner.Artifacts
+public class GMA_011: GoldMinerArtifactBehaviour
+
+  3 ¸ö Method:
+      protected override void OnAttached(GoldMinerArtifact artifact)
+      private bool ForceAndDetach()
+      protected override void OnDetached(GoldMinerArtifact artifact)

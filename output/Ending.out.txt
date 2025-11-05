@@ -1,0 +1,3 @@
+public class Ending
+  1 ¸ö Field:
+      public static int endingIndex

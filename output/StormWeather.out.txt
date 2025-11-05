@@ -1,0 +1,11 @@
+public class StormWeather: MonoBehaviour
+
+  1 ¸ö Method:
+      private void Update()
+  6 ¸ö Field:
+      public Buff buff
+      public float addBuffTimeSpace
+      private float addBuffTimer
+      private CharacterMainControl target
+      private bool onlyOutDoor
+      public float stormProtectionThreshold

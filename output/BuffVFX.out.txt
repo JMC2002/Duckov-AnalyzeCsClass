@@ -1,0 +1,12 @@
+public class BuffVFX: MonoBehaviour
+
+  4 ¸ö Method:
+      private void Awake()
+      private void OnSetup()
+      private void OnDestroy()
+      public void AutoSetup()
+  4 ¸ö Field:
+      public Buff buff
+      public GameObject shockFxPfb
+      private GameObject shockFxInstance
+      public Vector3 offsetFromCharacter

@@ -1,0 +1,14 @@
+public class SingleCrosshair: MonoBehaviour
+
+  2 ¸ö Method:
+      public void UpdateScatter(float _scatter)
+      private void OnValidate()
+  8 ¸ö Field:
+      public float rotation
+      public Vector3 axis
+      public float minDistance
+      public float scatterMoveScale
+      private float currentScatter
+      public bool controlRectWidthHeight
+      public float minScale
+      public float scatterScaleFactor

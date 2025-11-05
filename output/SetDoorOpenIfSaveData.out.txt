@@ -1,0 +1,10 @@
+public class SetDoorOpenIfSaveData: MonoBehaviour
+
+  3 ¸ö Method:
+      private void Start()
+      private void OnDestroy()
+      private void OnSet()
+  3 ¸ö Field:
+      public Door door
+      public string key
+      public bool openIfDataTure

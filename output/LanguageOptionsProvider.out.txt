@@ -1,0 +1,10 @@
+public class LanguageOptionsProvider: OptionsProviderBase
+
+  3 ¸ö Method:
+      public override string GetCurrentOption()
+      public override string[] GetOptions()
+      public override void Set(int index)
+  1 ¸ö Field:
+      private string[] cache
+  1 ¸ö Property:
+      public override string Key

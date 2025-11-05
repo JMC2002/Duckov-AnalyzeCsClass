@@ -1,0 +1,16 @@
+public class DecomposeDatabase: ScriptableObject
+
+  7 ¸ö Method:
+      public void RebuildDictionary()
+      public DecomposeFormula GetFormula(int itemTypeID)
+      public static async UniTask<bool> Decompose(Item item, int count)
+      public static bool CanDecompose(int itemTypeID)
+      public static bool CanDecompose(Item item)
+      public static DecomposeFormula GetDecomposeFormula(int itemTypeID)
+      public void SetData(List<DecomposeFormula> formulas)
+  2 ¸ö Field:
+      private DecomposeFormula[] entries
+      private Dictionary<int, DecomposeFormula> _dic
+  2 ¸ö Property:
+      public static DecomposeDatabase Instance
+      private Dictionary<int, DecomposeFormula> Dic

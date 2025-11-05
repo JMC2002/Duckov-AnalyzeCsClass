@@ -1,0 +1,4 @@
+public class Condition_RaidDead: Condition
+
+  1 ¸ö Method:
+      public override bool Evaluate()

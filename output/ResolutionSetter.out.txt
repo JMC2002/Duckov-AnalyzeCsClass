@@ -1,0 +1,29 @@
+public class ResolutionSetter: MonoBehaviour
+
+  1 个 ClassLike:
+      public enum screenModes
+  12 个 Method:
+      private void Test()
+      public static Resolution GetResByHeight(int height, DuckovResolution maxRes)
+      public static DuckovResolution[] GetResolutions()
+      private void Update()
+      private void UpdateFullScreenCheck()
+      public static void UpdateResolutionAndScreenMode()
+      private static FullScreenMode ScreenModeToFullScreenMode(screenModes screenMode)
+      public static string[] GetScreenModes()
+      public static string ScreenModeToName(screenModes mode)
+      private void Awake()
+      private void OnDestroy()
+      private void OnOptionsChanged(string key)
+  9 个 Field:
+      public static string Key_Resolution
+      public static string Key_ScreenMode
+      public static bool currentFullScreen
+      private static float fullScreenChangeCheckCoolTimer
+      private static float fullScreenChangeCheckCoolTime
+      public Vector2Int debugDisplayRes
+      public Vector2Int debugScreenRes
+      public Vector2Int debugmMaxRes
+      public DuckovResolution[] testRes
+  1 个 Property:
+      public static DuckovResolution MaxResolution

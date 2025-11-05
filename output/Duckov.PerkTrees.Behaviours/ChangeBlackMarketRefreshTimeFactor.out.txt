@@ -1,0 +1,9 @@
+namespace Duckov.PerkTrees.Behaviours
+public class ChangeBlackMarketRefreshTimeFactor: PerkBehaviour
+
+  3 ¸ö Method:
+      protected override void OnAwake()
+      protected override void OnOnDestroy()
+      private void HandleEvent(BlackMarket.OnRequestRefreshTimeFactorEventContext context)
+  1 ¸ö Field:
+      private float amount

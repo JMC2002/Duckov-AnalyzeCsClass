@@ -1,0 +1,11 @@
+public class MultiCirceExtrudeShape: ShapeProvider
+
+  1 ¸ö ClassLike:
+      public struct Circle
+  1 ¸ö Method:
+      public override PipeRenderer.OrientedPoint[] GenerateShape()
+  4 ¸ö Field:
+      public Vector3 origin
+      public float radius
+      public Circle[] circles
+      public int subdivision

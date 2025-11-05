@@ -1,0 +1,41 @@
+public class ItemAgent_MeleeWeapon: DuckovItemAgent
+
+  6 ¸ö Method:
+      private int UpdateColliders()
+      public void CheckAndDealDamage()
+      public bool AttackableTargetInRange()
+      private int CheckCollidersInRange(bool dealDamage)
+      private void Update()
+      protected override void OnInitialize()
+  16 ¸ö Field:
+      public GameObject hitFx
+      public GameObject slashFx
+      public float slashFxDelayTime
+      private string soundKey
+      private Collider[] colliders
+      private ItemSetting_MeleeWeapon setting
+      private static int DamageHash
+      private static int CritRateHash
+      private static int CritDamageFactorHash
+      private static int ArmorPiercingHash
+      private static int AttackSpeedHash
+      private static int AttackRangeHash
+      private static int DealDamageTimeHash
+      private static int StaminaCostHash
+      private static int BleedChanceHash
+      private static int MoveSpeedMultiplierHash
+  14 ¸ö Property:
+      public float Damage
+      public float CritRate
+      public float CritDamageFactor
+      public float ArmorPiercing
+      public float AttackSpeed
+      public float AttackRange
+      public float DealDamageTime
+      public float StaminaCost
+      public float BleedChance
+      public float MoveSpeedMultiplier
+      public float CharacterDamageMultiplier
+      public float CharacterCritRateGain
+      public float CharacterCritDamageGain
+      public string SoundKey

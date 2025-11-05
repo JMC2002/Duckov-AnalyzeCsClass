@@ -1,0 +1,22 @@
+namespace NodeCanvas.Tasks.Actions
+public class TraceTarget: ActionTask<AICharacterController>
+
+  5 ¸ö Method:
+      protected override string OnInit()
+      protected override void OnExecute()
+      protected override void OnUpdate()
+      protected override void OnStop()
+      protected override void OnPause()
+  12 ¸ö Field:
+      public bool traceTargetTransform
+      public BBParameter<Vector3> centerPosition
+      public BBParameter<Transform> centerTransform
+      public BBParameter<float> stopDistance
+      public BBParameter<float> overTime
+      public bool overTimeReturnSuccess
+      private Vector3 targetPoint
+      public bool failIfNoPath
+      public bool retryIfNotFound
+      private float recalculatePathTimeSpace
+      private float recalculatePathTimer
+      public bool syncDirectionIfNoAimTarget

@@ -1,0 +1,27 @@
+public class CostDisplay: MonoBehaviour
+
+  9 ¸ö Method:
+      private void OnEnable()
+      private void OnDisable()
+      private void OnLevelInitialized()
+      private void OnItemOperation()
+      private void RefreshBackground()
+      private void OnMoneyChanged(long arg1, long arg2)
+      public void Setup(Cost cost, int multiplier = 1)
+      private void RefreshMoneyBackground()
+      internal void Clear()
+  12 ¸ö Field:
+      private GameObject moneyContainer
+      private GameObject itemsContainer
+      private Image background
+      private Image moneyBackground
+      private TextMeshProUGUI money
+      private ItemAmountDisplay itemAmountTemplate
+      private Color normalColor
+      private Color enoughColor
+      private Color money_normalColor
+      private Color money_enoughColor
+      private PrefabPool<ItemAmountDisplay> _itemPool
+      private Cost cost
+  1 ¸ö Property:
+      private PrefabPool<ItemAmountDisplay> ItemPool

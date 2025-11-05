@@ -1,0 +1,14 @@
+public class SavedInventory: MonoBehaviour
+
+  7 ¸ö Method:
+      private void Awake()
+      private void Start()
+      private void OnDestroy()
+      private void Register()
+      private void Unregsister()
+      private void Save()
+      private void Load()
+  3 ¸ö Field:
+      private Inventory inventory
+      private string key
+      private bool registered

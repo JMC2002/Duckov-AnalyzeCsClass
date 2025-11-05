@@ -1,0 +1,15 @@
+namespace Duckov.UI.BarDisplays
+public class BarDisplayController_HP: BarDisplayController
+
+  5 ¸ö Method:
+      private void OnEnable()
+      private void OnDisable()
+      private void RegisterEvents()
+      private void UnregisterEvents()
+      private void OnHealthChange(Health health)
+  1 ¸ö Field:
+      private CharacterMainControl _target
+  3 ¸ö Property:
+      protected override float Current
+      protected override float Max
+      private CharacterMainControl Target

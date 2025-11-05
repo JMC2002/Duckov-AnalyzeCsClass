@@ -1,0 +1,9 @@
+public class MultiInteraction: MonoBehaviour
+
+  2 ¸ö Method:
+      private void OnTriggerEnter(Collider other)
+      private void OnTriggerExit(Collider other)
+  1 ¸ö Field:
+      private List<InteractableBase> interactables
+  1 ¸ö Property:
+      public ReadOnlyCollection<InteractableBase> Interactables

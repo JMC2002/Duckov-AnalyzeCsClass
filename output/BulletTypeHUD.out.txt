@@ -1,0 +1,34 @@
+public class BulletTypeHUD: MonoBehaviour
+
+  10 ¸ö Method:
+      private void Awake()
+      private void OnDestroy()
+      private void OnWeaponButtonSelected(WeaponButton button)
+      public void Update()
+      private void OnHoldAgentChanged(DuckovItemAgent newAgent)
+      private void OnSwitchInput(int dir)
+      private void OpenList()
+      public void CloseList()
+      private void RefreshContent()
+      public void SetBulletType(int typeID)
+  17 ¸ö Field:
+      private CharacterMainControl characterMainControl
+      private ItemAgent_Gun gunAgent
+      private CanvasGroup canvasGroup
+      private TextMeshProUGUI bulletTypeText
+      private ProceduralImage background
+      private Color normalColor
+      private Color emptyColor
+      private int bulletTpyeID
+      private GameObject typeList
+      public UnityEvent OnTypeChangeEvent
+      public GameObject indicator
+      private int selectIndex
+      private int totalSelctionCount
+      private BulletTypeSelectButton originSelectButton
+      private List<BulletTypeSelectButton> selectionsHUD
+      private PrefabPool<BulletTypeSelectButton> _selectionsCache
+      private bool listOpen
+  2 ¸ö Property:
+      private PrefabPool<BulletTypeSelectButton> Selections
+      private bool CanOpenList

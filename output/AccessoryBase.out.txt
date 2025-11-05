@@ -1,0 +1,9 @@
+public class AccessoryBase: MonoBehaviour
+
+  2 ¸ö Method:
+      public void Init(DuckovItemAgent _parentAgent, Item _selfItem)
+      protected virtual void OnInit()
+  3 ¸ö Field:
+      public string socketName
+      protected Item selfItem
+      protected DuckovItemAgent parentAgent

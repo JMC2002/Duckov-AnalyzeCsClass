@@ -1,0 +1,12 @@
+namespace Dialogues
+public class LocalizedStatement: IStatement
+
+  3 ¸ö Field:
+      private string _textKey
+      private AudioClip _audio
+      private string _meta
+  4 ¸ö Property:
+      public string text
+      public string textKey
+      public AudioClip audio
+      public string meta

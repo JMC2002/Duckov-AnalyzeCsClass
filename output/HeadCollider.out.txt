@@ -1,0 +1,10 @@
+public class HeadCollider: MonoBehaviour
+
+  4 ¸ö Method:
+      public void Init(CharacterMainControl _character)
+      private void OnDestroy()
+      private void OnSetTeam(Teams team)
+      private void OnDrawGizmos()
+  2 ¸ö Field:
+      private CharacterMainControl character
+      private SphereCollider sphereCollider

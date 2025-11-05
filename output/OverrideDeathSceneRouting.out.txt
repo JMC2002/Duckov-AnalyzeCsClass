@@ -1,0 +1,10 @@
+public class OverrideDeathSceneRouting: MonoBehaviour
+
+  3 ¸ö Method:
+      private void OnEnable()
+      private void OnDisable()
+      public string GetSceneID()
+  1 ¸ö Field:
+      private string sceneID
+  1 ¸ö Property:
+      public static OverrideDeathSceneRouting Instance

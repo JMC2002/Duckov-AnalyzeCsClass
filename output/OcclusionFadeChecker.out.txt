@@ -1,0 +1,5 @@
+public class OcclusionFadeChecker: MonoBehaviour
+
+  2 ¸ö Method:
+      private void OnTriggerEnter(Collider other)
+      private void OnTriggerExit(Collider other)

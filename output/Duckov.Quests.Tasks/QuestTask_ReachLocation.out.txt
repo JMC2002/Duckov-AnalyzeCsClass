@@ -1,0 +1,27 @@
+namespace Duckov.Quests.Tasks
+public class QuestTask_ReachLocation: Task
+
+  12 ¸ö Method:
+      private void OnEnable()
+      private void Start()
+      private void OnDisable()
+      protected override void OnInit()
+      private void OnFinishedLoadingScene(SceneLoadingContext context)
+      private void OnSubSceneLoaded(MultiSceneCore core, Scene scene)
+      private void CacheLocation()
+      private void Update()
+      public override object GenerateSaveData()
+      protected override bool CheckFinished()
+      public override void SetupSaveData(object data)
+      private void SetMapElementVisable(bool visable)
+  5 ¸ö Field:
+      private MultiSceneLocation location
+      private float radius
+      private bool finished
+      private Transform target
+      private MapElementForTask mapElement
+  4 ¸ö Property:
+      public string descriptionFormatkey
+      public string DescriptionFormat
+      public string TargetLocationDisplayName
+      public override string Description

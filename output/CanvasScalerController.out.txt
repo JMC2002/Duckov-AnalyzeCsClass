@@ -1,0 +1,13 @@
+public class CanvasScalerController: MonoBehaviour
+
+  7 ¸ö Method:
+      private void OnValidate()
+      private void Awake()
+      private void OnEnable()
+      private void Refresh()
+      private void FixedUpdate()
+      private bool ResolutionMatch()
+      private Vector2Int GetCurrentResolution()
+  2 ¸ö Field:
+      private CanvasScaler canvasScaler
+      private Vector2Int cachedResolution

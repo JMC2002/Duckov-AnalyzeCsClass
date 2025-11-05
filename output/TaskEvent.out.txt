@@ -1,0 +1,5 @@
+public class TaskEvent
+  1 ¸ö Method:
+      public static void EmitTaskEvent(string taskEventKey)
+  1 ¸ö Field:
+      public static event Action<string> OnTaskEvent

@@ -1,0 +1,11 @@
+public class AimTargetFinder: MonoBehaviour
+
+  3 ¸ö Method:
+      private void Start()
+      public Transform Find(bool search, Vector3 findPoint, ref CharacterMainControl foundCharacter)
+      private Transform Search(Vector3 findPoint, ref CharacterMainControl character)
+  4 ¸ö Field:
+      private Vector3 searchPoint
+      public float searchRadius
+      private LayerMask damageReceiverLayers
+      private Collider[] overlapcColliders

@@ -1,0 +1,43 @@
+namespace Duckov.CreditsUtility
+public class CreditsDisplay: MonoBehaviour
+
+  1 个 ClassLike:
+      private class GenerationStatus
+  17 个 Method:
+      public void Flush()
+      private void ParseAndDisplay()
+      private void EndItem()
+      private void BeginItem()
+      private void DoEmpty(params string[] elements)
+      private void DoInstructor(string text)
+      private void DoImage(string[] elements)
+      private void DoColor(string[] elements)
+      private void DoText(string text)
+      private Transform GetCurrentTransform()
+      public void PushTransform(Transform trans)
+      public Transform PopTransform()
+      private void Awake()
+      private void Reset()
+      private VerticalEntry BeginVerticalLayout(params string[] args)
+      private void EndLayout(params string[] args)
+      private HorizontalEntry BeginHorizontalLayout(params string[] args)
+  17 个 Field:
+      public bool s
+      public bool l
+      public bool b
+      public Color color
+      public VerticalEntry activeItem
+      private bool setupOnAwake
+      private TextAsset content
+      private Transform rootContentTransform
+      private float internalItemSpacing
+      private float mainSpacing
+      private float itemWidth
+      private HorizontalEntry horizontalPrefab
+      private VerticalEntry verticalPrefab
+      private EmptyEntry emptyPrefab
+      private TextEntry textPrefab
+      private ImageEntry imagePrefab
+      private GenerationStatus status
+  1 个 Property:
+      private Transform CurrentTransform

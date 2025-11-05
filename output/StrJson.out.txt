@@ -1,0 +1,11 @@
+public class StrJson
+  1 ¸ö ClassLike:
+      public struct Entry
+  3 ¸ö Method:
+      public StrJson Add(string key, string value)
+      public static StrJson Create(params string[] contentPairs)
+      public override string ToString()
+  3 ¸ö Field:
+      public string key
+      public string value
+      public List<Entry> entries

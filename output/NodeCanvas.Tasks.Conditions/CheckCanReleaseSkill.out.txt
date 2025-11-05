@@ -1,0 +1,5 @@
+namespace NodeCanvas.Tasks.Conditions
+public class CheckCanReleaseSkill: ConditionTask<AICharacterController>
+
+  1 ¸ö Method:
+      protected override bool OnCheck()

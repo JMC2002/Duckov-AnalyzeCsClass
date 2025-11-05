@@ -1,0 +1,14 @@
+public class NotHurtForSeconds: EffectFilter
+
+  3 ¸ö Method:
+      protected override bool OnEvaluate(EffectTriggerEventContext context)
+      private void OnDestroy()
+      private void OnHurt(DamageInfo dmgInfo)
+  4 ¸ö Field:
+      public float time
+      private float lastHurtTime
+      private bool binded
+      private CharacterMainControl _mainControl
+  2 ¸ö Property:
+      public override string DisplayName
+      private CharacterMainControl MainControl

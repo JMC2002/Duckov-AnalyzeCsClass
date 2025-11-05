@@ -1,0 +1,11 @@
+namespace Duckov.Quests.Relations
+public class QuestRelationNodeBase: Node
+
+  7 ¸ö Property:
+      public override int maxInConnections
+      public override int maxOutConnections
+      public override Type outConnectionType
+      public override bool allowAsPrime
+      public override bool canSelfConnect
+      public override Alignment2x2 commentsAlignment
+      public override Alignment2x2 iconAlignment

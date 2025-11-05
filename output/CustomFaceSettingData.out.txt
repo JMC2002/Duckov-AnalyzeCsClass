@@ -1,0 +1,21 @@
+public struct CustomFaceSettingData
+  2 ¸ö Method:
+      public string DataToJson()
+      public static bool JsonToData(string jsonData, out CustomFaceSettingData data)
+  16 ¸ö Field:
+      public bool savedSetting
+      public CustomFaceHeadSetting headSetting
+      public int hairID
+      public CustomFacePartInfo hairInfo
+      public int eyeID
+      public CustomFacePartInfo eyeInfo
+      public int eyebrowID
+      public CustomFacePartInfo eyebrowInfo
+      public int mouthID
+      public CustomFacePartInfo mouthInfo
+      public int tailID
+      public CustomFacePartInfo tailInfo
+      public int footID
+      public CustomFacePartInfo footInfo
+      public int wingID
+      public CustomFacePartInfo wingInfo

@@ -1,0 +1,4 @@
+public abstract class ShapeProvider: MonoBehaviour
+
+  1 ¸ö Method:
+      public abstract PipeRenderer.OrientedPoint[] GenerateShape()

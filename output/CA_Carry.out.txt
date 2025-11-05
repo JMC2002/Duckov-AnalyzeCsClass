@@ -1,0 +1,18 @@
+public class CA_Carry: CharacterActionBase, IProgress
+
+  11 ¸ö Method:
+      public override ActionPriorities ActionPriority()
+      public override bool CanMove()
+      public override bool CanRun()
+      public override bool CanUseHand()
+      public override bool CanControlAim()
+      public override bool IsReady()
+      public float GetWeight()
+      public Progress GetProgress()
+      protected override bool OnStart()
+      protected override void OnUpdateAction(float deltaTime)
+      protected override void OnStop()
+  3 ¸ö Field:
+      public Carriable carryTarget
+      private Carriable carringTarget
+      public Vector3 carryPoint

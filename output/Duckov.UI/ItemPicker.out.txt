@@ -1,0 +1,31 @@
+namespace Duckov.UI
+public class ItemPicker: MonoBehaviour
+
+  12 ¸ö Method:
+      private void OnGetEntry(ItemPickerEntry entry)
+      private async UniTask<Item> WaitForUserPick(ICollection<Item> candidates)
+      private void Awake()
+      private void OnCancelButtonClicked()
+      private void OnConfirmButtonClicked()
+      private void OnDestroy()
+      private void Update()
+      public static async UniTask<Item> Pick(ICollection<Item> candidates)
+      public void ConfirmPick(Item item)
+      public void Cancel()
+      private void SetupUI(ICollection<Item> candidates)
+      internal void NotifyEntryClicked(ItemPickerEntry itemPickerEntry, Item target)
+  10 ¸ö Field:
+      private FadeGroup fadeGroup
+      private ItemPickerEntry entryPrefab
+      private Transform contentParent
+      private Button confirmButton
+      private Button cancelButton
+      private PrefabPool<ItemPickerEntry> _entryPool
+      private bool picking
+      private bool canceled
+      private bool confirmed
+      private Item pickedItem
+  3 ¸ö Property:
+      public static ItemPicker Instance
+      private PrefabPool<ItemPickerEntry> EntryPool
+      public bool Picking

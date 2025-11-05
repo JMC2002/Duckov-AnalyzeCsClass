@@ -1,0 +1,12 @@
+public class LevelInitializingIndicator: MonoBehaviour
+
+  6 ¸ö Method:
+      private void Awake()
+      private void OnSetLoadingComment(string comment)
+      private void OnCommentChanged(string comment)
+      private void OnDestroy()
+      private void SceneLoader_onBeforeSetSceneActive(SceneLoadingContext obj)
+      private void SceneLoader_onAfterSceneInitialize(SceneLoadingContext obj)
+  2 ¸ö Field:
+      private FadeGroup fadeGroup
+      private TextMeshProUGUI levelInitializationCommentText

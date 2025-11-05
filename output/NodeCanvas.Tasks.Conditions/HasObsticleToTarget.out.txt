@@ -1,0 +1,12 @@
+namespace NodeCanvas.Tasks.Conditions
+public class HasObsticleToTarget: ConditionTask<AICharacterController>
+
+  4 ¸ö Method:
+      protected override string OnInit()
+      protected override void OnEnable()
+      protected override void OnDisable()
+      protected override bool OnCheck()
+  3 ¸ö Field:
+      public float hurtTimeThreshold
+      public int damageThreshold
+      public BBParameter<DamageReceiver> cacheFromCharacterDmgReceiver

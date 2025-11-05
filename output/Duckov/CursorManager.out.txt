@@ -1,0 +1,21 @@
+namespace Duckov
+public class CursorManager: MonoBehaviour
+
+  10 ¸ö Method:
+      public static void Register(ICursorDataProvider dataProvider)
+      public static bool Unregister(ICursorDataProvider dataProvider)
+      private static void ApplyStackData()
+      private void Awake()
+      private void Update()
+      private void RefreshCursor()
+      public void MSetDefaultCursor()
+      public void MSetCursor(CursorData data)
+      private void OnDestroy()
+      internal static void NotifyRefresh()
+  4 ¸ö Field:
+      private CursorData defaultCursor
+      public CursorData currentCursor
+      private int frame
+      private float fpsBuffer
+  1 ¸ö Property:
+      public static CursorManager Instance

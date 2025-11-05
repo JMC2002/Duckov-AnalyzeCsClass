@@ -1,0 +1,10 @@
+namespace Duckov.Crops
+public class CropDatabase: ScriptableObject
+
+  4 ¸ö Method:
+      public static CropInfo? GetCropInfo(string id)
+      internal static bool IsIdValid(string id)
+      internal static bool IsSeed(int itemTypeID)
+      internal static SeedInfo GetSeedInfo(int seedItemTypeID)
+  1 ¸ö Property:
+      public static CropDatabase Instance

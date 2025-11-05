@@ -1,0 +1,18 @@
+public class CharacterSpawnerGroup: CharacterSpawnerComponentBase
+
+  6 ¸ö Method:
+      public void Collect()
+      public override void Init(CharacterSpawnerRoot root)
+      public void Awake()
+      private void Update()
+      public void AddCharacterSpawned(AICharacterController _character, bool isLeader)
+      public override void StartSpawn()
+  6 ¸ö Field:
+      public CharacterSpawnerRoot spawnerRoot
+      public bool hasLeader
+      public float hasLeaderChance
+      public List<RandomCharacterSpawner> spawners
+      private List<AICharacterController> characters
+      private AICharacterController leaderAI
+  1 ¸ö Property:
+      public AICharacterController LeaderAI

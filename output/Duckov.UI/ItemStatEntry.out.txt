@@ -1,0 +1,16 @@
+namespace Duckov.UI
+public class ItemStatEntry: MonoBehaviour, IPoolable
+
+  8 ¸ö Method:
+      public void NotifyPooled()
+      public void NotifyReleased()
+      private void OnDisable()
+      internal void Setup(Stat target)
+      private void Refresh()
+      private void RegisterEvents()
+      private void UnregisterEvents()
+      private void OnTargetSetDirty(Stat stat)
+  3 ¸ö Field:
+      private Stat target
+      private TextMeshProUGUI displayName
+      private TextMeshProUGUI value

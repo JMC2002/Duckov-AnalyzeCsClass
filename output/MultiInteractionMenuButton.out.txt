@@ -1,0 +1,13 @@
+public class MultiInteractionMenuButton: MonoBehaviour
+
+  5 ¸ö Method:
+      private void Awake()
+      private void OnButtonClicked()
+      internal void Setup(InteractableBase target)
+      internal void Show()
+      internal void Hide()
+  4 ¸ö Field:
+      private Button button
+      private TextMeshProUGUI text
+      private FadeGroup fadeGroup
+      private InteractableBase target

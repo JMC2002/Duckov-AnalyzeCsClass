@@ -1,0 +1,10 @@
+public class UnlockEndowmentWhenQuestComplete: MonoBehaviour
+
+  4 ¸ö Method:
+      private void Awake()
+      private void Start()
+      private void OnDestroy()
+      private void OnQuestCompleted(Quest quest)
+  2 ¸ö Field:
+      private Quest quest
+      private EndowmentIndex endowmentToUnlock

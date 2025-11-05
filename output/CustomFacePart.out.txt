@@ -1,0 +1,18 @@
+public class CustomFacePart: MonoBehaviour
+
+  2 ¸ö Method:
+      private void CollectRenders()
+      public void SetInfo(CustomFacePartInfo info, CustomFaceInstance _parent)
+  10 ¸ö Field:
+      public int id
+      public bool mirror
+      public Transform centerObject
+      public Transform leftObject
+      public Transform rightObject
+      public List<Renderer> customColorRenderers
+      public List<Renderer> renderers
+      public string customColorKey
+      private CustomFaceInstance parent
+      private MaterialPropertyBlock block
+  1 ¸ö Property:
+      public CustomFaceInstance Parent

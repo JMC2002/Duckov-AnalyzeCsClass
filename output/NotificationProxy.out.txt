@@ -1,0 +1,6 @@
+public class NotificationProxy: MonoBehaviour
+
+  1 ¸ö Method:
+      public void Notify()
+  1 ¸ö Field:
+      public string notification

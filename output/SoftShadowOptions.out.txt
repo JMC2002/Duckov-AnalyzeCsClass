@@ -1,0 +1,14 @@
+public class SoftShadowOptions: OptionsProviderBase
+
+  6 ¸ö Method:
+      public override string[] GetOptions()
+      public override string GetCurrentOption()
+      private void Awake()
+      private void OnDestroy()
+      private void RefreshOnLevelInited()
+      public override void Set(int index)
+  2 ¸ö Field:
+      public string offKey
+      public string onKey
+  1 ¸ö Property:
+      public override string Key

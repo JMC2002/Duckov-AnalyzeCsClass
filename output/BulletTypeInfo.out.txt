@@ -1,0 +1,4 @@
+public class BulletTypeInfo
+  2 ¸ö Field:
+      public int bulletTypeID
+      public int count

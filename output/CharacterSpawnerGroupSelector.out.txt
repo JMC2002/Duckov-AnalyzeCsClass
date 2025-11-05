@@ -1,0 +1,13 @@
+public class CharacterSpawnerGroupSelector: CharacterSpawnerComponentBase
+
+  5 ¸ö Method:
+      public void Collect()
+      public override void Init(CharacterSpawnerRoot root)
+      public override void StartSpawn()
+      private void OnValidate()
+      public void RandomSpawn(int count)
+  4 ¸ö Field:
+      public CharacterSpawnerRoot spawnerRoot
+      public List<CharacterSpawnerGroup> groups
+      public Vector2Int spawnGroupCountRange
+      private int finalCount

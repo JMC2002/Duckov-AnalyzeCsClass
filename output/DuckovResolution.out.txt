@@ -1,0 +1,8 @@
+public struct DuckovResolution
+  3 ¸ö Method:
+      public override bool Equals(object obj)
+      public override string ToString()
+      public bool CheckRotioFit(DuckovResolution newRes, DuckovResolution defaultRes)
+  2 ¸ö Field:
+      public int width
+      public int height

@@ -1,0 +1,41 @@
+public class Soda_Joysticks: MonoBehaviour, IPointerDownHandler, IEventSystemHandler, IPointerUpHandler, IDragHandler
+
+  9 ¸ö Method:
+      private void Start()
+      private void Update()
+      private void OnEnable()
+      public void OnPointerDown(PointerEventData eventData)
+      public void OnPointerUp(PointerEventData eventData)
+      private void Revert()
+      public void CancleTouch()
+      public void OnDisable()
+      public void OnDrag(PointerEventData eventData)
+  25 ¸ö Field:
+      public bool usable
+      private int verticalRes
+      public float joystickRangePercent
+      public float cancleRangePercent
+      public bool fixedPositon
+      public bool followFinger
+      public bool canCancle
+      private float joystickRangePixel
+      private float cancleRangePixel
+      private Transform backGround
+      private Image joyImage
+      private CanvasGroup cancleRangeCanvasGroup
+      private bool holding
+      private Vector2 downPoint
+      private int currentPointerID
+      private Vector2 inputValue
+      private float rotValue
+      public float deadZone
+      public float fullZone
+      public bool hideWhenNotTouch
+      public CanvasGroup canvasGroup
+      private bool triggeringCancle
+      public UnityEvent<Vector2, bool> UpdateValueEvent
+      public UnityEvent OnTouchEvent
+      public UnityEvent<bool> OnUpEvent
+  2 ¸ö Property:
+      public bool Holding
+      public Vector2 InputValue

@@ -1,0 +1,25 @@
+namespace Duckov.MiniGames
+public class MiniGameInputHandler: MonoBehaviour
+
+  13 ¸ö Method:
+      private void Awake()
+      private void OnMouseDelta(InputAction.CallbackContext context)
+      public void ClearInput()
+      private void OnDisable()
+      private void SetGameButtonByContext(MiniGame.Button button, InputAction.CallbackContext context)
+      private void OnStart(InputAction.CallbackContext context)
+      private void OnSelect(InputAction.CallbackContext context)
+      private void OnButtonB(InputAction.CallbackContext context)
+      private void OnButtonA(InputAction.CallbackContext context)
+      private void OnMove(InputAction.CallbackContext context)
+      private void OnDestroy()
+      private void Bind(InputAction inputAction, Action<InputAction.CallbackContext> action)
+      internal void SetGame(MiniGame game)
+  7 ¸ö Field:
+      private MiniGame game
+      private InputAction inputActionMove
+      private InputAction inputActionButtonA
+      private InputAction inputActionButtonB
+      private InputAction inputActionSelect
+      private InputAction inputActionStart
+      private InputAction inputActionMouseDelta

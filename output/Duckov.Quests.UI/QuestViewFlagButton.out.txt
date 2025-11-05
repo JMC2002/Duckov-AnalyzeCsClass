@@ -1,0 +1,13 @@
+namespace Duckov.Quests.UI
+public class QuestViewFlagButton: MonoBehaviour
+
+  4 ¸ö Method:
+      private void Awake()
+      private void OnButtonClicked()
+      private void OnMasterShowingContentChanged(QuestView view, QuestView.ShowContent content)
+      private void Refresh()
+  4 ¸ö Field:
+      private QuestView master
+      private Button button
+      private QuestView.ShowContent content
+      private GameObject selectionIndicator

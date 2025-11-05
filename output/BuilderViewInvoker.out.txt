@@ -1,0 +1,6 @@
+public class BuilderViewInvoker: InteractableBase
+
+  1 ¸ö Method:
+      protected override void OnInteractFinished()
+  1 ¸ö Field:
+      private BuildingArea buildingArea

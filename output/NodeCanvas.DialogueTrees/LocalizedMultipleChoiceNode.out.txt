@@ -1,0 +1,17 @@
+namespace NodeCanvas.DialogueTrees
+public class LocalizedMultipleChoiceNode: DTNode
+
+  1 个 ClassLike:
+      public class Choice
+  2 个 Method:
+      protected override Status OnExecute(Component agent, IBlackboard bb)
+      private void OnOptionSelected(int index)
+  5 个 Field:
+      public bool isUnfolded
+      public LocalizedStatement statement
+      public ConditionTask condition
+      public float availableTime
+      public bool saySelection
+  2 个 Property:
+      public override int maxOutConnections
+      public override bool requireActorSelection

@@ -1,0 +1,10 @@
+public class MainMenuCamera: MonoBehaviour
+
+  1 ¸ö Method:
+      private void Update()
+  5 ¸ö Field:
+      public Vector2 yawRange
+      public Vector2 pitchRange
+      public Transform pitchRoot
+      public Vector2 posRangeX
+      public Vector2 posRangeY

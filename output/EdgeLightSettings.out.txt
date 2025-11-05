@@ -1,0 +1,14 @@
+public class EdgeLightSettings: OptionsProviderBase
+
+  6 ¸ö Method:
+      public override string[] GetOptions()
+      public override string GetCurrentOption()
+      public override void Set(int index)
+      private void Awake()
+      private void OnDestroy()
+      private void RefreshOnLevelInited()
+  2 ¸ö Field:
+      public string onKey
+      public string offKey
+  1 ¸ö Property:
+      public override string Key

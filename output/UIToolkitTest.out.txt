@@ -1,0 +1,8 @@
+public class UIToolkitTest: MonoBehaviour
+
+  3 ¸ö Method:
+      private void Awake()
+      private void OnButton2Clicked(ClickEvent evt)
+      private void OnButtonClicked(ClickEvent evt)
+  1 ¸ö Field:
+      private UIDocument doc

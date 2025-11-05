@@ -1,0 +1,9 @@
+public class HideIfSickFriendly: MonoBehaviour
+
+  4 ¸ö Method:
+      private void Start()
+      private void OnDestroy()
+      private void OnOptionsChanged(string option)
+      private void Sync()
+  1 ¸ö Field:
+      private bool sickFriendly

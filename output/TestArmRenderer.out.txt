@@ -1,0 +1,9 @@
+public class TestArmRenderer: MonoBehaviour
+
+  3 ¸ö Method:
+      private void Awake()
+      private void LateUpdate()
+      private void DrawLine(LineRenderer lineRenderer, Transform start, Transform end)
+  2 ¸ö Field:
+      public LineRenderer[] lineRenderers
+      public Transform[] joints

@@ -1,0 +1,34 @@
+namespace Duckov.MiniMaps
+public class MapMarkerManager: MonoBehaviour
+
+  1 个 ClassLike:
+      private struct SaveData
+  11 个 Method:
+      private void Awake()
+      private void Start()
+      private void OnDestroy()
+      private void Load()
+      private void OnCollectSaveData()
+      public static void Request(MapMarkerPOI.RuntimeData data)
+      public static void Request(Vector3 worldPos)
+      public static void Release(MapMarkerPOI entry)
+      internal static Sprite GetIcon(string iconName)
+      internal static void SelectColor(Color color)
+      internal static void SelectIcon(int index)
+  8 个 Field:
+      public string mainSceneName
+      public List<MapMarkerPOI.RuntimeData> pois
+      private MapMarkerPOI markerPrefab
+      private int selectedIconIndex
+      private Color selectedColor
+      public static Action<int> OnIconChanged
+      public static Action<Color> OnColorChanged
+      private bool loaded
+  7 个 Property:
+      public static MapMarkerManager Instance
+      public static int SelectedIconIndex
+      public static Color SelectedColor
+      public static Sprite SelectedIcon
+      public static string SelectedIconName
+      public static List<Sprite> Icons
+      private string SaveKey

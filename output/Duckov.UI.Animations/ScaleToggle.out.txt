@@ -1,0 +1,14 @@
+namespace Duckov.UI.Animations
+public class ScaleToggle: ToggleAnimation
+
+  3 ¸ö Method:
+      private void CachePose()
+      private void Awake()
+      protected override void OnSetToggle(bool status)
+  6 ¸ö Field:
+      public float idleScale
+      public float activeScale
+      public float duration
+      public AnimationCurve animationCurve
+      private Vector3 cachedScale
+      private RectTransform rectTransform

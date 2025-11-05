@@ -1,0 +1,6 @@
+public class PlayEventOnAwake: MonoBehaviour
+
+  1 ¸ö Method:
+      private void Awake()
+  1 ¸ö Field:
+      private string sfx

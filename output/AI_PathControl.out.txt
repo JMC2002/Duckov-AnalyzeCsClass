@@ -1,0 +1,22 @@
+public class AI_PathControl: MonoBehaviour
+
+  5 ¸ö Method:
+      public void Start()
+      public void MoveToPos(Vector3 pos)
+      public void OnPathComplete(Path p)
+      public void Update()
+      public void StopMove()
+  9 ¸ö Field:
+      public Seeker seeker
+      public CharacterMainControl controller
+      public Path path
+      public float nextWaypointDistance
+      private int currentWaypoint
+      private bool reachedEndOfPath
+      public float stopDistance
+      private bool moving
+      private bool waitingForPathResult
+  3 ¸ö Property:
+      public bool ReachedEndOfPath
+      public bool Moving
+      public bool WaitingForPathResult

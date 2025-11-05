@@ -1,0 +1,45 @@
+namespace Duckov.UI
+public class WeightBarComplex: MonoBehaviour
+
+  16 ¸ö Method:
+      private void OnEnable()
+      private void OnDisable()
+      private void RefreshMarkPositions()
+      private void RefreshMarkStatus()
+      private void OnTargetChildChanged(Item item)
+      private void OnItemSelectionChanged()
+      private async UniTask Animate()
+      private void ResetChangeBars()
+      private void ResetMainBar()
+      private async UniTask AnimateMainBar(int token)
+      private async UniTask AnimatePositiveBar(int token)
+      private async UniTask AnimateNegativeBar(int token)
+      private void SetupInvalid()
+      private static void SetSizeDeltaY(RectTransform rectTransform, float sizeDelta)
+      private static float GetSizeDeltaY(RectTransform rectTransform)
+      private float WeightToRectHeight(float weight)
+  18 ¸ö Field:
+      private CharacterMainControl target
+      private RectTransform barArea
+      private RectTransform mainBar
+      private Graphic mainBarGraphic
+      private RectTransform positiveBar
+      private RectTransform negativeBar
+      private RectTransform lightMark
+      private RectTransform superHeavyMark
+      private ToggleAnimation lightMarkToggle
+      private ToggleAnimation superHeavyMarkToggle
+      private Color superLightColor
+      private Color lightColor
+      private Color superHeavyColor
+      private Color overweightColor
+      private float animateDuration
+      private AnimationCurve animationCurve
+      private float targetRealBarTop
+      private int currentToken
+  5 ¸ö Property:
+      private CharacterMainControl Target
+      private float LightPercentage
+      private float SuperHeavyPercentage
+      private float MaxWeight
+      private float BarWidth

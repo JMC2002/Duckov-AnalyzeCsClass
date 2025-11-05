@@ -1,0 +1,12 @@
+public class FadeGroupButton: MonoBehaviour, IPointerClickHandler, IEventSystemHandler
+
+  5 ¸ö Method:
+      private void OnEnable()
+      private void OnDisable()
+      private void OnCancel(UIInputEventData data)
+      public void OnPointerClick(PointerEventData eventData)
+      private void Execute()
+  3 ¸ö Field:
+      private FadeGroup closeOnClick
+      private FadeGroup openOnClick
+      private bool triggerWhenCancel

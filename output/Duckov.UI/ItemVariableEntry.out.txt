@@ -1,0 +1,16 @@
+namespace Duckov.UI
+public class ItemVariableEntry: MonoBehaviour, IPoolable
+
+  8 ¸ö Method:
+      public void NotifyPooled()
+      public void NotifyReleased()
+      private void OnDisable()
+      internal void Setup(CustomData target)
+      private void Refresh()
+      private void RegisterEvents()
+      private void UnregisterEvents()
+      private void OnTargetSetData(CustomData data)
+  3 ¸ö Field:
+      private CustomData target
+      private TextMeshProUGUI displayName
+      private TextMeshProUGUI value

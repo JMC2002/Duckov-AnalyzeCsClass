@@ -1,0 +1,20 @@
+namespace Duckov.Quests.UI
+public class QuestSortButton: MonoBehaviour, IPointerClickHandler, IEventSystemHandler
+
+  1 个 ClassLike:
+      private struct Entry
+  4 个 Method:
+      private void Start()
+      public void OnPointerClick(PointerEventData eventData)
+      private void Refresh()
+      private void Apply()
+  7 个 Field:
+      public string displayNameKey
+      public Quest.SortingMode mode
+      private TextMeshProUGUI text
+      private MonoBehaviour targetBehaviour
+      private Entry[] entries
+      private int index
+      private IQuestSortable target
+  1 个 Property:
+      public Quest.SortingMode SortingMode

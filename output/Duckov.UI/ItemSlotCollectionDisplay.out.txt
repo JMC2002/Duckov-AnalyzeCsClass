@@ -1,0 +1,25 @@
+namespace Duckov.UI
+public class ItemSlotCollectionDisplay: MonoBehaviour
+
+  5 ¸ö Method:
+      public void Setup(Item target, bool movable = false)
+      private void OnSlotDisplayDoubleClicked(SlotDisplay display)
+      private void Clear()
+      private void OnSlotDisplayClicked(SlotDisplay display)
+      private async UniTask ShowNotEditableIndicator()
+  9 ¸ö Field:
+      private Transform entriesParent
+      private CanvasGroup notEditableIndicator
+      private bool editable
+      private bool contentSelectable
+      private bool showOperationMenu
+      private bool notifyNotEditable
+      private float fadeDuration
+      private float sustainDuration
+      private int currentToken
+  5 ¸ö Property:
+      public bool Editable
+      public bool ContentSelectable
+      public bool ShowOperationMenu
+      public bool Movable
+      public Item Target

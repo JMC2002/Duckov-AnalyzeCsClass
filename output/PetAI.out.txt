@@ -1,0 +1,24 @@
+public class PetAI: MonoBehaviour
+
+  10 ¸ö Method:
+      private void Start()
+      public void SetMaster(CharacterMainControl _master)
+      private void SyncSpeed()
+      private void InitStats()
+      private void OnDestroy()
+      private void Awake()
+      private void Update()
+      private void OnMainCharacterSetPosition(CharacterMainControl character, Vector3 targetPos)
+      private void SetPosition(Vector3 targetPos)
+      public void SetStandBy(bool _standBy, Vector3 pos)
+  10 ¸ö Field:
+      public CharacterMainControl master
+      public AICharacterController selfAiCharacterController
+      public bool setMainCharacterAsMaster
+      public bool standBy
+      public Vector3 standByPos
+      private bool statInited
+      private Stat walkSpeedStat
+      private Stat runSpeedStat
+      private CharacterMainControl selfCharacter
+      private float distanceToMaster

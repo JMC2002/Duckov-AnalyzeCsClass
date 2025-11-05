@@ -1,0 +1,13 @@
+public class InventoryFilterDisplayEntry: MonoBehaviour, IPointerClickHandler, IEventSystemHandler
+
+  3 ¸ö Method:
+      public void OnPointerClick(PointerEventData eventData)
+      internal void Setup(Action<InventoryFilterDisplayEntry, PointerEventData> onPointerClick, InventoryFilterProvider.FilterEntry filter)
+      internal void NotifySelectionChanged(bool isThisSelected)
+  4 ¸ö Field:
+      private Image icon
+      private TextMeshProUGUI nameDisplay
+      private GameObject selectedIndicator
+      private Action<InventoryFilterDisplayEntry, PointerEventData> onPointerClick
+  1 ¸ö Property:
+      public InventoryFilterProvider.FilterEntry Filter

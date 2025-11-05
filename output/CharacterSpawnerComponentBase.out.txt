@@ -1,0 +1,5 @@
+public abstract class CharacterSpawnerComponentBase: MonoBehaviour
+
+  2 ¸ö Method:
+      public abstract void Init(CharacterSpawnerRoot root)
+      public abstract void StartSpawn()

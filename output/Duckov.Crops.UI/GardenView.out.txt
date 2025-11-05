@@ -1,0 +1,97 @@
+namespace Duckov.Crops.UI
+public class GardenView: View, IPointerClickHandler, IEventSystemHandler, IPointerMoveHandler, IPointerDownHandler, IPointerUpHandler, IPointerExitHandler, ICursorDataProvider
+
+  1 个 ClassLike:
+      public enum ToolType
+  40 个 Method:
+      protected override void Awake()
+      protected override void OnDestroy()
+      private void OnDisable()
+      private void OnPlayerItemOperation()
+      public static void Show(Garden target)
+      protected override void OnOpen()
+      protected override void OnClose()
+      private void EnableCursor()
+      private void ReleaseCursor()
+      private void ChangeCursor()
+      private void Update()
+      private void OnBtnChangePlantClicked()
+      private void OnContextChanged()
+      private void RefreshCursor()
+      private void RefreshHoveringGizmos()
+      public void SetTool(ToolType action)
+      private CursorData GetCursorByTool(ToolType action)
+      private void UpdateContext()
+      private void UpdateCursor3D()
+      private void RefreshCursor3DActive()
+      public void SelectSeed(int seedTypeID)
+      private void RefreshSeedInfoDisplay()
+      private bool TryPointerOnPlanePoint(Vector2 pointerPos, out Vector3 planePoint)
+      private bool TryPointerPosToCoord(Vector2 pointerPos, out Vector2Int result)
+      private Vector2Int? GetPointingCoord()
+      public void OnPointerClick(PointerEventData eventData)
+      private void ExecuteTool(Vector2Int coord)
+      private void CropActionDestroy(Vector2Int coord)
+      private void CropActionWater(Vector2Int coord)
+      private void CropActionHarvest(Vector2Int coord)
+      private void CropActionPlant(Vector2Int coord)
+      private CropInfo? GetCropInfoFromSeedType(int plantingSeedTypeID)
+      public void OnPointerMove(PointerEventData eventData)
+      private void RefreshSeedAmount()
+      public void OnPointerDown(PointerEventData eventData)
+      public void OnPointerUp(PointerEventData eventData)
+      public void OnPointerExit(PointerEventData eventData)
+      private void UpdateCamera()
+      private void CenterCamera()
+      public CursorData GetCursorData()
+  39 个 Field:
+      private FadeGroup fadeGroup
+      private GameObject mainEventReceiver
+      private Button btn_ChangePlant
+      private GameObject plantModePanel
+      private ItemMetaDisplay seedItemDisplay
+      private GameObject seedItemPlaceHolder
+      private TextMeshProUGUI seedAmountText
+      private GardenViewCropSelector cropSelector
+      private Transform cellHoveringGizmos
+      private string textKey_Plant
+      private string textKey_Harvest
+      private string textKey_Destroy
+      private string textKey_Water
+      private string textKey_TargetOccupied
+      private Transform cameraRig
+      private Image cursorIcon
+      private TextMeshProUGUI cursorAmountDisplay
+      private ItemMetaDisplay cursorItemDisplay
+      private Sprite iconPlant
+      private Sprite iconHarvest
+      private Sprite iconWater
+      private Sprite iconDestroy
+      private CursorData cursorPlant
+      private CursorData cursorHarvest
+      private CursorData cursorWater
+      private CursorData cursorDestroy
+      private Transform cursor3DTransform
+      private Vector3 cursor3DOffset
+      private GameObject cursor3D_Plant
+      private GameObject cursor3D_Harvest
+      private GameObject cursor3D_Water
+      private GameObject cursor3D_Destory
+      private Vector3 camFocusPos
+      private int _plantingSeedTypeID
+      private bool enabledCursor
+      private bool show3DCursor
+      private bool hoveringBG
+      private int seedAmount
+      private bool dragging
+  10 个 Property:
+      public static GardenView Instance
+      public Garden Target
+      public bool SeedSelected
+      public int PlantingSeedTypeID
+      public ItemMetaData SeedMeta
+      public ToolType Tool
+      public bool Hovering
+      public Vector2Int HoveringCoord
+      public Crop HoveringCrop
+      public string ToolDisplayName

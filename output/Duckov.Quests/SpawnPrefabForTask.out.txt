@@ -1,0 +1,21 @@
+namespace Duckov.Quests
+public class SpawnPrefabForTask: MonoBehaviour
+
+  8 ¸ö Method:
+      private void Awake()
+      private void Start()
+      private void OnDestroy()
+      private void OnSubSceneLoaded(MultiSceneCore core, Scene scene)
+      private void OnFinishedLoadingScene(SceneLoadingContext context)
+      private void SpawnIfNeeded()
+      private bool IsSpawned()
+      private void Spawn()
+  5 ¸ö Field:
+      private string componentID
+      private Task _taskCache
+      private List<MultiSceneLocation> locations
+      private GameObject prefab
+      private bool spawned
+  2 ¸ö Property:
+      private Task task
+      private int SpawnKey

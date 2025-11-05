@@ -1,0 +1,32 @@
+public class ItemWishlist: MonoBehaviour
+
+  1 个 ClassLike:
+      public struct WishlistInfo
+  17 个 Method:
+      private void Awake()
+      private void OnDestroy()
+      private void OnWishlistHoveringItem(UIInputEventData data)
+      private void Load()
+      private void Save()
+      private void Start()
+      private void OnQuestListChanged(QuestManager obj)
+      private void OnBuildingListChanged()
+      private void CacheQuestItems()
+      private void CacheBuildingItems()
+      private IEnumerable<int> IterateAll()
+      public bool IsQuestRequired(int itemTypeID)
+      public bool IsManuallyWishlisted(int itemTypeID)
+      public bool IsBuildingRequired(int itemTypeID)
+      public static void AddToWishList(int itemTypeID)
+      public static bool RemoveFromWishlist(int itemTypeID)
+      public static WishlistInfo GetWishlistInfo(int itemTypeID)
+  5 个 Field:
+      public int itemTypeID
+      public bool isManuallyWishlisted
+      public bool isQuestRequired
+      public bool isBuildingRequired
+      public static event Action<int> OnWishlistChanged
+  1 个 Property:
+      public static ItemWishlist Instance
+  1 个 Constant:
+      private const string SaveKey

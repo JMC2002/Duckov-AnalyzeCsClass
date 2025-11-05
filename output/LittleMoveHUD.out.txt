@@ -1,0 +1,12 @@
+public class LittleMoveHUD: MonoBehaviour
+
+  1 ¸ö Method:
+      private void LateUpdate()
+  7 ¸ö Field:
+      private Camera camera
+      private CharacterMainControl character
+      public float maxDistance
+      public float smoothTime
+      private Vector3 worldPos
+      private Vector3 velocityTemp
+      public Vector3 offset

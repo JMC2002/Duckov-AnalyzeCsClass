@@ -1,0 +1,28 @@
+public class InteractSelectionHUD: MonoBehaviour
+
+  3 ¸ö Method:
+      public void SetInteractable(InteractableBase _interactable, bool _hasUpDown)
+      private void UpdateRequireItem(InteractableBase interactable)
+      public void SetSelection(bool _select)
+  19 ¸ö Field:
+      private InteractableBase interactable
+      public GameObject selectIndicator
+      public TextMeshProUGUI text
+      public ProceduralImage background
+      public Color selectedColor
+      public Color unselectedColor
+      public CanvasGroup requireCanvasGroup
+      public ProceduralImage requireItemBackgroundImage
+      public TextMeshProUGUI requireText
+      public string requirItemTextKey
+      public string requirUseItemTextKey
+      public Image requirementIcon
+      public Color hasRequireItemColor
+      public Color noRequireItemColor
+      private bool selecting
+      public UnityEvent OnSelectedEvent
+      public GameObject selectionPoint
+      public GameObject upDownIndicator
+      private bool hasUpDown
+  1 ¸ö Property:
+      public InteractableBase InteractTarget

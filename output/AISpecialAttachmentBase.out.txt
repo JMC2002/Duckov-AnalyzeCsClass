@@ -1,0 +1,8 @@
+public class AISpecialAttachmentBase: MonoBehaviour
+
+  2 ¸ö Method:
+      public void Init(AICharacterController _ai, CharacterMainControl _character)
+      protected virtual void OnInited()
+  2 ¸ö Field:
+      public AICharacterController aiCharacterController
+      public CharacterMainControl character

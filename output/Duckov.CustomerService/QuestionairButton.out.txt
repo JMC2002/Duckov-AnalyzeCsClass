@@ -1,0 +1,11 @@
+namespace Duckov.CustomerService
+public class QuestionairButton: MonoBehaviour, IPointerClickHandler, IEventSystemHandler
+
+  2 ¸ö Method:
+      public string GenerateQuestionair()
+      public void OnPointerClick(PointerEventData eventData)
+  4 ¸ö Field:
+      private string addressCN
+      private string addressJP
+      private string addressEN
+      private string format

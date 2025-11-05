@@ -1,0 +1,6 @@
+public class DoorTrigger: MonoBehaviour
+
+  1 ¸ö Method:
+      private void OnTriggerEnter(Collider collision)
+  1 ¸ö Field:
+      public Door parent

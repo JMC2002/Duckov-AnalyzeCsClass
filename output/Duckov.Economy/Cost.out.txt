@@ -1,0 +1,17 @@
+namespace Duckov.Economy
+public struct Cost
+  1 个 ClassLike:
+      public struct ItemEntry
+  3 个 Method:
+      public bool Pay(bool accountAvaliable = true, bool cashAvaliable = true)
+      public static Cost FromString(string costDescription)
+      internal async UniTask Return(bool directToBuffer = false, bool toPlayerInventory = false, int amountFactor = 1, List<Item> generatedItemsBuffer = null)
+  4 个 Field:
+      public int id
+      public long amount
+      public long money
+      public ItemEntry[] items
+  3 个 Property:
+      public bool Enough
+      public bool IsFree
+      public static bool TaskPending

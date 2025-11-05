@@ -1,0 +1,17 @@
+public class FormulasDetailsDisplay: MonoBehaviour
+
+  5 ¸ö Method:
+      private void SetupEmpty()
+      private void SetupFormula(CraftingFormula formula)
+      private void RefreshContent()
+      public void Setup(CraftingFormula? formula)
+      private void SetupUnknown()
+  8 ¸ö Field:
+      private TextMeshProUGUI nameText
+      private Image image
+      private TextMeshProUGUI descriptionText
+      private CostDisplay costDisplay
+      private FadeGroup contentFadeGroup
+      private FadeGroup placeHolderFadeGroup
+      private Sprite unknownImage
+      private CraftingFormula formula

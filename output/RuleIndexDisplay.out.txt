@@ -1,0 +1,10 @@
+public class RuleIndexDisplay: MonoBehaviour
+
+  5 ¸ö Method:
+      private void Awake()
+      private void OnDestroy()
+      private void OnLanguageChanged(SystemLanguage language)
+      private void OnEnable()
+      private void Refresh()
+  1 ¸ö Field:
+      private TextMeshProUGUI text

@@ -1,0 +1,22 @@
+public class DummyFish: MonoBehaviour, IAquariumContent
+
+  4 ¸ö Method:
+      private void Awake()
+      public void Setup(Aquarium master)
+      private void FixedUpdate()
+      private void OnDrawGizmos()
+  12 ¸ö Field:
+      private Rigidbody rigidbody
+      private float rotateForce
+      private float swimForce
+      private float deadZone
+      private float rotationDamping
+      private Transform target
+      private float swim
+      private float rotVelocityX
+      private float rotVelocityY
+      private Aquarium master
+      private Vector3 _debug_idealRotForward
+      private Vector3 _debug_projectedForward
+  1 ¸ö Property:
+      private Vector3 TargetPosition

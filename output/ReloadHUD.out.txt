@@ -1,0 +1,13 @@
+public class ReloadHUD: MonoBehaviour
+
+  3 ¸ö Method:
+      private void Update()
+      private void OnDestroy()
+      private void Reload()
+  6 ¸ö Field:
+      private CharacterMainControl characterMainControl
+      public Button button
+      private bool reloadable
+      public UnityEvent OnShowEvent
+      public UnityEvent OnHideEvent
+      private int frame

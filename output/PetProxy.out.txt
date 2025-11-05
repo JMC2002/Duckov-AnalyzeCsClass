@@ -1,0 +1,15 @@
+public class PetProxy: MonoBehaviour
+
+  5 ¸ö Method:
+      private void Start()
+      private void OnDestroy()
+      private void OnCollectSaveData()
+      public void DestroyItemInBase()
+      private void Update()
+  2 ¸ö Field:
+      private Inventory inventory
+      private float checkTimer
+  3 ¸ö Property:
+      public static PetProxy Instance
+      public static Inventory PetInventory
+      public Inventory Inventory

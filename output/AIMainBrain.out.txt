@@ -1,0 +1,49 @@
+public class AIMainBrain: MonoBehaviour
+
+  2 个 ClassLike:
+      public struct SearchTaskContext
+      public struct CheckObsticleTaskContext
+  10 个 Method:
+      public static void MakeSound(AISound sound)
+      private static void FilterPlayerHearSound(AISound sound)
+      public void Awake()
+      private void Start()
+      private void Update()
+      private void DoSearch(SearchTaskContext context)
+      public void AddSearchTask(Vector3 center, Vector3 dir, float searchAngle, float searchDistance, Teams selfTeam, bool checkObsticle, bool thermalOn, bool ignoreFowBlockLayer, int searchPickupID, Action<DamageReceiver, InteractablePickup> callback)
+      private void DoCheckObsticle(CheckObsticleTaskContext context)
+      public void AddCheckObsticleTask(Vector3 start, Vector3 end, bool thermalOn, bool ignoreFowBlockLayer, Action<bool> callback)
+      private bool CheckObsticle(Vector3 startPoint, Vector3 endPoint, bool thermalOn, bool ignoreFowBlockLayer)
+  30 个 Field:
+      public Vector3 searchCenter
+      public Vector3 searchDirection
+      public float searchAngle
+      public float searchDistance
+      public Teams selfTeam
+      public bool checkObsticle
+      public bool thermalOn
+      public bool ignoreFowBlockLayer
+      public int searchPickupID
+      public Action<DamageReceiver, InteractablePickup> onSearchFinishedCallback
+      public Vector3 start
+      public Vector3 end
+      public bool thermalOn
+      public bool ignoreFowBlockLayer
+      public Action<bool> onCheckFinishCallback
+      private Queue<SearchTaskContext> searchTasks
+      private Queue<CheckObsticleTaskContext> checkObsticleTasks
+      private LayerMask dmgReceiverLayers
+      private LayerMask interactLayers
+      private LayerMask obsticleLayers
+      private LayerMask obsticleLayersWithThermal
+      private Collider[] cols
+      private RaycastHit[] ObsHits
+      public int maxSeachCount
+      public int maxCheckObsticleCount
+      private static CharacterMainControl _mc
+      private int fowBlockLayer
+      private DamageReceiver dmgReceiverTemp
+      public static event Action<AISound> OnSoundSpawned
+      public static event Action<AISound> OnPlayerHearSound
+  1 个 Property:
+      private static CharacterMainControl mainCharacter

@@ -1,0 +1,6 @@
+public class CharacterPosInShader: MonoBehaviour
+
+  1 ¸ö Method:
+      private void Update()
+  1 ¸ö Field:
+      private int characterPosHash

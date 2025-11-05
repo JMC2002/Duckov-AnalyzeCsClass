@@ -1,0 +1,25 @@
+public class PlayerPositionBackupManager: MonoBehaviour
+
+  1 ¸ö ClassLike:
+      private struct PlayerPositionBackupEntry
+  9 ¸ö Method:
+      private void Awake()
+      private void OnDestroy()
+      private void Update()
+      private bool CheckCanBackup()
+      private void OnSubSceneLoaded(MultiSceneCore multiSceneCore, Scene scene)
+      public void BackupCurrentPos()
+      public static void StartRecover()
+      private void OnStartRecover()
+      public void SetPlayerToBackupPos()
+  10 ¸ö Field:
+      public int sceneID
+      public Vector3 position
+      private List<PlayerPositionBackupEntry> backups
+      private CharacterMainControl mainCharacter
+      public float backupTimeSpace
+      public float minBackupDistance
+      private float backupTimer
+      public InteractableBase backupInteract
+      public int listSize
+      private static event Action OnStartRecoverEvent

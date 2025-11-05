@@ -1,0 +1,11 @@
+public class SetInLevelDataBoolProxy: MonoBehaviour
+
+  3 ¸ö Method:
+      public void SetToTarget()
+      public void SetTo(bool target)
+      private void InitKey()
+  4 ¸ö Field:
+      public bool targetValue
+      public string keyString
+      private int keyHash
+      private bool keyInited

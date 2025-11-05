@@ -1,0 +1,10 @@
+namespace Duckov.UI
+public class TooltipsProvider: MonoBehaviour, ITooltipsProvider, IPointerEnterHandler, IEventSystemHandler, IPointerExitHandler
+
+  4 ¸ö Method:
+      public string GetTooltipsText()
+      public void OnPointerEnter(PointerEventData eventData)
+      public void OnPointerExit(PointerEventData eventData)
+      private void OnDisable()
+  1 ¸ö Field:
+      public string text

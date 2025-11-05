@@ -1,0 +1,21 @@
+public struct RandomItemGenerateDescription
+  1 ¸ö ClassLike:
+      public struct Entry
+  3 ¸ö Method:
+      public async UniTask<List<Item>> Generate(int count = -1)
+      private void SetDurabilityIfNeeded(Item targetItem)
+      private void RefreshPercent()
+  13 ¸ö Field:
+      public int itemTypeID
+      private string comment
+      public float chance
+      public Vector2Int randomCount
+      public bool controlDurability
+      public Vector2 durability
+      public Vector2 durabilityIntegrity
+      public bool randomFromPool
+      public RandomContainer<Entry> itemPool
+      public RandomContainer<Tag> tags
+      public List<Tag> addtionalRequireTags
+      public List<Tag> excludeTags
+      public RandomContainer<int> qualities

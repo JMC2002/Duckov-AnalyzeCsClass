@@ -1,0 +1,16 @@
+public class HealthHUD: MonoBehaviour
+
+  1 ¸ö Method:
+      private void Update()
+  9 ¸ö Field:
+      private CharacterMainControl characterMainControl
+      private float percent
+      private float maxHealth
+      private float currenthealth
+      public ProceduralImage fillImage
+      public ProceduralImage backgroundImage
+      public Color backgroundColor
+      public Color emptyBackgroundColor
+      public TextMeshProUGUI text
+  1 ¸ö Property:
+      private Item item

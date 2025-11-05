@@ -1,0 +1,8 @@
+public class UIPanelButton_OpenChildPanel: MonoBehaviour, IPointerClickHandler, IEventSystemHandler
+
+  2 ¸ö Method:
+      private void Awake()
+      public void OnPointerClick(PointerEventData eventData)
+  2 ¸ö Field:
+      private UIPanel master
+      private UIPanel target

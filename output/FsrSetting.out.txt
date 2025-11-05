@@ -1,0 +1,20 @@
+public class FsrSetting: OptionsProviderBase
+
+  8 ¸ö Method:
+      public override string[] GetOptions()
+      public override string GetCurrentOption()
+      public override void Set(int index)
+      private void Awake()
+      private void OnGamingConsoleInteractChanged(bool _gameOn)
+      private void OnDestroy()
+      private void SyncSetting()
+      private void RefreshOnLevelInited()
+  6 ¸ö Field:
+      public string offKey
+      public string qualityKey
+      public string balancedKey
+      public string performanceKey
+      public string ultraPerformanceKey
+      private static bool gameOn
+  1 ¸ö Property:
+      public override string Key

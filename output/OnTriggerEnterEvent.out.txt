@@ -1,0 +1,22 @@
+public class OnTriggerEnterEvent: MonoBehaviour
+
+  7 ¸ö Method:
+      private void Awake()
+      public void Init()
+      private void OnCollisionEnter(Collision collision)
+      private void OnCollisionExit(Collision collision)
+      private void OnTriggerEnter(Collider other)
+      private void OnTriggerExit(Collider other)
+      private void OnEvent(GameObject other, bool enter)
+  9 ¸ö Field:
+      public bool onlyMainCharacter
+      public bool filterByTeam
+      public Teams selfTeam
+      public LayerMask layerMask
+      public bool triggerOnce
+      public UnityEvent DoOnTriggerEnter
+      public UnityEvent DoOnTriggerExit
+      private bool triggered
+      private bool mainCharacterIn
+  1 ¸ö Property:
+      private bool hideLayerMask

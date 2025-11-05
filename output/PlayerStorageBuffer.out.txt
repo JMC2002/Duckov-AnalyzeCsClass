@@ -1,0 +1,12 @@
+public class PlayerStorageBuffer: MonoBehaviour
+
+  4 ¸ö Method:
+      private void Awake()
+      private void OnCollectSaveData()
+      public static void SaveBuffer()
+      public static void LoadBuffer()
+  2 ¸ö Property:
+      public static PlayerStorageBuffer Instance
+      public static List<ItemTreeData> Buffer
+  1 ¸ö Constant:
+      private const string bufferSaveKey

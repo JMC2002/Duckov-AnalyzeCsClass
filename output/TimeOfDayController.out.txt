@@ -1,0 +1,40 @@
+public class TimeOfDayController: MonoBehaviour
+
+  6 ¸ö Method:
+      private void Start()
+      private void Update()
+      private void OnWeatherChanged(Weather newWeather)
+      private TimePhaseTags GetTimePhaseTagByTime(float hourTime)
+      public static string GetTimePhaseNameByPhaseTag(TimePhaseTags phaseTag)
+      public static string GetWeatherNameByWeather(Weather weather)
+  24 ¸ö Field:
+      private TimeOfDayConfig config
+      private bool atNight
+      private TimeOfDayVolumeControl weatherVolumeControl
+      private TimeOfDayPhase currentPhase
+      private Weather currentWeather
+      public float morningStart
+      public float dawnStart
+      public float nightStart
+      public static float NightViewAngleFactor
+      public static float NightViewDistanceFactor
+      public static float NightSenseRangeFactor
+      public string timePhaseKey_Day
+      public string timePhaseKey_Dawn
+      public string timePhaseKey_Night
+      public string WeatherKey_Sunny
+      public string WeatherKey_Cloudy
+      public string WeatherKey_Rainy
+      public string WeatherKey_Storm_I
+      public string WeatherKey_Storm_II
+      private string stormPhaseISoundKey
+      private string stormPhaseIISoundKey
+      public GameObject stormIObject
+      public GameObject stormIIObject
+      private float time
+  5 ¸ö Property:
+      public static TimeOfDayController Instance
+      public bool AtNight
+      public TimeOfDayPhase CurrentPhase
+      public Weather CurrentWeather
+      public float Time

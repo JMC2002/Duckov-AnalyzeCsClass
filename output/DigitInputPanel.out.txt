@@ -1,0 +1,20 @@
+public class DigitInputPanel: MonoBehaviour
+
+  8 ¸ö Method:
+      private void Awake()
+      private void OnBackspaceButtonClicked()
+      private void OnClearButtonClicked()
+      private void OnNumKeyClicked(long v)
+      private void OnInputFieldValueChanged(string value)
+      public void Setup(long value, Func<long> maxFunc = null)
+      public void Max()
+      internal void Clear()
+  6 ¸ö Field:
+      private TMP_InputField inputField
+      private Button clearButton
+      private Button backspaceButton
+      private Button maximumButton
+      private Button[] numKeys
+      public Func<long> maxFunction
+  1 ¸ö Property:
+      public long Value

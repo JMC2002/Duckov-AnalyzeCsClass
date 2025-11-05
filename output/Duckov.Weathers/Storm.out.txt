@@ -1,0 +1,16 @@
+namespace Duckov.Weathers
+public class Storm
+  6 ¸ö Method:
+      public int GetStormLevel(TimeSpan dayAndTime)
+      public TimeSpan GetStormETA(TimeSpan dayAndTime)
+      public TimeSpan GetStormIOverETA(TimeSpan dayAndTime)
+      public TimeSpan GetStormIIOverETA(TimeSpan dayAndTime)
+      public float GetSleepPercent(TimeSpan dayAndTime)
+      public float GetStormRemainPercent(TimeSpan dayAndTime)
+  4 ¸ö Field:
+      private long offset
+      private long sleepTime
+      private long stage1Time
+      private long stage2Time
+  1 ¸ö Property:
+      private long Period

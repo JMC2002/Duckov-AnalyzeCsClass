@@ -1,0 +1,16 @@
+public class CustomFaceUISwitch: MonoBehaviour
+
+  6 ¸ö Method:
+      private void Awake()
+      public void Init(CustomFaceUI _master, CustomFacePartTypes partType, string title)
+      private void OnLeftClick()
+      private void OnRightClick()
+      public void SetName(string name)
+      private void Switch(int direction)
+  6 ¸ö Field:
+      public TextLocalizor titleText
+      public TextMeshProUGUI nameText
+      public Button leftButton
+      public Button rightButton
+      public CustomFaceUI master
+      public CustomFacePartTypes type

@@ -1,0 +1,22 @@
+public class BulletCountHUD: MonoBehaviour
+
+  6 ¸ö Method:
+      private void Awake()
+      public void Update()
+      private void OnInventoryChanged(Inventory inventory, int index)
+      private void ChangeTotalCount()
+      private void OnDestroy()
+      private void OnHoldAgentChanged(DuckovItemAgent newAgent)
+  12 ¸ö Field:
+      private ItemAgent_Gun gunAgent
+      private CharacterMainControl characterMainControl
+      private ItemAgent_Gun gunAgnet
+      public CanvasGroup canvasGroup
+      public TextMeshProUGUI bulletCountText
+      public TextMeshProUGUI capacityText
+      public ProceduralImage background
+      public Color normalBackgroundColor
+      public Color emptyBackgroundColor
+      private int bulletCount
+      private int totalCount
+      public UnityEvent OnValueChangeEvent

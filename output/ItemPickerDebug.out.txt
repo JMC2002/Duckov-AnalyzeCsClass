@@ -1,0 +1,5 @@
+public class ItemPickerDebug: MonoBehaviour
+
+  2 ¸ö Method:
+      public void PickPlayerInventoryAndLog()
+      private async UniTask Pick()

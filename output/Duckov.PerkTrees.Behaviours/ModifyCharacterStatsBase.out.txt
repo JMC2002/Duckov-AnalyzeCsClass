@@ -1,0 +1,20 @@
+namespace Duckov.PerkTrees.Behaviours
+public class ModifyCharacterStatsBase: PerkBehaviour
+
+  2 个 ClassLike:
+      public class Entry
+      private struct Record
+  2 个 Method:
+      protected override void OnUnlocked()
+      protected override void OnLocked()
+  6 个 Field:
+      public string key
+      public float value
+      public bool percentage
+      public Stat stat
+      public float value
+      private Item targetItem
+  3 个 Property:
+      private StringList AvaliableKeys
+      private string DescriptionFormat
+      public override string Description

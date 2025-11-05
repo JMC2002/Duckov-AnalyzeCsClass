@@ -1,0 +1,14 @@
+namespace Duckov.Effects
+public class DamageAction: EffectAction
+
+  1 ¸ö Method:
+      protected override void OnTriggeredPositive()
+  6 ¸ö Field:
+      private Buff buff
+      private bool percentDamage
+      private float damageValue
+      private float percentDamageValue
+      private DamageInfo damageInfo
+      private GameObject fx
+  1 ¸ö Property:
+      private CharacterMainControl MainControl

@@ -1,0 +1,10 @@
+public class TeleportBeacon: MonoBehaviour
+
+  2 ¸ö Method:
+      private void Start()
+      public void ActivateBeacon()
+  4 ¸ö Field:
+      public string beaconScene
+      public int beaconIndex
+      public GameObject activeByUnlocked
+      public InteractableBase interactable

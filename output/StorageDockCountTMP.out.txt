@@ -1,0 +1,13 @@
+public class StorageDockCountTMP: MonoBehaviour
+
+  7 ¸ö Method:
+      private void Awake()
+      private void OnDestroy()
+      private void OnLoadingFinished()
+      private void Start()
+      private void OnTakeBufferItem()
+      private void OnItemAddedToBuffer(Item item)
+      private void Refresh()
+  2 ¸ö Field:
+      private TextMeshPro tmp
+      private bool setActiveFalseWhenCountIsZero

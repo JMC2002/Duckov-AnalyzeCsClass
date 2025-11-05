@@ -1,0 +1,11 @@
+public class BaseSceneUtilities: MonoBehaviour
+
+  3 ¸ö Method:
+      private void Save()
+      private void Awake()
+      private void Update()
+  2 ¸ö Field:
+      private float saveInterval
+      private float lastTimeSaved
+  1 ¸ö Property:
+      private float TimeSinceLastSave

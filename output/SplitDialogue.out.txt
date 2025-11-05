@@ -1,0 +1,36 @@
+public class SplitDialogue: MonoBehaviour, IPointerClickHandler, IEventSystemHandler
+
+  1 个 ClassLike:
+      private enum Status
+  16 个 Method:
+      private void OnEnable()
+      private void OnDisable()
+      private void OnActiveViewChanged()
+      private void Awake()
+      private void OnSliderValueChanged(float value)
+      private void RefreshCountText()
+      private void OnConfirmButtonClicked()
+      private void Setup(Item target, Inventory destination = null, int destinationIndex = -1)
+      public void Cancel()
+      private async UniTask Confirm()
+      private void Hide()
+      private async UniTask DoSplit(int value)
+      public void OnPointerClick(PointerEventData eventData)
+      private void SwitchStatus(Status status)
+      public static void SetupAndShow(Item item)
+      public static void SetupAndShow(Item item, Inventory destinationInventory, int destinationIndex)
+  12 个 Field:
+      private FadeGroup fadeGroup
+      private Button confirmButton
+      private TextMeshProUGUI countText
+      private GameObject normalIndicator
+      private GameObject busyIndicator
+      private GameObject completeIndicator
+      private Slider slider
+      private Item target
+      private Inventory destination
+      private int destinationIndex
+      private Inventory cachedInInventory
+      private Status status
+  1 个 Property:
+      public static SplitDialogue Instance

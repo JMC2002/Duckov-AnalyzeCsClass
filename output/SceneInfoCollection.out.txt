@@ -1,0 +1,19 @@
+public class SceneInfoCollection: ScriptableObject
+
+  9 个 Method:
+      public SceneInfoEntry InstanceGetSceneInfo(string id)
+      public string InstanceGetSceneID(int buildIndex)
+      internal string InstanceGetSceneID(SceneReference sceneRef)
+      internal SceneReference InstanceGetSceneReferencce(string requireSceneID)
+      public static SceneInfoEntry GetSceneInfo(string sceneID)
+      public static string GetSceneID(SceneReference sceneRef)
+      public static string GetSceneID(int buildIndex)
+      internal static int GetBuildIndex(string overrideSceneID)
+      internal static SceneInfoEntry GetSceneInfo(int sceneBuildIndex)
+  1 个 Field:
+      private List<SceneInfoEntry> entries
+  2 个 Property:
+      internal static SceneInfoCollection Instance
+      public static List<SceneInfoEntry> Entries
+  1 个 Constant:
+      public const string BaseSceneID

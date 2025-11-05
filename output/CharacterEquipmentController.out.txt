@@ -1,0 +1,26 @@
+public class CharacterEquipmentController: MonoBehaviour
+
+  9 ¸ö Method:
+      public void SetItem(Item _item)
+      private void OnDestroy()
+      private void ChangeArmorModel(Slot slot)
+      private void ChangeHelmatModel(Slot slot)
+      private void ChangeHeadsetModel(Slot slot)
+      private void ChangeBackpackModel(Slot slot)
+      private void ChangeFaceMaskModel(Slot slot)
+      private void ChangeEquipmentModel(Slot slot, Transform socket)
+      private bool IsSlotRequireTag(Slot slot, Tag tag)
+  13 ¸ö Field:
+      private CharacterMainControl characterMainControl
+      private Item characterItem
+      public static int equipmentModelHash
+      public static int armorHash
+      public static int helmatHash
+      public static int faceMaskHash
+      public static int backpackHash
+      public static int headsetHash
+      private Slot armorSlot
+      private Slot helmatSlot
+      private Slot backpackSlot
+      private Slot faceMaskSlot
+      private Slot headsetSlot

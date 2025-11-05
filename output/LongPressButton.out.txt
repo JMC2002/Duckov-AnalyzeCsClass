@@ -1,0 +1,18 @@
+public class LongPressButton: MonoBehaviour, IPointerDownHandler, IEventSystemHandler, IPointerUpHandler, IPointerExitHandler
+
+  4 ¸ö Method:
+      private void Update()
+      public void OnPointerDown(PointerEventData eventData)
+      public void OnPointerExit(PointerEventData eventData)
+      public void OnPointerUp(PointerEventData eventData)
+  7 ¸ö Field:
+      private Image fill
+      private float pressTime
+      public UnityEvent onPressStarted
+      public UnityEvent onPressCanceled
+      public UnityEvent onPressFullfilled
+      private float timeWhenPressStarted
+      private bool pressed
+  2 ¸ö Property:
+      private float TimeSincePressStarted
+      private float Progress

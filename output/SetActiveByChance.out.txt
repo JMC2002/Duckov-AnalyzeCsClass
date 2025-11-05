@@ -1,0 +1,9 @@
+public class SetActiveByChance: MonoBehaviour
+
+  2 ¸ö Method:
+      private void Awake()
+      private int GetKey()
+  3 ¸ö Field:
+      public bool saveInLevel
+      private int keyCached
+      public float activeChange

@@ -1,0 +1,5 @@
+public class LightCookieMove: MonoBehaviour
+
+  2 ¸ö Method:
+      private void Start()
+      private void Update()

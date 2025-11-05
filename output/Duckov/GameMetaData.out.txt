@@ -1,0 +1,17 @@
+namespace Duckov
+public class GameMetaData: ScriptableObject
+
+  6 ¸ö Field:
+      private GameVersionData versionData
+      private bool isTestVersion
+      private bool isDemo
+      private Platform platform
+      private bool bloodFxOn
+      private static GameMetaData _instance
+  6 ¸ö Property:
+      public VersionData Version
+      public bool IsDemo
+      public bool IsTestVersion
+      public static GameMetaData Instance
+      public static bool BloodFxOn
+      public Platform Platform

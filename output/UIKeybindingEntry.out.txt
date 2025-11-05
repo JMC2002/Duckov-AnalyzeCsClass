@@ -1,0 +1,18 @@
+public class UIKeybindingEntry: MonoBehaviour
+
+  6 ¸ö Method:
+      private void Awake()
+      private void OnDestroy()
+      private void OnLanguageChanged(SystemLanguage language)
+      private void OnButtonClick()
+      private void OnValidate()
+      private void Setup()
+  6 ¸ö Field:
+      private InputActionReference actionRef
+      private int index
+      private string overrideDisplayNameKey
+      private TextMeshProUGUI label
+      private Button rebindButton
+      private InputIndicator indicator
+  1 ¸ö Property:
+      private string displayNameKey

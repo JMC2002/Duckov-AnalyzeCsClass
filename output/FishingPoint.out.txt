@@ -1,0 +1,11 @@
+public class FishingPoint: MonoBehaviour
+
+  4 ¸ö Method:
+      private void Awake()
+      private void OnDestroy()
+      private void OnPlayerTakeFishingRod(FishingRod rod)
+      private void OnInteractFinished(CharacterMainControl character, InteractableBase interact)
+  3 ¸ö Field:
+      public InteractableBase Interactable
+      public Action_Fishing action
+      public Transform playerPoint

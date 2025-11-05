@@ -1,0 +1,11 @@
+public class AddToWishListButton: MonoBehaviour, IPointerClickHandler, IEventSystemHandler
+
+  3 ¸ö Method:
+      public void OnPointerClick(PointerEventData eventData)
+      public static void ShowPage()
+      private void Start()
+  4 ¸ö Constant:
+      private const string url
+      private const string CNUrl
+      private const string ENUrl
+      private const uint appid

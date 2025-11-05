@@ -1,0 +1,11 @@
+public class ItemSetting_NightVision: ItemSettingBase
+
+  6 ¸ö Method:
+      public override void OnInit()
+      private void OnplugedIntoSlot(Item item)
+      private void OnDestroy()
+      public void ToggleNightVison()
+      private void SyncModifiers()
+      public override void SetMarkerParam(Item selfItem)
+  1 ¸ö Field:
+      private bool nightVisionOn

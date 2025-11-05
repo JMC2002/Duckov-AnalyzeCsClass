@@ -1,0 +1,14 @@
+public class MoveRing: MonoBehaviour
+
+  4 ¸ö Method:
+      public void SetThreshold(float threshold)
+      public void LateUpdate()
+      public void SetMove(Vector3 direction, float value)
+      public void SetRunning(bool running)
+  4 ¸ö Field:
+      public Renderer ring
+      public float runThreshold
+      private Material ringMat
+      private InputManager inputManager
+  1 ¸ö Property:
+      private CharacterMainControl character

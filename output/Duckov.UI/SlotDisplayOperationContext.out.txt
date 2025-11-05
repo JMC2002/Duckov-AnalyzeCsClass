@@ -1,0 +1,8 @@
+namespace Duckov.UI
+public struct SlotDisplayOperationContext
+  1 ¸ö ClassLike:
+      public enum Operation
+  3 ¸ö Field:
+      public SlotDisplay slotDisplay
+      public Operation operation
+      public bool succeed

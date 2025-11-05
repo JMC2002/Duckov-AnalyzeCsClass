@@ -1,0 +1,11 @@
+public class MultipleBezierShape: ShapeProvider
+
+  1 ¸ö Method:
+      public override PipeRenderer.OrientedPoint[] GenerateShape()
+  6 ¸ö Field:
+      public Vector3[] points
+      public int subdivisions
+      public bool lockedHandles
+      public float rotationOffset
+      public float twist
+      public bool edit

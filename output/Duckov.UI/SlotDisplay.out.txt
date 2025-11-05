@@ -1,0 +1,58 @@
+namespace Duckov.UI
+public class SlotDisplay: MonoBehaviour, IPoolable, IPointerClickHandler, IEventSystemHandler, IItemDragSource, IBeginDragHandler, IEndDragHandler, IDragHandler, IDropHandler, IPointerEnterHandler, IPointerExitHandler
+
+  30 ¸ö Method:
+      private void RegisterEvents()
+      private void UnregisterEvents()
+      private void OnFastDrop(UIInputEventData data)
+      private void OnFastUse(UIInputEventData data)
+      private void OnFastPick(UIInputEventData data)
+      private void OnEndDragItem(Item item)
+      private void OnStartDragItem(Item item)
+      private void OnItemDisplayDoubleClicked(ItemDisplay arg1, PointerEventData arg2)
+      private void OnItemDisplayClicked(ItemDisplay display, PointerEventData data)
+      private void OnTargetContentChanged(Slot slot)
+      private void OnItemSelectionChanged()
+      public void Setup(Slot target)
+      private void Refresh()
+      public static SlotDisplay Get()
+      public static void Release(SlotDisplay item)
+      public void NotifyPooled()
+      public void NotifyReleased()
+      private void Awake()
+      private void OnEnable()
+      private void OnDisable()
+      public void OnPointerClick(PointerEventData eventData)
+      public void Punch()
+      public void DenialPunch()
+      public bool IsEditable()
+      public Item GetItem()
+      public void OnDrop(PointerEventData eventData)
+      public void OnDrag(PointerEventData eventData)
+      public void OnPointerEnter(PointerEventData eventData)
+      public void OnPointerExit(PointerEventData eventData)
+      private bool SetAmmo(Item incomming)
+  16 ¸ö Field:
+      private Sprite defaultSlotIcon
+      private TextMeshProUGUI label
+      private ItemDisplay itemDisplay
+      private Image slotIcon
+      private FadeGroup pluggableIndicator
+      private GameObject hoveringIndicator
+      private bool editable
+      private bool showOperationMenu
+      private bool contentSelectable
+      private float punchDuration
+      private float slotIconPunchScale
+      private float denialPunchDuration
+      private Color slotIconDenialColor
+      private Color iconInitialColor
+      private bool hovering
+      public static event Action<SlotDisplayOperationContext> onOperation
+  6 ¸ö Property:
+      public bool Editable
+      public bool ContentSelectable
+      public bool ShowOperationMenu
+      public Slot Target
+      public static PrefabPool<SlotDisplay> Pool
+      public bool Movable

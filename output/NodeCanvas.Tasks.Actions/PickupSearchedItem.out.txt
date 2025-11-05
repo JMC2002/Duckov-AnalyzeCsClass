@@ -1,0 +1,7 @@
+namespace NodeCanvas.Tasks.Actions
+public class PickupSearchedItem: ActionTask<AICharacterController>
+
+  3 ¸ö Method:
+      protected override string OnInit()
+      protected override void OnExecute()
+      protected override void OnUpdate()

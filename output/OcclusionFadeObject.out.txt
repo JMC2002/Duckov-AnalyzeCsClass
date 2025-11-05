@@ -1,0 +1,27 @@
+public class OcclusionFadeObject: MonoBehaviour
+
+  13 ¸ö Method:
+      private void Collect()
+      private void CollectTriggers()
+      private void CollectRenderers()
+      public void OnEnter()
+      public void OnLeave()
+      private void Refresh()
+      private void OnEnable()
+      private void OnDisable()
+      private void SyncEnable()
+      private void Sync()
+      private void Hide()
+      private void Show()
+      private Transform FindFirst(Transform root, string checkName)
+  10 ¸ö Field:
+      public OcclusionFadeTypes fadeType
+      public string topName
+      public OcclusionFadeTrigger[] triggers
+      public Renderer[] renderers
+      public List<Material> originMaterials
+      private List<Material> tempMaterials
+      private Transform topTransform
+      private int enterCounter
+      private bool hiding
+      private bool triggerEnabled

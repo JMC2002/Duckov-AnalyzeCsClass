@@ -1,0 +1,8 @@
+public class AddBuffAction: EffectAction
+
+  1 ¸ö Method:
+      protected override void OnTriggered(bool positive)
+  1 ¸ö Field:
+      public Buff buffPfb
+  1 ¸ö Property:
+      private CharacterMainControl MainControl

@@ -1,0 +1,5 @@
+namespace Duckov.MiniMaps.Editor
+public class MiniMapShooter: MonoBehaviour
+
+  1 ¸ö Method:
+      private void Awake()

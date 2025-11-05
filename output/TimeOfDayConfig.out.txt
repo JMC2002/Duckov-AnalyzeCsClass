@@ -1,0 +1,18 @@
+public class TimeOfDayConfig: MonoBehaviour
+
+  2 ¸ö Method:
+      public TimeOfDayEntry GetCurrentEntry(Weather weather)
+      public void InvokeDebug()
+  12 ¸ö Field:
+      private TimeOfDayEntry defaultEntry
+      private TimeOfDayEntry cloudyEntry
+      private TimeOfDayEntry rainyEntry
+      private TimeOfDayEntry stormIEntry
+      private TimeOfDayEntry stormIIEntry
+      public bool forceSetTime
+      public int forceSetTimeTo
+      public bool forceSetWeather
+      public Weather forceSetWeatherTo
+      private Volume lookDevVolume
+      private TimePhaseTags debugPhase
+      private Weather debugWeather

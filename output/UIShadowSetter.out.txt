@@ -1,0 +1,4 @@
+public class UIShadowSetter: MonoBehaviour
+
+  1 ¸ö Method:
+      private void Awake()

@@ -1,0 +1,116 @@
+public class InputManager: MonoBehaviour
+
+  1 个 ClassLike:
+      public enum InputDevices
+  44 个 Method:
+      private void OnDestroy()
+      private void Start()
+      private void OnApplicationFocus(bool hasFocus)
+      private void Awake()
+      public static void DisableInput(GameObject source)
+      public static void ActiveInput(GameObject source)
+      public static void SetInputDevice(InputDevices _inputDevice)
+      private void UpdateCursor()
+      private void Update()
+      private void UpdateInputActived()
+      private void UpdateAimWhileUsingTouch()
+      public void SetTrigger(bool trigger, bool triggerThisFrame, bool releaseThisFrame)
+      private void CheckAttack()
+      private void CheckGunDurability()
+      private Vector3 TrnasAxisInputToWorld(Vector2 axisInput)
+      public void SetSwitchBulletTypeInput(int dir)
+      public void SetSwitchWeaponInput(int dir)
+      public void SetSwitchInteractInput(int dir)
+      public void SetMoveInput(Vector2 axisInput)
+      public void SetRunInput(bool run)
+      public void SetAdsInput(bool ads)
+      public void ToggleView()
+      public void ToggleNightVision()
+      public void SetAimInputUsingJoystick(Vector2 _joystickAxisInput)
+      private void UpdateJoystickAim()
+      public void SetAimType(AimTypes aimType)
+      public void SetMousePosition(Vector2 mousePosition)
+      public void SetAimInputUsingMouse(Vector2 mouseDelta)
+      private Vector2 ProcessMousePosViaCameraChange(Vector2 inputMousePos)
+      private void ClampMousePosInWindow(ref Vector2 mousePosition, ref Vector2 deltaValue)
+      public void Interact()
+      public void PutAway()
+      public void Quack()
+      public void SwitchItemAgent(int index)
+      public void StopAction()
+      private bool CheckInAimAngleAndNoObsticle()
+      public void ReleaseItemSkill()
+      public void ReleaseCharacterSkill()
+      public bool CancleSkill()
+      public void Dash()
+      public void StartCharacterSkillAim()
+      public void StartItemSkillAim()
+      public void AddRecoil(ItemAgent_Gun gun)
+      private Vector2 ProcessMousePosViaRecoil(Vector2 mousePos, Vector2 mouseDelta, ItemAgent_Gun gun)
+  53 个 Field:
+      private static InputDevices inputDevice
+      public CharacterMainControl characterMainControl
+      public AimTargetFinder aimTargetFinder
+      public float runThreshold
+      private Vector3 worldMoveInput
+      public static Action OnInteractButtonDown
+      private Transform aimTargetCol
+      private LayerMask obsticleLayers
+      private RaycastHit[] obsticleHits
+      private RaycastHit hittedCharacterDmgReceiverInfo
+      private RaycastHit hittedObsticleInfo
+      private RaycastHit hittedHead
+      private LayerMask aimCheckLayers
+      private CharacterMainControl foundCharacter
+      public static readonly int PrimaryWeaponSlotHash
+      public static readonly int SecondaryWeaponSlotHash
+      public static readonly int MeleeWeaponSlotHash
+      private Camera mainCam
+      private float checkGunDurabilityCoolTimer
+      private float checkGunDurabilityCoolTime
+      private Transform aimTarget
+      private Vector2 joystickAxisInput
+      private Vector2 moveAxisInput
+      private Vector2 aimScreenPoint
+      private Vector3 inputAimPoint
+      public static bool useRunInputBuffer
+      private int inputActiveCoolCounter
+      private bool adsInput
+      private bool runInputBuffer
+      private bool runInput
+      private bool runInptutThisFrame
+      private bool newRecoil
+      private ItemAgent_Gun recoilGun
+      private float recoilV
+      private float recoilH
+      private float recoilRecover
+      private bool triggerInput
+      private Vector2 recoilNeedToRecover
+      private Vector2 inputMousePosition
+      private Vector2 _aimMousePosCache
+      private bool aimMousePosFirstSynced
+      private bool cursorVisable
+      private bool aimingEnemyHead
+      private bool currentFocus
+      private float fovCache
+      private float _oppositeDelta
+      private float recoilTimer
+      private float recoilTime
+      private float recoilRecoverTime
+      private Vector2 recoilThisShot
+      public static event Action OnInputDeviceChanged
+      public static event Action<int> OnSwitchBulletTypeInput
+      public static event Action<int> OnSwitchWeaponInput
+  12 个 Property:
+      public static InputDevices InputDevice
+      public Vector3 WorldMoveInput
+      public Transform AimTarget
+      public Vector2 MoveAxisInput
+      public Vector2 AimScreenPoint
+      public Vector3 InputAimPoint
+      private static InputManager instance
+      public static bool InputActived
+      public Vector2 MousePos
+      public bool TriggerInput
+      private Vector2 AimMousePosition
+      public bool AimingEnemyHead

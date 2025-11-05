@@ -1,0 +1,31 @@
+public class HurtVisual: MonoBehaviour
+
+  11 ¸ö Method:
+      public void SetHealth(Health _health)
+      private void Awake()
+      private void Init()
+      private void Update()
+      public void ForceHurt()
+      private void OnHurt(DamageInfo dmgInfo)
+      private void SetRendererValue(float value)
+      private void OnDead(DamageInfo dmgInfo)
+      private void OnDestroy()
+      private void AutoSet()
+      public void SetRenderers(List<Renderer> _renderers)
+  13 ¸ö Field:
+      public bool useSimpleHealth
+      public HealthSimpleBase simpleHealth
+      private Health health
+      private GameObject hitFX
+      private GameObject hitFX_NoBlood
+      private GameObject deadFx
+      private GameObject deadFx_NoBlood
+      public List<Renderer> renderers
+      public static readonly int hurtHash
+      private MaterialPropertyBlock materialPropertyBlock
+      public float hurtCoolSpeed
+      public float hurtValueMultiplier
+      private float hurtValue
+  2 ¸ö Property:
+      public GameObject HitFx
+      public GameObject DeadFx

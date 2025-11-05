@@ -1,0 +1,6 @@
+public class FmodEventTester: MonoBehaviour
+
+  1 ¸ö Method:
+      public void PlayEvent()
+  1 ¸ö Field:
+      private string e

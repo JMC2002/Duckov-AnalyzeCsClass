@@ -1,0 +1,9 @@
+namespace Duckov.UI
+public class UsageUtilitiesDisplay_Entry: MonoBehaviour
+
+  1 ¸ö Method:
+      internal void Setup(UsageBehavior cur)
+  1 ¸ö Field:
+      private TextMeshProUGUI text
+  1 ¸ö Property:
+      public UsageBehavior Target

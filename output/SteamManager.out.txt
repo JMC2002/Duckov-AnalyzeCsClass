@@ -1,0 +1,24 @@
+public class SteamManager: MonoBehaviour
+
+  10 个 Method:
+      protected static void SteamAPIDebugTextHook(int nSeverity, StringBuilder pchDebugText)
+      private static void InitOnPlayMode()
+      protected virtual void Awake()
+      private static string GetID()
+      protected virtual void OnDestroy()
+      private void OnRichPresenceChanged(RichPresenceManager manager)
+      private void OnAchievementDataLoaded(AchievementManager manager)
+      private void OnAchievementUnlocked(string achievementKey)
+      protected virtual void OnEnable()
+      protected virtual void Update()
+  4 个 Field:
+      protected static bool s_EverInitialized
+      protected static SteamManager s_instance
+      protected bool m_bInitialized
+      protected SteamAPIWarningMessageHook_t m_SteamAPIWarningMessageHook
+  2 个 Property:
+      protected static SteamManager Instance
+      public static bool Initialized
+  2 个 Constant:
+      public const bool SteamEnabled
+      public const int AppID_Int

@@ -1,0 +1,35 @@
+namespace Duckov.BlackMarkets.UI
+public class BlackMarketView: View
+
+  1 个 ClassLike:
+      public enum Mode
+  12 个 Method:
+      protected override void Awake()
+      private void OnEnable()
+      private void OnDisable()
+      private void OnRefreshChanceChanced(BlackMarket market)
+      private void RefreshRefreshButton()
+      private void OnRefreshBtnClicked()
+      public static void Show(Mode mode)
+      private void Setup(BlackMarket target, Mode mode)
+      private void SetMode(Mode mode)
+      protected override void OnOpen()
+      protected override void OnClose()
+      private void Update()
+  10 个 Field:
+      private FadeGroup fadeGroup
+      private DemandPanel demandPanel
+      private SupplyPanel supplyPanel
+      private TextMeshProUGUI refreshETAText
+      private TextMeshProUGUI refreshChanceText
+      private Button btn_demandPanel
+      private Button btn_supplyPanel
+      private Button btn_refresh
+      private GameObject refreshInteractableIndicator
+      private Mode mode
+  5 个 Property:
+      public static BlackMarketView Instance
+      protected override bool ShowOpenCloseButtons
+      public BlackMarket Target
+      private bool ShowDemand
+      private bool ShowSupply

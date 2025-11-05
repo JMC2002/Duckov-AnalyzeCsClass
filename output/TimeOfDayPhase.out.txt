@@ -1,0 +1,4 @@
+public struct TimeOfDayPhase
+  2 ¸ö Field:
+      public TimePhaseTags timePhaseTag
+      public VolumeProfile volumeProfile

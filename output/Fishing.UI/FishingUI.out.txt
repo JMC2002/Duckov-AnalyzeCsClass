@@ -1,0 +1,18 @@
+namespace Fishing.UI
+public class FishingUI: View
+
+  10 ¸ö Method:
+      protected override void Awake()
+      protected override void OnDestroy()
+      internal override void TryQuit()
+      protected override void OnOpen()
+      protected override void OnClose()
+      private void OnStopFishing(Action_Fishing fishing)
+      private void OnStartSelectBait(Action_Fishing fishing, ICollection<Item> availableBaits, Func<Item, bool> baitSelectionResultCallback)
+      private async UniTask SelectBaitTask(ICollection<Item> availableBaits, Func<Item, bool> baitSelectionResultCallback)
+      private void OnStopCatching(Action_Fishing fishing, Item catchedItem, Action<bool> confirmCallback)
+      private async UniTask ConfirmTask(Item catchedItem, Action<bool> confirmCallback)
+  3 ¸ö Field:
+      private FadeGroup fadeGroup
+      private BaitSelectPanel baitSelectPanel
+      private ConfirmPanel confirmPanel

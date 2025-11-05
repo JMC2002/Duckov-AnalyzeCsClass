@@ -1,0 +1,16 @@
+namespace NodeCanvas.Tasks.Actions
+public class SetAim: ActionTask<AICharacterController>
+
+  5 ¸ö Method:
+      protected override string OnInit()
+      protected override void OnExecute()
+      protected override void OnUpdate()
+      protected override void OnStop()
+      protected override void OnPause()
+  4 ¸ö Field:
+      public bool useTransfom
+      public BBParameter<Transform> aimTarget
+      public BBParameter<Vector3> aimPos
+      private bool waitingSearchResult
+  1 ¸ö Property:
+      protected override string info

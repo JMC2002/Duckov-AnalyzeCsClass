@@ -1,0 +1,7 @@
+public class PaperBox: MonoBehaviour
+
+  1 ¸ö Method:
+      private void Update()
+  2 ¸ö Field:
+      public CharacterMainControl character
+      public Transform setActiveWhileStandStill

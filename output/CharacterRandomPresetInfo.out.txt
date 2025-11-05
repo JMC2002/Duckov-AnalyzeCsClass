@@ -1,0 +1,4 @@
+public struct CharacterRandomPresetInfo
+  2 ¸ö Field:
+      public CharacterRandomPreset randomPreset
+      public float weight

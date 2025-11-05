@@ -1,0 +1,20 @@
+public class CraftView_ListEntry: MonoBehaviour, IPointerClickHandler, IEventSystemHandler
+
+  7 ¸ö Method:
+      private void OnEnable()
+      private void OnDisable()
+      public void Setup(CraftView master, CraftingFormula formula)
+      public void OnPointerClick(PointerEventData eventData)
+      internal void NotifyUnselected()
+      internal void NotifySelected()
+      private void Refresh()
+  6 ¸ö Field:
+      private Color normalColor
+      private Color normalInsufficientColor
+      private Image icon
+      private Image background
+      private TextMeshProUGUI nameText
+      private GameObject selectedIndicator
+  2 ¸ö Property:
+      public CraftView Master
+      public CraftingFormula Formula

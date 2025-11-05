@@ -1,0 +1,35 @@
+public class ADSAimMarker: MonoBehaviour
+
+  8 ¸ö Method:
+      public void CollectCrosshairs()
+      private void Awake()
+      private void LateUpdate()
+      public void SetAimMarkerPos(Vector3 pos)
+      public void OnShoot()
+      public void SetScatter(float _currentScatter, float _minScatter)
+      public void SetAdsValue(float _adsValue)
+      private void SetSniperRenderer()
+  21 ¸ö Field:
+      public ADSAimMarker selfPrefab
+      public bool hideNormalCrosshair
+      public AimMarker parentAimMarker
+      public RectTransform aimMarkerUI
+      public RectTransform followUI
+      public CanvasGroup canvasGroup
+      public float followSpeed
+      public float followMaxDistance
+      private float adsValue
+      private float canvasAlpha
+      public Vector2 adsAlphaRemap
+      public List<ProceduralImage> proceduralImages
+      private List<CanvasGroup> proceduralImageCanvasGroups
+      public List<PunchReceiver> shootPunchReceivers
+      public List<SingleCrosshair> crosshairs
+      public Graphic sniperRoundRenderer
+      public Graphic followSniperRoundRenderer
+      private float scatter
+      private float minScatter
+      private RectTransform selfRect
+      private int sniperCenterShaderHash
+  1 ¸ö Property:
+      public float CanvasAlpha

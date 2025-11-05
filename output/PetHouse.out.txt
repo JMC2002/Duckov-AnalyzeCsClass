@@ -1,0 +1,12 @@
+public class PetHouse: MonoBehaviour
+
+  3 ¸ö Method:
+      private void Awake()
+      private void OnDestroy()
+      private void OnLevelInited()
+  3 ¸ö Field:
+      private static PetHouse instance
+      public Transform petMarker
+      private PetAI petTarget
+  1 ¸ö Property:
+      public static PetHouse Instance

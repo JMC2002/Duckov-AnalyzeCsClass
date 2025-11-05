@@ -1,0 +1,27 @@
+public class BitcoinMinerView: View
+
+  9 ¸ö Method:
+      protected override void Awake()
+      private void OnMinerSlotEntryDoubleClicked(ItemSlotCollectionDisplay display1, SlotDisplay slotDisplay)
+      private void OnPlayerItemsDoubleClicked(InventoryDisplay display, InventoryEntry entry, PointerEventData data)
+      private void OnMinerInventoryEntryDoubleClicked(InventoryDisplay display, InventoryEntry entry, PointerEventData data)
+      public static void Show()
+      protected override void OnOpen()
+      protected override void OnClose()
+      private void FixedUpdate()
+      private void RefreshStatus()
+  10 ¸ö Field:
+      private FadeGroup fadeGroup
+      private InventoryDisplay inventoryDisplay
+      private InventoryDisplay storageDisplay
+      private ItemSlotCollectionDisplay minerSlotsDisplay
+      private InventoryDisplay minerInventoryDisplay
+      private TextMeshProUGUI commentText
+      private TextMeshProUGUI remainingTimeText
+      private TextMeshProUGUI timeEachCoinText
+      private TextMeshProUGUI performanceText
+      private Image fill
+  3 ¸ö Property:
+      public static BitcoinMinerView Instance
+      private string ActiveCommentKey
+      private string StoppedCommentKey

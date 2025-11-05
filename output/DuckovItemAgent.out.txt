@@ -1,0 +1,20 @@
+public class DuckovItemAgent: ItemAgent
+
+  5 ¸ö Method:
+      public Transform GetSocket(string socketName, bool createNew)
+      public void SetHolder(CharacterMainControl _holder)
+      public CharacterMainControl GetHolder()
+      protected override void OnInitialize()
+      private void InitInterfaces()
+  7 ¸ö Field:
+      public HandheldSocketTypes handheldSocket
+      public HandheldAnimationType handAnimationType
+      private CharacterMainControl holder
+      public UnityEvent OnInitializdEvent
+      public GameObject setActiveIfMainCharacter
+      private Dictionary<string, Transform> _socketsDic
+      private IAgentUsable usableInterface
+  3 ¸ö Property:
+      public CharacterMainControl Holder
+      private Dictionary<string, Transform> SocketsDic
+      public IAgentUsable UsableInterface

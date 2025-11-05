@@ -1,0 +1,10 @@
+public class ItemPropertiesDisplay: MonoBehaviour
+
+  2 ¸ö Method:
+      private void Awake()
+      internal void Setup(Item targetItem)
+  2 ¸ö Field:
+      private LabelAndValue entryTemplate
+      private PrefabPool<LabelAndValue> _entryPool
+  1 ¸ö Property:
+      private PrefabPool<LabelAndValue> EntryPool

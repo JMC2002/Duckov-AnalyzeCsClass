@@ -1,0 +1,20 @@
+public class CameraMode: MonoBehaviour
+
+  9 ¸ö Method:
+      private void Awake()
+      private void OnDestroy()
+      private void OnViewOpen(ManagedUIElement element)
+      private void OnUICancel(UIInputEventData data)
+      private void OnToggleCameraMode(UIInputEventData data)
+      private void MActivate()
+      private void MDeactivate()
+      public static void Activate()
+      public static void Deactivate()
+  4 ¸ö Field:
+      public static Action OnCameraModeActivated
+      public static Action OnCameraModeDeactivated
+      public static Action<bool> OnCameraModeChanged
+      private bool active
+  2 ¸ö Property:
+      public static CameraMode Instance
+      public static bool Active

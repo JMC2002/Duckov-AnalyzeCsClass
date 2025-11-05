@@ -1,0 +1,15 @@
+public class DevCam: MonoBehaviour
+
+  4 ¸ö Method:
+      private void Awake()
+      private void Toggle()
+      private void OnDestroy()
+      private void Update()
+  7 ¸ö Field:
+      public Camera devCamera
+      public Transform postTarget
+      private bool active
+      public Transform root
+      public static bool devCamOn
+      private float timer
+      private int pressCounter

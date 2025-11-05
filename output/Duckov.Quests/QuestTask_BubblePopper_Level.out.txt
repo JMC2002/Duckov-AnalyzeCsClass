@@ -1,0 +1,13 @@
+namespace Duckov.Quests
+public class QuestTask_BubblePopper_Level: Task
+
+  3 ¸ö Method:
+      public override object GenerateSaveData()
+      public override void SetupSaveData(object data)
+      protected override bool CheckFinished()
+  2 ¸ö Field:
+      private int targetLevel
+      private bool finished
+  2 ¸ö Property:
+      private string descriptionKey
+      public override string Description

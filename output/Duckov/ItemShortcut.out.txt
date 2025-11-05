@@ -1,0 +1,34 @@
+namespace Duckov
+public class ItemShortcut: MonoBehaviour
+
+  1 个 ClassLike:
+      private class SaveData
+  17 个 Method:
+      public void Generate(ItemShortcut shortcut)
+      public void ApplyTo(ItemShortcut shortcut)
+      private void Awake()
+      private void OnDestroy()
+      private void Start()
+      private void OnLevelInitialized()
+      private void OnSetSaveFile()
+      private void OnCollectSaveData()
+      private void Load()
+      private void Save()
+      public static bool IsItemValid(Item item)
+      private bool Set_Local(int index, Item item)
+      private Item Get_Local(int index)
+      private void SetDirty(int index)
+      private void Update()
+      public static Item Get(int index)
+      public static bool Set(int index, Item item)
+  3 个 Field:
+      public static ItemShortcut Instance
+      private int maxIndex
+      public static event Action<int> OnSetItem
+  4 个 Property:
+      public int Count
+      private static CharacterMainControl Master
+      private static Inventory MainInventory
+      public static int MaxIndex
+  1 个 Constant:
+      private const string SaveKey

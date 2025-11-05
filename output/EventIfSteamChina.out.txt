@@ -1,0 +1,7 @@
+public class EventIfSteamChina: MonoBehaviour
+
+  1 ¸ö Method:
+      private void Start()
+  2 ¸ö Field:
+      public UnityEvent onStart_IsSteamChina
+      public UnityEvent onStart_IsNotSteamChina

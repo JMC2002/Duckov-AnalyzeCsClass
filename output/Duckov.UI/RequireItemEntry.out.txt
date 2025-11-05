@@ -1,0 +1,11 @@
+namespace Duckov.UI
+public class RequireItemEntry: MonoBehaviour, IPoolable
+
+  3 ¸ö Method:
+      public void NotifyPooled()
+      public void NotifyReleased()
+      public void Setup(PerkRequirement.RequireItemEntry target)
+  3 ¸ö Field:
+      private Image icon
+      private TextMeshProUGUI text
+      private string textFormat

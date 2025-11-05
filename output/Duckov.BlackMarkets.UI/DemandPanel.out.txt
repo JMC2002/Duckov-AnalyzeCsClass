@@ -1,0 +1,19 @@
+namespace Duckov.BlackMarkets.UI
+public class DemandPanel: MonoBehaviour
+
+  9 ¸ö Method:
+      private void OnCreateEntry(DemandPanel_Entry entry)
+      private void OnEntryClicked(DemandPanel_Entry entry)
+      internal void Setup(BlackMarket target)
+      private void OnEnable()
+      private void OnDisable()
+      private void Refresh()
+      private void UnregsiterEvents()
+      private void RegisterEvents()
+      private void OnAfterTargetGenerateEntries()
+  2 ¸ö Field:
+      private DemandPanel_Entry entryTemplate
+      private PrefabPool<DemandPanel_Entry> _entryPool
+  2 ¸ö Property:
+      public BlackMarket Target
+      private PrefabPool<DemandPanel_Entry> EntryPool

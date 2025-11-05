@@ -1,0 +1,37 @@
+namespace Duckov.Quests.UI
+public class QuestViewDetails: MonoBehaviour
+
+  11 ¸ö Method:
+      private void Awake()
+      internal void Refresh()
+      private int GetNewToken()
+      private async UniTask RefreshAsync()
+      private void SetupTasks()
+      private void SetupRewards()
+      private void RegisterEvents()
+      private void UnregisterEvents()
+      private void OnTargetStatusChanged(Quest quest)
+      internal void Setup(Quest quest)
+      private void OnDestroy()
+  16 ¸ö Field:
+      private Quest target
+      private TaskEntry taskEntryPrefab
+      private RewardEntry rewardEntry
+      private GameObject placeHolder
+      private FadeGroup contentFadeGroup
+      private TextMeshProUGUI displayName
+      private TextMeshProUGUI description
+      private TextMeshProUGUI questGiverDisplayName
+      private Transform tasksParent
+      private Transform rewardsParent
+      private QuestRequiredItem requiredItem
+      private bool interactable
+      private PrefabPool<TaskEntry> _taskEntryPool
+      private PrefabPool<RewardEntry> _rewardEntryPool
+      private Quest showingQuest
+      private int activeTaskToken
+  4 ¸ö Property:
+      public Quest Target
+      public bool Interactable
+      private PrefabPool<TaskEntry> TaskEntryPool
+      private PrefabPool<RewardEntry> RewardEntryPool

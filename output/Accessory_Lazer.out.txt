@@ -1,0 +1,15 @@
+public class Accessory_Lazer: AccessoryBase
+
+  5 ¸ö Method:
+      protected override void OnInit()
+      private void Update()
+      private void ShowHitMarker(Vector3 point)
+      private void HideHitMarker()
+      private bool CheckObsticle(Vector3 startPoint, Vector3 endPoint, out Vector3 hitPoint)
+  6 ¸ö Field:
+      private LineRenderer lineRenderer
+      private GameObject hitMarker
+      private CharacterMainControl character
+      private Vector3[] localPoints
+      private RaycastHit[] raycastHits
+      private LayerMask hitLayers

@@ -1,0 +1,12 @@
+public class MapImageToShader: MonoBehaviour
+
+  2 ¸ö Method:
+      private void Start()
+      private void Update()
+  6 ¸ö Field:
+      public RectTransform rect
+      private Material material
+      private int zeroPointID
+      private int upVectorID
+      private int rightVectorID
+      private int scaleID

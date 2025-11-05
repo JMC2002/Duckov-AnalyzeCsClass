@@ -1,0 +1,14 @@
+public class BezierSpline: ShapeProvider
+
+  6 ¸ö Method:
+      public static Vector3 GetPoint(Vector3 p1, Vector3 p2, Vector3 p3, Vector3 p4, float t)
+      public static Vector3 GetTangent(Vector3 p1, Vector3 p2, Vector3 p3, Vector3 p4, float t)
+      public static Vector3 GetNormal(Vector3 p1, Vector3 p2, Vector3 p3, Vector3 p4, float t)
+      public static PipeRenderer.OrientedPoint[] GenerateShape(Vector3 p0, Vector3 p1, Vector3 p2, Vector3 p3, int subdivisions)
+      public override PipeRenderer.OrientedPoint[] GenerateShape()
+      private void OnDrawGizmosSelected()
+  4 ¸ö Field:
+      public PipeRenderer pipeRenderer
+      public Vector3[] points
+      public int subdivisions
+      public bool drawGizmos

@@ -1,0 +1,13 @@
+namespace Duckov.ItemUsage
+public class SpawnEgg: UsageBehavior
+
+  2 ¸ö Method:
+      public override bool CanBeUsed(Item item, object user)
+      protected override void OnUse(Item item, object user)
+  4 ¸ö Field:
+      public Egg eggPrefab
+      public CharacterRandomPreset spawnCharacter
+      public float eggSpawnDelay
+      public string descriptionKey
+  1 ¸ö Property:
+      public override DisplaySettingsData DisplaySettings

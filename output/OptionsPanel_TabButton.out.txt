@@ -1,0 +1,9 @@
+public class OptionsPanel_TabButton: MonoBehaviour, IPointerClickHandler, IEventSystemHandler
+
+  2 ¸ö Method:
+      public void OnPointerClick(PointerEventData eventData)
+      internal void NotifySelectionChanged(OptionsPanel optionsPanel, OptionsPanel_TabButton selection)
+  3 ¸ö Field:
+      private GameObject selectedIndicator
+      private GameObject tab
+      public Action<OptionsPanel_TabButton, PointerEventData> onClicked

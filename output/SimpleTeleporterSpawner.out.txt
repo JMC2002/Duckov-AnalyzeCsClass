@@ -1,0 +1,16 @@
+public class SimpleTeleporterSpawner: MonoBehaviour
+
+  8 ¸ö Method:
+      private void Start()
+      private void OnValidate()
+      private void OnDestroy()
+      public void StartCreate()
+      private void Create()
+      private void CreateAPair(Vector3 point1, Vector3 point2)
+      private SimpleTeleporter CreateATeleporter(Vector3 point)
+      private int GetKey()
+  4 ¸ö Field:
+      private int scene
+      private int pairCount
+      private SimpleTeleporter simpleTeleporterPfb
+      private Points points

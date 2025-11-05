@@ -1,0 +1,7 @@
+namespace Duckov.BasketBalls
+public class BasketTrigger: MonoBehaviour
+
+  1 ¸ö Method:
+      private void OnTriggerEnter(Collider other)
+  1 ¸ö Field:
+      public UnityEvent<BasketBall> onGoal

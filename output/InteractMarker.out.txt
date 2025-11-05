@@ -1,0 +1,8 @@
+public class InteractMarker: MonoBehaviour
+
+  1 ¸ö Method:
+      public void MarkAsUsed()
+  3 ¸ö Field:
+      private bool markedAsUsed
+      public GameObject showIfUsedObject
+      public GameObject hideIfUsedObject

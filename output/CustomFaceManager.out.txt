@@ -1,0 +1,7 @@
+public class CustomFaceManager: MonoBehaviour
+
+  4 ¸ö Method:
+      public void SaveSettingToMainCharacter(CustomFaceSettingData setting)
+      public CustomFaceSettingData LoadMainCharacterSetting()
+      private void SaveSetting(string key, CustomFaceSettingData setting)
+      private CustomFaceSettingData LoadSetting(string key)

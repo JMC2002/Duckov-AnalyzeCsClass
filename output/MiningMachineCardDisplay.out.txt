@@ -1,0 +1,11 @@
+public class MiningMachineCardDisplay: MonoBehaviour
+
+  1 ¸ö ClassLike:
+      public enum CardTypes
+  1 ¸ö Method:
+      public void SetVisualActive(bool active, CardTypes cardType)
+  4 ¸ö Field:
+      public GameObject activeVisual
+      public GameObject deactiveVisual
+      public GameObject normalGPU
+      public GameObject potatoGPU

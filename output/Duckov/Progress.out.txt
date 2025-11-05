@@ -1,0 +1,9 @@
+namespace Duckov
+public struct Progress
+  4 ¸ö Field:
+      public bool inProgress
+      public float total
+      public float current
+      public string progressName
+  1 ¸ö Property:
+      public float progress

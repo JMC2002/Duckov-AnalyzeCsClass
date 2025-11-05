@@ -1,0 +1,12 @@
+namespace Duckov.MiniGames.GoldMiner
+public class StaminaDisplay: MonoBehaviour
+
+  2 ¸ö Method:
+      private void FixedUpdate()
+      private void Refresh()
+  5 ¸ö Field:
+      private GoldMiner master
+      private Image fill
+      private TextMeshProUGUI text
+      private Gradient normalColor
+      private Color extraColor

@@ -1,0 +1,16 @@
+public class CostTakerHUD: MonoBehaviour
+
+  8 ¸ö Method:
+      private void Awake()
+      private void OnDestroy()
+      private void OnCostTakerRegistered(CostTaker taker)
+      private void OnCostTakerUnregistered(CostTaker taker)
+      private void Start()
+      private void ShowAll()
+      private void ShowHUD(CostTaker costTaker)
+      private void HideHUD(CostTaker costTaker)
+  2 ¸ö Field:
+      private CostTakerHUD_Entry entryTemplate
+      private PrefabPool<CostTakerHUD_Entry> _entryPool
+  1 ¸ö Property:
+      private PrefabPool<CostTakerHUD_Entry> EntryPool

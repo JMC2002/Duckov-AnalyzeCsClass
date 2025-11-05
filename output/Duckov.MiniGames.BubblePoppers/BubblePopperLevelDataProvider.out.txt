@@ -1,0 +1,11 @@
+namespace Duckov.MiniGames.BubblePoppers
+public class BubblePopperLevelDataProvider: MonoBehaviour
+
+  1 ¸ö Method:
+      internal int[] GetData(int levelIndex)
+  3 ¸ö Field:
+      private BubblePopper master
+      private int totalLevels
+      public int seed
+  1 ¸ö Property:
+      public int TotalLevels

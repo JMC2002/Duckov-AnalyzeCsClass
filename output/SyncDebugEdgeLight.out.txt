@@ -1,0 +1,6 @@
+public class SyncDebugEdgeLight: MonoBehaviour
+
+  3 ¸ö Method:
+      private void Awake()
+      private void OnDestroy()
+      private void OnDebugConfigChanged(DebugView debugView)

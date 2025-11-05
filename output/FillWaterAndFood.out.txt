@@ -1,0 +1,7 @@
+public class FillWaterAndFood: MonoBehaviour
+
+  1 ¸ö Method:
+      public void Fill()
+  2 ¸ö Field:
+      public float water
+      public float food

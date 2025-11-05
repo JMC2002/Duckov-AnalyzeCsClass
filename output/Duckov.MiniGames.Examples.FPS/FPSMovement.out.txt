@@ -1,0 +1,14 @@
+namespace Duckov.MiniGames.Examples.FPS
+public class FPSMovement: Character
+
+  7 ¸ö Method:
+      protected override void Awake()
+      protected override void Start()
+      public void SetGame(MiniGame game)
+      private void Update()
+      private void UpdateMovement()
+      private void UpdateRotation()
+      public void AddControlYawInput(float value)
+  2 ¸ö Field:
+      private MiniGame game
+      private Vector2 lookSensitivity

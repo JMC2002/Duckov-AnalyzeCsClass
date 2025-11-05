@@ -1,0 +1,7 @@
+public class OpenSaveFolder: MonoBehaviour
+
+  2 ¸ö Method:
+      private void Update()
+      public void OpenFolder()
+  1 ¸ö Property:
+      private string filePath

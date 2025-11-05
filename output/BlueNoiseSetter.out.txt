@@ -1,0 +1,7 @@
+public class BlueNoiseSetter: MonoBehaviour
+
+  1 ¸ö Method:
+      private void Update()
+  2 ¸ö Field:
+      public List<Texture2D> blueNoises
+      private int index

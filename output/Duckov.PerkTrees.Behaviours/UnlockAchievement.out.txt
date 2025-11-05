@@ -1,0 +1,7 @@
+namespace Duckov.PerkTrees.Behaviours
+public class UnlockAchievement: PerkBehaviour
+
+  1 ¸ö Method:
+      protected override void OnUnlocked()
+  1 ¸ö Field:
+      private string achievementKey

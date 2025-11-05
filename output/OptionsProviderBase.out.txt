@@ -1,0 +1,8 @@
+public abstract class OptionsProviderBase: MonoBehaviour
+
+  3 ¸ö Method:
+      public abstract string[] GetOptions()
+      public abstract string GetCurrentOption()
+      public abstract void Set(int index)
+  1 ¸ö Property:
+      public abstract string Key

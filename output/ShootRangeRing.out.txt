@@ -1,0 +1,12 @@
+public class ShootRangeRing: MonoBehaviour
+
+  5 ¸ö Method:
+      private void Awake()
+      private void Update()
+      private void LateUpdate()
+      private void OnDestroy()
+      private void OnAgentChanged(DuckovItemAgent agent)
+  3 ¸ö Field:
+      private CharacterMainControl character
+      public MeshRenderer ringRenderer
+      private ItemAgent_Gun gunAgent

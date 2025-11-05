@@ -1,0 +1,5 @@
+public class WishListProxy: MonoBehaviour
+
+  2 ¸ö Method:
+      private void Start()
+      public void ShowStorePage()

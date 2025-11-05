@@ -1,0 +1,51 @@
+namespace Duckov.Buffs
+public class Buff: MonoBehaviour
+
+  1 个 ClassLike:
+      public enum BuffExclusiveTags
+  8 个 Method:
+      internal void Setup(CharacterBuffManager manager)
+      internal void NotifyUpdate()
+      internal void NotifyOutOfTime()
+      internal virtual void NotifyIncomingBuffWithSameID(Buff incomingPrefab)
+      protected virtual void OnSetup()
+      protected virtual void OnUpdate()
+      protected virtual void OnNotifiedOutOfTime()
+      private void OnDestroy()
+  18 个 Field:
+      private int id
+      private int maxLayers
+      private BuffExclusiveTags exclusiveTag
+      private int exclusiveTagPriority
+      private string displayName
+      private string description
+      private Sprite icon
+      private bool limitedLifeTime
+      private float totalLifeTime
+      private bool hide
+      private int currentLayers
+      private CharacterBuffManager master
+      public UnityEvent OnSetupEvent
+      private GameObject buffFxPfb
+      private GameObject buffFxInstance
+      public CharacterMainControl fromWho
+      public int fromWeaponID
+      private float timeWhenStarted
+  17 个 Property:
+      public BuffExclusiveTags ExclusiveTag
+      public int ExclusiveTagPriority
+      public bool Hide
+      public CharacterMainControl Character
+      private Item CharacterItem
+      public int ID
+      public int CurrentLayers
+      public int MaxLayers
+      public string DisplayName
+      public string DisplayNameKey
+      public string Description
+      public Sprite Icon
+      public bool LimitedLifeTime
+      public float TotalLifeTime
+      public float CurrentLifeTime
+      public float RemainingTime
+      public bool IsOutOfTime

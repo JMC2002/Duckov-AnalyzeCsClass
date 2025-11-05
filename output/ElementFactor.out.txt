@@ -1,0 +1,4 @@
+public struct ElementFactor
+  2 ¸ö Field:
+      public ElementTypes elementType
+      public float factor

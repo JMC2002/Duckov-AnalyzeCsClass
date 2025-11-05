@@ -1,0 +1,31 @@
+namespace Duckov.MasterKeys
+public class MasterKeysManager: MonoBehaviour
+
+  1 个 ClassLike:
+      public class Status
+  13 个 Method:
+      public static bool SubmitAndActivate(Item item)
+      public static bool IsActive(int id)
+      internal static void Activate(int id)
+      internal static Status GetStatus(int id)
+      private void Awake()
+      private void OnDestroy()
+      private void OnCollectSaveData()
+      public bool IsActive_Local(int id)
+      private void Activate_Local(int id)
+      public Status GetStatus_Local(int id)
+      public Status GetOrCreateStatus(int id)
+      private void Save()
+      private void Load()
+  5 个 Field:
+      public int id
+      public bool active
+      private static List<int> _cachedKeyItemIds
+      private static string[] excludeTags
+      public static event Action<int> OnMasterKeyUnlocked
+  3 个 Property:
+      public static MasterKeysManager Instance
+      public int Count
+      public static List<int> AllPossibleKeys
+  1 个 Constant:
+      private const string SaveKey

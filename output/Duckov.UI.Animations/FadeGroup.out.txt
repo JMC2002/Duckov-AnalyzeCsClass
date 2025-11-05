@@ -1,0 +1,34 @@
+namespace Duckov.UI.Animations
+public class FadeGroup: MonoBehaviour
+
+  14 ¸ö Method:
+      private void Start()
+      private void OnEnable()
+      public void Show()
+      public void Hide()
+      public void Toggle()
+      public UniTask ShowAndReturnTask()
+      public UniTask HideAndReturnTask()
+      private int CacheNewTaskToken()
+      public async UniTask ShowTask()
+      public async UniTask HideTask()
+      private void ShowComplete()
+      private void HideComplete()
+      public void SkipHide()
+      internal void SkipShow()
+  9 ¸ö Field:
+      private bool skipHideOnStart
+      private bool showOnEnable
+      private bool skipHideBeforeShow
+      public bool manageGameObjectActive
+      private bool isHidingInProgress
+      private bool isShowingInProgress
+      private bool isShown
+      public bool debug
+      private int activeTaskToken
+  5 ¸ö Property:
+      public bool IsHidingInProgress
+      public bool IsShowingInProgress
+      public bool IsShown
+      public bool IsHidden
+      public bool IsFading

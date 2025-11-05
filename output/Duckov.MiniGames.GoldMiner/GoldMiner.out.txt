@@ -1,0 +1,73 @@
+namespace Duckov.MiniGames.GoldMiner
+public class GoldMiner: MiniGameBehaviour
+
+  28 个 Method:
+      private void Awake()
+      protected override void Start()
+      internal bool PayMoney(int price)
+      private async UniTask Main()
+      private async UniTask DoTitleScreen()
+      private async UniTask DoGameOver()
+      public void Cleanup()
+      private void GenerateLevel()
+      private Vector3 NormalizedPosToLocalPos(Vector2 posNormalized)
+      private void OnDrawGizmosSelected()
+      private async UniTask Run(int seed = 0)
+      private async UniTask<bool> SettleLevel()
+      private async UniTask DoLevel()
+      protected override void OnUpdate(float deltaTime)
+      private void UpdateLevelPlaying(float deltaTime)
+      public void LaunchHook()
+      private bool IsLevelOver()
+      private async UniTask DoShop()
+      private void OnHookResolveEntity(Hook hook, GoldMinerEntity entity)
+      private void OnHookBeginRetrieve(Hook hook)
+      private void OnHookEndRetrieve(Hook hook)
+      private void OnHookLaunch(Hook hook)
+      private void OnHookAttach(Hook hook, GoldMinerEntity entity)
+      public bool UseStrengthPotion()
+      public bool UseEagleEyePotion()
+      public GoldMinerArtifact GetArtifactPrefab(string id)
+      internal bool UseBomb()
+      internal void NotifyArtifactChange()
+  29 个 Field:
+      private Hook hook
+      private GoldMinerShop shop
+      private LevelSettlementUI settlementUI
+      private GameObject titleScreen
+      private GameObject gameoverScreen
+      private GoldMiner_PopText popText
+      private Transform levelLayout
+      private Bounds bounds
+      private Bomb bombPrefab
+      private RandomContainer<GoldMinerEntity> entities
+      private ReadOnlyCollection<GoldMinerArtifact> artifactPrefabs_ReadOnly
+      public Action<GoldMiner> onLevelBegin
+      public Action<GoldMiner> onLevelEnd
+      public Action<GoldMiner> onShopBegin
+      public Action<GoldMiner> onShopEnd
+      public Action<GoldMiner> onEarlyLevelPlayTick
+      public Action<GoldMiner> onLateLevelPlayTick
+      public Action<GoldMiner, Hook> onHookLaunch
+      public Action<GoldMiner, Hook> onHookBeginRetrieve
+      public Action<GoldMiner, Hook> onHookEndRetrieve
+      public Action<GoldMiner, Hook, GoldMinerEntity> onHookAttach
+      public Action<GoldMiner, GoldMinerEntity> onResolveEntity
+      public Action<GoldMiner, GoldMinerEntity> onAfterResolveEntity
+      public Action<GoldMiner> onArtifactChange
+      private bool titleConfirmed
+      private bool gameOverConfirmed
+      private bool levelPlaying
+      private bool launchHook
+      public static event Action<int> OnLevelClear
+  8 个 Property:
+      public Hook Hook
+      public Bounds Bounds
+      public int Money
+      public ReadOnlyCollection<GoldMinerArtifact> ArtifactPrefabs
+      public static int HighLevel
+      public GoldMinerRunData run
+      private bool ShouldQuit
+      public float GlobalPriceFactor
+  1 个 Constant:
+      private const string HighLevelSaveKey

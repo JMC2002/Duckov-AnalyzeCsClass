@@ -1,0 +1,6 @@
+public class ItemSetting_Formula: ItemSettingBase
+
+  1 ¸ö Method:
+      public override void SetMarkerParam(Item selfItem)
+  1 ¸ö Field:
+      public string formulaID

@@ -1,0 +1,14 @@
+namespace Duckov.UI.Inventories
+public class PagesControl_Entry: MonoBehaviour
+
+  3 ¸ö Method:
+      private void Awake()
+      private void OnButtonClicked()
+      internal void Setup(PagesControl master, int i, bool selected)
+  6 ¸ö Field:
+      private TextMeshProUGUI text
+      private GameObject selectedIndicator
+      private Button button
+      private PagesControl master
+      private int index
+      private bool selected

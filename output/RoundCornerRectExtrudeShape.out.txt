@@ -1,0 +1,10 @@
+public class RoundCornerRectExtrudeShape: ShapeProvider
+
+  2 ¸ö Method:
+      public override PipeRenderer.OrientedPoint[] GenerateShape()
+      private List<PipeRenderer.OrientedPoint> Resample(List<PipeRenderer.OrientedPoint> original, float stepLength)
+  4 ¸ö Field:
+      public Vector2 size
+      public float bevelSize
+      public bool resample
+      public float stepLength

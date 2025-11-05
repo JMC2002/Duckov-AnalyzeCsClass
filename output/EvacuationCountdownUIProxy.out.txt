@@ -1,0 +1,5 @@
+public class EvacuationCountdownUIProxy: MonoBehaviour
+
+  2 ¸ö Method:
+      public void Request(CountDownArea target)
+      public void Release(CountDownArea target)

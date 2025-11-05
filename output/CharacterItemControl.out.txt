@@ -1,0 +1,8 @@
+public class CharacterItemControl: MonoBehaviour
+
+  1 ¸ö Method:
+      public bool PickupItem(Item item)
+  1 ¸ö Field:
+      public CharacterMainControl characterMainControl
+  1 ¸ö Property:
+      private Inventory inventory

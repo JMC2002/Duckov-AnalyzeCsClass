@@ -1,0 +1,30 @@
+namespace Duckov.Buildings.UI
+public class BuildingBtnEntry: MonoBehaviour
+
+  7 ¸ö Method:
+      private void Awake()
+      private void OnRecycleButtonTriggered()
+      private void OnEnable()
+      private void OnDisable()
+      private void OnButtonClicked()
+      internal void Setup(BuildingInfo buildingInfo)
+      private void Refresh()
+  14 ¸ö Field:
+      private Button button
+      private Image icon
+      private TextMeshProUGUI nameText
+      private TextMeshProUGUI descriptionText
+      private CostDisplay costDisplay
+      private LongPressButton recycleButton
+      private TextMeshProUGUI amountText
+      private string tokenFormatKey
+      private TextMeshProUGUI tokenText
+      private GameObject reachedAmountLimitationIndicator
+      private Image backGround
+      private Color normalColor
+      private Color avaliableColor
+      private BuildingInfo info
+  3 ¸ö Property:
+      private string TokenFormat
+      public BuildingInfo Info
+      public bool CostEnough

@@ -1,0 +1,19 @@
+public class CustomFaceSaveLoad: MonoBehaviour
+
+  8 ¸ö Method:
+      private void Awake()
+      private CustomFaceLoadSaveButton CreateAButton(int index, string name, Transform parent)
+      public void SetSlotAndLoad(int slot)
+      private void UpdateSelection()
+      private void LoadData(int slot)
+      public void LoadDefault()
+      public void SaveDataToCurrentSlot()
+      private void SaveData(int slot)
+  5 ¸ö Field:
+      public CustomFaceInstance instance
+      public CustomFaceLoadSaveButton buttonPfb
+      public Transform slotButtonParent
+      private List<CustomFaceLoadSaveButton> slotButtons
+      private int currentSlot
+  1 ¸ö Property:
+      private CustomFaceData faceData

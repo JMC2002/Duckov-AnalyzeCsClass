@@ -1,0 +1,12 @@
+public class ATMView: View
+
+  4 ¸ö Method:
+      protected override void Awake()
+      public static void Show()
+      protected override void OnOpen()
+      protected override void OnClose()
+  2 ¸ö Field:
+      private FadeGroup fadeGroup
+      private ATMPanel atmPanel
+  1 ¸ö Property:
+      public static ATMView Instance

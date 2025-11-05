@@ -1,0 +1,12 @@
+public class FollowCharacterHUD: MonoBehaviour
+
+  3 ¸ö Method:
+      private void Awake()
+      private void OnDestroy()
+      private void UpdatePos(GameCamera gameCamera, CharacterMainControl target)
+  5 ¸ö Field:
+      public float maxDistance
+      public float smoothTime
+      private Vector3 worldPos
+      private Vector3 velocityTemp
+      public Vector3 offset

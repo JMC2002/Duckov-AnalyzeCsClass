@@ -1,0 +1,23 @@
+public class DuckovDialogueActor: MonoBehaviour, IDialogueActor
+
+  5 ¸ö Method:
+      public static void Register(DuckovDialogueActor actor)
+      public static void Unregister(DuckovDialogueActor actor)
+      public static DuckovDialogueActor Get(string id)
+      private void OnEnable()
+      private void OnDisable()
+  5 ¸ö Field:
+      private static List<DuckovDialogueActor> _activeActors
+      private string id
+      private Sprite _portraitSprite
+      private string nameKey
+      private Vector3 offset
+  8 ¸ö Property:
+      private static List<DuckovDialogueActor> ActiveActors
+      public string ID
+      public Vector3 Offset
+      public string NameKey
+      public Texture2D portrait
+      public Sprite portraitSprite
+      public Color dialogueColor
+      public Vector3 dialoguePosition

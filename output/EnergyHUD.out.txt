@@ -1,0 +1,13 @@
+public class EnergyHUD: MonoBehaviour
+
+  1 ¸ö Method:
+      private void Update()
+  6 ¸ö Field:
+      private CharacterMainControl characterMainControl
+      private float percent
+      public ProceduralImage fillImage
+      public ProceduralImage backgroundImage
+      public Color backgroundColor
+      public Color emptyBackgroundColor
+  1 ¸ö Property:
+      private Item item

@@ -1,0 +1,21 @@
+namespace Duckov.Crops
+public class CellDisplay: MonoBehaviour
+
+  1 ¸ö ClassLike:
+      private struct GraphicsStyle
+  6 ¸ö Method:
+      internal void Setup(Garden garden, int coordx, int coordy)
+      private void OnEnable()
+      private void OnDisable()
+      private void HandleCropEvent(Crop crop, Crop.CropEvent e)
+      private void RefreshGraphics(bool watered)
+      private void ApplyGraphicsStype(GraphicsStyle style)
+  8 ¸ö Field:
+      public Color color
+      public float smoothness
+      private Renderer renderer
+      private GraphicsStyle styleDry
+      private GraphicsStyle styleWatered
+      private Garden garden
+      private Vector2Int coord
+      private MaterialPropertyBlock propertyBlock

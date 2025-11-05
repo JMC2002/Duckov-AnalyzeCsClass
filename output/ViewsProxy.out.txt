@@ -1,0 +1,21 @@
+public class ViewsProxy: MonoBehaviour
+
+  18 ¸ö Method:
+      public void ShowInventoryView()
+      public void ShowQuestView()
+      public void ShowMapView()
+      public void ShowKeyView()
+      public void ShowPlayerStats()
+      public void ShowEndowmentView()
+      public void ShowMapSelectionView()
+      public void ShowRepairView()
+      public void ShowFormulasIndexView()
+      public void ShowBitcoinView()
+      public void ShowStorageDock()
+      public void ShowBlackMarket_Demands()
+      public void ShowBlackMarket_Supplies()
+      public void ShowSleepView()
+      public void ShowATMView()
+      public void ShowDecomposeView()
+      public void ShowGardenView(Garden garnden)
+      public void ShowGamingConsoleView(GamingConsole console)

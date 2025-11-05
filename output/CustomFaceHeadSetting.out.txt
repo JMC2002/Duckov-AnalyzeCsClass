@@ -1,0 +1,6 @@
+public struct CustomFaceHeadSetting
+  4 ¸ö Field:
+      public Color mainColor
+      public float headScaleOffset
+      public float foreheadHeight
+      public float foreheadRound

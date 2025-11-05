@@ -1,0 +1,21 @@
+namespace Duckov.Quests
+public class RewardItem: Reward
+
+  5 ¸ö Method:
+      public override object GenerateSaveData()
+      public override void SetupSaveData(object data)
+      public override void OnClaim()
+      private async UniTask GenerateAndGiveItems()
+      private void SendItemToPlayerStorage(Item item)
+  5 ¸ö Field:
+      public int itemTypeID
+      public int amount
+      private bool claimed
+      private bool claiming
+      private ItemMetaData? _cachedMeta
+  5 ¸ö Property:
+      public override bool Claimed
+      public override bool Claiming
+      private ItemMetaData CachedMeta
+      public override Sprite Icon
+      public override string Description

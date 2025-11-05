@@ -1,0 +1,14 @@
+public class RunInputOptions: OptionsProviderBase
+
+  6 ¸ö Method:
+      public override string[] GetOptions()
+      public override string GetCurrentOption()
+      public override void Set(int index)
+      private void Awake()
+      private void OnDestroy()
+      private void RefreshOnLevelInited()
+  2 ¸ö Field:
+      public string holdModeKey
+      public string switchModeKey
+  1 ¸ö Property:
+      public override string Key

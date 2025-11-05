@@ -1,0 +1,12 @@
+public class ItemTest: MonoBehaviour
+
+  4 ¸ö Method:
+      public void DoInstantiate()
+      public void EquipSword()
+      public void UequipSword()
+      public void DestroyInstances()
+  4 ¸ö Field:
+      public Item characterTemplate
+      public Item swordTemplate
+      public Item characterInstance
+      public Item swordInstance

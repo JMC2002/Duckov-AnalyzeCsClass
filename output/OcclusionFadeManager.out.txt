@@ -1,0 +1,33 @@
+public class OcclusionFadeManager: MonoBehaviour
+
+  5 ¸ö Method:
+      private void Awake()
+      private void OnValidate()
+      private void SetShader()
+      private void Update()
+      public Material GetMaskedMaterial(Material mat)
+  21 ¸ö Field:
+      private static OcclusionFadeManager instance
+      public OcclusionFadeChecker aimOcclusionFadeChecker
+      public OcclusionFadeChecker characterOcclusionFadeChecker
+      private CharacterMainControl character
+      private Camera cam
+      public Dictionary<Material, Material> materialDic
+      public List<Shader> supportedShaders
+      public Shader maskedShader
+      public Material testMat
+      public float viewRange
+      public float viewFadeRange
+      public Texture2D fadeNoiseTexture
+      public float heightFadeRange
+      private int aimViewDirHash
+      private int aimPosHash
+      private int characterViewDirHash
+      private int charactetrPosHash
+      private int viewRangeHash
+      private int viewFadeRangeHash
+      private int startFadeHeightHash
+      private int heightFadeRangeHash
+  2 ¸ö Property:
+      public static OcclusionFadeManager Instance
+      public float startFadeHeight

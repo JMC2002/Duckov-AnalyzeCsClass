@@ -1,0 +1,8 @@
+public class BulletTypeDisplay: MonoBehaviour
+
+  1 ¸ö Method:
+      internal void Setup(int targetBulletID)
+  1 ¸ö Field:
+      private TextMeshProUGUI bulletDisplayName
+  1 ¸ö Property:
+      private string NotAssignedTextKey

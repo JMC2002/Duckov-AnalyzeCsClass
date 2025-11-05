@@ -1,0 +1,11 @@
+public class MoveVisual: MonoBehaviour
+
+  2 ¸ö Method:
+      private void Awake()
+      private void Update()
+  3 ¸ö Field:
+      private CharacterModel characterModel
+      public List<ParticleSystem> runParticles
+      private bool running
+  1 ¸ö Property:
+      private CharacterMainControl Character

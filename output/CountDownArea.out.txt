@@ -1,0 +1,25 @@
+public class CountDownArea: MonoBehaviour
+
+  8 ¸ö Method:
+      private void OnTriggerEnter(Collider other)
+      private void OnTriggerExit(Collider other)
+      private void OnHoveringMainCharactersChanged()
+      private void BeginCountDown()
+      private void AbortCountDown()
+      private void UpdateCountDown()
+      private void OnCountdownSucceed()
+      private void Update()
+  8 ¸ö Field:
+      private float requiredExtrationTime
+      private bool disableWhenSucceed
+      public UnityEvent onCountDownSucceed
+      public UnityEvent onTickSecond
+      public UnityEvent<CountDownArea> onCountDownStarted
+      public UnityEvent<CountDownArea> onCountDownStopped
+      private bool countingDown
+      private float timeWhenCountDownBegan
+  4 ¸ö Property:
+      public float RequiredExtrationTime
+      private float TimeSinceCountDownBegan
+      public float RemainingTime
+      public float Progress

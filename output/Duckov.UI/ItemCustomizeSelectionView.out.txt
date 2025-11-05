@@ -1,0 +1,35 @@
+namespace Duckov.UI
+public class ItemCustomizeSelectionView: View
+
+  11 ¸ö Method:
+      protected override void Awake()
+      private void OnBeginCustomizeButtonClicked()
+      private List<Inventory> GetAvaliableInventories()
+      protected override void OnOpen()
+      protected override void OnClose()
+      private void RegisterEvents()
+      private void OnItemSelectionChanged()
+      private void UnregisterEvents()
+      public static void Show()
+      public static void Hide()
+      private void RefreshSelectedItemInfo()
+  15 ¸ö Field:
+      private FadeGroup fadeGroup
+      private ItemSlotCollectionDisplay slotDisplay
+      private InventoryDisplay inventoryDisplay
+      private ItemDetailsDisplay detailsDisplay
+      private FadeGroup itemDetailsFadeGroup
+      private FadeGroup customizeButtonFadeGroup
+      private FadeGroup placeHolderFadeGroup
+      private Button beginCustomizeButton
+      private TextMeshProUGUI selectedItemName
+      private Image selectedItemIcon
+      private TrueShadow selectedItemShadow
+      private GameObject customizableIndicator
+      private GameObject uncustomizableIndicator
+      private string noItemSelectedNameText
+      private Sprite noItemSelectedIconSprite
+  3 ¸ö Property:
+      public static ItemCustomizeSelectionView Instance
+      private Item CharacterItem
+      private bool CanCustomize

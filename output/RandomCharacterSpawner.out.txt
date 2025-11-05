@@ -1,0 +1,31 @@
+public class RandomCharacterSpawner: CharacterSpawnerComponentBase
+
+  8 ¸ö Method:
+      private void ShowGizmo()
+      public override void Init(CharacterSpawnerRoot root)
+      private void OnDestroy()
+      private CharacterRandomPresetInfo GetAPresetByWeight()
+      public override void StartSpawn()
+      private async UniTaskVoid CreateAsync()
+      private async UniTask<CharacterMainControl> CreateAt(Vector3 point, int scene, CharacterSpawnerGroup group, bool isLeader)
+      private void OnDrawGizmos()
+  16 ¸ö Field:
+      public Points spawnPoints
+      public CharacterSpawnerRoot spawnerRoot
+      public CharacterSpawnerGroup masterGroup
+      public List<CharacterRandomPresetInfo> randomPresetInfos
+      private float delayTime
+      public Vector2Int spawnCountRange
+      private float totalWeight
+      public bool isStaticTarget
+      public static string currentGizmosTag
+      public bool firstIsLeader
+      private bool firstCreateStarted
+      public UnityEvent OnStartCreateEvent
+      private int targetSpawnCount
+      private int currentSpawnedCount
+      private bool destroied
+      public string gizmosTag
+  2 ¸ö Property:
+      private float minDistanceToMainCharacter
+      private int scene

@@ -1,0 +1,7 @@
+namespace Duckov.UI
+public class RectTransformChangeEventEmitter: UIBehaviour
+
+  3 ¸ö Method:
+      private void SetDirty()
+      protected override void OnRectTransformDimensionsChange()
+      protected override void OnEnable()

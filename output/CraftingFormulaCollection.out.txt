@@ -1,0 +1,10 @@
+public class CraftingFormulaCollection: ScriptableObject
+
+  1 ¸ö Method:
+      public static bool TryGetFormula(string id, out CraftingFormula formula)
+  2 ¸ö Field:
+      private List<CraftingFormula> list
+      private ReadOnlyCollection<CraftingFormula> _entries_ReadOnly
+  2 ¸ö Property:
+      public static CraftingFormulaCollection Instance
+      public ReadOnlyCollection<CraftingFormula> Entries

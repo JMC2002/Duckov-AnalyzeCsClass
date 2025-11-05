@@ -1,0 +1,17 @@
+namespace Duckov.Crops.UI
+public class GardenViewCropSelector: MonoBehaviour
+
+  7 ¸ö Method:
+      private void Awake()
+      private void OnConfirm()
+      public void Show()
+      private void OnEnable()
+      private void OnDisable()
+      private void OnSelectionChanged()
+      public void Hide()
+  5 ¸ö Field:
+      private GardenView master
+      private FadeGroup fadeGroup
+      private Button btnConfirm
+      private InventoryDisplay playerInventoryDisplay
+      private InventoryDisplay storageInventoryDisplay

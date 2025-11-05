@@ -1,0 +1,28 @@
+namespace Duckov.Endowment
+public class EndowmentManager: MonoBehaviour
+
+  11 个 Method:
+      private EndowmentEntry GetEntry(EndowmentIndex index)
+      private static string GetUnlockKey(EndowmentIndex index)
+      public static bool GetEndowmentUnlocked(EndowmentIndex index)
+      private static void SetEndowmentUnlocked(EndowmentIndex index, bool value = true)
+      public static bool UnlockEndowment(EndowmentIndex index)
+      private void Awake()
+      private void OnDestroy()
+      private void OnLevelInitialized()
+      private void MakeSureEndowmentAchievementsUnlocked()
+      private void ApplyCurrentEndowment()
+      internal void SelectIndex(EndowmentIndex index)
+  3 个 Field:
+      public static Action<EndowmentIndex> OnEndowmentChanged
+      public static Action<EndowmentIndex> OnEndowmentUnlock
+      private ReadOnlyCollection<EndowmentEntry> _entries_ReadOnly
+  6 个 Property:
+      private static EndowmentManager _instance
+      public static EndowmentManager Instance
+      public static EndowmentIndex SelectedIndex
+      public ReadOnlyCollection<EndowmentEntry> Entries
+      public static EndowmentEntry Current
+      public static EndowmentIndex CurrentIndex
+  1 个 Constant:
+      private const string SaveKey

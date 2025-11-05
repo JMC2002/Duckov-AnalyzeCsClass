@@ -1,0 +1,7 @@
+public class EndingControl: MonoBehaviour
+
+  1 ¸ö Method:
+      public void SetEndingIndex()
+  2 ¸ö Field:
+      public int endingIndex
+      public string MissleLuncherClosedKey

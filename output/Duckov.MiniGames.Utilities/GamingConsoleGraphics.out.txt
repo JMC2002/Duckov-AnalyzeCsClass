@@ -1,0 +1,30 @@
+namespace Duckov.MiniGames.Utilities
+public class GamingConsoleGraphics: MonoBehaviour
+
+  11 ¸ö Method:
+      private void Awake()
+      private void Start()
+      private void OnContentChanged(GamingConsole console)
+      private void Update()
+      private void RefreshDisplays()
+      private void OnCatridgeChanged()
+      private void OnConsoleChanged()
+      private void OnMonitorChanged()
+      private void OnDestroy()
+      private void OnBeforeAnimateOut(GamingConsole console)
+      private void OnAfterAnimateIn(GamingConsole console)
+  14 ¸ö Field:
+      private GamingConsole master
+      private Transform monitorRoot
+      private Transform consoleRoot
+      private Transform playingControllerPosition
+      private Transform cartridgeRoot
+      private Item _cachedMonitor
+      private Item _cachedConsole
+      private Item _cachedCartridge
+      private ItemGraphicInfo monitorGraphic
+      private ItemGraphicInfo consoleGraphic
+      private ControllerPickupAnimation pickupAnimation
+      private ControllerAnimator controllerAnimator
+      private bool dirty
+      private bool isBeingDestroyed

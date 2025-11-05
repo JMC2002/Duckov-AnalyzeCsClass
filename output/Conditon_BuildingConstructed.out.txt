@@ -1,0 +1,7 @@
+public class Conditon_BuildingConstructed: Condition
+
+  1 ¸ö Method:
+      public override bool Evaluate()
+  2 ¸ö Field:
+      public string buildingID
+      public bool not

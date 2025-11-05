@@ -1,0 +1,9 @@
+public class SkillRangeHUD: MonoBehaviour
+
+  2 ¸ö Method:
+      public void SetRange(float range)
+      public void SetProgress(float progress)
+  3 ¸ö Field:
+      public Transform rangeTarget
+      public Renderer rangeRenderer
+      private Material rangeMat

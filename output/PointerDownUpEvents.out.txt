@@ -1,0 +1,8 @@
+public class PointerDownUpEvents: MonoBehaviour, IPointerDownHandler, IEventSystemHandler, IPointerUpHandler
+
+  2 ¸ö Method:
+      public void OnPointerDown(PointerEventData eventData)
+      public void OnPointerUp(PointerEventData eventData)
+  2 ¸ö Field:
+      public UnityEvent<PointerEventData> onPointerDown
+      public UnityEvent<PointerEventData> onPointerUp

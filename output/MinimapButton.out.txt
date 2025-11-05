@@ -1,0 +1,5 @@
+public class MinimapButton: MonoBehaviour
+
+  2 ¸ö Method:
+      private void Start()
+      private void Update()

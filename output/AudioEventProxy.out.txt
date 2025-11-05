@@ -1,0 +1,8 @@
+public class AudioEventProxy: MonoBehaviour
+
+  2 ¸ö Method:
+      private void Awake()
+      public void Post()
+  2 ¸ö Field:
+      public bool playOnAwake
+      private string eventName

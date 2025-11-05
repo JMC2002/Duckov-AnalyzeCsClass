@@ -1,0 +1,6 @@
+public class GetCurrentPosition: ActionTask<Transform>
+
+  1 ¸ö Method:
+      protected override void OnExecute()
+  1 ¸ö Field:
+      public BBParameter<Vector3> positionResult

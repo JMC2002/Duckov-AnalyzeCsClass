@@ -1,0 +1,9 @@
+public class PauseMenu: UIPanel
+
+  3 ¸ö Method:
+      public static void Show()
+      public static void Hide()
+      public static void Toggle()
+  2 ¸ö Property:
+      public static PauseMenu Instance
+      public bool Shown

@@ -1,0 +1,55 @@
+namespace Duckov.MiniGames
+public class GamingConsole: InteractableBase
+
+  1 个 ClassLike:
+      private class SaveData
+  14 个 Method:
+      private async UniTask Load()
+      private void Save()
+      protected override void Awake()
+      protected override void OnDestroy()
+      private void OnDisable()
+      protected override void Start()
+      private void OnContentChanged(Item item)
+      private void OnUICancel(UIInputEventData data)
+      protected override void OnInteractStart(CharacterMainControl interactCharacter)
+      private async UniTask AnimateCameraIn()
+      private async UniTask AnimateCameraOut()
+      protected override void OnInteractStop()
+      private void RefreshGame()
+      private void CreateGame(MiniGame prefab)
+  24 个 Field:
+      public ItemTreeData monitorData
+      public ItemTreeData consoleData
+      private List<MiniGame> possibleGames
+      private RenderTexture rt
+      private MiniGameInputHandler inputHandler
+      private CinemachineVirtualCamera virtualCamera
+      private float transitionTime
+      private Transform vcamEndPosition
+      private Transform vcamLookTarget
+      private AnimationCurve posCurve
+      private AnimationCurve rotCurve
+      private AnimationCurve fovCurve
+      private float activeFov
+      private Transform teleportToPositionWhenBegin
+      private Item mainItem
+      private string incompleteNotificationText
+      private string noGameNotificationText
+      private MiniGame game
+      private string SaveKey
+      private bool loading
+      private bool loaded
+      private bool isBeingDestroyed
+      private int animateToken
+      public static event Action<bool> OnGamingConsoleInteractChanged
+  9 个 Property:
+      public MiniGame SelectedGame
+      public MiniGame Game
+      public Slot MonitorSlot
+      public Slot ConsoleSlot
+      public bool controllerConnected
+      public Item Monitor
+      public Item Console
+      public Item Cartridge
+      public string CatridgeGameID

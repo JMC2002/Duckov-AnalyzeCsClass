@@ -1,0 +1,17 @@
+public class ZoneDamage: MonoBehaviour
+
+  3 ¸ö Method:
+      private void Start()
+      private void Update()
+      private void Damage()
+  10 ¸ö Field:
+      public Zone zone
+      public float timeSpace
+      private float timer
+      public DamageInfo damageInfo
+      public bool checkGasMask
+      public bool checkElecProtection
+      public bool checkFireProtection
+      private int hasMaskHash
+      private int elecProtectionHash
+      private int fireProtectionHash

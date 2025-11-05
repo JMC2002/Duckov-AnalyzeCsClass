@@ -1,0 +1,13 @@
+namespace ItemStatsSystem
+public class OnTakeDamageTrigger: EffectTrigger
+
+  6 ¸ö Method:
+      private void OnEnable()
+      protected override void OnDisable()
+      protected override void OnMasterSetTargetItem(Effect effect, Item item)
+      private void RegisterEvents()
+      private void UnregisterEvents()
+      private void OnTookDamage(DamageInfo info)
+  2 ¸ö Field:
+      public int threshold
+      private Health target

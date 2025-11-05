@@ -1,0 +1,23 @@
+public class ItemRepair_RepairAllPanel: MonoBehaviour
+
+  10 ¸ö Method:
+      private void OnPointerClickEntry(ItemDisplay display, PointerEventData data)
+      private void Awake()
+      private void OnButtonClicked()
+      private void OnEnable()
+      private void OnDisable()
+      public void Setup(ItemRepairView master)
+      private void OnPlayerItemOperation()
+      private void OnRepairOptionDone()
+      private void Refresh()
+      private void Update()
+  7 ¸ö Field:
+      private ItemRepairView master
+      private TextMeshProUGUI priceDisplay
+      private ItemDisplay itemDisplayTemplate
+      private Button button
+      private GameObject placeholder
+      private PrefabPool<ItemDisplay> _pool
+      private bool needsRefresh
+  1 ¸ö Property:
+      private PrefabPool<ItemDisplay> Pool

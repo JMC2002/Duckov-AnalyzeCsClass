@@ -1,0 +1,3 @@
+public static class RectTransformExtensions
+  1 ¸ö Method:
+      public static Camera GetUICamera()

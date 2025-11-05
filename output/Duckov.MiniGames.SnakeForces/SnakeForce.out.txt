@@ -1,0 +1,63 @@
+namespace Duckov.MiniGames.SnakeForces
+public class SnakeForce: MiniGameBehaviour
+
+  1 个 ClassLike:
+      public class Part
+  17 个 Method:
+      internal void MoveTo(Vector2Int coord)
+      protected override void Start()
+      private void Restart()
+      private void AddFood(int count = 3)
+      private void GameOver()
+      private void Win()
+      protected override void OnUpdate(float deltaTime)
+      private void RefreshScoreText()
+      private void Tick()
+      private void HandleMovement()
+      private void HandleEatAndGrow()
+      private void DetectDeath()
+      private Part Grow()
+      private Part AddPart(Vector2Int coord, Vector2Int direction)
+      private bool RemovePart(Part part)
+      private void Clear()
+      private void PunchCamera()
+  28 个 Field:
+      public Vector2Int coord
+      public Vector2Int direction
+      public readonly SnakeForce Master
+      private GameObject gameOverScreen
+      private GameObject titleScreen
+      private GameObject winIndicator
+      private TextMeshProUGUI scoreText
+      private TextMeshProUGUI highScoreText
+      private GameObject highScoreIndicator
+      private TextMeshProUGUI scoreTextGameOver
+      private Transform cameraParent
+      private float tickIntervalFrom
+      private float tickIntervalTo
+      private int maxSpeedTick
+      private AnimationCurve speedCurve
+      private int borderXMin
+      private int borderXMax
+      private int borderYMin
+      private int borderYMax
+      private bool playing
+      private bool dead
+      private bool won
+      private int _score
+      private float tickETA
+      private ulong playTick
+      private Vector2Int lastFrameAxis
+      private double freezeCountDown
+      private bool axisInput
+  8 个 Property:
+      public bool IsHead
+      public bool IsTail
+      public List<Part> Snake
+      public List<Vector2Int> Foods
+      public int Score
+      public static int HighScore
+      public Part Head
+      public Part Tail
+  1 个 Constant:
+      public const string HighScoreKey

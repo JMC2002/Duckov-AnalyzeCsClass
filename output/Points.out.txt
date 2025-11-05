@@ -1,0 +1,15 @@
+public class Points: MonoBehaviour
+
+  7 ¸ö Method:
+      public void SetYtoZero()
+      public void RemoveAllPoints()
+      public List<Vector3> GetRandomPoints(int count)
+      public Vector3 GetRandomPoint()
+      public Vector3 GetPoint(int index)
+      private Vector3 PointToWorld(Vector3 point)
+      public void SendPointsChangedMessage()
+  4 ¸ö Field:
+      public List<Vector3> points
+      public int lastSelectedPointIndex
+      public bool worldSpace
+      public bool syncToSelectedPoint

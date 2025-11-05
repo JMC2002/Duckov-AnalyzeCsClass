@@ -1,0 +1,8 @@
+public class CustomFacePreset: ScriptableObject
+
+  3 ¸ö Method:
+      private void CopyJsonToClipBoard()
+      private void PastyFromJsonData()
+      private string DataToJson()
+  1 ¸ö Field:
+      public CustomFaceSettingData settings

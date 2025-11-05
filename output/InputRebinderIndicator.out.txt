@@ -1,0 +1,8 @@
+public class InputRebinderIndicator: MonoBehaviour
+
+  3 ¸ö Method:
+      private void Awake()
+      private void OnRebindComplete(InputAction action)
+      private void OnRebindBegin(InputAction action)
+  1 ¸ö Field:
+      private FadeGroup fadeGroup

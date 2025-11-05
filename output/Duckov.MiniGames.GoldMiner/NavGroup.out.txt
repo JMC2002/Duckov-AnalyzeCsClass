@@ -1,0 +1,24 @@
+namespace Duckov.MiniGames.GoldMiner
+public class NavGroup: MiniGameBehaviour
+
+  11 ¸ö Method:
+      public void SetAsActiveNavGroup()
+      protected override void OnEnable()
+      private void CleanupIndex()
+      private void RefreshAll()
+      private void RefreshEntry(int index)
+      public NavEntry GetSelectedEntry()
+      private void Awake()
+      private void OnLevelBegin(GoldMiner miner)
+      internal void Remove(NavEntry navEntry)
+      internal void Add(NavEntry navEntry)
+      internal void TrySelect(NavEntry navEntry)
+  4 ¸ö Field:
+      private GoldMiner master
+      public List<NavEntry> entries
+      public static Action OnNavGroupChanged
+      private int _navIndex
+  3 ¸ö Property:
+      public static NavGroup ActiveNavGroup
+      public bool active
+      public int NavIndex

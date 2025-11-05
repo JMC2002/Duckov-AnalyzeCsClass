@@ -1,0 +1,16 @@
+namespace Duckov.Options.UI
+public class OptionsUIEntry_Toggle: MonoBehaviour
+
+  3 ¸ö Method:
+      private void Awake()
+      private void OnEnable()
+      private void OnToggleValueChanged(float value)
+  4 ¸ö Field:
+      private string key
+      private bool defaultValue
+      private TextMeshProUGUI label
+      private Slider toggle
+  3 ¸ö Property:
+      private string labelKey
+      public bool Value
+      private int SliderValue

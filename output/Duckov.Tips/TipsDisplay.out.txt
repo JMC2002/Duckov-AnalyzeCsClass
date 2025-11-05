@@ -1,0 +1,11 @@
+namespace Duckov.Tips
+public class TipsDisplay: MonoBehaviour
+
+  3 ¸ö Method:
+      public void DisplayRandom()
+      public void Display(string tipID)
+      private void OnEnable()
+  3 ¸ö Field:
+      private TextMeshProUGUI text
+      private TipEntry[] entries
+      private CanvasGroup canvasGroup

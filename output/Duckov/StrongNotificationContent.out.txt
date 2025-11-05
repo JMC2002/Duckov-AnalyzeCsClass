@@ -1,0 +1,6 @@
+namespace Duckov
+public class StrongNotificationContent
+  3 ¸ö Field:
+      public string mainText
+      public string subText
+      public Sprite image

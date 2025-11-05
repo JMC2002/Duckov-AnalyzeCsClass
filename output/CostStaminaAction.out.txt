@@ -1,0 +1,8 @@
+public class CostStaminaAction: EffectAction
+
+  1 ¸ö Method:
+      protected override void OnTriggered(bool positive)
+  1 ¸ö Field:
+      public float staminaCost
+  1 ¸ö Property:
+      private CharacterMainControl MainControl

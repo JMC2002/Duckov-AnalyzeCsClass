@@ -1,0 +1,4 @@
+public class ForceUnmaskable: MonoBehaviour
+
+  1 ¸ö Method:
+      private void OnEnable()

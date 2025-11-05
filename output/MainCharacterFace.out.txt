@@ -1,0 +1,8 @@
+public class MainCharacterFace: MonoBehaviour
+
+  2 ¸ö Method:
+      private void Start()
+      private void Update()
+  2 ¸ö Field:
+      public CustomFaceManager customFaceManager
+      public CustomFaceInstance customFace

@@ -1,0 +1,10 @@
+public class PerkTreeManager: MonoBehaviour
+
+  2 ¸ö Method:
+      private void Awake()
+      public static PerkTree GetPerkTree(string id)
+  2 ¸ö Field:
+      private static PerkTreeManager instance
+      public List<PerkTree> perkTrees
+  1 ¸ö Property:
+      public static PerkTreeManager Instance

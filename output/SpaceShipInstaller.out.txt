@@ -1,0 +1,19 @@
+public class SpaceShipInstaller: MonoBehaviour
+
+  4 ¸ö Method:
+      private void Awake()
+      public void Install()
+      private void SyncGraphic(bool _installed)
+      private void Update()
+  9 ¸ö Field:
+      private string saveDataKey
+      private int questID
+      private InteractableBase interactable
+      private string notificationKey
+      private string interactKey
+      private bool inited
+      public GameObject builtGraphic
+      public GameObject unbuiltGraphic
+      public GameObject buildFx
+  1 ¸ö Property:
+      private bool Installed

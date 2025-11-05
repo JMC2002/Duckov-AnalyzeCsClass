@@ -1,0 +1,19 @@
+namespace Fishing.UI
+public class BaitSelectPanelEntry: MonoBehaviour, IPointerClickHandler, IEventSystemHandler
+
+  7 ¸ö Method:
+      internal void Setup(BaitSelectPanel master, Item cur)
+      private void RegisterEvents()
+      private void UnregisterEvents()
+      private void Refresh()
+      private void Awake()
+      public void OnPointerClick(PointerEventData eventData)
+      private void OnPointerClick(ItemDisplay display, PointerEventData data)
+  4 ¸ö Field:
+      private GameObject selectedIndicator
+      private ItemDisplay itemDisplay
+      private BaitSelectPanel master
+      private Item targetItem
+  2 ¸ö Property:
+      public Item Target
+      private bool Selected

@@ -1,0 +1,10 @@
+public class CharacterSkillKeeper
+  2 ¸ö Method:
+      public void SetSkill(SkillBase _skill, GameObject _bindingObject)
+      public bool CheckSkillAndBinding()
+  3 ¸ö Field:
+      private SkillBase skill
+      private GameObject skillBindingObject
+      public Action OnSkillChanged
+  1 ¸ö Property:
+      public SkillBase Skill

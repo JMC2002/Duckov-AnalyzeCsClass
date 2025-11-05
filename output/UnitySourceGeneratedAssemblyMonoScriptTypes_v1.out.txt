@@ -1,0 +1,11 @@
+internal class UnitySourceGeneratedAssemblyMonoScriptTypes_v1
+  1 ¸ö ClassLike:
+      private struct MonoScriptData
+  1 ¸ö Method:
+      private static MonoScriptData Get()
+  5 ¸ö Field:
+      public byte[] FilePathsData
+      public byte[] TypesData
+      public int TotalTypes
+      public int TotalFiles
+      public bool IsEditorOnly

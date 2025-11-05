@@ -1,0 +1,53 @@
+public class Action_Fishing: CharacterActionBase
+
+  1 个 ClassLike:
+      public enum FishingStates
+  23 个 Method:
+      private void Awake()
+      public override bool CanEditInventory()
+      public override ActionPriorities ActionPriority()
+      protected override bool OnStart()
+      private void OnCatchButton()
+      private void UIOnCancle(UIInputEventData data)
+      protected override void OnStop()
+      public override bool CanControlAim()
+      public override bool CanMove()
+      public override bool CanRun()
+      public override bool CanUseHand()
+      public override bool IsReady()
+      private int NewToken()
+      private async UniTask Fishing()
+      private async UniTask SingleFishingLoop(Func<bool> IsTaskValid)
+      private void ResultConfirm(bool _continueFishing)
+      private async UniTask<bool> Catching(Func<bool> IsTaskValid)
+      private async UniTask<bool> WaitForSelectBait()
+      public List<Item> GetAllBaits()
+      public void CatchButton()
+      public void Quit()
+      private bool SelectBaitAndStartFishing(Item _bait)
+      private void OnDestroy()
+  22 个 Field:
+      private CinemachineVirtualCamera fishingCamera
+      private FishingRod fishingRod
+      private FishingPoint fishingPoint
+      private float introTime
+      private float fishingWaitTime
+      private float catchTime
+      private Item bait
+      private Transform socket
+      private int testCatchItem
+      private Item catchedItem
+      private bool quit
+      private UniTask currentTask
+      private bool catchInput
+      private bool resultConfirmed
+      private bool continueFishing
+      private FishingStates fishingState
+      private int fishingTaskToken
+      public static event Action<Action_Fishing, ICollection<Item>, Func<Item, bool>> OnPlayerStartSelectBait
+      public static event Action<Action_Fishing> OnPlayerStartFishing
+      public static event Action<Action_Fishing, float, Func<float>> OnPlayerStartCatching
+      public static event Action<Action_Fishing, Item, Action<bool>> OnPlayerStopCatching
+      public static event Action<Action_Fishing> OnPlayerStopFishing
+  1 个 Property:
+      public FishingStates FishingState

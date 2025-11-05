@@ -1,0 +1,11 @@
+namespace Duckov.UI
+public class ItemShortcutEditorPanel: MonoBehaviour
+
+  2 ¸ö Method:
+      private void OnEnable()
+      private void Setup()
+  2 ¸ö Field:
+      private ItemShortcutEditorEntry entryTemplate
+      private PrefabPool<ItemShortcutEditorEntry> _entryPool
+  1 ¸ö Property:
+      private PrefabPool<ItemShortcutEditorEntry> EntryPool

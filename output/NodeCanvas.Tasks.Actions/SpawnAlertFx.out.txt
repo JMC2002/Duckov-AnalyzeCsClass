@@ -1,0 +1,13 @@
+namespace NodeCanvas.Tasks.Actions
+public class SpawnAlertFx: ActionTask<AICharacterController>
+
+  5 ¸ö Method:
+      protected override string OnInit()
+      protected override void OnExecute()
+      protected override void OnUpdate()
+      protected override void OnStop()
+      protected override void OnPause()
+  1 ¸ö Field:
+      public BBParameter<float> alertTime
+  1 ¸ö Property:
+      protected override string info

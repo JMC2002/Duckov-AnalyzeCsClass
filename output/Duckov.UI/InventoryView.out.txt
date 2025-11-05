@@ -1,0 +1,22 @@
+namespace Duckov.UI
+public class InventoryView: View
+
+  9 ¸ö Method:
+      protected override void Awake()
+      private void Update()
+      protected override void OnOpen()
+      protected override void OnClose()
+      private void RegisterEvents()
+      private void OnItemSelectionChanged()
+      private void UnregisterEvents()
+      public static void Show()
+      public static void Hide()
+  5 ¸ö Field:
+      private FadeGroup fadeGroup
+      private ItemSlotCollectionDisplay slotDisplay
+      private InventoryDisplay inventoryDisplay
+      private ItemDetailsDisplay detailsDisplay
+      private FadeGroup itemDetailsFadeGroup
+  2 ¸ö Property:
+      private static InventoryView Instance
+      private Item CharacterItem

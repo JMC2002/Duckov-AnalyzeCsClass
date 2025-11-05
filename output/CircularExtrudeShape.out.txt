@@ -1,0 +1,10 @@
+public class CircularExtrudeShape: ShapeProvider
+
+  2 ¸ö Method:
+      public override PipeRenderer.OrientedPoint[] GenerateShape()
+      private void OnDrawGizmosSelected()
+  4 ¸ö Field:
+      public PipeRenderer pipeRenderer
+      public float radius
+      public int subdivision
+      public Vector3 offset

@@ -1,0 +1,13 @@
+public class PlayableDirectorEvents: MonoBehaviour
+
+  5 ¸ö Method:
+      private void OnEnable()
+      private void OnDisable()
+      private void OnStopped(PlayableDirector director)
+      private void OnPaused(PlayableDirector director)
+      private void OnPlayed(PlayableDirector director)
+  4 ¸ö Field:
+      private PlayableDirector playableDirector
+      private UnityEvent onPlayed
+      private UnityEvent onPaused
+      private UnityEvent onStopped

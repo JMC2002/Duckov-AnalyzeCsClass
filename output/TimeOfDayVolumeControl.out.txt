@@ -1,0 +1,21 @@
+public class TimeOfDayVolumeControl: MonoBehaviour
+
+  5 ¸ö Method:
+      private void Update()
+      private void UpdateBlending(float deltaTime)
+      public void SetTargetProfile(VolumeProfile profile)
+      private void StartBlendToBufferdTarget()
+      public void ForceSetProfile(VolumeProfile profile)
+  9 ¸ö Field:
+      private VolumeProfile currentProfile
+      private VolumeProfile blendingTargetProfile
+      private VolumeProfile bufferTargetProfile
+      public Volume fromVolume
+      public Volume toVolume
+      private bool blending
+      private float blendTimer
+      public float blendTime
+      public AnimationCurve blendCurve
+  2 ¸ö Property:
+      public VolumeProfile CurrentProfile
+      public VolumeProfile BufferTargetProfile

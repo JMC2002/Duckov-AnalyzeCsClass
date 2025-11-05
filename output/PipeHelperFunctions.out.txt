@@ -1,0 +1,8 @@
+public class PipeHelperFunctions
+  6 ¸ö Method:
+      public static void RecalculateNormals(ref PipeRenderer.OrientedPoint[] points)
+      public static void RecalculateUvs(ref PipeRenderer.OrientedPoint[] points, float factor = 1f, float offset = 0f)
+      public static void RotatePoints(ref PipeRenderer.OrientedPoint[] points, float offset, float step)
+      public static PipeRenderer.OrientedPoint[] RemoveDuplicates(PipeRenderer.OrientedPoint[] points, float threshold = 0.0001f)
+      public static Vector2[] GenerateUV2(PipeRenderer.OrientedPoint[] points)
+      public static float GetTotalLength(PipeRenderer.OrientedPoint[] points)

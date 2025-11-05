@@ -1,0 +1,14 @@
+public class PlayerHurtVisual: MonoBehaviour
+
+  4 ¸ö Method:
+      private void Update()
+      private void TryInit()
+      private void OnDestroy()
+      private void OnHurt(DamageInfo dmgInfo)
+  6 ¸ö Field:
+      private Volume volume
+      private float speed
+      private Health mainCharacterHealth
+      private bool inited
+      public static bool hurtVisualOn
+      private float value

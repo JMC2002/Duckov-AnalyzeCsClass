@@ -1,0 +1,7 @@
+public class Condition_TimeOfDay: Condition
+
+  1 ¸ö Method:
+      public override bool Evaluate()
+  2 ¸ö Field:
+      public float from
+      public float to

@@ -1,0 +1,10 @@
+public class UIInputEventData
+  1 ¸ö Method:
+      public void Use()
+  4 ¸ö Field:
+      private bool used
+      public Vector2 vector
+      public bool confirm
+      public bool cancel
+  1 ¸ö Property:
+      public bool Used

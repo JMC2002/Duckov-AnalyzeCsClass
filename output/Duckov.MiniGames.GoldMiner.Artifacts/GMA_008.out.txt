@@ -1,0 +1,10 @@
+namespace Duckov.MiniGames.GoldMiner.Artifacts
+public class GMA_008: GoldMinerArtifactBehaviour
+
+  4 ¸ö Method:
+      protected override void OnAttached(GoldMinerArtifact artifact)
+      protected override void OnDetached(GoldMinerArtifact artifact)
+      private void OnLevelBegin(GoldMiner miner)
+      private void OnAfterResolveEntity(GoldMiner miner, GoldMinerEntity entity)
+  1 ¸ö Field:
+      private bool triggered

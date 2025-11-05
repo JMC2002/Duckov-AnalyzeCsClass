@@ -1,0 +1,25 @@
+public class ATMPanel_SavePanel: MonoBehaviour
+
+  11 个 Method:
+      private void OnEnable()
+      private void OnDisable()
+      private void OnPlayerItemOperation()
+      private void RefreshCash()
+      private void Awake()
+      private void OnQuitButtonClicked()
+      private void OnConfirmButtonClicked()
+      private void OnInputValueChanged(string v)
+      private void Refresh()
+      internal void Hide(bool skip = false)
+      internal void Show()
+  6 个 Field:
+      private FadeGroup fadeGroup
+      private DigitInputPanel inputPanel
+      private Button confirmButton
+      private GameObject insufficientIndicator
+      private Button quitButton
+      private int _cachedCashAmount
+  1 个 Property:
+      private int CashAmount
+  1 个 Constant:
+      private const int CashItemTypeID

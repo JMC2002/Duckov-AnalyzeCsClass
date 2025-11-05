@@ -1,0 +1,6 @@
+public class SetActiveOnAwake: MonoBehaviour
+
+  1 ¸ö Method:
+      private void Awake()
+  1 ¸ö Field:
+      public GameObject target

@@ -1,0 +1,8 @@
+public class SetActiveByInputDevice: MonoBehaviour
+
+  3 ¸ö Method:
+      private void Awake()
+      private void OnDestroy()
+      private void OnInputDeviceChanged()
+  1 ¸ö Field:
+      public InputManager.InputDevices activeIfDeviceIs

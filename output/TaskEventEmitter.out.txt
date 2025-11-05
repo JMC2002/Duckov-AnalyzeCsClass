@@ -1,0 +1,9 @@
+public class TaskEventEmitter: MonoBehaviour
+
+  3 ¸ö Method:
+      public void SetKey(string key)
+      private void Awake()
+      public void EmitEvent()
+  2 ¸ö Field:
+      private string eventKey
+      private bool emitOnAwake

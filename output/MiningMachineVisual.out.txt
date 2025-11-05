@@ -1,0 +1,11 @@
+public class MiningMachineVisual: MonoBehaviour
+
+  3 ¸ö Method:
+      private void Update()
+      private void OnDestroy()
+      private void OnSlotContentChanged(Item minnerItem, Slot changedSlot)
+  4 ¸ö Field:
+      public List<MiningMachineCardDisplay> cardsDisplay
+      private bool inited
+      private SlotCollection slots
+      private Item minnerItem

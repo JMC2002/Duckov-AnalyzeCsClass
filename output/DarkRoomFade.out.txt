@@ -1,0 +1,17 @@
+public class DarkRoomFade: MonoBehaviour
+
+  7 ¸ö Method:
+      public void StartFade()
+      private void Awake()
+      private void Update()
+      private void UpdateMaterial()
+      private void Collect()
+      public void SetRenderers(bool enable)
+      public static void SetRenderersEnable(bool enable)
+  6 ¸ö Field:
+      public float maxRange
+      public float speed
+      public Renderer[] renderers
+      private Vector3 startPos
+      private float range
+      private bool started

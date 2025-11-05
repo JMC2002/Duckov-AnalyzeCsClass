@@ -1,0 +1,22 @@
+namespace Duckov.Achievements
+public class AchievementDatabase: ScriptableObject
+
+  1 个 ClassLike:
+      public class Achievement
+  3 个 Method:
+      private void RebuildDictionary()
+      public static bool TryGetAchievementData(string id, out Achievement achievement)
+      internal bool IsIDValid(string id)
+  2 个 Field:
+      private XlsxObject achievementChart
+      private Dictionary<string, Achievement> _dic
+  9 个 Property:
+      public string id
+      public string overrideDisplayNameKey
+      public string overrideDescriptionKey
+      private string DisplayNameKey
+      public string DescriptionKey
+      public string DisplayName
+      public string Description
+      public static AchievementDatabase Instance
+      private Dictionary<string, Achievement> dic

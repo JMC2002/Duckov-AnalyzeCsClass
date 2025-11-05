@@ -1,0 +1,4 @@
+public class PlayerPositionBackupProxy: MonoBehaviour
+
+  1 ¸ö Method:
+      public void StartRecoverInteract()

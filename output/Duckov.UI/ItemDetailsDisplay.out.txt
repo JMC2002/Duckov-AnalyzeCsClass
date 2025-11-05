@@ -1,0 +1,64 @@
+namespace Duckov.UI
+public class ItemDetailsDisplay: MonoBehaviour
+
+  19 ¸ö Method:
+      internal void Setup(Item target)
+      private void Awake()
+      private void OnElementDoubleClicked(ItemSlotCollectionDisplay collectionDisplay, SlotDisplay slotDisplay)
+      private void OnDestroy()
+      private void Clear()
+      private void SetupGunDisplays()
+      private void SetupVariables()
+      private void SetupConstants()
+      private void SetupStats()
+      private void SetupModifiers()
+      private void SetupEffects()
+      private void RegisterEvents()
+      private void RefreshWeightText()
+      private void OnTargetSetStackCount(Item item)
+      private void OnTargetChildChanged(Item obj)
+      internal void UnregisterEvents()
+      private void OnTargetDurabilityChanged(Item item)
+      private void RefreshDurability()
+      private void OnTargetDestroy(Item item)
+  32 ¸ö Field:
+      private Image icon
+      private TrueShadow iconShadow
+      private TextMeshProUGUI displayName
+      private TextMeshProUGUI itemID
+      private TextMeshProUGUI description
+      private GameObject countContainer
+      private TextMeshProUGUI count
+      private GameObject durabilityContainer
+      private TextMeshProUGUI durabilityText
+      private TooltipsProvider durabilityToolTips
+      private string durabilityToolTipsFormatKey
+      private Image durabilityFill
+      private Image durabilityLoss
+      private Gradient durabilityColorOverT
+      private TextMeshProUGUI weightText
+      private ItemSlotCollectionDisplay slotCollectionDisplay
+      private RectTransform propertiesParent
+      private BulletTypeDisplay bulletTypeDisplay
+      private TagsDisplay tagsDisplay
+      private GameObject usableIndicator
+      private UsageUtilitiesDisplay usageUtilitiesDisplay
+      private GameObject registeredIndicator
+      private ItemVariableEntry variableEntryPrefab
+      private ItemStatEntry statEntryPrefab
+      private ItemModifierEntry modifierEntryPrefab
+      private ItemEffectEntry effectEntryPrefab
+      private string weightFormat
+      private Item target
+      private PrefabPool<ItemVariableEntry> _variablePool
+      private PrefabPool<ItemStatEntry> _statPool
+      private PrefabPool<ItemModifierEntry> _modifierPool
+      private PrefabPool<ItemEffectEntry> _effectPool
+  7 ¸ö Property:
+      private string DurabilityToolTipsFormat
+      public ItemSlotCollectionDisplay SlotCollectionDisplay
+      private PrefabPool<ItemVariableEntry> VariablePool
+      private PrefabPool<ItemStatEntry> StatPool
+      private PrefabPool<ItemModifierEntry> ModifierPool
+      private PrefabPool<ItemEffectEntry> EffectPool
+      public Item Target

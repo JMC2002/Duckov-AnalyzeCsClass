@@ -1,0 +1,9 @@
+public class Condition_XiaoHeiZi: Condition
+
+  1 ¸ö Method:
+      public override bool Evaluate()
+  2 ¸ö Field:
+      private int hairID
+      private int armorID
+  1 ¸ö Property:
+      public override string DisplayText

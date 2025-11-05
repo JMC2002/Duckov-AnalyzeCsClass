@@ -1,0 +1,13 @@
+namespace Duckov.UI
+public class TagsDisplayEntry: MonoBehaviour, IPointerEnterHandler, IEventSystemHandler, IPointerExitHandler, ITooltipsProvider
+
+  5 ¸ö Method:
+      public string GetTooltipsText()
+      public void OnPointerEnter(PointerEventData eventData)
+      public void OnPointerExit(PointerEventData eventData)
+      private void OnDisable()
+      public void Setup(Tag tag)
+  3 ¸ö Field:
+      private Image background
+      private TextMeshProUGUI text
+      private Tag target

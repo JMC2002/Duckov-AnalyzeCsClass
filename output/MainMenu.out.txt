@@ -1,0 +1,8 @@
+public class MainMenu: MonoBehaviour
+
+  2 ¸ö Method:
+      private void Awake()
+      private void OnDestroy()
+  2 ¸ö Field:
+      public static Action OnMainMenuAwake
+      public static Action OnMainMenuDestroy

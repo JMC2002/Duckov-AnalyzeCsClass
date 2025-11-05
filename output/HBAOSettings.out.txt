@@ -1,0 +1,17 @@
+public class HBAOSettings: OptionsProviderBase
+
+  6 ¸ö Method:
+      public override string[] GetOptions()
+      public override string GetCurrentOption()
+      public override void Set(int index)
+      private void Awake()
+      private void OnDestroy()
+      private void RefreshOnLevelInited()
+  5 ¸ö Field:
+      public string offKey
+      public string lowKey
+      public string normalKey
+      public string highKey
+      public VolumeProfile GlobalVolumePorfile
+  1 ¸ö Property:
+      public override string Key

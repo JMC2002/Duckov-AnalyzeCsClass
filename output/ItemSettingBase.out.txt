@@ -1,0 +1,11 @@
+public abstract class ItemSettingBase: MonoBehaviour
+
+  4 ¸ö Method:
+      public void Awake()
+      public virtual void OnInit()
+      public virtual void Start()
+      public abstract void SetMarkerParam(Item selfItem)
+  1 ¸ö Field:
+      protected Item _item
+  1 ¸ö Property:
+      public Item Item

@@ -1,0 +1,21 @@
+public class CameraArm: MonoBehaviour
+
+  4 ¸ö Method:
+      private void Update()
+      public static void ToggleView()
+      private void UpdateArm()
+      private void OnValidate()
+  13 ¸ö Field:
+      public bool volumeInfluence
+      public float pitch
+      public float yaw
+      public float distance
+      public static float globalPitch
+      public static float globalYaw
+      public static float globalDistance
+      public Transform pitchRoot
+      public Transform yawRoot
+      public CinemachineVirtualCamera virtualCamera
+      public GameCamera gameCamera
+      private static bool topDownView
+      public Volume topDownViewVolume

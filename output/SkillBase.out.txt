@@ -1,0 +1,20 @@
+public abstract class SkillBase: MonoBehaviour
+
+  2 ¸ö Method:
+      public void ReleaseSkill(SkillReleaseContext releaseContext, CharacterMainControl from)
+      public abstract void OnRelease()
+  11 ¸ö Field:
+      public bool hasReleaseSound
+      public string onReleaseSound
+      public Sprite icon
+      public float staminaCost
+      public float coolDownTime
+      private float lastReleaseTime
+      protected SkillContext skillContext
+      protected SkillReleaseContext skillReleaseContext
+      protected CharacterMainControl fromCharacter
+      public Item fromItem
+      public Action OnSkillReleasedEvent
+  2 ¸ö Property:
+      public float LastReleaseTime
+      public SkillContext SkillContext

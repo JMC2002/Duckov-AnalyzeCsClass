@@ -1,0 +1,32 @@
+namespace Duckov.UI
+public class ItemShortcutEditorEntry: MonoBehaviour, IPointerClickHandler, IEventSystemHandler, IDropHandler, IPointerEnterHandler, IPointerExitHandler, IItemDragSource, IBeginDragHandler, IEndDragHandler, IDragHandler
+
+  19 ¸ö Method:
+      private void Awake()
+      private void OnSetItem(int index)
+      private void OnItemDisplayClicked(ItemDisplay display, PointerEventData data)
+      public void OnPointerClick(PointerEventData eventData)
+      internal void Refresh()
+      private void RegisterEvents()
+      private void UnregisterEvents()
+      private void OnTargetStackCountChanged(Item item)
+      private void OnTargetParentChanged(Item item)
+      private void SetDirty()
+      private void Update()
+      private void OnDestroy()
+      internal void Setup(int i)
+      public void OnDrop(PointerEventData eventData)
+      public void OnPointerEnter(PointerEventData eventData)
+      public void OnPointerExit(PointerEventData eventData)
+      public bool IsEditable()
+      public Item GetItem()
+      public void OnDrag(PointerEventData eventData)
+  6 ¸ö Field:
+      private ItemDisplay itemDisplay
+      private GameObject hoveringIndicator
+      private int index
+      private InputIndicator indicator
+      private Item displayingItem
+      private bool dirty
+  1 ¸ö Property:
+      private Item TargetItem

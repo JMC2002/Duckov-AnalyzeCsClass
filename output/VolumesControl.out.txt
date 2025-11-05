@@ -1,0 +1,8 @@
+public class VolumesControl: MonoBehaviour
+
+  1 ¸ö Method:
+      private void Update()
+  3 ¸ö Field:
+      public Volume interactVolume
+      private CharacterMainControl character
+      private bool currentInteracting

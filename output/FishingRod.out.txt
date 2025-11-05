@@ -1,0 +1,11 @@
+public class FishingRod: MonoBehaviour
+
+  1 ¸ö Method:
+      public bool UseBait()
+  3 ¸ö Field:
+      private ItemAgent _selfAgent
+      private Slot baitSlot
+      public Transform lineStart
+  2 ¸ö Property:
+      private ItemAgent selfAgent
+      public Item Bait

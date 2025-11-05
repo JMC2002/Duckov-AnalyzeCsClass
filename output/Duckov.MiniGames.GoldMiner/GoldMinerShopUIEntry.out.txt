@@ -1,0 +1,23 @@
+namespace Duckov.MiniGames.GoldMiner
+public class GoldMinerShopUIEntry: MonoBehaviour
+
+  6 ¸ö Method:
+      private void Awake()
+      private void OnVCTEnter()
+      private void OnInteract(NavEntry entry)
+      internal void Setup(GoldMinerShopUI master, ShopEntity target)
+      private void Refresh()
+      private void SetupEmpty()
+  12 ¸ö Field:
+      private NavEntry navEntry
+      private VirtualCursorTarget VCT
+      private GameObject mainLayout
+      private TextMeshProUGUI nameText
+      private TextMeshProUGUI priceText
+      private string priceFormat
+      private GameObject priceIndicator
+      private GameObject freeIndicator
+      private Image icon
+      private GameObject soldIndicator
+      private GoldMinerShopUI master
+      public ShopEntity target

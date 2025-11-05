@@ -1,0 +1,28 @@
+namespace Duckov.DeathLotteries
+public class DeathLotteryVIew: View
+
+  10 ¸ö Method:
+      protected override void OnOpen()
+      protected override void OnClose()
+      protected override void Awake()
+      protected override void OnDestroy()
+      private void Show(DeathLottery target)
+      private void RefreshTexts()
+      private void Setup()
+      internal void NotifyEntryClicked(DeathLotteryCard deathLotteryCard, Cost cost)
+      private async UniTask SelectTask(int index, Cost cost)
+      private void HandleRemaining()
+  8 ¸ö Field:
+      private FadeGroup fadeGroup
+      private string remainingTextFormatKey
+      private string noRemainingChances
+      private TextMeshProUGUI remainingCountText
+      private DeathLotteryCard[] cards
+      private FadeGroup selectionBusyIndicator
+      private DeathLottery target
+      private UniTask selectTask
+  4 ¸ö Property:
+      private string RemainingTextFormat
+      public DeathLottery Target
+      public int RemainingChances
+      private bool ProcessingSelection

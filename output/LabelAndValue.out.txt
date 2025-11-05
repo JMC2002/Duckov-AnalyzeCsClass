@@ -1,0 +1,10 @@
+public class LabelAndValue: MonoBehaviour
+
+  1 ¸ö Method:
+      public void Setup(string label, string value, Polarity valuePolarity)
+  5 ¸ö Field:
+      private TextMeshProUGUI labelText
+      private TextMeshProUGUI valueText
+      private Color colorNeutral
+      private Color colorPositive
+      private Color colorNegative

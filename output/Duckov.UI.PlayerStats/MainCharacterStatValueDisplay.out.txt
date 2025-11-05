@@ -1,0 +1,17 @@
+namespace Duckov.UI.PlayerStats
+public class MainCharacterStatValueDisplay: MonoBehaviour
+
+  7 ¸ö Method:
+      private void OnEnable()
+      private void OnDisable()
+      private void AutoRename()
+      private void RegisterEvents()
+      private void UnregisterEvents()
+      private void OnTargetDirty(Stat stat)
+      private void Refresh()
+  5 ¸ö Field:
+      private string statKey
+      private TextMeshProUGUI displayNameText
+      private TextMeshProUGUI valueText
+      private string format
+      private Stat target

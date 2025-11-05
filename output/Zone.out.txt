@@ -1,0 +1,16 @@
+public class Zone: MonoBehaviour
+
+  5 ¸ö Method:
+      private void Awake()
+      private void OnDestroy()
+      private void OnTriggerEnter(Collider other)
+      private void OnTriggerExit(Collider other)
+      private void OnDisable()
+  5 ¸ö Field:
+      public bool onlyPlayerTeam
+      private HashSet<Health> healths
+      public bool setActiveByDistance
+      private Rigidbody rb
+      private int sceneBuildIndex
+  1 ¸ö Property:
+      public HashSet<Health> Healths

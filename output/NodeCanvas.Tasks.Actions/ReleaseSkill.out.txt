@@ -1,0 +1,11 @@
+namespace NodeCanvas.Tasks.Actions
+public class ReleaseSkill: ActionTask<AICharacterController>
+
+  4 ¸ö Method:
+      protected override string OnInit()
+      protected override void OnExecute()
+      protected override void OnUpdate()
+      protected override void OnStop()
+  2 ¸ö Field:
+      private float readyTime
+      private float tryReleaseSkillTimeMarker

@@ -1,0 +1,19 @@
+public class FogOfWarManager: MonoBehaviour
+
+  5 ¸ö Method:
+      private void Start()
+      private void OnDestroy()
+      private void Init()
+      private void Update()
+      private void OnCharacterDie(DamageInfo dmgInfo)
+  10 ¸ö Field:
+      public FogOfWarRevealer3D mainVis
+      public float mianVisYOffset
+      private CharacterMainControl character
+      public FogOfWarWorld fogOfWar
+      private float viewAgnel
+      private float senseRange
+      private float viewDistance
+      private TimeOfDayController timeOfDayController
+      private bool allVision
+      private bool inited

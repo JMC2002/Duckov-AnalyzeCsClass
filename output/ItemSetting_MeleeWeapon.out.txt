@@ -1,0 +1,10 @@
+public class ItemSetting_MeleeWeapon: ItemSettingBase
+
+  2 ¸ö Method:
+      public override void Start()
+      public override void SetMarkerParam(Item selfItem)
+  4 ¸ö Field:
+      public bool dealExplosionDamage
+      public ElementTypes element
+      public float buffChance
+      public Buff buff

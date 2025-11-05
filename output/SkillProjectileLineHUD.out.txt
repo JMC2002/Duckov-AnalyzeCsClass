@@ -1,0 +1,13 @@
+public class SkillProjectileLineHUD: MonoBehaviour
+
+  3 ¸ö Method:
+      private void Awake()
+      public bool UpdateLine(Vector3 start, Vector3 target, float verticleSpeed, ref Vector3 hitPoint)
+      private bool CheckObsticle(Vector3 from, Vector3 to, ref Vector3 hitPoint)
+  6 ¸ö Field:
+      public ShapesSkillLine line
+      public int fragmentCount
+      public Color lineColor
+      public Color obsticleColor
+      private LayerMask obsticleLayers
+      private RaycastHit[] hits

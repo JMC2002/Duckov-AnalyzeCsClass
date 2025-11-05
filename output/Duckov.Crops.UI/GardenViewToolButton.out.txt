@@ -1,0 +1,13 @@
+namespace Duckov.Crops.UI
+public class GardenViewToolButton: MonoBehaviour, IPointerClickHandler, IEventSystemHandler
+
+  5 ¸ö Method:
+      public void OnPointerClick(PointerEventData eventData)
+      private void Awake()
+      private void Start()
+      private void Refresh()
+      private void OnToolChanged()
+  3 ¸ö Field:
+      private GardenView master
+      private GardenView.ToolType tool
+      private GameObject indicator

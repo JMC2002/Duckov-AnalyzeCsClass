@@ -1,0 +1,11 @@
+namespace Duckov.Modding
+public abstract class ModBehaviour: MonoBehaviour
+
+  4 ¸ö Method:
+      public void Setup(ModManager master, ModInfo info)
+      public void NotifyBeforeDeactivate()
+      protected virtual void OnAfterSetup()
+      protected virtual void OnBeforeDeactivate()
+  2 ¸ö Property:
+      public ModManager master
+      public ModInfo info

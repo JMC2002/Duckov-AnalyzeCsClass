@@ -1,0 +1,4 @@
+public class LevelManagerProxy: MonoBehaviour
+
+  1 ¸ö Method:
+      public void NotifyEvacuated()

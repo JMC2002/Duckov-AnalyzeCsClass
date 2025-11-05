@@ -1,0 +1,29 @@
+namespace Duckov.UI
+public class MapSelectionView: View
+
+  8 ¸ö Method:
+      protected override void Awake()
+      protected override void OnOpen()
+      protected override void OnClose()
+      internal void NotifyEntryClicked(MapSelectionEntry mapSelectionEntry, PointerEventData eventData)
+      private async UniTask LoadTask(string sceneID, Cost cost)
+      private async UniTask<bool> WaitForConfirm()
+      private void SetupSceneInfo(SceneInfoEntry info)
+      internal override void TryQuit()
+  14 ¸ö Field:
+      private FadeGroup mainFadeGroup
+      private FadeGroup confirmIndicatorFadeGroup
+      private TextMeshProUGUI destinationDisplayNameText
+      private CostDisplay confirmCostDisplay
+      private string sfx_EntryClicked
+      private string sfx_ShowDestination
+      private string sfx_ConfirmDestination
+      private ColorPunch confirmColorPunch
+      private Button btnConfirm
+      private Button btnCancel
+      private SceneReference overrideLoadingScreen
+      private bool loading
+      private bool confirmButtonClicked
+      private bool cancelButtonClicked
+  1 ¸ö Property:
+      public static MapSelectionView Instance

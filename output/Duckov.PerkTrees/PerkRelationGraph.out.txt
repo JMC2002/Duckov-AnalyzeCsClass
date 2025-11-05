@@ -1,0 +1,15 @@
+namespace Duckov.PerkTrees
+public class PerkRelationGraph: Graph
+
+  3 ¸ö Method:
+      public PerkRelationNode GetRelatedNode(Perk perk)
+      public List<PerkRelationNode> GetIncomingNodes(PerkRelationNode skillTreeNode)
+      public List<PerkRelationNode> GetOutgoingNodes(PerkRelationNode skillTreeNode)
+  7 ¸ö Property:
+      public override Type baseNodeType
+      public override bool requiresAgent
+      public override bool requiresPrimeNode
+      public override bool isTree
+      public override PlanarDirection flowDirection
+      public override bool allowBlackboardOverrides
+      public override bool canAcceptVariableDrops

@@ -1,0 +1,53 @@
+namespace Duckov.DeathLotteries
+public class DeathLottery: MonoBehaviour
+
+  3 个 ClassLike:
+      private struct dummyItemEntry
+      public struct OptionalCosts
+      public struct Status
+  16 个 Method:
+      public void RequestUI()
+      private async UniTask Load()
+      private async UniTask LoadItemInstances()
+      private void ClearItemInstances()
+      private void ForceCreateNewStatus()
+      private async UniTask ForceCreateNewStatusTask()
+      private async UniTask CreateNewStatus()
+      private void Awake()
+      private void Start()
+      private void OnDestroy()
+      private void Save()
+      private async UniTask<List<Item>> SelectCandidates(Item deadCharacter)
+      private bool CanBeACandidate(Item item)
+      public async UniTask<bool> Select(int index, Cost payWhenSucceed)
+      static void SendToPlayer(Item item2)
+      internal OptionalCosts GetCost()
+  16 个 Field:
+      public int typeID
+      public Cost costA
+      public bool useCostB
+      public Cost costB
+      public bool valid
+      public uint deadCharacterToken
+      public List<int> selectedItems
+      public List<ItemTreeData> candidates
+      private string selectNotificationFormatKey
+      private Tag[] requireTags
+      private Tag[] excludeTags
+      private RandomContainer<dummyItemEntry> dummyItems
+      private OptionalCosts[] costs
+      private Status status
+      private bool loading
+      public static event Action<DeathLottery> OnRequestUI
+  9 个 Property:
+      public int SelectedCount
+      public int MaxChances
+      public static uint CurrentDeadCharacterToken
+      private string SelectNotificationFormat
+      public OptionalCosts[] Costs
+      public List<Item> ItemInstances
+      public Status CurrentStatus
+      public int RemainingChances
+      public bool Loading
+  1 个 Constant:
+      public const int MaxCandidateCount

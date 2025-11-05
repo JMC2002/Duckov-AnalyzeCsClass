@@ -1,0 +1,27 @@
+public class ItemAgentHolder: MonoBehaviour
+
+  7 ¸ö Method:
+      public DuckovItemAgent ChangeHoldItem(Item item)
+      public void SetTrigger(bool trigger, bool triggerThisFrame, bool releaseThisFrame)
+      private void OnDestroy()
+      private void DestroyCurrentItemAgent()
+      private void OnAgentItemTreeChanged(Item item)
+      private bool IsSkillItem(Item item)
+      private void Update()
+  10 ¸ö Field:
+      public CharacterMainControl characterController
+      private DuckovItemAgent currentHoldItemAgent
+      private Transform _currentUsingSocketCache
+      private static int handheldHash
+      private ItemAgent_Gun _gunRef
+      private ItemAgent_MeleeWeapon _meleeRef
+      private ItemSetting_Skill _skillRef
+      private bool holdStady
+      private float holdStadyTime
+      private float holdStadyTimer
+  5 ¸ö Property:
+      public DuckovItemAgent CurrentHoldItemAgent
+      public Transform CurrentUsingSocket
+      public ItemAgent_Gun CurrentHoldGun
+      public ItemAgent_MeleeWeapon CurrentHoldMeleeWeapon
+      public ItemSetting_Skill Skill

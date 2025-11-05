@@ -1,0 +1,16 @@
+public class UI_Bus_Slider: MonoBehaviour
+
+  5 ¸ö Method:
+      private void Initialize()
+      private void Awake()
+      private void Start()
+      private void OnEnable()
+      private void OnValueChanged(float value)
+  5 ¸ö Field:
+      private AudioManager.Bus busRef
+      private string busName
+      private TextMeshProUGUI volumeNumberText
+      private Slider slider
+      private bool initialized
+  1 ¸ö Property:
+      private AudioManager.Bus BusRef

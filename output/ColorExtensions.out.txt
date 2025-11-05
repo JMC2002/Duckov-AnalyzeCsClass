@@ -1,0 +1,3 @@
+public static class ColorExtensions
+  1 ¸ö Method:
+      public static string ToHexString(this Color color)

@@ -1,0 +1,3 @@
+public struct SkillReleaseContext
+  1 ¸ö Field:
+      public Vector3 releasePoint

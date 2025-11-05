@@ -1,0 +1,10 @@
+public class SceneLoadingEventsReceiver: MonoBehaviour
+
+  4 ¸ö Method:
+      private void OnEnable()
+      private void OnDisable()
+      private void OnStartedLoadingScene(SceneLoadingContext context)
+      private void OnFinishedLoadingScene(SceneLoadingContext context)
+  2 ¸ö Field:
+      public UnityEvent onStartLoadingScene
+      public UnityEvent onFinishedLoadingScene

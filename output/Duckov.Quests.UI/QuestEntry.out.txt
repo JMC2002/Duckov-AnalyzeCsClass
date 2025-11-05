@@ -1,0 +1,30 @@
+namespace Duckov.Quests.UI
+public class QuestEntry: MonoBehaviour, IPoolable, IPointerClickHandler, IEventSystemHandler
+
+  13 ¸ö Method:
+      public void NotifyPooled()
+      public void NotifyReleased()
+      private void OnDestroy()
+      internal void Setup(Quest quest)
+      internal void SetMenu(ISingleSelectionMenu<QuestEntry> menu)
+      private void RegisterEvents()
+      private void UnregisterEvents()
+      private void OnNeedInspectionChanged(Quest obj)
+      private void OnTargetStatusChanged(Quest quest)
+      private void OnMasterSelectionChanged(QuestView view, Quest oldSelection, Quest newSelection)
+      private void Refresh()
+      public void OnPointerClick(PointerEventData eventData)
+      public void NotifyRefresh()
+  9 ¸ö Field:
+      private ISingleSelectionMenu<QuestEntry> menu
+      private Quest target
+      private GameObject selectionIndicator
+      private TextMeshProUGUI displayName
+      private TextMeshProUGUI locationName
+      private string anyLocationKey
+      private GameObject redDot
+      private GameObject claimableIndicator
+      private TextMeshProUGUI questIDDisplay
+  2 ¸ö Property:
+      public Quest Target
+      public bool Selected

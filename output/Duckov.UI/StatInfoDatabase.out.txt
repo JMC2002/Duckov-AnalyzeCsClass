@@ -1,0 +1,19 @@
+namespace Duckov.UI
+public class StatInfoDatabase: ScriptableObject
+
+  1 个 ClassLike:
+      public struct Entry
+  3 个 Method:
+      public static Entry Get(string statName)
+      public static Polarity GetPolarity(string statName)
+      private static void RebuildDic()
+  5 个 Field:
+      public string statName
+      public Polarity polarity
+      public string displayFormat
+      private Entry[] entries
+      private Dictionary<string, Entry> _dic
+  3 个 Property:
+      public string DisplayFormat
+      public static StatInfoDatabase Instance
+      private static Dictionary<string, Entry> Dic

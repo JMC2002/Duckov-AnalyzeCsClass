@@ -1,0 +1,15 @@
+public class ShapesSkillLine: MonoBehaviour
+
+  2 ¸ö Method:
+      private void Awake()
+      public void DrawLine()
+  9 ¸ö Field:
+      public Vector3[] points
+      public Color[] colors
+      public Vector3 hitPoint
+      public bool hitObsticle
+      public ShapesBlendMode blendMode
+      public bool worldSpace
+      public float dotRadius
+      public float lineThickness
+      private Camera cam

@@ -1,0 +1,41 @@
+public class Projectile: MonoBehaviour
+
+  9 ¸ö Method:
+      public void SetPool(ObjectPool<Projectile> _pool)
+      private void Release()
+      private void Awake()
+      public void Init()
+      private void Update()
+      private void UpdateFlyThroughSound()
+      public void Init(ProjectileContext _context)
+      private void UpdateMoveAndCheck()
+      private void UpdateAimDirection()
+  28 ¸ö Field:
+      public ProjectileContext context
+      public float radius
+      private float traveledDistance
+      private List<RaycastHit> hits
+      private LayerMask hitLayers
+      private Vector3 hitPoint
+      private Vector3 hitNormal
+      private bool dead
+      private bool overMaxDistance
+      private GameObject hitFx
+      private Vector3 direction
+      private Vector3 velocity
+      private float gravity
+      public List<GameObject> damagedObjects
+      public static Action<Vector3> OnBulletFlyByCharacter
+      private bool flyThroughCharacterSoundPlayed
+      private bool firstFrame
+      private Vector3 startPoint
+      private ObjectPool<Projectile> pool
+      private TrailRenderer trail
+      public Transform randomRotate
+      public bool random
+      public MeshRenderer mesh
+      public string colorName
+      private bool inited
+      private DamageReceiver _dmgReceiverTemp
+      private float _distanceThisFrame
+      private int _hitCount

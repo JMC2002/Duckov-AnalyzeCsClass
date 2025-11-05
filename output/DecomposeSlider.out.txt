@@ -1,0 +1,14 @@
+public class DecomposeSlider: MonoBehaviour
+
+  4 ¸ö Method:
+      private void Awake()
+      private void OnDestroy()
+      private void OnValueChanged(float value)
+      public void SetMinMax(int min, int max)
+  4 ¸ö Field:
+      private Slider slider
+      public TextMeshProUGUI minText
+      public TextMeshProUGUI maxText
+      public TextMeshProUGUI valueText
+  1 ¸ö Property:
+      public int Value

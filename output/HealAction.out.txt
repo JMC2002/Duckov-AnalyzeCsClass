@@ -1,0 +1,9 @@
+public class HealAction: EffectAction
+
+  1 ¸ö Method:
+      protected override void OnTriggered(bool positive)
+  2 ¸ö Field:
+      private CharacterMainControl _mainControl
+      public int healValue
+  1 ¸ö Property:
+      private CharacterMainControl MainControl

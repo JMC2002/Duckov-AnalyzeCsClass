@@ -1,0 +1,23 @@
+namespace FX
+public class PopTextEntity: MonoBehaviour
+
+  2 ¸ö Method:
+      public void SetupContent(string text, Sprite sprite = null)
+      internal void SetColor(Color newColor)
+  8 ¸ö Field:
+      private SpriteRenderer spriteRenderer
+      private RectTransform _spriteRendererRectTransform_cache
+      private TextMeshPro _tmp
+      public Vector3 velocity
+      public float size
+      private Color color
+      private Color endColor
+      public float spawnTime
+  7 ¸ö Property:
+      private RectTransform spriteRendererRectTransform
+      private TextMeshPro tmp
+      public TextMeshPro Tmp
+      public Color EndColor
+      public Color Color
+      public float timeSinceSpawn
+      private string text

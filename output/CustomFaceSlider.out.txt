@@ -1,0 +1,21 @@
+public class CustomFaceSlider: MonoBehaviour
+
+  10 ¸ö Method:
+      private void Awake()
+      private void Start()
+      private void OnEndEditField(string str)
+      private void OnDestroy()
+      public void Init(float minValue, float maxValue, CustomFaceUI _master, string nameKey)
+      private void OnSliderValueChanged(float _value)
+      public void SetNameKey(string _nameKey)
+      public void SetMinMaxValue(float min, float max)
+      public void SetValue(float value)
+      private void RefreshFieldText()
+  5 ¸ö Field:
+      private Slider slider
+      private TMP_InputField valueField
+      private string valueFormat
+      private TextLocalizor nameText
+      private CustomFaceUI master
+  1 ¸ö Property:
+      public float Value

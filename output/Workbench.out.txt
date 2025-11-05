@@ -1,0 +1,4 @@
+public class Workbench: InteractableBase
+
+  1 ¸ö Method:
+      protected override void OnInteractFinished()
