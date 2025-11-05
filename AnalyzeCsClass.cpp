@@ -21,10 +21,17 @@ int main(int argc, char* argv[]) try {
     fs::path inputDir = ".\\input";
     fs::path outputDir = ".\\output";
 
+    LOG_DEBUG("ClassLike: {}", ClassLike::getBuilder().pattern);
+    LOG_DEBUG("   Method: {}",    Method::getBuilder().pattern);
+    LOG_DEBUG("    Field: {}",     Field::getBuilder().pattern);
+    LOG_DEBUG(" Property: {}",  Property::getBuilder().pattern);
+    LOG_DEBUG(" Constant: {}",  Constant::getBuilder().pattern);
+    LOG_DEBUG("    Event: {}",     Event::getBuilder().pattern);
+
     BENCH_SCOPE("总耗时");
 
     LOG_INFO("正在扫描 {}", inputDir.string());
-    auto files = IOUtils::list_files(inputDir, ".txt");
+    auto files = IOUtils::list_files(inputDir, ".cs");
 
     LOG_INFO("共发现 {} 个文件", files.size());
 

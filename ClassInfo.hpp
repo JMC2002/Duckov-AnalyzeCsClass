@@ -9,6 +9,7 @@
 using namespace std::literals;
 
 constexpr std::string_view Type = R"([\w<>.,\[\]\s?]+)";
+constexpr std::string_view ClassType = "class|struct|interface|enum";
 constexpr std::string_view AntiConstType = R"((?!const\b|event\b)[\w<>.,\[\]\s?]+)";
 constexpr std::string_view Identifier = R"([A-Za-z_]\w*)";
 constexpr std::string_view GenericName = R"([A-Za-z_]\w*(?:<[\w,\s<>]+>)?)";
@@ -84,7 +85,7 @@ struct Constant : public Base<Constant> {
 struct Property : public Base<Property> {
     static auto& getBuilder() {
         static auto rb = Base<Property>::getBuilder()
-                        .join_with("\\s*", R"(\{\s*(?:get|set|init)\b|=>)", false)
+                        .join_with("\\s*", R"(\{\s*(?:get|set|init)\b|=>)")
                         .build();
         return rb;
     }
@@ -96,8 +97,24 @@ struct Event : public Base<Event> {
 
     static auto& getBuilder() {
         static auto rb = Base<Event>::getBuilder()
-                        .join_with("\\s*", R"(\{\s*(?:add|remove)\b|=>)", false)
+                        .join_with("\\s*", R"(\{\s*(?:add|remove)\b|=>)")
                         .build();
+        return rb;
+    }
+};
+
+struct ClassLike : public Base<ClassLike> {
+    static inline constexpr std::string_view modifierRe = ClassModifier;
+    static inline constexpr std::string_view typeRe = ClassType;
+    static inline constexpr std::string_view identifierRe = GenericName;
+
+    std::string super;            // 父类
+
+    static auto& getBuilder() {
+        static auto rb = Base<ClassLike>::getBuilder()
+            .join_with("\\s*", &ClassLike::super, Super)
+            .join_with("\\s*", "\\{", false)
+            .build();
         return rb;
     }
 };
@@ -141,6 +158,16 @@ struct std::formatter<Constant> : std::formatter<Base<Constant>> {};
 template <>
 struct std::formatter<Event> : std::formatter<Base<Event>> {};
 
+template<>
+struct std::formatter<ClassLike> : std::formatter<Base<ClassLike>> {
+    auto format(const ClassLike& c, std::format_context& ctx) const {
+        std::string result = std::format("{}", static_cast<const Base<ClassLike>&>(c));
+        if (!c.super.empty())
+            result += std::format("{}", c.super);
+        return std::formatter<std::string>::format(result, ctx);
+    }
+};
+
 
 // 存储view很影响format性能，留作备用
 //using AnyMatchView = std::variant<
@@ -153,7 +180,10 @@ struct std::formatter<Event> : std::formatter<Base<Event>> {};
 //
 //using MemberArr = std::array<std::pair<std::string_view, std::optional<AnyMatchView>>, std::variant_size_v<AnyMatchView>>;
 
+struct ClassInfo;
+
 using AnyMatchView = std::variant<
+    std::vector<ClassLike>,
     std::vector<Method>,
     std::vector<Field>,
     std::vector<Property>,
@@ -163,51 +193,50 @@ using AnyMatchView = std::variant<
 
 using MemberArr = std::array<std::pair<std::string_view, AnyMatchView>, std::variant_size_v<AnyMatchView>>;
 
-struct ClassInfo : public Base<ClassInfo> {
-    static inline constexpr std::string_view modifierRe = ClassModifier;
-    static inline constexpr std::string_view typeRe = "class";
-    static inline constexpr std::string_view identifierRe = GenericName;
-
+struct ClassInfo {
+    ClassLike self;
     std::string namespaceName; // 命名空间
-    std::string super;            // 父类
-    
-    static auto& getBuilder() {
-        static auto rb = Base<ClassInfo>::getBuilder()
-            .join_with("\\s*", &ClassInfo::super, Super)
-            .join_with("\\s*", "\\{", false)
-            .build();
-        return rb;
-    }
 
     MemberArr members;
     ClassInfo() = default;
     ClassInfo(const std::string& code) {
 
-        auto r = ClassInfo::getBuilder().match(code) | std::ranges::to<std::vector>();
-        if (r.size() && r[0].name.size())
-            *this = r[0];
-        else {
+        auto r = ClassLike::getBuilder().match(code);
+        for (auto&& v : r) {
+            self = v;
+            break;
+        }
+        if (self.name.empty()) {
             LOG_WARN("未找到 class 定义");
         }
 
         if (auto ns = matchNamespace(code)) {
             namespaceName = *ns;
-            LOG_DEBUG("namespace : {}", namespaceName);
         }
         else
-            LOG_DEBUG("没找到namespace");
+            LOG_TRACE("没找到namespace");
 
         members = MemberArr{
-            std::pair{   "Method"sv,   Method::getBuilder().match(code) | std::ranges::to<std::vector>() },
-            std::pair{    "Field"sv,    Field::getBuilder().match(code) | std::ranges::to<std::vector>() },
-            std::pair{ "Property"sv, Property::getBuilder().match(code) | std::ranges::to<std::vector>() },
-            std::pair{ "Constant"sv, Constant::getBuilder().match(code) | std::ranges::to<std::vector>() },
-            std::pair{    "Event"sv,    Event::getBuilder().match(code) | std::ranges::to<std::vector>() },
+            std::pair{ "ClassLike"sv, r | std::views::drop(1) | std::ranges::to<std::vector>() },
+            std::pair{    "Method"sv,    Method::getBuilder().match(code) | std::ranges::to<std::vector>() },
+            std::pair{     "Field"sv,     Field::getBuilder().match(code) | std::ranges::to<std::vector>() },
+            std::pair{  "Property"sv,  Property::getBuilder().match(code) | std::ranges::to<std::vector>() },
+            std::pair{  "Constant"sv,  Constant::getBuilder().match(code) | std::ranges::to<std::vector>() },
+            std::pair{     "Event"sv,     Event::getBuilder().match(code) | std::ranges::to<std::vector>() },
         };
+
+        //for (auto&& [name, m] : members) {
+        //    std::visit([&](auto&& v) {
+        //        // if (v.empty()) return;
+        //        LOG_DEBUG("{} 个 {}:\n", v.size(), name);
+        //        for (auto&& mem : v)
+        //            LOG_DEBUG("{}\n", mem);
+        //        }, m);
+        //}
     }
 
     static std::optional<std::string> matchNamespace(const std::string& code) {
-        static const std::regex nsRe(R"(namespace\s+([\w\.]+)\s*\{)");
+        static const std::regex nsRe(R"(namespace\s+([\w\.]+)\s*(?:\{|;))");
         std::smatch m;
         if (std::regex_search(code, m, nsRe))
             return m[1].str();
@@ -226,10 +255,7 @@ struct std::formatter<ClassInfo> : std::formatter<std::string> {
         if (!c.namespaceName.empty())
             out += std::format("namespace {}\n", c.namespaceName);
         
-        out += std::format("{}class {}", c.modifier, c.name);
-        if (c.super.size())
-            out += std::format("{}", c.super);
-        out += '\n';
+        out += std::format("{}\n", c.self);
 
         for (auto&& [name, m] : c.members) {
             std::visit([&](auto&& v) {

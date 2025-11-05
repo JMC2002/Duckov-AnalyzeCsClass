@@ -28,11 +28,11 @@ namespace IOUtils {
         file << content;
     }
 
-    /// 扫描目录下所有指定扩展名的文件（默认 `.txt`）
+    /// 扫描目录下所有指定扩展名的文件（默认 `.cs`）
     template <bool Recursive = true>
     inline std::vector<fs::path> list_files(
         const fs::path& root,
-        const std::string& extension = ".txt")
+        const std::string& extension = ".cs")
     {
         std::vector<fs::path> results;
         if (!fs::exists(root))
