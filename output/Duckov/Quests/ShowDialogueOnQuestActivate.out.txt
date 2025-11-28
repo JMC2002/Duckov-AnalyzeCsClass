@@ -1,0 +1,16 @@
+namespace Duckov.Quests
+public class ShowDialogueOnQuestActivate: MonoBehaviour
+	
+  1 ¸ö ClassLike:
+      public class DialogueEntry
+  5 ¸ö Method:
+      private void Awake()
+      private void OnQuestActivated(Quest quest)
+      private UniTask ShowDIalogue()
+      private UniTask ShowDialogueEntry(ShowDialogueOnQuestActivate.DialogueEntry cur)
+      private Transform GetQuestGiverTransform(Quest quest)
+  4 ¸ö Field:
+      private Quest quest
+      private List<ShowDialogueOnQuestActivate.DialogueEntry> dialogueEntries
+      private Transform cachedQuestGiverTransform
+      public string content

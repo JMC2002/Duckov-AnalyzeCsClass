@@ -1,0 +1,15 @@
+namespace Duckov.MiniGames.GoldMiner
+public class GoldMinerShopUIRefreshBtn: MonoBehaviour
+	
+  5 ¸ö Method:
+      private void Awake()
+      private void OnEnable()
+      private void OnAfterOperation()
+      private void RefreshCostText()
+      private void OnInteract(NavEntry entry)
+  5 ¸ö Field:
+      private GoldMinerShop shop
+      private NavEntry navEntry
+      private TextMeshProUGUI costText
+      private TextMeshProUGUI refreshChanceText
+      private GameObject noChanceIndicator

@@ -1,6 +1,6 @@
 namespace UI
 public class MenuItem: MonoBehaviour
-
+	
   9 ¸ö Method:
       private void OnTransformParentChanged()
       private void OnEnable()

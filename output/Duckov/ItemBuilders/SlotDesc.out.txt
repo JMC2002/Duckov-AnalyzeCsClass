@@ -1,0 +1,6 @@
+namespace Duckov.ItemBuilders
+public struct SlotDesc
+  3 ¸ö Field:
+      public string key
+      public List<Tag> requireTags
+      public List<Tag> excludeTags

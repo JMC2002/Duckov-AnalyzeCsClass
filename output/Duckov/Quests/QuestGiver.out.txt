@@ -1,0 +1,25 @@
+namespace Duckov.Quests
+public class QuestGiver: InteractableBase
+	
+  14 ¸ö Method:
+      protected override void Awake()
+      protected override void Start()
+      protected override void OnDestroy()
+      private void OnTaskFinished(Quest quest, Task task)
+      private void OnBuildingBuilt(int buildingID)
+      private bool AnyQuestNeedsInspection()
+      private bool AnyQuestAvaliable()
+      private void OnQuestListsChanged(QuestManager manager)
+      private void RefreshInspectionIndicator()
+      public void ActivateQuest(Quest quest)
+      internal List<Quest> GetAvaliableQuests()
+      protected override void OnInteractStart(CharacterMainControl interactCharacter)
+      protected override void OnInteractStop()
+      protected override void OnUpdate(CharacterMainControl _interactCharacter, float deltaTime)
+  3 ¸ö Field:
+      private QuestGiverID questGiverID
+      private GameObject inspectionIndicator
+      private IEnumerable<Quest> _possibleQuests
+  2 ¸ö Property:
+      private IEnumerable<Quest> PossibleQuests
+      public QuestGiverID ID

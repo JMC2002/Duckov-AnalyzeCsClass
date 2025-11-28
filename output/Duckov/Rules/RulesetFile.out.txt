@@ -1,0 +1,7 @@
+namespace Duckov.Rules
+public class RulesetFile: ScriptableObject
+	
+  1 ¸ö Field:
+      private Ruleset data
+  1 ¸ö Property:
+      public Ruleset Data

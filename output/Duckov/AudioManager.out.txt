@@ -1,26 +1,23 @@
 namespace Duckov
 public class AudioManager: MonoBehaviour
-
+	
   3 个 ClassLike:
       public class Bus
       public enum FootStepMaterialType
       public enum VoiceType
   43 个 Method:
-      public void Apply()
-      internal void LoadOptions()
-      internal void NotifyOptionsChanged(string key)
-      private IEnumerable<Bus> AllBueses()
+      private IEnumerable<AudioManager.Bus> AllBueses()
       public static EventInstance? Post(string eventName, GameObject gameObject)
       public static EventInstance? PostCustomSFX(string filePath, GameObject gameObject = null, bool loop = false)
       public static EventInstance? Post(string eventName)
       public static EventInstance? Post(string eventName, Vector3 position)
-      internal static EventInstance? PostQuak(string soundKey, VoiceType voiceType, GameObject gameObject)
+      internal static EventInstance? PostQuak(string soundKey, AudioManager.VoiceType voiceType, GameObject gameObject)
       public static void PostHitMarker(bool crit)
       public static void PostKillMarker(bool crit = false)
       private void Awake()
       private void OnDestroy()
       private void OnOptionsChanged(string key)
-      public static Bus GetBus(string name)
+      public static AudioManager.Bus GetBus(string name)
       private void OnStartedLoadingScene(SceneLoadingContext context)
       private void OnLevelInitialized()
       private void Start()
@@ -48,28 +45,26 @@ public class AudioManager: MonoBehaviour
       public static void StopAll(GameObject gameObject, FMOD.Studio.STOP_MODE mode = FMOD.Studio.STOP_MODE.IMMEDIATE)
       internal void MSetRTPC(string key, float value, GameObject gameObject = null)
       internal static void SetRTPC(string key, float value, GameObject gameObject = null)
-      public static void SetVoiceType(GameObject gameObject, VoiceType voiceType)
+      public static void SetVoiceType(GameObject gameObject, AudioManager.VoiceType voiceType)
+      public void Apply()
+      internal void LoadOptions()
+      internal void NotifyOptionsChanged(string key)
   14 个 Field:
-      private string volumeRTPC
-      private float volume
-      private bool mute
-      private float appliedVolume
       private AudioObject ambientSource
       private AudioObject bgmSource
       private AudioObject stingerSource
-      private Bus masterBus
-      private Bus sfxBus
-      private Bus musicBus
+      private AudioManager.Bus masterBus
+      private AudioManager.Bus sfxBus
+      private AudioManager.Bus musicBus
       private static Transform _soundSourceParent
       private static ObjectPool<GameObject> _soundSourcePool
       private static bool playingBGM
       private static EventInstance bgmEvent
+      private string volumeRTPC
+      private float volume
+      private bool mute
+      private float appliedVolume
   13 个 Property:
-      public string Name
-      public float Volume
-      public bool Mute
-      public bool Dirty
-      private string SaveKey
       public static AudioManager Instance
       public static bool IsStingerPlaying
       private Transform listener
@@ -78,6 +73,11 @@ public class AudioManager: MonoBehaviour
       public static bool PlayingBGM
       private static bool LogEvent
       public static bool Initialized
+      public string Name
+      public float Volume
+      public bool Mute
+      public bool Dirty
+      private string SaveKey
   17 个 Constant:
       private const string path_hitmarker_norm
       private const string path_hitmarker_crit

@@ -1,0 +1,14 @@
+namespace Duckov.PerkTrees
+public class PerkRequirement
+  1 个 ClassLike:
+      public class RequireItemEntry
+  1 个 Method:
+      internal bool AreSatisfied()
+  5 个 Field:
+      public int level
+      public Cost cost
+      public long requireTime
+      public int id
+      public int amount
+  1 个 Property:
+      public TimeSpan RequireTime

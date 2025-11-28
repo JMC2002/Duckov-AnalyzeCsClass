@@ -1,6 +1,6 @@
 namespace SodaCraft
 public class LightControl: VolumeComponent, IPostProcessComponent
-
+	
   3 ¸ö Method:
       public bool IsActive()
       public bool IsTileCompatible()

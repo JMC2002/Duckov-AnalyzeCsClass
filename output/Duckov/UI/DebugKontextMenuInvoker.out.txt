@@ -1,0 +1,8 @@
+namespace Duckov.UI
+public class DebugKontextMenuInvoker: MonoBehaviour, IPointerClickHandler, IEventSystemHandler
+	
+  2 ¸ö Method:
+      public void OnPointerClick(PointerEventData eventData)
+      public void Show(Vector2 point)
+  1 ¸ö Field:
+      private KontextMenu kontextMenu

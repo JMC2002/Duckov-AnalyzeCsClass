@@ -2,6 +2,6 @@ public static class ScrollWheelBehaviour
   1 ¸ö ClassLike:
       public enum Behaviour
   1 ¸ö Method:
-      public static string GetDisplayName(Behaviour behaviour)
+      public static string GetDisplayName(ScrollWheelBehaviour.Behaviour behaviour)
   1 ¸ö Property:
-      public static Behaviour CurrentBehaviour
+      public static ScrollWheelBehaviour.Behaviour CurrentBehaviour

@@ -1,0 +1,19 @@
+namespace Duckov.Splines
+public class BeveledLineShape: ShapeProvider
+	
+  1 ¸ö Method:
+      public override PipeRenderer.OrientedPoint[] GenerateShape()
+  11 ¸ö Field:
+      public PipeRenderer pipeRenderer
+      public Points pointsComponent
+      public float bevelSize
+      public int subdivision
+      public bool subdivideByLength
+      public float subdivisionLength
+      public float uvMultiplier
+      public float uvOffset
+      public bool useProtectionOffset
+      public float protectionOffset
+      public bool edit
+  1 ¸ö Property:
+      public List<Vector3> points

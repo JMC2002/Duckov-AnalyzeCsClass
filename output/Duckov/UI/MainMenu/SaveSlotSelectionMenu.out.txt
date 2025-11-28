@@ -1,0 +1,13 @@
+namespace Duckov.UI.MainMenu
+public class SaveSlotSelectionMenu: MonoBehaviour
+	
+  5 ¸ö Method:
+      private void OnEnable()
+      private void OnDisable()
+      private void OnCancel(UIInputEventData data)
+      internal UniTask Execute()
+      public void Finish()
+  3 ¸ö Field:
+      private FadeGroup fadeGroup
+      private GameObject oldSaveIndicator
+      internal bool finished

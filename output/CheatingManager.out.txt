@@ -9,7 +9,7 @@ public class CheatingManager: MonoBehaviour
       private void SetTypedItem(int id)
       private void LockItem()
       public void CreateItem(int id, int quantity = 1)
-      private async UniTaskVoid CreateItemAsync(int id, int quantity = 1)
+      private UniTaskVoid CreateItemAsync(int id, int quantity = 1)
       private void ToggleTypeing()
       public void ToggleInvincible()
       public void CheatMove()

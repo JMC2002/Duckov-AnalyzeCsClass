@@ -1,0 +1,12 @@
+namespace Duckov.MiniGames.GoldMiner
+public class PigBehaviour: MiniGameBehaviour
+	
+  3 ¸ö Method:
+      private void Awake()
+      protected override void OnUpdate(float deltaTime)
+      private void OnAttached(GoldMinerEntity entity, Hook hook)
+  4 ¸ö Field:
+      private GoldMinerEntity entity
+      private float moveSpeed
+      private bool attached
+      private bool movingRight

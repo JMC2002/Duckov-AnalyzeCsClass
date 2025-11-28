@@ -1,0 +1,29 @@
+namespace Duckov.Quests.UI
+public class RewardEntry: MonoBehaviour, IPoolable
+	
+  9 ¸ö Method:
+      private void Awake()
+      private void OnClaimButtonClicked()
+      public void NotifyPooled()
+      public void NotifyReleased()
+      internal void Setup(Reward target)
+      private void RegisterEvents()
+      private void UnregisterEvents()
+      private void OnTargetStatusChanged()
+      private void Refresh()
+  13 ¸ö Field:
+      private Image rewardIcon
+      private TextMeshProUGUI rewardText
+      private Button claimButton
+      private GameObject claimableIndicator
+      private Image statusIcon
+      private TextMeshProUGUI buttonText
+      private GameObject claimingIcon
+      private Sprite claimIcon
+      private string claimTextKey
+      private Sprite claimedIcon
+      private string claimedTextKey
+      private bool interactable
+      private Reward target
+  1 ¸ö Property:
+      public bool Interactable

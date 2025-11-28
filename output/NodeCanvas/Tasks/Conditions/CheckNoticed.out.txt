@@ -1,0 +1,11 @@
+namespace NodeCanvas.Tasks.Conditions
+public class CheckNoticed: ConditionTask<AICharacterController>
+	
+  4 ¸ö Method:
+      protected override string OnInit()
+      protected override void OnEnable()
+      protected override void OnDisable()
+      protected override bool OnCheck()
+  2 ¸ö Field:
+      public float noticedTimeThreshold
+      public bool resetNotice

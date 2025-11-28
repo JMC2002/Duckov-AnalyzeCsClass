@@ -1,0 +1,15 @@
+namespace Duckov
+public class WyvrnManager: MonoBehaviour
+	
+  5 ¸ö Method:
+      private void Awake()
+      private void OnDestroy()
+      private void OnHardwareSyncingManagerSetEvent(string eventName)
+      public IEnumerator Start()
+      public void SetEvent(string eventName)
+  2 ¸ö Field:
+      private bool initialized
+      private int _mResult
+  2 ¸ö Property:
+      public static WyvrnManager Instance
+      public static bool Initialized

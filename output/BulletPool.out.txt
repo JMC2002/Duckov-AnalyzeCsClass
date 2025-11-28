@@ -1,7 +1,6 @@
 public class BulletPool: MonoBehaviour
 
   8 ¸ö Method:
-      new Dictionary<Projectile, ObjectPool<Projectile>>()
       private void Awake()
       public Projectile GetABullet(Projectile bulletPrefab)
       private ObjectPool<Projectile> GetAPool(Projectile pfb)
@@ -9,3 +8,4 @@ public class BulletPool: MonoBehaviour
       private void OnGetABulletInPool(Projectile bulletToGet)
       private void OnBulletRelease(Projectile bulletToGet)
       public bool Release(Projectile instance, Projectile prefab)
+      new Dictionary<Projectile, ObjectPool<Projectile>>()

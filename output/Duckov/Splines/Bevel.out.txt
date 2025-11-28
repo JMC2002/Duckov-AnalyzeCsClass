@@ -1,0 +1,4 @@
+namespace Duckov.Splines
+public class Bevel
+  1 ¸ö Method:
+      public static Vector3[] Evaluate(Vector3 cur, Vector3 prev, Vector3 next, int step, float offset, out Vector3 o, out Vector3 axis, float protectionOffset = 0.1f, bool useProtectionOffset = false, float clipDistance = 3.4028235E+38f)

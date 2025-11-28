@@ -14,7 +14,7 @@ public class ATMPanel: MonoBehaviour
       private void OnMoneyChanged(long oldMoney, long changedMoney)
       private void RefreshCash()
       private void RefreshBalance()
-      public static async UniTask<bool> Draw(long amount)
+      public static UniTask<bool> Draw(long amount)
       public static bool Save(long amount)
   9 ¸ö Field:
       private TextMeshProUGUI balanceAmountText

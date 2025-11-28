@@ -6,7 +6,7 @@ public class SpawnPaperBoxAction: EffectAction
       protected override void OnTriggered(bool positive)
       private void OnDestroy()
   4 ¸ö Field:
-      public Sockets socket
+      public SpawnPaperBoxAction.Sockets socket
       public PaperBox paperBoxPrefab
       private PaperBox instance
       private CharacterMainControl _mainControl

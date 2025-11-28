@@ -7,7 +7,9 @@ public class TimeOfDayController: MonoBehaviour
       private TimePhaseTags GetTimePhaseTagByTime(float hourTime)
       public static string GetTimePhaseNameByPhaseTag(TimePhaseTags phaseTag)
       public static string GetWeatherNameByWeather(Weather weather)
-  24 ¸ö Field:
+  27 ¸ö Field:
+      public static event Action OnStormStarted
+      public static event Action OnStormEnded
       private TimeOfDayConfig config
       private bool atNight
       private TimeOfDayVolumeControl weatherVolumeControl
@@ -32,6 +34,7 @@ public class TimeOfDayController: MonoBehaviour
       public GameObject stormIObject
       public GameObject stormIIObject
       private float time
+      private Weather lastWeather
   5 ¸ö Property:
       public static TimeOfDayController Instance
       public bool AtNight

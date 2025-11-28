@@ -11,7 +11,7 @@ public class ItemSetting_Gun: ItemSettingBase
       public bool IsFull()
       public bool IsValidBullet(Item newBulletItem)
       public bool LoadSpecificBullet(Item newBulletItem)
-      public async UniTaskVoid LoadBulletsFromInventory(Inventory inventory)
+      public UniTaskVoid LoadBulletsFromInventory(Inventory inventory)
       public bool AutoSetTypeInInventory(Inventory inventory)
       public int GetBulletCount()
       public Item GetCurrentLoadedBullet()
@@ -32,8 +32,8 @@ public class ItemSetting_Gun: ItemSettingBase
       private bool loadingBullets
       private bool loadBulletsSuccess
       private int caliberHash
-      public TriggerModes triggerMode
-      public ReloadModes reloadMode
+      public ItemSetting_Gun.TriggerModes triggerMode
+      public ItemSetting_Gun.ReloadModes reloadMode
       public bool autoReload
       public ElementTypes element
       public Buff buff

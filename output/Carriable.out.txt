@@ -6,7 +6,7 @@ public class Carriable: MonoBehaviour
       private void SetRigidbodyActive(bool active)
       public void Drop()
       public void OnCarriableUpdate(float deltaTime)
-      private async UniTaskVoid DropTask()
+      private UniTaskVoid DropTask()
   7 ¸ö Field:
       private CA_Carry carrier
       private Rigidbody rb

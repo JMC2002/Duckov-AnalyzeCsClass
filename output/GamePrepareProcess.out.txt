@@ -1,7 +1,7 @@
 public class GamePrepareProcess: MonoBehaviour
 
   2 ¸ö Method:
-      private async UniTask Execute()
+      private UniTask Execute()
       private void Start()
   6 ¸ö Field:
       private DifficultySelection difficultySelection

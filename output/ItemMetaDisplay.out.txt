@@ -8,8 +8,8 @@ public class ItemMetaDisplay: MonoBehaviour, IPointerEnterHandler, IEventSystemH
       public void Setup(ItemMetaData data)
       internal void Setup(object rootTypeID)
   5 ¸ö Field:
+      public static event Action<ItemMetaDisplay> OnMouseEnter
+      public static event Action<ItemMetaDisplay> OnMouseExit
       private Image icon
       private TrueShadow displayQualityShadow
       private ItemMetaData data
-      public static event Action<ItemMetaDisplay> OnMouseEnter
-      public static event Action<ItemMetaDisplay> OnMouseExit

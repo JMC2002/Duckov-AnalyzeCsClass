@@ -1,6 +1,6 @@
 namespace Duckov
 public class StrongNotification: MonoBehaviour, IPointerClickHandler, IEventSystemHandler
-
+	
   12 ¸ö Method:
       private void Awake()
       private void OnDestroy()
@@ -9,8 +9,8 @@ public class StrongNotification: MonoBehaviour, IPointerClickHandler, IEventSyst
       private void OnConfirm(UIInputEventData data)
       private void Update()
       private void BeginShow()
-      private async UniTask ShowTask()
-      private async UniTask DisplayContent(StrongNotificationContent cur)
+      private UniTask ShowTask()
+      private UniTask DisplayContent(StrongNotificationContent cur)
       public void OnPointerClick(PointerEventData eventData)
       public static void Push(StrongNotificationContent content)
       public static void Push(string mainText, string subText = "")

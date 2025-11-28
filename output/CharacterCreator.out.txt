@@ -1,7 +1,7 @@
 public class CharacterCreator: MonoBehaviour
 
   2 ¸ö Method:
-      public async UniTask<CharacterMainControl> CreateCharacter(Item itemInstance, CharacterModel modelPrefab, Vector3 pos, Quaternion rotation)
-      public async UniTask<Item> LoadOrCreateCharacterItemInstance(int itemTypeID)
+      public UniTask<CharacterMainControl> CreateCharacter(Item itemInstance, CharacterModel modelPrefab, Vector3 pos, Quaternion rotation)
+      public UniTask<Item> LoadOrCreateCharacterItemInstance(int itemTypeID)
   1 ¸ö Property:
       public CharacterMainControl characterPfb

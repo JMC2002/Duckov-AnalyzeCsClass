@@ -1,0 +1,2 @@
+namespace Duckov.Buildings
+public enum BuildingRotation

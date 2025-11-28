@@ -1,20 +1,20 @@
 namespace Duckov
 public class DeadBodyManager: MonoBehaviour
-
+	
   1 ¸ö ClassLike:
       public class DeathInfo
   11 ¸ö Method:
-      private void AppendDeathInfo(DeathInfo deathInfo)
-      private static List<DeathInfo> LoadDeathInfos()
+      private void AppendDeathInfo(DeadBodyManager.DeathInfo deathInfo)
+      private static List<DeadBodyManager.DeathInfo> LoadDeathInfos()
       internal static void RecordDeath(CharacterMainControl mainCharacter)
       private void Awake()
       private void OnDestroy()
       private void Save()
       private void OnSubSceneLoaded(MultiSceneCore core, Scene scene)
-      private async UniTask SpawnDeadBody(DeathInfo info)
-      private static void NotifyDeadbodyTouched(DeathInfo info)
-      private void OnDeadbodyTouched(DeathInfo info)
-      private bool ShouldSpawnDeadBody(DeathInfo info)
+      private UniTask SpawnDeadBody(DeadBodyManager.DeathInfo info)
+      private static void NotifyDeadbodyTouched(DeadBodyManager.DeathInfo info)
+      private void OnDeadbodyTouched(DeadBodyManager.DeathInfo info)
+      private bool ShouldSpawnDeadBody(DeadBodyManager.DeathInfo info)
   7 ¸ö Field:
       public bool valid
       public uint raidID

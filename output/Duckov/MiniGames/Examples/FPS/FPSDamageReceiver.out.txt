@@ -1,0 +1,10 @@
+namespace Duckov.MiniGames.Examples.FPS
+public class FPSDamageReceiver: MonoBehaviour
+	
+  1 ¸ö Method:
+      internal void CastDamage(FPSDamageInfo damage)
+  2 ¸ö Field:
+      private ParticleSystem damageEffectPrefab
+      private ParticleSystem damageEffectPrefab_Censored
+  1 ¸ö Property:
+      public ParticleSystem DamageFX

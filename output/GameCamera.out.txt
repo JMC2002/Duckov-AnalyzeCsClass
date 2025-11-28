@@ -41,7 +41,7 @@ public class GameCamera: MonoBehaviour
       private Vector3 cameraRightVector
       private float defaultAimOffsetDistanceFactor
       private float aimOffsetDistanceFactor
-      private CameraAimingTypes cameraAimingType
+      private GameCamera.CameraAimingTypes cameraAimingType
       private float lerpSpeed
   2 ¸ö Property:
       public static GameCamera Instance

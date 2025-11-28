@@ -1,0 +1,7 @@
+namespace Duckov.NoteIndexs
+public class RequireNoteIndexUnlocked: Condition
+	
+  1 ¸ö Method:
+      public override bool Evaluate()
+  1 ¸ö Field:
+      public string key

@@ -1,0 +1,14 @@
+namespace Duckov.MiniGames
+public class GamingConsoleAnimator: MonoBehaviour
+	
+  3 ¸ö Method:
+      private void Update()
+      private void Tick()
+      private void Clear()
+  4 ¸ö Field:
+      private Animator animator
+      private GamingConsole console
+      private Vector2 joyStick_Current
+      private Vector2 joyStick_Target
+  1 ¸ö Property:
+      private MiniGame Game

@@ -1,0 +1,36 @@
+namespace Duckov.MiniMaps.UI
+public class MiniMapDisplay: MonoBehaviour, IScrollHandler, IEventSystemHandler
+	
+  20 ¸ö Method:
+      public bool NoSignal()
+      private void OnGetPointOfInterestEntry(PointOfInterestEntry entry)
+      private void OnGetMapEntry(MiniMapDisplayEntry entry)
+      private void Awake()
+      private void OnEnable()
+      private void OnDisable()
+      private void RegisterEvents()
+      private void UnregisterEvents()
+      internal void AutoSetup()
+      public void Setup(IMiniMapDataProvider dataProvider)
+      private void SetupRotation()
+      private void HandlePointsOfInterests()
+      private void HandlePointOfInterest(MonoBehaviour poi)
+      private void ReleasePointOfInterest(MonoBehaviour poi)
+      private void HandleTeleporters()
+      private void FitContent()
+      public bool TryConvertWorldToMinimap(Vector3 worldPosition, string sceneID, out Vector3 result)
+      public bool TryConvertToWorldPosition(Vector3 displayPosition, out Vector3 result)
+      internal void Center(Vector3 minimapPos)
+      public void OnScroll(PointerEventData eventData)
+  8 ¸ö Field:
+      private MiniMapView master
+      private MiniMapDisplayEntry mapDisplayEntryPrefab
+      private PointOfInterestEntry pointOfInterestEntryPrefab
+      private UISplineRenderer teleporterSplines
+      private bool autoSetupOnEnable
+      private float padding
+      private PrefabPool<MiniMapDisplayEntry> _mapEntryPool
+      private PrefabPool<PointOfInterestEntry> _pointOfInterestEntryPool
+  2 ¸ö Property:
+      private PrefabPool<MiniMapDisplayEntry> MapEntryPool
+      private PrefabPool<PointOfInterestEntry> PointOfInterestEntryPool

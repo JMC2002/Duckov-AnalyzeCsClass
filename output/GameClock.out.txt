@@ -13,16 +13,15 @@ public class GameClock: MonoBehaviour
       public void StepTimeTil(TimeSpan time)
       internal static void Step(float seconds)
   8 ¸ö Field:
-      public long days
-      public double secondsOfDay
-      public long realTimePlayedTicks
+      public static event Action OnGameClockStep
       public float clockTimeScale
       private long days
       private double secondsOfDay
       private TimeSpan realTimePlayed
-      public static event Action OnGameClockStep
+      public long days
+      public double secondsOfDay
+      public long realTimePlayedTicks
   13 ¸ö Property:
-      public TimeSpan RealTimePlayed
       public static GameClock Instance
       private static string SaveKey
       private TimeSpan RealTimePlayed
@@ -35,5 +34,6 @@ public class GameClock: MonoBehaviour
       public static int Minut
       public static int Seconds
       public static int Milliseconds
+      public TimeSpan RealTimePlayed
   1 ¸ö Constant:
       private const double SecondsPerDay

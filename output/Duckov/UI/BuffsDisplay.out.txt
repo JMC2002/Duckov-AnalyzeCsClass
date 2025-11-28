@@ -1,0 +1,18 @@
+namespace Duckov.UI
+public class BuffsDisplay: MonoBehaviour
+	
+  8 ¸ö Method:
+      public void ReleaseEntry(BuffsDisplayEntry entry)
+      private void Awake()
+      private void OnDestroy()
+      private void OnLevelInitialized()
+      private void RegisterEvents()
+      private void UnregisterEvents()
+      private void OnAddBuff(CharacterBuffManager manager, Buff buff)
+      private void OnRemoveBuff(CharacterBuffManager manager, Buff buff)
+  3 ¸ö Field:
+      private BuffsDisplayEntry prefab
+      private PrefabPool<BuffsDisplayEntry> _entryPool
+      private CharacterBuffManager buffManager
+  1 ¸ö Property:
+      private PrefabPool<BuffsDisplayEntry> EntryPool

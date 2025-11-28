@@ -1,0 +1,23 @@
+namespace Duckov
+public class HardwareSyncingManager: MonoBehaviour
+	
+  17 ¸ö Method:
+      public static void SetEvent(string eventName)
+      private void Awake()
+      private void OnDestroy()
+      private void OnItemSentToPlayerInventory(Item item)
+      private void OnLevelChanged(int arg1, int arg2)
+      private void OnBuildingBuilt(int obj)
+      private void OnItemUsedByPlayer(Item item)
+      private void OnItemSoldByPlayer(StockShop shop, Item item, int arg3)
+      private void OnItemPurchased(StockShop shop, Item item)
+      private void OnPauseMenuOn()
+      private void OnPauseMenuOff()
+      private void OnEvacuated(EvacuationInfo info)
+      private void OnMainMenuAwake()
+      private void OnMainMenuDestroy()
+      private void OnDead(Health health, DamageInfo info)
+      private void OnHurt(Health health, DamageInfo info)
+      private void OnStartLoot(InteractableLootbox lootbox)
+  1 ¸ö Field:
+      public static event Action<string> OnSetEvent

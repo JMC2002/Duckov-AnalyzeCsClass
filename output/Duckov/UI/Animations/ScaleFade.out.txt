@@ -1,0 +1,21 @@
+namespace Duckov.UI.Animations
+public class ScaleFade: FadeElement
+	
+  7 ¸ö Method:
+      private void CachePose()
+      private void RestorePose()
+      private void Initialize()
+      protected override UniTask HideTask(int token)
+      protected override void OnSkipHide()
+      protected override void OnSkipShow()
+      protected override UniTask ShowTask(int token)
+  7 ¸ö Field:
+      private float duration
+      private Vector3 scale
+      private float uniformScale
+      private AnimationCurve showCurve
+      private AnimationCurve hideCurve
+      private Vector3 cachedScale
+      private bool initialized
+  1 ¸ö Property:
+      private Vector3 HiddenScale

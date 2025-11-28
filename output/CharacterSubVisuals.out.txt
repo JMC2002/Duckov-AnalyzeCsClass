@@ -2,18 +2,14 @@ public class CharacterSubVisuals: MonoBehaviour
 
   7 ¸ö Method:
       private void InitLayers()
-      private void SetRenderers()
+      public void SetRenderers()
       public void AddRenderer(Renderer renderer)
       public void SetRenderersHidden(bool _hidden)
       private void OnTransformParentChanged()
       public void SetCharacter(CharacterMainControl newCharacter)
       private void OnDestroy()
-  13 ¸ö Field:
+  9 ¸ö Field:
       private CharacterMainControl character
-      public List<Renderer> renderers
-      public List<ParticleSystem> particles
-      public List<Light> lights
-      public List<SodaPointLight> sodaPointLights
       private int hiddenLayer
       private int showLayer
       private int sodaLightShowLayer

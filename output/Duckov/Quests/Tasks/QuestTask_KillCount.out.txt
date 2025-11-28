@@ -1,0 +1,47 @@
+namespace Duckov.Quests.Tasks
+public class QuestTask_KillCount: Task
+	
+  8 ¸ö Method:
+      private void OnEnable()
+      private void OnDisable()
+      private void OnLevelInitialized()
+      private void Health_OnDead(Health health, DamageInfo info)
+      private void AddCount()
+      public override object GenerateSaveData()
+      protected override bool CheckFinished()
+      public override void SetupSaveData(object data)
+  11 ¸ö Field:
+      private int requireAmount
+      private bool resetOnLevelInitialized
+      private int amount
+      private bool withWeapon
+      private int weaponTypeID
+      private bool requireHeadShot
+      private bool withoutHeadShot
+      private bool requireBuff
+      private int requireBuffID
+      private CharacterRandomPreset requireEnemyType
+      private string requireSceneID
+  22 ¸ö Property:
+      private string defaultEnemyNameKey
+      private string defaultWeaponNameKey
+      private string weaponName
+      private string enemyName
+      private string descriptionFormatKey
+      private string withWeaponDescriptionFormatKey
+      private string requireSceneDescriptionFormatKey
+      private string RequireHeadShotDescriptionKey
+      private string WithoutHeadShotDescriptionKey
+      private string RequireBuffDescriptionFormatKey
+      private string DescriptionFormat
+      public override string[] ExtraDescriptsions
+      private string WithWeaponDescription
+      private string RequireSceneDescription
+      private string RequireHeadShotDescription
+      private string WithoutHeadShotDescription
+      private string RequireBuffDescription
+      public override string Description
+      public SceneInfoEntry RequireSceneInfo
+      public SceneReference RequireScene
+      public string requireSceneName
+      public bool SceneRequirementSatisfied

@@ -6,7 +6,7 @@ public class OcclusionFadeManager: MonoBehaviour
       private void SetShader()
       private void Update()
       public Material GetMaskedMaterial(Material mat)
-  21 ¸ö Field:
+  22 ¸ö Field:
       private static OcclusionFadeManager instance
       public OcclusionFadeChecker aimOcclusionFadeChecker
       public OcclusionFadeChecker characterOcclusionFadeChecker
@@ -19,6 +19,7 @@ public class OcclusionFadeManager: MonoBehaviour
       public float viewRange
       public float viewFadeRange
       public Texture2D fadeNoiseTexture
+      public static bool FadeEnabled
       public float heightFadeRange
       private int aimViewDirHash
       private int aimPosHash

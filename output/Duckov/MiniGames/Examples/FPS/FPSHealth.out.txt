@@ -1,0 +1,21 @@
+namespace Duckov.MiniGames.Examples.FPS
+public class FPSHealth: MiniGameBehaviour
+	
+  5 ¸ö Method:
+      protected override void Start()
+      protected override void OnUpdate(float deltaTime)
+      private void OnReceiverReceiveDamage(FPSDamageReceiver receiver, FPSDamageInfo info)
+      private void ReceiveDamage(FPSDamageInfo info)
+      private void Die()
+  8 ¸ö Field:
+      private int maxHp
+      private List<FPSDamageReceiver> damageReceivers
+      private MeshRenderer meshRenderer
+      private float hurtValueDropRate
+      private int hp
+      private bool dead
+      private float hurtValue
+      private MaterialPropertyBlock materialPropertyBlock
+  2 ¸ö Property:
+      public int HP
+      public bool Dead

@@ -1,0 +1,11 @@
+namespace Duckov.UI.Animations
+public class ToggleComponent: MonoBehaviour
+	
+  3 ¸ö Method:
+      private void Awake()
+      private void OnDestroy()
+      protected virtual void OnSetToggle(ToggleAnimation master, bool value)
+  1 ¸ö Field:
+      private ToggleAnimation master
+  1 ¸ö Property:
+      private bool Status

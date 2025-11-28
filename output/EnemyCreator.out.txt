@@ -4,11 +4,11 @@ public class EnemyCreator: MonoBehaviour
       private void Start()
       private void OnDestroy()
       private void StartCreate()
-      private async UniTaskVoid CreateCharacterAsync()
+      private UniTaskVoid CreateCharacterAsync()
       private void PlugAccessories()
-      private async UniTask AddBullet()
-      private async UniTask<List<Item>> GenerateItems()
-      private async UniTask<Item> LoadOrCreateCharacterItemInstance()
+      private UniTask AddBullet()
+      private UniTask<List<Item>> GenerateItems()
+      private UniTask<Item> LoadOrCreateCharacterItemInstance()
       private int GetCreatorID()
   6 ¸ö Field:
       private CharacterMainControl character

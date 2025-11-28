@@ -1,8 +1,9 @@
 public class CustomFaceInstance: MonoBehaviour
 
-  14 ¸ö Method:
+  15 ¸ö Method:
       private void TestConvert()
       public void AddRendererToSubVisual(Renderer renderer)
+      private ValueTuple<CustomFacePartUtility, CustomFacePartUtility, CustomFacePartCollection> GetDataByPartType(CustomFacePartTypes type)
       public CustomFacePart SwitchPart(CustomFacePartTypes type, CustomFaceInstance parent, int direction)
       private CustomFacePart ChangePart(CustomFacePartTypes type, CustomFaceInstance parent, int id)
       private CustomFacePart SwitchOnePartInternal(CustomFacePartUtility part, CustomFacePart pfb, CustomFaceInstance parent, bool mirror)

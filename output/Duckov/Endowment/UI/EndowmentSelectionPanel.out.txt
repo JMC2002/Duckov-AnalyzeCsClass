@@ -1,0 +1,30 @@
+namespace Duckov.Endowment.UI
+public class EndowmentSelectionPanel: View
+	
+  14 ¸ö Method:
+      protected override void Awake()
+      protected override void OnCancel()
+      private void OnCancelButtonClicked()
+      private void OnConfirmButtonClicked()
+      private void OnEntryClicked(EndowmentSelectionEntry entry, PointerEventData data)
+      private void Select(EndowmentSelectionEntry entry)
+      public void Setup()
+      private void RefreshDescription()
+      protected override void OnOpen()
+      protected override void OnClose()
+      public UniTask Execute()
+      private UniTask WaitForConfirm()
+      internal void SkipHide()
+      public static void Show()
+  8 ¸ö Field:
+      private FadeGroup fadeGroup
+      private EndowmentSelectionEntry entryTemplate
+      private TextMeshProUGUI descriptionText
+      private Button confirmButton
+      private Button cancelButton
+      private PrefabPool<EndowmentSelectionEntry> _pool
+      private bool confirmed
+      private bool canceled
+  2 ¸ö Property:
+      private PrefabPool<EndowmentSelectionEntry> Pool
+      public EndowmentSelectionEntry Selection

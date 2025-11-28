@@ -1,6 +1,6 @@
 namespace Duckov
 public class GameMetaData: ScriptableObject
-
+	
   6 ¸ö Field:
       private GameVersionData versionData
       private bool isTestVersion

@@ -7,7 +7,7 @@ public class SoulCube: MonoBehaviour
       private void Update()
       private void AddCube()
   14 ¸ö Field:
-      private States currentState
+      private SoulCube.States currentState
       private SoulCollector target
       private Vector3 direction
       private float stateTimer

@@ -1,0 +1,60 @@
+namespace Duckov.Crops
+public class Garden: MonoBehaviour
+	
+  1 个 ClassLike:
+      private class SaveData
+  26 个 Method:
+      private void WaterAll()
+      private void Awake()
+      private void OnDestroy()
+      private void Start()
+      private void FixedUpdate()
+      private void RefreshAutowater()
+      private void RefreshSize()
+      public void SetSize(int x, int y)
+      private void RegenerateCellDisplays()
+      private Crop CreateCropInstance(string id)
+      public void Save()
+      public void Load()
+      private void Clear()
+      public bool IsCoordValid(Vector2Int coord)
+      public bool IsCoordOccupied(Vector2Int coord)
+      public bool Plant(Vector2Int coord, string cropID)
+      public void Water(Vector2Int coord)
+      public Vector3 CoordToWorldPosition(Vector2Int coord)
+      public Vector3 CoordToLocalPosition(Vector2Int coord)
+      public Vector2Int WorldPositionToCoord(Vector3 wPos)
+      internal void Release(Crop crop)
+      private void OnDrawGizmosSelected()
+      internal static void Register(IGardenSizeAdder obj)
+      internal static void Register(IGardenAutoWaterProvider obj)
+      internal static void Unregister(IGardenSizeAdder obj)
+      internal static void Unregister(IGardenAutoWaterProvider obj)
+  21 个 Field:
+      public static event Action OnSizeAddersChanged
+      public static event Action OnAutoWatersChanged
+      private string gardenID
+      private Grid grid
+      private Crop cropTemplate
+      private Transform border00
+      private Transform border01
+      private Transform border11
+      private Transform border10
+      private Transform corner00
+      private Transform corner01
+      private Transform corner11
+      private Transform corner10
+      private BoxCollider interactBox
+      private Vector2Int size
+      private bool autoWater
+      public Vector3 cameraRigCenter
+      private bool sizeDirty
+      private CellDisplay cellDisplayTemplate
+      private PrefabPool<CellDisplay> _cellPool
+      public List<CropData> crops
+  5 个 Property:
+      public string GardenID
+      public string SaveKey
+      public bool AutoWater
+      public Vector2Int Size
+      public PrefabPool<CellDisplay> CellPool

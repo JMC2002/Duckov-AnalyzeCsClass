@@ -4,7 +4,7 @@ public class FreeCameraController: MonoBehaviour
       private void Awake()
       private void OnEnable()
       public void SetRotation(Quaternion rotation)
-      private void Update()
+      private unsafe void Update()
       private void OnDestroy()
       private void ToggleFollowTarget()
       private void SnapToMainCamera()

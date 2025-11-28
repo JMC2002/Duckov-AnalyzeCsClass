@@ -1,0 +1,23 @@
+namespace Duckov.Quests.Tasks
+public class QuestTask_UnlockPerk: Task
+	
+  8 ¸ö Method:
+      protected override void OnInit()
+      private bool BindPerk()
+      private void OnPerkUnlockStateChanged(Perk _perk, bool _unlocked)
+      private void OnDestroy()
+      private void OnLevelInitialized()
+      public override object GenerateSaveData()
+      protected override bool CheckFinished()
+      public override void SetupSaveData(object data)
+  5 ¸ö Field:
+      private string perkTreeID
+      private string perkObjectName
+      private Perk perk
+      private bool unlocked
+      private string descriptionFormatKey
+  4 ¸ö Property:
+      private string DescriptionFormat
+      private string PerkDisplayName
+      public override string Description
+      public override Sprite Icon

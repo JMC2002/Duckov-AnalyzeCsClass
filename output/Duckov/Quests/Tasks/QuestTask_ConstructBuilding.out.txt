@@ -1,0 +1,13 @@
+namespace Duckov.Quests.Tasks
+public class QuestTask_ConstructBuilding: Task
+	
+  3 ¸ö Method:
+      public override object GenerateSaveData()
+      protected override bool CheckFinished()
+      public override void SetupSaveData(object data)
+  1 ¸ö Field:
+      private string buildingID
+  3 ¸ö Property:
+      private string descriptionFormatKey
+      private string DescriptionFormat
+      public override string Description

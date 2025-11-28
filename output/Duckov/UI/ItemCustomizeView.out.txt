@@ -1,0 +1,43 @@
+namespace Duckov.UI
+public class ItemCustomizeView: View, ISingleSelectionMenu<SlotDisplay>
+	
+  20 ¸ö Method:
+      private void OnGetInventoryDisplay(InventoryDisplay display)
+      private void OnReleaseInventoryDisplay(InventoryDisplay display)
+      private void OnInventoryDoubleClicked(InventoryDisplay display, InventoryEntry entry, PointerEventData data)
+      public void Setup(Item target, List<Inventory> avaliableInventories)
+      public void DebugSetup(Item target, Inventory inventory1, Inventory inventory2)
+      protected override void OnOpen()
+      protected override void OnClose()
+      private void OnItemSelectionChanged()
+      private void RefreshDetails()
+      protected override void Awake()
+      private void OnUnequipButtonClicked()
+      private void OnEquipButtonClicked()
+      private void HandleUnpluggledItem(Item item)
+      private void OnSlotElementClicked(ItemSlotCollectionDisplay collection, SlotDisplay slot)
+      public SlotDisplay GetSelection()
+      public bool SetSelection(SlotDisplay selection)
+      private void RefreshSelectionIndicator()
+      private void OnSlotSelectionChanged()
+      private void RefreshAvaliableItems()
+      private void RefreshItemListGraphics()
+  14 ¸ö Field:
+      private FadeGroup fadeGroup
+      private Button equipButton
+      private Button unequipButton
+      private ItemDetailsDisplay customizingTargetDisplay
+      private ItemDetailsDisplay selectedItemDisplay
+      private FadeGroup selectedItemDisplayFadeGroup
+      private RectTransform slotSelectionIndicator
+      private GameObject selectSlotPlaceHolder
+      private GameObject avaliableItemsContainer
+      private GameObject noAvaliableItemPlaceHolder
+      private ItemDisplay itemDisplayTemplate
+      private PrefabPool<ItemDisplay> _itemDisplayPool
+      private Item target
+      private SlotDisplay selectedSlotDisplay
+  3 ¸ö Property:
+      public static ItemCustomizeView Instance
+      private PrefabPool<ItemDisplay> ItemDisplayPool
+      public Item Target

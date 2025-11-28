@@ -1,6 +1,6 @@
 namespace Dialogues
 public class LocalizedStatementNode: DTNode
-
+	
   3 ¸ö Method:
       private LocalizedStatement CreateStatement()
       protected override Status OnExecute(Component agent, IBlackboard bb)

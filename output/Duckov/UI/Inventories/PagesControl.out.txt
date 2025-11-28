@@ -1,0 +1,18 @@
+namespace Duckov.UI.Inventories
+public class PagesControl: MonoBehaviour
+	
+  7 ¸ö Method:
+      private void Start()
+      public void Setup(InventoryDisplay target)
+      private void RegisterEvents()
+      private void UnregisterEvents()
+      private void OnPageInfoRefreshed()
+      private void Refresh()
+      internal void NotifySelect(int i)
+  4 ¸ö Field:
+      private InventoryDisplay target
+      private PagesControl_Entry template
+      private GameObject inputIndicators
+      private PrefabPool<PagesControl_Entry> _pool
+  1 ¸ö Property:
+      private PrefabPool<PagesControl_Entry> Pool

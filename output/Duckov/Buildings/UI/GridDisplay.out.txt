@@ -1,0 +1,20 @@
+namespace Duckov.Buildings.UI
+public class GridDisplay: MonoBehaviour
+	
+  8 ¸ö Method:
+      private void Awake()
+      public void Setup(BuildingArea buildingArea)
+      public static void Close()
+      public static UniTask SetGridShowHide(bool show, AnimationCurve curve, float duration)
+      public static void HideGrid()
+      public static void ShowGrid()
+      public static void HidePreview()
+      internal void SetBuildingPreviewCoord(Vector2Int coord, Vector2Int dimensions, BuildingRotation rotation, bool validPlacement)
+  5 ¸ö Field:
+      private BuildingArea targetArea
+      private float animationDuration
+      private AnimationCurve showCurve
+      private AnimationCurve hideCurve
+      private static int gridShowHideTaskToken
+  1 ¸ö Property:
+      public static GridDisplay Instance

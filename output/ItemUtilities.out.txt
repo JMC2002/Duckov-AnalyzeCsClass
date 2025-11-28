@@ -3,9 +3,8 @@ public static class ItemUtilities
       private class ItemDurabilityComparer: IComparer<Item>
 	
   21 ¸ö Method:
-      public int Compare(Item x, Item y)
-      public static async UniTask<bool> Decompose(Item item, int count)
-      public static async UniTask<Item> GenerateBullet(Item gunItem)
+      public static UniTask<bool> Decompose(Item item, int count)
+      public static UniTask<Item> GenerateBullet(Item gunItem)
       public static List<Item> FindAllBelongsToPlayer(Predicate<Item> predicate)
       public static int GetItemCount(int typeID)
       public static bool AddAndMerge(this Inventory inventory, Item item, int preferedFirstPosition = 0)
@@ -24,11 +23,12 @@ public static class ItemUtilities
       internal static int Count(IEnumerable<Item> items)
       public static float GetRepairLossRatio(this Item item)
       internal static void NotifyPlayerItemOperation()
+      public int Compare(Item x, Item y)
   4 ¸ö Field:
-      public static readonly ItemDurabilityComparer Instance
       public static event Action OnPlayerItemOperation
       public static event Action<Item> OnItemSentToPlayerInventory
       public static event Action<Item> OnItemSentToPlayerStorage
+      public static readonly ItemUtilities.ItemDurabilityComparer Instance
   3 ¸ö Property:
       private static Item CharacterItem
       private static Inventory CharacterInventory

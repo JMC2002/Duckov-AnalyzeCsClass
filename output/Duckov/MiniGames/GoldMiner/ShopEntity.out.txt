@@ -1,0 +1,9 @@
+namespace Duckov.MiniGames.GoldMiner
+public class ShopEntity
+  4 ¸ö Field:
+      public GoldMinerArtifact artifact
+      public bool locked
+      public bool sold
+      public float priceFactor
+  1 ¸ö Property:
+      public string ID

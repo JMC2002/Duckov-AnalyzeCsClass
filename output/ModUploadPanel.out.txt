@@ -4,7 +4,7 @@ public class ModUploadPanel: MonoBehaviour
       private void Awake()
       private void OnUploadBtnClick()
       private void OnCancelBtnClick()
-      public async UniTask Execute(ModInfo info)
+      public UniTask Execute(ModInfo info)
       private void Update()
       private static string FormatBytes(ulong bytes)
       private void Clean()

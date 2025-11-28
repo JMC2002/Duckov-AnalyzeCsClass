@@ -6,5 +6,5 @@ public class EdgeLightEntry: MonoBehaviour
       private void OnDestroy()
       private void OnSettingChanged()
   2 ¸ö Field:
-      private static bool settingEnabled
       private static event Action OnSettingChangedEvent
+      private static bool settingEnabled

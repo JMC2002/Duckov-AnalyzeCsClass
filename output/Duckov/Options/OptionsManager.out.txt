@@ -1,0 +1,15 @@
+namespace Duckov.Options
+public class OptionsManager: MonoBehaviour
+	
+  1 个 Method:
+      public static void Save<T>(string key, T obj)
+  2 个 Field:
+      public static event Action<string> OnOptionsChanged
+      private static ES3Settings _saveSettings
+  4 个 Property:
+      private static string Folder
+      public static string FilePath
+      private static ES3Settings SaveSettings
+      public static float MouseSensitivity
+  1 个 Constant:
+      public const string FileName

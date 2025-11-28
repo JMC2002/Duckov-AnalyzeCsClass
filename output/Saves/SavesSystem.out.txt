@@ -8,9 +8,9 @@ public class SavesSystem
       public static string GetSaveFileName(int slot)
       public static bool IsOldSave(int index)
       public static void SetFile(int index)
-      public static BackupInfo[] GetBackupList()
-      public static BackupInfo[] GetBackupList(int slot)
-      public static BackupInfo[] GetBackupList(string mainPath, int slot = -1)
+      public static SavesSystem.BackupInfo[] GetBackupList()
+      public static SavesSystem.BackupInfo[] GetBackupList(int slot)
+      public static SavesSystem.BackupInfo[] GetBackupList(string mainPath, int slot = -1)
       private static int GetEmptyOrOldestBackupIndex()
       private static int GetOldestBackupIndex()
       private static int GetNewestBackupIndex()
@@ -44,11 +44,10 @@ public class SavesSystem
       private static void SetAsOldGame()
       public static void DeleteCurrentSave()
   17 ¸ö Field:
-      public int slot
-      public int index
-      public string path
-      public bool exists
-      public long time_raw
+      public static event Action OnSetFile
+      public static event Action OnSaveDeleted
+      public static event Action OnCollectSaveData
+      public static event Action OnRestoreFailureDetected
       private static int? _currentSlot
       private static bool saving
       private static ES3Settings settings
@@ -57,13 +56,12 @@ public class SavesSystem
       private static DateTime _lastIndexedBackupTime
       private static bool globalCached
       private static ES3Settings GlobalFileSetting
-      public static event Action OnSetFile
-      public static event Action OnSaveDeleted
-      public static event Action OnCollectSaveData
-      public static event Action OnRestoreFailureDetected
+      public int slot
+      public int index
+      public string path
+      public bool exists
+      public long time_raw
   13 ¸ö Property:
-      public bool TimeValid
-      public DateTime Time
       public static int CurrentSlot
       public static string CurrentFilePath
       public static bool IsSaving
@@ -75,5 +73,7 @@ public class SavesSystem
       private static TimeSpan TimeSinceLastIndexedBackup
       public static string GlobalSaveDataFilePath
       public static string GlobalSaveDataFileName
+      public bool TimeValid
+      public DateTime Time
   1 ¸ö Constant:
       private const int BackupListCount

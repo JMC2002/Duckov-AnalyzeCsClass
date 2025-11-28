@@ -1,0 +1,21 @@
+namespace Fishing.UI
+public class ConfirmPanel: MonoBehaviour
+	
+  7 ¸ö Method:
+      private void Awake()
+      private void OnItemDisplayClick(ItemDisplay display, PointerEventData data)
+      private void OnContinueButtonClicked()
+      private void OnQuitButtonClicked()
+      internal UniTask DoConfirmDialogue(Item catchedItem, Action<bool> confirmCallback)
+      private void Setup(Item item)
+      internal void NotifyStop()
+  9 ¸ö Field:
+      private FadeGroup fadeGroup
+      private TextMeshProUGUI titleText
+      private string succeedTextKey
+      private string failedTextKey
+      private ItemDisplay itemDisplay
+      private Button continueButton
+      private Button quitButton
+      private bool confirmed
+      private bool continueFishing

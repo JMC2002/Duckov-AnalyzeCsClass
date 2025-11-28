@@ -1,0 +1,32 @@
+namespace Duckov.UI
+public class StorageDock: View
+	
+  12 个 Method:
+      protected override void Awake()
+      private void OnEnable()
+      private void OnDisable()
+      private void OnTakeBufferItem()
+      protected override void OnOpen()
+      protected override void OnClose()
+      private void Setup()
+      private void Refresh()
+      public void NextPage()
+      public void PrevPage()
+      public void GotoPage(int page)
+      internal static void Show()
+  8 个 Field:
+      private FadeGroup fadeGroup
+      private StorageDockEntry entryTemplate
+      private GameObject placeHolder
+      private TextMeshProUGUI pageText
+      private Button btnNextPage
+      private Button btnPrevPage
+      private int page
+      private PrefabPool<StorageDockEntry> _entryPool
+  4 个 Property:
+      public static StorageDock Instance
+      private int TotalItemCount
+      private int MaxPage
+      private PrefabPool<StorageDockEntry> EntryPool
+  1 个 Constant:
+      private const int itemsPerPage

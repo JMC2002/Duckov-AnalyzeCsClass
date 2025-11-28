@@ -4,7 +4,7 @@ public class ColorPunch: MonoBehaviour
       private void Awake()
       public void Punch()
       private int NewToken()
-      private async UniTask DoTask()
+      private UniTask DoTask()
   6 ¸ö Field:
       private Graphic graphic
       private float duration

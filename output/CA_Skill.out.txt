@@ -2,7 +2,7 @@ public class CA_Skill: CharacterActionBase, IProgress
 
   16 ¸ö Method:
       public CharacterSkillKeeper GetSkillKeeper(SkillTypes skillType)
-      public override ActionPriorities ActionPriority()
+      public override CharacterActionBase.ActionPriorities ActionPriority()
       public override bool CanControlAim()
       public override bool CanEditInventory()
       public override bool CanMove()

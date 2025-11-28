@@ -1,0 +1,16 @@
+namespace Duckov.Tasks
+public class ParallelTask: MonoBehaviour, ITaskBehaviour
+	
+  5 ¸ö Method:
+      private void Start()
+      private UniTask MainTask()
+      public void Begin()
+      public bool IsComplete()
+      public bool IsPending()
+  6 ¸ö Field:
+      private bool beginOnStart
+      private List<MonoBehaviour> tasks
+      private UnityEvent onBegin
+      private UnityEvent onComplete
+      private bool running
+      private bool complete

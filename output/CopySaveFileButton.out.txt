@@ -1,0 +1,8 @@
+public class CopySaveFileButton: MonoBehaviour
+
+  2 ¸ö Method:
+      private void Awake()
+      public void Apply()
+  2 ¸ö Field:
+      private string fromFile
+      private Button button

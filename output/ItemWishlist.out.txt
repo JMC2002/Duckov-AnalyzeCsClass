@@ -19,13 +19,13 @@ public class ItemWishlist: MonoBehaviour
       public bool IsBuildingRequired(int itemTypeID)
       public static void AddToWishList(int itemTypeID)
       public static bool RemoveFromWishlist(int itemTypeID)
-      public static WishlistInfo GetWishlistInfo(int itemTypeID)
+      public static ItemWishlist.WishlistInfo GetWishlistInfo(int itemTypeID)
   5 ¸ö Field:
+      public static event Action<int> OnWishlistChanged
       public int itemTypeID
       public bool isManuallyWishlisted
       public bool isQuestRequired
       public bool isBuildingRequired
-      public static event Action<int> OnWishlistChanged
   1 ¸ö Property:
       public static ItemWishlist Instance
   1 ¸ö Constant:

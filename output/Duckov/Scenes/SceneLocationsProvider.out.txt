@@ -1,0 +1,21 @@
+namespace Duckov.Scenes
+public class SceneLocationsProvider: MonoBehaviour
+	
+  12 ¸ö Method:
+      public static SceneLocationsProvider GetProviderOfScene(SceneReference sceneReference)
+      public static SceneLocationsProvider GetProviderOfScene(Scene scene)
+      internal static SceneLocationsProvider GetProviderOfScene(int sceneBuildIndex)
+      public static Transform GetLocation(SceneReference scene, string name)
+      public static Transform GetLocation(int sceneBuildIndex, string name)
+      public static Transform GetLocation(string sceneID, string name)
+      private void Awake()
+      private void OnDestroy()
+      public Transform GetLocation(string path)
+      public bool TryGetPath(Transform value, out string path)
+      public List<ValueTuple<string, Vector3, GameObject>> GetAllPathsAndItsPosition()
+      private void OnDrawGizmosSelected()
+  2 ¸ö Field:
+      private static ReadOnlyCollection<SceneLocationsProvider> _activeProviders_ReadOnly
+      private StringBuilder sb
+  1 ¸ö Property:
+      public static ReadOnlyCollection<SceneLocationsProvider> ActiveProviders

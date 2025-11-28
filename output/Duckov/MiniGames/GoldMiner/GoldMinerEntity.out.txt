@@ -1,0 +1,29 @@
+namespace Duckov.MiniGames.GoldMiner
+public class GoldMinerEntity: MiniGameBehaviour
+	
+  2 个 ClassLike:
+      public enum Size
+      public enum Tag
+  5 个 Method:
+      public void SetMaster(GoldMiner master)
+      public void NotifyAttached(Hook hook)
+      public void NotifyBeginRetrieving()
+      internal void Explode(Vector3 origin)
+      internal void NotifyResolved(GoldMiner game)
+  11 个 Field:
+      private string typeID
+      public GoldMinerEntity.Size size
+      public GoldMinerEntity.Tag[] tags
+      private int value
+      private float speed
+      private ParticleSystem contactFX
+      private ParticleSystem beginMoveFX
+      private ParticleSystem resolveFX
+      private ParticleSystem explodeFX
+      public Action<GoldMinerEntity, Hook> OnAttached
+      public Action<GoldMinerEntity, GoldMiner> OnResolved
+  4 个 Property:
+      public GoldMiner master
+      public string TypeID
+      public float Speed
+      public int Value

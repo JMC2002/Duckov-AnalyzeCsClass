@@ -5,12 +5,12 @@ public class Grenade: MonoBehaviour
       public void BindAgent(ItemAgent _agent)
       private void Update()
       private void Explode()
-      private async UniTask DestroyOverTime()
-      private async UniTask ActiveLandmine()
+      private UniTask DestroyOverTime()
+      private UniTask ActiveLandmine()
       private void OnLinemineTriggerd()
       public void SetWeaponIdInfo(int typeId)
       public void Launch(Vector3 startPoint, Vector3 velocity, CharacterMainControl fromCharacter, bool canHurtSelf)
-      private async UniTask IgnoreCollisionForSeconds(Collider col1, Collider col2, float ignoreTime)
+      private UniTask IgnoreCollisionForSeconds(Collider col1, Collider col2, float ignoreTime)
   31 ¸ö Field:
       public bool hasCollideSound
       public string collideSound

@@ -1,0 +1,10 @@
+namespace Duckov.UI.Animations
+public class ScaleLooper: LooperElement
+	
+  1 ¸ö Method:
+      protected override void OnTick(LooperClock clock, float t)
+  4 ¸ö Field:
+      private AnimationCurve uniformScaleOverT
+      private AnimationCurve xOverT
+      private AnimationCurve yOverT
+      private AnimationCurve zOverT

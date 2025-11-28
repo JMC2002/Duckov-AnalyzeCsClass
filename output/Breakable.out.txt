@@ -16,7 +16,7 @@ public class Breakable: MonoBehaviour
       public bool createExplosion
       public float explosionRadius
       public DamageInfo explosionDamageInfo
-      private BreakableStates breakableState
+      private Breakable.BreakableStates breakableState
       public GameObject normalVisual
       public GameObject dangerVisual
       public GameObject breakedVisual

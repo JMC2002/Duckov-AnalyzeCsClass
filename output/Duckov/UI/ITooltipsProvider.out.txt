@@ -1,0 +1,2 @@
+namespace Duckov.UI
+public interface ITooltipsProvider

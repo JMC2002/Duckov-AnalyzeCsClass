@@ -1,0 +1,12 @@
+namespace Duckov.Buildings
+public class BuildingDataCollection: ScriptableObject
+	
+  2 ¸ö Method:
+      internal static BuildingInfo GetInfo(string id)
+      internal static Building GetPrefab(string prefabName)
+  2 ¸ö Field:
+      private List<Building> prefabs
+      public ReadOnlyCollection<BuildingInfo> readonlyInfos
+  2 ¸ö Property:
+      public static BuildingDataCollection Instance
+      public ReadOnlyCollection<BuildingInfo> Infos

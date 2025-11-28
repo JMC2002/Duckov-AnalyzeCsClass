@@ -12,11 +12,11 @@ public class SplitDialogue: MonoBehaviour, IPointerClickHandler, IEventSystemHan
       private void OnConfirmButtonClicked()
       private void Setup(Item target, Inventory destination = null, int destinationIndex = -1)
       public void Cancel()
-      private async UniTask Confirm()
+      private UniTask Confirm()
       private void Hide()
-      private async UniTask DoSplit(int value)
+      private UniTask DoSplit(int value)
       public void OnPointerClick(PointerEventData eventData)
-      private void SwitchStatus(Status status)
+      private void SwitchStatus(SplitDialogue.Status status)
       public static void SetupAndShow(Item item)
       public static void SetupAndShow(Item item, Inventory destinationInventory, int destinationIndex)
   12 ¸ö Field:
@@ -31,6 +31,6 @@ public class SplitDialogue: MonoBehaviour, IPointerClickHandler, IEventSystemHan
       private Inventory destination
       private int destinationIndex
       private Inventory cachedInInventory
-      private Status status
+      private SplitDialogue.Status status
   1 ¸ö Property:
       public static SplitDialogue Instance

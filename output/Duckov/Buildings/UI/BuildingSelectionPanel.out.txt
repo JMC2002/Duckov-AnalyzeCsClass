@@ -1,0 +1,18 @@
+namespace Duckov.Buildings.UI
+public class BuildingSelectionPanel: MonoBehaviour
+	
+  8 ¸ö Method:
+      private void OnGetButtonEntry(BuildingBtnEntry entry)
+      private void OnReleaseButtonEntry(BuildingBtnEntry entry)
+      private void OnRecycleRequested(BuildingBtnEntry entry)
+      private void OnButtonSelected(BuildingBtnEntry entry)
+      public void Show()
+      internal void Setup(BuildingArea targetArea)
+      public void Refresh()
+      public static BuildingInfo[] GetBuildingsToDisplay()
+  3 ¸ö Field:
+      private BuildingBtnEntry buildingBtnTemplate
+      private PrefabPool<BuildingBtnEntry> _pool
+      private BuildingArea targetArea
+  1 ¸ö Property:
+      private PrefabPool<BuildingBtnEntry> Pool

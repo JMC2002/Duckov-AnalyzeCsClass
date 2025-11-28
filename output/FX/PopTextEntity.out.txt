@@ -1,6 +1,6 @@
 namespace FX
 public class PopTextEntity: MonoBehaviour
-
+	
   2 ¸ö Method:
       public void SetupContent(string text, Sprite sprite = null)
       internal void SetColor(Color newColor)

@@ -1,0 +1,21 @@
+namespace Duckov.Weathers
+public class Precipitation
+  8 ¸ö Method:
+      public bool IsRainy(TimeSpan dayAndTime)
+      public bool IsCloudy(TimeSpan dayAndTime)
+      public float Get(TimeSpan dayAndTime)
+      public Vector2 GetPerlinNoiseCoord(TimeSpan dayAndTime)
+      internal void SetSeed(int seed)
+      public float Get()
+      public bool IsRainy()
+      public bool IsCloudy()
+  6 ¸ö Field:
+      private int seed
+      private float cloudyThreshold
+      private float rainyThreshold
+      private float frequency
+      private float offset
+      private float contrast
+  2 ¸ö Property:
+      public float CloudyThreshold
+      public float RainyThreshold

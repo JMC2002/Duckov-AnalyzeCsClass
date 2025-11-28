@@ -1,0 +1,24 @@
+namespace Duckov.UI.MainMenu
+public class SaveSlotSelectionButton: MonoBehaviour
+	
+  7 ¸ö Method:
+      private void Awake()
+      private void OnDestroy()
+      private void OnEnable()
+      private void OnDisable()
+      private void OnButtonClick()
+      private void OnValidate()
+      private void Refresh()
+  12 ¸ö Field:
+      private SaveSlotSelectionMenu menu
+      private Button button
+      private TextMeshProUGUI text
+      private TextMeshProUGUI difficultyText
+      private TextMeshProUGUI playTimeText
+      private TextMeshProUGUI saveTimeText
+      private string slotTextKey
+      private string format
+      private string newGameTextKey
+      private GameObject activeIndicator
+      private GameObject oldSlotIndicator
+      private int index

@@ -1,5 +1,5 @@
 namespace Duckov
 public class GameVersionData: ScriptableObject
-
+	
   1 ¸ö Field:
       public VersionData versionData

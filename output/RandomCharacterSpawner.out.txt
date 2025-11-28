@@ -6,13 +6,14 @@ public class RandomCharacterSpawner: CharacterSpawnerComponentBase
       private void OnDestroy()
       private CharacterRandomPresetInfo GetAPresetByWeight()
       public override void StartSpawn()
-      private async UniTaskVoid CreateAsync()
-      private async UniTask<CharacterMainControl> CreateAt(Vector3 point, int scene, CharacterSpawnerGroup group, bool isLeader)
+      private UniTaskVoid CreateAsync()
+      private UniTask<CharacterMainControl> CreateAt(Vector3 point, int scene, CharacterSpawnerGroup group, bool isLeader)
       private void OnDrawGizmos()
-  16 ¸ö Field:
+  17 ¸ö Field:
       public Points spawnPoints
       public CharacterSpawnerRoot spawnerRoot
       public CharacterSpawnerGroup masterGroup
+      public float spawnTimeSpace
       public List<CharacterRandomPresetInfo> randomPresetInfos
       private float delayTime
       public Vector2Int spawnCountRange

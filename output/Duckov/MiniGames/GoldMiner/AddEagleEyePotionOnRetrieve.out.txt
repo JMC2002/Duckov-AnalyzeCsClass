@@ -1,0 +1,9 @@
+namespace Duckov.MiniGames.GoldMiner
+public class AddEagleEyePotionOnRetrieve: MiniGameBehaviour
+	
+  2 ¸ö Method:
+      private void Awake()
+      private void OnResolved(GoldMinerEntity entity, GoldMiner game)
+  2 ¸ö Field:
+      private GoldMinerEntity master
+      private int amount

@@ -1,6 +1,6 @@
 namespace Dialogues
 public class DialogueUIChoice: MonoBehaviour, IPointerClickHandler, IEventSystemHandler, IPointerEnterHandler
-
+	
   9 ¸ö Method:
       private void Awake()
       private void OnConfirm(MenuItem item)

@@ -1,0 +1,43 @@
+namespace Duckov.PerkTrees
+public class Perk: MonoBehaviour, ISelfValidator
+	
+  11 ¸ö Method:
+      public bool AreAllParentsUnlocked()
+      private void OnValidate()
+      private bool CheckAndPay()
+      public bool SubmitItemsAndBeginUnlocking()
+      public bool ConfirmUnlock()
+      public bool ForceUnlock()
+      public TimeSpan GetRemainingTime()
+      public float GetProgress01()
+      public void Validate(SelfValidationResult result)
+      internal Vector2 GetLayoutPosition()
+      internal void NotifyParentStateChanged()
+  12 ¸ö Field:
+      public static event Action<Perk> OnPerkUnlockConfirmed
+      private PerkTree master
+      private bool lockInDemo
+      private Sprite icon
+      private DisplayQuality quality
+      private string displayName
+      private bool hasDescription
+      private PerkRequirement requirement
+      private bool defaultUnlocked
+      internal bool unlocking
+      internal long unlockingBeginTimeRaw
+      private bool _unlocked
+  14 ¸ö Property:
+      public bool LockInDemo
+      public DisplayQuality DisplayQuality
+      public Sprite Icon
+      private string description
+      public string DisplayName
+      public string Description
+      public PerkRequirement Requirement
+      public bool DefaultUnlocked
+      private DateTime UnlockingBeginTime
+      public bool Unlocked
+      public bool Unlocking
+      public PerkTree Master
+      public string DisplayNameRaw
+      public string DescriptionRaw

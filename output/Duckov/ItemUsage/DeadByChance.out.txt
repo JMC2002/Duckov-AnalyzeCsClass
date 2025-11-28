@@ -1,0 +1,14 @@
+namespace Duckov.ItemUsage
+public class DeadByChance: UsageBehavior
+	
+  3 ¸ö Method:
+      public override bool CanBeUsed(Item item, object user)
+      protected override void OnUse(Item item, object user)
+      private UniTaskVoid KillSelf(CharacterMainControl character, int weaponID)
+  4 ¸ö Field:
+      public int damageValue
+      public float chance
+      public string descriptionKey
+      public string popTextKey
+  1 ¸ö Property:
+      public override UsageBehavior.DisplaySettingsData DisplaySettings

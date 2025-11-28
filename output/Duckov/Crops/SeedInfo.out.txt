@@ -1,0 +1,7 @@
+namespace Duckov.Crops
+public struct SeedInfo
+  1 ¸ö Method:
+      public string GetRandomCropID()
+  2 ¸ö Field:
+      public int itemTypeID
+      public RandomContainer<string> cropIDs

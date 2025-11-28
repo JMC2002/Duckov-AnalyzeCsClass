@@ -1,0 +1,28 @@
+namespace Duckov.UI
+public class BuffsDisplayEntry: MonoBehaviour, IPoolable, IPointerClickHandler, IEventSystemHandler
+	
+  8 ¸ö Method:
+      public void Setup(BuffsDisplay master, Buff target)
+      private void Update()
+      private void Refresh()
+      public void Release()
+      private UniTask ReleaseTask()
+      public void NotifyPooled()
+      public void NotifyReleased()
+      public void OnPointerClick(PointerEventData eventData)
+  12 ¸ö Field:
+      public static event Action<BuffsDisplayEntry, PointerEventData> OnBuffsDisplayEntryClicked
+      private Image icon
+      private TextMeshProUGUI remainingTimeText
+      private TextMeshProUGUI layersText
+      private TextMeshProUGUI displayName
+      private FadeGroup fadeGroup
+      private PunchReceiver punchReceiver
+      private string timeFormat
+      private BuffsDisplay master
+      private Buff target
+      private bool releasing
+      private bool pooled
+  2 ¸ö Property:
+      public Image Icon
+      public Buff Target

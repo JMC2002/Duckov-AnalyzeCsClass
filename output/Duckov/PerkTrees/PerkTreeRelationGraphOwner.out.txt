@@ -1,0 +1,10 @@
+namespace Duckov.PerkTrees
+public class PerkTreeRelationGraphOwner: GraphOwner<PerkRelationGraph>
+	
+  2 ¸ö Method:
+      public List<Perk> GetRequiredNodes(Perk node)
+      internal PerkRelationNode GetRelatedNode(Perk perk)
+  1 ¸ö Field:
+      private PerkRelationGraph _relationGraph
+  1 ¸ö Property:
+      public PerkRelationGraph RelationGraph

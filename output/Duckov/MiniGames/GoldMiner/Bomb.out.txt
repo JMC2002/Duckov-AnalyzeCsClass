@@ -1,0 +1,13 @@
+namespace Duckov.MiniGames.GoldMiner
+public class Bomb: MiniGameBehaviour
+	
+  4 ¸ö Method:
+      protected override void OnUpdate(float deltaTime)
+      private void Explode(GoldMinerEntity goldMinerTarget)
+      private void OnCollisionEnter2D(Collision2D collision)
+      private void OnCollisionExit2D(Collision2D collision)
+  4 ¸ö Field:
+      private float moveSpeed
+      private float maxLifeTime
+      private ParticleSystem explodeFX
+      private float lifeTime

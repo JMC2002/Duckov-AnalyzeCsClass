@@ -16,15 +16,15 @@ public class BaseBGMSelector: MonoBehaviour
       public void SetNext()
       public void SetPrevious()
   9 ¸ö Field:
+      private string switchGroupName
+      private DialogueBubbleProxy proxy
+      public List<BaseBGMSelector.Entry> entries
+      private int index
+      private bool waitForStinger
       public string musicName
       public string author
       public string switchName
       public string filePath
-      private string switchGroupName
-      private DialogueBubbleProxy proxy
-      public List<Entry> entries
-      private int index
-      private bool waitForStinger
   2 ¸ö Property:
       private string BGMInfoFormatKey
       private string BGMInfoFormat

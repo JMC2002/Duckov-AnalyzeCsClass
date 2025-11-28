@@ -1,0 +1,39 @@
+namespace Duckov.MasterKeys.UI
+public class MasterKeysRegisterView: View
+	
+  17 ¸ö Method:
+      protected override void Awake()
+      private void OnInventoryItemDoubleClicked(InventoryDisplay display, InventoryEntry entry, PointerEventData data)
+      private void OnSlotDoubleClicked(SlotDisplay display)
+      private void OnSubmitButtonClicked()
+      private void IndicateSuccess()
+      private UniTask SuccessIndicationTask()
+      private void HideSuccessIndication()
+      private bool EntryFunc_ShouldHighligh(Item e)
+      private bool EntryFunc_CanOperate(Item e)
+      protected override void OnOpen()
+      protected override void OnClose()
+      private void RegisterEvents()
+      private void UnregisterEvents()
+      private void OnSlotContentChanged(Slot slot)
+      private void RefreshRecordExistsIndicator()
+      private void OnItemSelectionChanged()
+      public static void Show()
+  13 ¸ö Field:
+      private FadeGroup fadeGroup
+      private InventoryDisplay inventoryDisplay
+      private InventoryDisplay playerStorageInventoryDisplay
+      private ItemDetailsDisplay detailsDisplay
+      private FadeGroup detailsFadeGroup
+      private Button submitButton
+      private Item keySlotItem
+      private string keySlotKey
+      private SlotDisplay registerSlotDisplay
+      private GameObject recordExistsIndicator
+      private FadeGroup succeedIndicator
+      private float successIndicationTime
+      private string sfx_Register
+  3 ¸ö Property:
+      public static MasterKeysRegisterView Instance
+      private Item CharacterItem
+      private Slot KeySlot

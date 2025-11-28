@@ -6,7 +6,7 @@ public class DeleteSaveDataButton: MonoBehaviour, IPointerDownHandler, IEventSys
       private void Start()
       private void Update()
       private void Execute()
-      private async UniTask NotifySaveDeleted()
+      private UniTask NotifySaveDeleted()
       private void DeleteCurrentSaveData()
       private void RefreshProgressBar()
   5 ¸ö Field:

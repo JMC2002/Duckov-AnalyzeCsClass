@@ -1,0 +1,51 @@
+namespace Duckov.UI
+public class ItemRepairView: View
+	
+  16 ¸ö Method:
+      protected override void Awake()
+      private List<Inventory> GetAvaliableInventories()
+      protected override void OnOpen()
+      protected override void OnClose()
+      private void RegisterEvents()
+      private void OnItemSelectionChanged()
+      private void UnregisterEvents()
+      public static void Show()
+      public static void Hide()
+      private void RefreshSelectedItemInfo()
+      private void OnRepairButtonClicked()
+      private void Repair(Item item, bool prepaied = false)
+      private int CalculateRepairPrice(Item item, out float repairAmount, out float lostAmount, out float lostPercentage)
+      public List<Item> GetAllEquippedItems()
+      public int CalculateRepairPrice(List<Item> itemsToRepair)
+      public void RepairItems(List<Item> itemsToRepair)
+  24 ¸ö Field:
+      public static event Action OnRepaireOptionDone
+      private FadeGroup fadeGroup
+      private ItemSlotCollectionDisplay slotDisplay
+      private InventoryDisplay inventoryDisplay
+      private ItemDetailsDisplay detailsDisplay
+      private FadeGroup itemDetailsFadeGroup
+      private ItemRepair_RepairAllPanel repairAllPanel
+      private FadeGroup repairButtonFadeGroup
+      private FadeGroup placeHolderFadeGroup
+      private Button repairButton
+      private TextMeshProUGUI repairPriceText
+      private TextMeshProUGUI selectedItemName
+      private Image selectedItemIcon
+      private TrueShadow selectedItemShadow
+      private string noItemSelectedNameText
+      private Sprite noItemSelectedIconSprite
+      private GameObject noNeedToRepairIndicator
+      private GameObject brokenIndicator
+      private GameObject cannotRepairIndicator
+      private TextMeshProUGUI durabilityText
+      private TextMeshProUGUI willLoseDurabilityText
+      private Image barFill
+      private Image lossBarFill
+      private Gradient barFillColorOverT
+  5 ¸ö Property:
+      public static ItemRepairView Instance
+      private Item CharacterItem
+      private bool CanRepair
+      private bool NoNeedToRepair
+      private bool Broken

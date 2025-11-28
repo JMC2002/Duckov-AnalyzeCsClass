@@ -9,7 +9,7 @@ public class CharacterSoundMaker: MonoBehaviour
       private float moveSoundTimer
       public float walkSoundFrequence
       public float runSoundFrequence
-      public static Action<Vector3, FootStepTypes, CharacterMainControl> OnFootStepSound
+      public static Action<Vector3, CharacterSoundMaker.FootStepTypes, CharacterMainControl> OnFootStepSound
   2 ¸ö Property:
       public float walkSoundDistance
       public float runSoundDistance

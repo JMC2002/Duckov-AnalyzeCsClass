@@ -1,0 +1,9 @@
+namespace Duckov.UI.Animations
+public class LocalPositionLooper: LooperElement
+	
+  1 ¸ö Method:
+      protected override void OnTick(LooperClock clock, float t)
+  3 ¸ö Field:
+      private Vector3 localPositionA
+      private Vector3 localPositionB
+      private AnimationCurve curve

@@ -1,0 +1,20 @@
+namespace Duckov.UI
+public class FormulasIndexEntry: MonoBehaviour, IPointerClickHandler, IEventSystemHandler
+	
+  3 ¸ö Method:
+      public void OnPointerClick(PointerEventData eventData)
+      internal void Setup(FormulasIndexView master, CraftingFormula formula)
+      public void Refresh()
+  6 ¸ö Field:
+      private TextMeshProUGUI displayNameText
+      private Image image
+      private string lockedText
+      private Sprite lockedImage
+      private FormulasIndexView master
+      private CraftingFormula formula
+  5 ¸ö Property:
+      public CraftingFormula Formula
+      private int ItemID
+      private ItemMetaData Meta
+      private bool Unlocked
+      public bool Valid

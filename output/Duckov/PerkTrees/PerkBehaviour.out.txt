@@ -1,0 +1,21 @@
+namespace Duckov.PerkTrees
+public abstract class PerkBehaviour: MonoBehaviour
+	
+  11 ¸ö Method:
+      private void Awake()
+      private void OnLevelInitialized()
+      private void OnDestroy()
+      private void OnValidate()
+      private void OnMasterUnlockStateChanged(Perk perk, bool unlocked)
+      private void NotifyUnlockStateChanged(bool unlocked)
+      protected virtual void OnUnlockStateChanged(bool unlocked)
+      protected virtual void OnUnlocked()
+      protected virtual void OnLocked()
+      protected virtual void OnAwake()
+      protected virtual void OnOnDestroy()
+  1 ¸ö Field:
+      private Perk master
+  3 ¸ö Property:
+      protected Perk Master
+      private bool Unlocked
+      public virtual string Description

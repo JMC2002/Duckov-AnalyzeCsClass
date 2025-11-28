@@ -1,0 +1,16 @@
+namespace Duckov.Quests.UI
+public class QuestGiverTabButton: MonoBehaviour
+	
+  4 ¸ö Method:
+      internal void Setup(QuestGiverTabs questGiverTabs)
+      private void Awake()
+      private void OnClick()
+      internal void Refresh()
+  4 ¸ö Field:
+      private Button button
+      private GameObject selectedIndicator
+      private QuestStatus status
+      private QuestGiverTabs master
+  2 ¸ö Property:
+      public QuestStatus Status
+      private bool Selected

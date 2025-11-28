@@ -1,6 +1,6 @@
 namespace Duckov
 public class GameVersionDisplay: MonoBehaviour
-
+	
   1 ¸ö Method:
       private void Start()
   1 ¸ö Field:

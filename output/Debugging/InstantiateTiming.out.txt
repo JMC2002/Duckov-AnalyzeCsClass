@@ -1,6 +1,6 @@
 namespace Debugging
 public class InstantiateTiming: MonoBehaviour
-
+	
   3 ¸ö Method:
       public void InstantiatePrefab()
       private void Awake()

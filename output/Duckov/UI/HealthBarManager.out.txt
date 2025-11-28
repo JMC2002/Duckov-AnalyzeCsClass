@@ -1,0 +1,19 @@
+namespace Duckov.UI
+public class HealthBarManager: MonoBehaviour
+	
+  8 ¸ö Method:
+      private void Awake()
+      private void OnDestroy()
+      private void RegisterStaticEvents()
+      private void UnregisterStaticEvents()
+      private HealthBar GetActiveHealthBar(Health health)
+      private HealthBar CreateHealthBarFor(Health health, DamageInfo? damage = null)
+      private void Health_OnRequestHealthBar(Health health)
+      public static void RequestHealthBar(Health health, DamageInfo? damage = null)
+  3 ¸ö Field:
+      private static HealthBarManager _instance
+      public HealthBar healthBarPrefab
+      private PrefabPool<HealthBar> _prefabPool
+  2 ¸ö Property:
+      public static HealthBarManager Instance
+      private PrefabPool<HealthBar> PrefabPool

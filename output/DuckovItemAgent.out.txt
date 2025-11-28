@@ -1,6 +1,7 @@
 public class DuckovItemAgent: ItemAgent
 
-  5 ¸ö Method:
+  6 ¸ö Method:
+      public void AddSocket(Transform socket)
       public Transform GetSocket(string socketName, bool createNew)
       public void SetHolder(CharacterMainControl _holder)
       public CharacterMainControl GetHolder()

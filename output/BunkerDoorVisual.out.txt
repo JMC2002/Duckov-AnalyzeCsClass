@@ -4,7 +4,7 @@ public class BunkerDoorVisual: MonoBehaviour
       private void Awake()
       public void OnEnter()
       public void OnExit()
-      private async UniTask PopText(string text, float delay, bool _inRange)
+      private UniTask PopText(string text, float delay, bool _inRange)
   5 ¸ö Field:
       public string welcomeText
       public string leaveText

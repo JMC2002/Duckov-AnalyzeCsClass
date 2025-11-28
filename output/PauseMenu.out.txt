@@ -4,6 +4,9 @@ public class PauseMenu: UIPanel
       public static void Show()
       public static void Hide()
       public static void Toggle()
+  2 ¸ö Field:
+      public static event Action onPauseMenuOn
+      public static event Action onPauseMenuOff
   2 ¸ö Property:
       public static PauseMenu Instance
       public bool Shown

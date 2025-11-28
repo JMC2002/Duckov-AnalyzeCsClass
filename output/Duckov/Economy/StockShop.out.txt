@@ -1,0 +1,68 @@
+namespace Duckov.Economy
+public class StockShop: MonoBehaviour, IMerchant, ISaveDataProvider
+	
+  4 个 ClassLike:
+      public class Entry
+      public class OverrideSellingPriceEntry
+      private class SaveData
+      public class StockCountEntry
+  18 个 Method:
+      private UniTask<Item> GetItemInstance(int typeID)
+      public Item GetItemInstanceDirect(int typeID)
+      private void Awake()
+      private void InitializeEntries()
+      private void Load()
+      private void Save()
+      private void OnDestroy()
+      private void Start()
+      private UniTask CacheItemInstances()
+      internal void RefreshIfNeeded()
+      private void DoRefreshStock()
+      public UniTask<bool> Buy(int itemTypeID, int amount = 1)
+      private UniTask<bool> BuyTask(int itemTypeID, int amount = 1)
+      internal UniTask Sell(Item target)
+      public void ShowUI()
+      public int ConvertPrice(Item item, bool selling = false)
+      public object GenerateSaveData()
+      public void SetupSaveData(object dataRaw)
+  22 个 Field:
+      public static event Action<StockShop> OnAfterItemSold
+      public static event Action<StockShop, Item> OnItemPurchased
+      public static event Action<StockShop, Item, int> OnItemSoldByPlayer
+      private string merchantID
+      public string DisplayNameKey
+      private long refreshAfterTimeSpan
+      private string purchaseNotificationTextFormatKey
+      private bool accountAvaliable
+      private bool returnCash
+      private bool refreshStockOnStart
+      public float sellFactor
+      private long lastTimeRefreshedStock
+      private bool buying
+      private bool selling
+      private StockShopDatabase.ItemEntry entry
+      private bool show
+      private int currentStock
+      public int typeID
+      public float factor
+      public long lastTimeRefreshedStock
+      public int itemTypeID
+      public int stock
+  17 个 Property:
+      public string MerchantID
+      public string OpinionKey
+      public string DisplayName
+      private int Opinion
+      public string PurchaseNotificationTextFormat
+      public bool AccountAvaliable
+      public TimeSpan TimeSinceLastRefresh
+      public TimeSpan NextRefreshETA
+      private string SaveKey
+      public bool Busy
+      public int MaxStock
+      public int ItemTypeID
+      public bool ForceUnlock
+      public float PriceFactor
+      public float Possibility
+      public bool Show
+      public int CurrentStock

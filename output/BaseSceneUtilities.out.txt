@@ -1,11 +1,16 @@
 public class BaseSceneUtilities: MonoBehaviour
 
-  3 个 Method:
+  6 个 Method:
       private void Save()
       private void Awake()
+      private void OnDestroy()
       private void Update()
-  2 个 Field:
-      private float saveInterval
+      private void OnViewOpenClose(ManagedUIElement uiElement)
+      private void TrySetDirty()
+  4 个 Field:
+      private float saveCoolTime
+      private float saveCoolTimer
+      private bool dirty
       private float lastTimeSaved
   1 个 Property:
       private float TimeSinceLastSave

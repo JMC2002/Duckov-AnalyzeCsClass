@@ -12,8 +12,8 @@ public class HUDManager: MonoBehaviour
       public static void RegisterHideToken(UnityEngine.Object obj)
       public static void UnregisterHideToken(UnityEngine.Object obj)
   3 ¸ö Field:
+      private static event Action onHideTokensChanged
       private FadeGroup fadeGroup
       private CanvasGroup canvasGroup
-      private static event Action onHideTokensChanged
   1 ¸ö Property:
       private bool ShouldDisplay

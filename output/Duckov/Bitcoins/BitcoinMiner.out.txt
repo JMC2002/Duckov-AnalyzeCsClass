@@ -1,0 +1,50 @@
+namespace Duckov.Bitcoins
+public class BitcoinMiner: MonoBehaviour
+	
+  1 个 ClassLike:
+      private struct SaveData
+  10 个 Method:
+      private void Awake()
+      private void OnDestroy()
+      private void Start()
+      private UniTask Setup(BitcoinMiner.SaveData data)
+      private UniTask Initialize()
+      private void Load()
+      private void Save()
+      private void UpdateWork()
+      private UniTask CreateCoin()
+      private void FixedUpdate()
+  14 个 Field:
+      private int minerItemID
+      private int coinItemID
+      private double workPerCoin
+      private Item item
+      private double work
+      private static readonly double wps_1
+      private static readonly double wps_12
+      private static double? _cached_k
+      private long lastUpdateDateTimeRaw
+      private float cachedPerformance
+      public ItemTreeData itemData
+      public double work
+      public float cachedPerformance
+      public long lastUpdateDateTimeRaw
+  15 个 Property:
+      public static BitcoinMiner Instance
+      private double Progress
+      private static double K_1_12
+      public double WorkPerSecond
+      public double HoursPerCoin
+      public bool IsInventoryFull
+      public TimeSpan TimePerCoin
+      public TimeSpan RemainingTime
+      private DateTime LastUpdateDateTime
+      public bool Loading
+      public bool Initialized
+      public bool CreatingCoin
+      public Item Item
+      public float NormalizedProgress
+      public double Performance
+  2 个 Constant:
+      public const string SaveKey
+      private const string PerformaceStatKey

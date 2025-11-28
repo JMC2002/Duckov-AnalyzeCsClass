@@ -6,7 +6,7 @@ public class ElementFactorFilter: EffectFilter
       protected override bool OnEvaluate(EffectTriggerEventContext context)
       private void OnDestroy()
   4 ¸ö Field:
-      public ElementFactorFilterTypes type
+      public ElementFactorFilter.ElementFactorFilterTypes type
       public float compareTo
       public ElementTypes element
       private CharacterMainControl _mainControl

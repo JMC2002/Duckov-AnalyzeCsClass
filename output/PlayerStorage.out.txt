@@ -13,24 +13,24 @@ public class PlayerStorage: MonoBehaviour, IInitializedQueryHandler
       private void OnInventoryContentChanged(Inventory inventory, int index)
       public static void Push(Item item, bool toBufferDirectly = false)
       private void Save()
-      private async UniTask Load()
+      private UniTask Load()
       private void Update()
       public static int RecalculateStorageCapacity()
       private void SetCapacity(int capacity)
-      public static async UniTask TakeBufferItem(int index)
+      public static UniTask TakeBufferItem(int index)
       public bool HasInitialized()
   11 ¸ö Field:
-      public int capacity
+      public static event Action<PlayerStorage, Inventory, int> OnPlayerStorageChange
+      public static event Action<PlayerStorage.StorageCapacityCalculationHolder> OnRecalculateStorageCapacity
+      public static event Action OnTakeBufferItem
+      public static event Action<Item> OnItemAddedToBuffer
+      public static event Action OnLoadingFinished
       private Inventory inventory
       private InteractableLootbox interactable
       private int defaultCapacity
       private static bool needRecalculateCapacity
       private bool initialized
-      public static event Action<PlayerStorage, Inventory, int> OnPlayerStorageChange
-      public static event Action<StorageCapacityCalculationHolder> OnRecalculateStorageCapacity
-      public static event Action OnTakeBufferItem
-      public static event Action<Item> OnItemAddedToBuffer
-      public static event Action OnLoadingFinished
+      public int capacity
   7 ¸ö Property:
       public static PlayerStorage Instance
       public static Inventory Inventory

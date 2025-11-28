@@ -5,7 +5,7 @@ public class DuckovHider: HiderBehavior
       private void OnDestroy()
       protected override void OnHide()
       protected override void OnReveal()
-      private async UniTask HideDelay()
+      private UniTask HideDelay()
       private void OnMainCharacterDie(DamageInfo damageInfo)
   4 ¸ö Field:
       public CharacterMainControl character

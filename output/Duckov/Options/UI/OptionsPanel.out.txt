@@ -1,0 +1,13 @@
+namespace Duckov.Options.UI
+public class OptionsPanel: UIPanel, ISingleSelectionMenu<OptionsPanel_TabButton>
+	
+  6 ¸ö Method:
+      private void Start()
+      private void Setup()
+      private void OnTabButtonClicked(OptionsPanel_TabButton button, PointerEventData data)
+      protected override void OnOpen()
+      public OptionsPanel_TabButton GetSelection()
+      public bool SetSelection(OptionsPanel_TabButton selection)
+  2 ¸ö Field:
+      private List<OptionsPanel_TabButton> tabButtons
+      private OptionsPanel_TabButton selection

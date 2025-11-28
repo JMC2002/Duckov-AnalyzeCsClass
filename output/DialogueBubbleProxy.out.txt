@@ -4,7 +4,8 @@ public class DialogueBubbleProxy: MonoBehaviour
       public void Pop()
       public void Pop(string text, float speed = -1f)
       private void OnDrawGizmos()
-  3 ¸ö Field:
+  4 ¸ö Field:
       public string textKey
       public float yOffset
       public float duration
+      public bool byMainCharacter

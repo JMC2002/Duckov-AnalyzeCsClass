@@ -9,6 +9,8 @@ public class ItemAmountDisplay: MonoBehaviour, IPointerEnterHandler, IEventSyste
       public void OnPointerEnter(PointerEventData eventData)
       public void OnPointerExit(PointerEventData eventData)
   11 ¸ö Field:
+      public static event Action<ItemAmountDisplay> OnMouseEnter
+      public static event Action<ItemAmountDisplay> OnMouseExit
       private Image background
       private Image icon
       private TextMeshProUGUI amountText
@@ -18,8 +20,6 @@ public class ItemAmountDisplay: MonoBehaviour, IPointerEnterHandler, IEventSyste
       private int typeID
       private long amount
       private ItemMetaData metaData
-      public static event Action<ItemAmountDisplay> OnMouseEnter
-      public static event Action<ItemAmountDisplay> OnMouseExit
   2 ¸ö Property:
       public int TypeID
       public ItemMetaData MetaData

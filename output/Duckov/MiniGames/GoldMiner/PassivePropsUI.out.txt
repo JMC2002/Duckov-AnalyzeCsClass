@@ -1,0 +1,29 @@
+namespace Duckov.MiniGames.GoldMiner
+public class PassivePropsUI: MiniGameBehaviour
+	
+  13 ¸ö Method:
+      private void OnReleaseEntry(PassivePropDisplay display)
+      private void OnGetEntry(PassivePropDisplay display)
+      private void Awake()
+      private void OnDestroy()
+      private void OnNavGroupChanged()
+      private void OnEarlyTick(GoldMiner miner)
+      private void RefreshDescription()
+      private void HideDescription()
+      private void SetupAndShowDescription(PassivePropDisplay ppd)
+      private ValueTuple<int, int> IndexToCoord(int index)
+      private void OnLevelBegin(GoldMiner miner)
+      private void OnArtifactChanged(GoldMiner miner)
+      private void Refresh()
+  9 ¸ö Field:
+      private GoldMiner master
+      private RectTransform descriptionContainer
+      private TextMeshProUGUI descriptionText
+      private PassivePropDisplay entryTemplate
+      private NavGroup navGroup
+      private NavGroup upNavGroup
+      private GridLayoutGroup gridLayout
+      private PrefabPool<PassivePropDisplay> _pool
+      private bool changeLock
+  1 ¸ö Property:
+      private PrefabPool<PassivePropDisplay> Pool

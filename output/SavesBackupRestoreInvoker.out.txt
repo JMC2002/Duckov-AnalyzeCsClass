@@ -4,10 +4,8 @@ public class SavesBackupRestoreInvoker: MonoBehaviour
       private void Awake()
       private void OnMainButtonClicked()
       private void OnButtonClicked(int index)
-  6 ¸ö Field:
+  4 ¸ö Field:
       private Button mainButton
       private FadeGroup menuFadeGroup
-      private Button buttonSlot1
-      private Button buttonSlot2
-      private Button buttonSlot3
+      private List<Button> buttons
       private SavesBackupRestorePanel restorePanel

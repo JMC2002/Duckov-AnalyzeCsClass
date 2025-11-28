@@ -1,0 +1,12 @@
+namespace Duckov.UI
+public class UsageUtilitiesDisplay: MonoBehaviour
+	
+  2 ¸ö Method:
+      public void Setup(Item item)
+      private void Refresh()
+  2 ¸ö Field:
+      private UsageUtilitiesDisplay_Entry entryTemplate
+      private PrefabPool<UsageUtilitiesDisplay_Entry> _entryPool
+  2 ¸ö Property:
+      public UsageUtilities Target
+      private PrefabPool<UsageUtilitiesDisplay_Entry> EntryPool

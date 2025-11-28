@@ -1,0 +1,21 @@
+namespace Duckov.Quests.Rewards
+public class QuestReward_UnlockStockItem: Reward
+	
+  5 ¸ö Method:
+      private ItemMetaData GetItemMeta()
+      public override object GenerateSaveData()
+      public override void OnClaim()
+      public override void SetupSaveData(object data)
+      public override void NotifyReload(Quest questInstance)
+  2 ¸ö Field:
+      private int unlockItem
+      private bool claimed
+  8 ¸ö Property:
+      public int UnlockItem
+      public override Sprite Icon
+      private string descriptionFormatKey
+      private string DescriptionFormat
+      private string ItemDisplayName
+      public override string Description
+      public override bool Claimed
+      public override bool AutoClaim

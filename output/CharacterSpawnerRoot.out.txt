@@ -1,11 +1,12 @@
 public class CharacterSpawnerRoot: MonoBehaviour
 
-  11 ¸ö Method:
+  12 ¸ö Method:
       private void Awake()
       private void OnDestroy()
       private void Start()
       private void Update()
       private void CheckDespawn()
+      private bool CheckNeedOfTrigger()
       private bool CheckTiming()
       private void Init()
       private void StartSpawn()

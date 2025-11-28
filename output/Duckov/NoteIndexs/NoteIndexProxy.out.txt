@@ -1,0 +1,6 @@
+namespace Duckov.NoteIndexs
+public class NoteIndexProxy: MonoBehaviour
+	
+  2 ¸ö Method:
+      public void UnlockNote(string key)
+      public void UnlockAndShowNote(string key)

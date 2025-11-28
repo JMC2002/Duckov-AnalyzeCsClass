@@ -1,0 +1,5 @@
+namespace Duckov.CreditsUtility
+public struct Token
+  2 ¸ö Field:
+      public TokenType type
+      public string text

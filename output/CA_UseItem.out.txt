@@ -1,7 +1,7 @@
 public class CA_UseItem: CharacterActionBase, IProgress
 
   17 ¸ö Method:
-      public override ActionPriorities ActionPriority()
+      public override CharacterActionBase.ActionPriorities ActionPriority()
       public override bool CanMove()
       public override bool CanRun()
       public override bool CanUseHand()
@@ -18,7 +18,8 @@ public class CA_UseItem: CharacterActionBase, IProgress
       private void PostActionSound()
       private void PostUseSound()
       private void StopSound()
-  6 ¸ö Field:
+  7 ¸ö Field:
+      public static event Action<Item> OnItemUsedByPlayer
       private Item item
       public IAgentUsable agentUsable
       public bool hasSound

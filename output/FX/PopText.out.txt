@@ -1,6 +1,6 @@
 namespace FX
 public class PopText: MonoBehaviour
-
+	
   8 ¸ö Method:
       private void Awake()
       private PopTextEntity GetOrCreateEntry()

@@ -1,0 +1,35 @@
+namespace Duckov.Crops
+public class CropAnimator: MonoBehaviour
+	
+  1 个 ClassLike:
+      private struct Stage
+  9 个 Method:
+      private void Awake()
+      private void Update()
+      private void RefreshPosition(bool notifyStageChange = true)
+      private void OnStageChange()
+      private void OnWater(Crop crop)
+      private void OnRipen(Crop crop)
+      private void OnHarvest(Crop crop)
+      private void OnPlant(Crop crop)
+      private void OnBeforeDestroy(Crop crop)
+  12 个 Field:
+      private Crop crop
+      private Transform displayParent
+      private ParticleSystem plantFX
+      private ParticleSystem stageChangeFX
+      private ParticleSystem ripenFX
+      private ParticleSystem waterFX
+      private ParticleSystem harvestFX
+      private ParticleSystem destroyFX
+      private CropAnimator.Stage[] stages
+      private int? cachedStage
+      public float progress
+      public float position
+  6 个 Property:
+      private ParticleSystem PlantFX
+      private ParticleSystem StageChangeFX
+      private ParticleSystem RipenFX
+      private ParticleSystem WaterFX
+      private ParticleSystem HarvestFX
+      private ParticleSystem DestroyFX

@@ -5,8 +5,8 @@ public class MultiInteractionMenu: MonoBehaviour
       private void Setup(MultiInteraction target)
       private int CreateNewToken()
       private bool TokenChanged(int token)
-      public async UniTask SetupAndShow(MultiInteraction target)
-      public async UniTask Hide()
+      public UniTask SetupAndShow(MultiInteraction target)
+      public UniTask Hide()
   5 ¸ö Field:
       private MultiInteractionMenuButton buttonTemplate
       private float delayEachButton

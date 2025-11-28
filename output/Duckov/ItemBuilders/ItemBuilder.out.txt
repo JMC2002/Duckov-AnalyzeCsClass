@@ -1,0 +1,28 @@
+namespace Duckov.ItemBuilders
+public class ItemBuilder
+  18 ¸ö Method:
+      public static ItemBuilder New()
+      public Item Instantiate()
+      public ItemBuilder Icon(Sprite sprite)
+      public ItemBuilder TypeID(int id)
+      public ItemBuilder EnableStacking(int maxStackCount, int stackCount)
+      public ItemBuilder DisableStacking()
+      public ItemBuilder Slot(string key, List<Tag> requireTags, List<Tag> excludeTags)
+      public ItemBuilder Slot(string key, Tag requireTag, Tag excludeTag = null)
+      public ItemBuilder Stat(string key, float value, bool display = false)
+      public ItemBuilder SetVariable(string key, float value, bool display = false)
+      public ItemBuilder SetVariable(string key, int value, bool display = false)
+      public ItemBuilder SetVariable(string key, bool value, bool display = false)
+      public ItemBuilder SetVariable(string key, string value, bool display = false)
+      public ItemBuilder SetConstant(string key, float value, bool display = false)
+      public ItemBuilder SetConstant(string key, int value, bool display = false)
+      public ItemBuilder SetConstant(string key, bool value, bool display = false)
+      public ItemBuilder SetConstant(string key, string value, bool display = false)
+      public ItemBuilder Modifier(ModifierDescription description)
+  6 ¸ö Field:
+      public int typeID
+      public Sprite icon
+      public int maxStackCount
+      public int stackCount
+      public CustomDataCollection constants
+      public CustomDataCollection variables

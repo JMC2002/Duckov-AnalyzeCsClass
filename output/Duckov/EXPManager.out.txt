@@ -1,7 +1,7 @@
 namespace Duckov
 public class EXPManager: MonoBehaviour, ISaveDataProvider
-
-  12 ¸ö Method:
+	
+  13 ¸ö Method:
       private static void OnLevelChanged(int oldLevel, int newLevel)
       public static bool AddExp(int amount)
       private void CacheExp()
@@ -14,6 +14,7 @@ public class EXPManager: MonoBehaviour, ISaveDataProvider
       private void OnDestroy()
       private void OnNewRaid(RaidUtilities.RaidInfo info)
       public int LevelFromExp(long exp)
+      public ValueTuple<long, long> GetLevelExpRange(int level)
   7 ¸ö Field:
       private static EXPManager instance
       private string levelChangeNotificationFormatKey

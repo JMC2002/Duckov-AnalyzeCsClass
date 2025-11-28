@@ -6,11 +6,12 @@ public class CostTakerHUD_Entry: MonoBehaviour
       internal void Setup(CostTaker cur)
       private void UpdatePosition()
       private void UpdateFadeGroup()
-  4 个 Field:
+  5 个 Field:
       private RectTransform rectTransform
       private TextMeshProUGUI nameText
       private CostDisplay costDisplay
       private FadeGroup fadeGroup
+      private bool directionPositive
   1 个 Property:
       public CostTaker Target
   2 个 Constant:

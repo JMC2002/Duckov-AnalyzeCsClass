@@ -103,7 +103,8 @@ public class CharacterMainControl: MonoBehaviour
       public static float EquipmentRepairLossFactor()
       private float GetFloatStatValue(int hash)
       public void UseStamina(float value)
-  98 ¸ö Field:
+  99 ¸ö Field:
+      public static event Action<Item> OnMainCharacterStartUseItem
       public CharacterRandomPreset characterPreset
       private AudioManager.VoiceType audioVoiceType
       private AudioManager.FootStepMaterialType footStepMaterialType
@@ -114,6 +115,7 @@ public class CharacterMainControl: MonoBehaviour
       public CA_Carry carryAction
       public CharacterModel characterModel
       private bool hidden
+      public bool dropBoxOnDead
       public InteractableLootbox deadLootBoxPrefab
       public Transform modelRoot
       private Vector3 moveInput
@@ -142,7 +144,7 @@ public class CharacterMainControl: MonoBehaviour
       public DamageReceiver mainDamageReceiver
       private HashSet<GameObject> nearByHalfObsticles
       private int weaponSwitchIndex
-      private WeightStates weightState
+      private CharacterMainControl.WeightStates weightState
       private int meleeWeaponSlotHash
       private int primWeaponSlotHash
       private int secWeaponSlotHash
@@ -201,7 +203,6 @@ public class CharacterMainControl: MonoBehaviour
       private int walkSoundRangeHash
       private int runSoundRangeHash
       private static int flashLightHash
-      public static event Action<Item> OnMainCharacterStartUseItem
   80 ¸ö Property:
       public AudioManager.VoiceType AudioVoiceType
       public AudioManager.FootStepMaterialType FootStepMaterialType

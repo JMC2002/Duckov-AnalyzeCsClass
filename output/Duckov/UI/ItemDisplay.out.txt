@@ -1,0 +1,92 @@
+namespace Duckov.UI
+public class ItemDisplay: MonoBehaviour, IPoolable, IPointerClickHandler, IEventSystemHandler, IPointerDownHandler, IPointerUpHandler, IPointerEnterHandler, IPointerExitHandler, IDropHandler
+	
+  35 个 Method:
+      public void Setup(Item target)
+      private void RegisterEvents()
+      private void UnregisterEvents()
+      private void OnWishlistChanged(int type)
+      private void OnTargetDurabilityChanged(Item item)
+      private void OnTargetDestroy(Item item)
+      private void OnTargetSetStackCount(Item item)
+      private void OnItemUtilitiesSelectionChanged()
+      private void OnTargetInspectionStateChanged(Item item)
+      private void Clear()
+      private void SetupEmpty()
+      private void Refresh()
+      private void RefreshWishlistInfo()
+      private void HideMainContentAndDisableControl()
+      private void ShowMainContentAndEnableControl()
+      private void ShowInspectionElements()
+      private void HideInspectionElements()
+      private void OnEnable()
+      private void OnDisable()
+      private void OnDestroy()
+      public static ItemDisplay Get()
+      public static void Release(ItemDisplay item)
+      public void NotifyPooled()
+      public void NotifyReleased()
+      private void Select()
+      public void NotifySelected()
+      public void NotifyUnselected()
+      public void OnPointerClick(PointerEventData eventData)
+      public void Punch()
+      public void OnPointerDown(PointerEventData eventData)
+      public void OnPointerUp(PointerEventData eventData)
+      public void OnPointerExit(PointerEventData eventData)
+      public void OnPointerEnter(PointerEventData eventData)
+      public void OnDrop(PointerEventData eventData)
+      private void HandleDirectDrop(PointerEventData eventData)
+  34 个 Field:
+      public static event Action<ItemDisplay> OnPointerEnterItemDisplay
+      public static event Action<ItemDisplay> OnPointerExitItemDisplay
+      private Image icon
+      private TrueShadow displayQualityShadow
+      private GameObject countGameObject
+      private TextMeshProUGUI countText
+      private GameObject selectionIndicator
+      private Graphic interactionEventReceiver
+      private GameObject backgroundRing
+      private GameObject inspectionElementRoot
+      private GameObject inspectingElement
+      private GameObject notInspectingElement
+      private GameObject nameContainer
+      private TextMeshProUGUI nameText
+      private GameObject durabilityGameObject
+      private Image durabilityFill
+      private Gradient durabilityFillColorOverT
+      private GameObject durabilityZeroIndicator
+      private Image durabilityLoss
+      private GameObject slotIndicatorContainer
+      private SlotIndicator slotIndicatorTemplate
+      private GameObject wishlistedIndicator
+      private GameObject questRequiredIndicator
+      private GameObject buildingRequiredIndicator
+      private float punchDuration
+      private float selectionRingPunchScale
+      private float backgroundRingPunchScale
+      private float iconPunchScale
+      private PrefabPool<SlotIndicator> _slotIndicatorPool
+      private bool mainContentShown
+      private bool isBeingDestroyed
+      private bool showOperationButtons
+      private float lastClickTime
+      private bool doubleClickInvoked
+  15 个 Property:
+      private Sprite FallbackIcon
+      public Item Target
+      internal Action releaseAction
+      public bool Selected
+      private PrefabPool<SlotIndicator> SlotIndicatorPool
+      public static PrefabPool<ItemDisplay> Pool
+      public bool ShowOperationButtons
+      public bool Editable
+      public bool Movable
+      public bool CanDrop
+      public bool IsStockshopSample
+      public bool CanUse
+      public bool CanSplit
+      public bool CanLockSort
+      public bool CanSetShortcut
+  1 个 Constant:
+      public const float doubleClickTimeThreshold

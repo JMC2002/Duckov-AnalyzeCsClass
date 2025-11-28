@@ -1,6 +1,6 @@
 namespace Duckov
 public class AudioObject: MonoBehaviour
-
+	
   13 ¸ö Method:
       internal static AudioObject GetOrCreate(GameObject from)
       public EventInstance? PostQuak(string soundKey)

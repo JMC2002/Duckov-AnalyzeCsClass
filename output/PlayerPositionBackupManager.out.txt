@@ -13,13 +13,13 @@ public class PlayerPositionBackupManager: MonoBehaviour
       private void OnStartRecover()
       public void SetPlayerToBackupPos()
   10 ¸ö Field:
-      public int sceneID
-      public Vector3 position
-      private List<PlayerPositionBackupEntry> backups
+      private static event Action OnStartRecoverEvent
+      private List<PlayerPositionBackupManager.PlayerPositionBackupEntry> backups
       private CharacterMainControl mainCharacter
       public float backupTimeSpace
       public float minBackupDistance
       private float backupTimer
       public InteractableBase backupInteract
       public int listSize
-      private static event Action OnStartRecoverEvent
+      public int sceneID
+      public Vector3 position

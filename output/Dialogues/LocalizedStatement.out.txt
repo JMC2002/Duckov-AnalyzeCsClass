@@ -1,6 +1,6 @@
 namespace Dialogues
 public class LocalizedStatement: IStatement
-
+	
   3 ¸ö Field:
       private string _textKey
       private AudioClip _audio

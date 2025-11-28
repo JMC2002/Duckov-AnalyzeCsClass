@@ -4,7 +4,7 @@ public class CameraShaker: MonoBehaviour
       public enum CameraShakeTypes
   2 ¸ö Method:
       private void Awake()
-      public static void Shake(Vector3 velocity, CameraShakeTypes shakeType)
+      public static void Shake(Vector3 velocity, CameraShaker.CameraShakeTypes shakeType)
   4 ¸ö Field:
       private static CameraShaker _instance
       public CinemachineImpulseSource recoilSource

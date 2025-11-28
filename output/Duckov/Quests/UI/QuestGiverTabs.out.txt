@@ -1,0 +1,13 @@
+namespace Duckov.Quests.UI
+public class QuestGiverTabs: MonoBehaviour, ISingleSelectionMenu<QuestGiverTabButton>
+	
+  6 ¸ö Method:
+      public QuestGiverTabButton GetSelection()
+      public QuestStatus GetStatus()
+      public bool SetSelection(QuestGiverTabButton selection)
+      private void Initialize()
+      private void Awake()
+      private void RefreshAllButtons()
+  2 ¸ö Field:
+      private QuestGiverTabButton selectedButton
+      private bool initialized

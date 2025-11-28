@@ -3,7 +3,7 @@ public class DecomposeDatabase: ScriptableObject
   7 ¸ö Method:
       public void RebuildDictionary()
       public DecomposeFormula GetFormula(int itemTypeID)
-      public static async UniTask<bool> Decompose(Item item, int count)
+      public static UniTask<bool> Decompose(Item item, int count)
       public static bool CanDecompose(int itemTypeID)
       public static bool CanDecompose(Item item)
       public static DecomposeFormula GetDecomposeFormula(int itemTypeID)

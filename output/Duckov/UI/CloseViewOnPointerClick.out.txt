@@ -1,0 +1,15 @@
+namespace Duckov.UI
+public class CloseViewOnPointerClick: MonoBehaviour, IPointerClickHandler, IEventSystemHandler
+	
+  6 ¸ö Method:
+      private void OnValidate()
+      private void Awake()
+      private void OnDestroy()
+      private void OnViewClose(ManagedUIElement element)
+      private void OnViewOpen(ManagedUIElement element)
+      public void OnPointerClick(PointerEventData eventData)
+  2 ¸ö Field:
+      private View view
+      private Graphic graphic
+  1 ¸ö Constant:
+      private const bool FunctionEnabled

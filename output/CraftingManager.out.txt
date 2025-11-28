@@ -6,8 +6,8 @@ public class CraftingManager: MonoBehaviour
       private void Save()
       private void Load()
       public static void UnlockFormula(string formulaID)
-      private async UniTask<List<Item>> Craft(CraftingFormula formula)
-      public async UniTask<List<Item>> Craft(string id)
+      private UniTask<List<Item>> Craft(CraftingFormula formula)
+      public UniTask<List<Item>> Craft(string id)
       internal static bool IsFormulaUnlocked(string value)
       internal static CraftingFormula GetFormula(string id)
   2 ¸ö Field:

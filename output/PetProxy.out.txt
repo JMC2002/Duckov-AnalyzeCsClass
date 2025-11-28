@@ -9,7 +9,8 @@ public class PetProxy: MonoBehaviour
   2 ¸ö Field:
       private Inventory inventory
       private float checkTimer
-  3 ¸ö Property:
+  4 ¸ö Property:
       public static PetProxy Instance
       public static Inventory PetInventory
+      public static bool InventoryEmpty
       public Inventory Inventory

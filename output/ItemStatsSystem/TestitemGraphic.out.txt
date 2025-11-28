@@ -1,6 +1,6 @@
 namespace ItemStatsSystem
 public class TestitemGraphic: MonoBehaviour
-
+	
   2 ¸ö Method:
       private void Start()
       private void Update()

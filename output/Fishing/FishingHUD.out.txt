@@ -1,15 +1,15 @@
 namespace Fishing
 public class FishingHUD: MonoBehaviour
-
+	
   8 ¸ö Method:
       private void Awake()
       private void OnDestroy()
       private void OnStopFishing(Action_Fishing fishing)
       private void OnStopCatching(Action_Fishing fishing, Item item, Action<bool> action)
       private void OnStartCatching(Action_Fishing fishing, float totalTime, Func<float> currentTimeGetter)
-      private async UniTask CatchingTask(Action_Fishing fishing, float totalTime, Func<float> currentTimeGetter)
+      private UniTask CatchingTask(Action_Fishing fishing, float totalTime, Func<float> currentTimeGetter)
       private void UpdateBar(float totalTime, float currentTime)
-      private async UniTask StopCatchingTask(Item item, Action<bool> confirmCallback)
+      private UniTask StopCatchingTask(Item item, Action<bool> confirmCallback)
   4 ¸ö Field:
       private FadeGroup fadeGroup
       private Image countDownFill

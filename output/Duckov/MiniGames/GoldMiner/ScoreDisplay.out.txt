@@ -1,0 +1,14 @@
+namespace Duckov.MiniGames.GoldMiner
+public class ScoreDisplay: MonoBehaviour
+	
+  4 ¸ö Method:
+      private void Awake()
+      private void OnAfterResolveEntity(GoldMiner miner, GoldMinerEntity entity)
+      private void OnLevelBegin(GoldMiner miner)
+      private void Refresh()
+  5 ¸ö Field:
+      private GoldMiner master
+      private TextMeshProUGUI moneyText
+      private TextMeshProUGUI factorText
+      private TextMeshProUGUI scoreText
+      private TextMeshProUGUI targetScoreText

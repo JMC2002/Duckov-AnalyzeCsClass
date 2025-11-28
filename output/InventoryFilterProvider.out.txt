@@ -6,9 +6,9 @@ public class InventoryFilterProvider: MonoBehaviour
       private bool FilterFunction(Item item)
       public Func<Item, bool> GetFunction()
   4 ¸ö Field:
+      public InventoryFilterProvider.FilterEntry[] entries
       public string name
       public Sprite icon
       public Tag[] requireTags
-      public FilterEntry[] entries
   1 ¸ö Property:
       public string DisplayName

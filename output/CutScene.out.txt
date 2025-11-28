@@ -21,7 +21,7 @@ public class CutScene: MonoBehaviour
       private Collider trigger
       private FSMOwner fsmOwner
       private DialogueTreeController dialogueTreeOwner
-      private PlayTiming playTiming
+      private CutScene.PlayTiming playTiming
       private bool playing
   5 ¸ö Property:
       private string SaveKey

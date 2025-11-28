@@ -1,0 +1,8 @@
+namespace Duckov.Modding.UI
+public class ModPathButton: MonoBehaviour, IPointerClickHandler, IEventSystemHandler
+	
+  2 ¸ö Method:
+      private void OnEnable()
+      public void OnPointerClick(PointerEventData eventData)
+  1 ¸ö Field:
+      private TextMeshProUGUI pathText
