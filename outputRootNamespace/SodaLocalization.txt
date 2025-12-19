@@ -1,0 +1,3 @@
+﻿<Global Namespace>
+SodaCraft
+UnitySourceGeneratedAssemblyMonoScriptTypes_v1

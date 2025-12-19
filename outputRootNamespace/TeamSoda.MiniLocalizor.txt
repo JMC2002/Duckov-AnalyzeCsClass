@@ -1,0 +1,3 @@
+﻿<Global Namespace>
+MiniLocalizor
+UnitySourceGeneratedAssemblyMonoScriptTypes_v1

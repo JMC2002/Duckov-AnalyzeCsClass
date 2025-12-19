@@ -1,0 +1,5 @@
+﻿<Global Namespace>
+Duckov
+ItemGraphicInfo
+ItemStatsSystem
+UnitySourceGeneratedAssemblyMonoScriptTypes_v1

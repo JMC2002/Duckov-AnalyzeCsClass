@@ -1,0 +1,3 @@
+﻿<Global Namespace>
+Duckov
+UnitySourceGeneratedAssemblyMonoScriptTypes_v1
