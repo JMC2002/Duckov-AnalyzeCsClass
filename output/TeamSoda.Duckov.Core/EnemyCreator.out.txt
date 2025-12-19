@@ -1,0 +1,21 @@
+public class EnemyCreator: MonoBehaviour
+
+  9 ¸ö Method:
+      private void Start()
+      private void OnDestroy()
+      private void StartCreate()
+      private async UniTaskVoid CreateCharacterAsync()
+      private void PlugAccessories()
+      private async UniTask AddBullet()
+      private async UniTask<List<Item>> GenerateItems()
+      private async UniTask<Item> LoadOrCreateCharacterItemInstance()
+      private int GetCreatorID()
+  6 ¸ö Field:
+      private CharacterMainControl character
+      private List<RandomItemGenerateDescription> itemsToGenerate
+      private ItemFilter bulletFilter
+      private AudioManager.VoiceType voiceType
+      private CharacterModel characterModel
+      private AICharacterController aiController
+  1 ¸ö Property:
+      private int characterItemTypeID

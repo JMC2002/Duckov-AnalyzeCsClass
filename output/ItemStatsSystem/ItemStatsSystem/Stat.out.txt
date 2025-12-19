@@ -1,0 +1,29 @@
+namespace ItemStatsSystem
+public class Stat
+  6 ¸ö Method:
+      private void Recalculate()
+      public void AddModifier(Modifier modifier)
+      public bool RemoveModifier(Modifier modifier)
+      public int RemoveAllModifiersFromSource(object source)
+      internal void Initialize(StatCollection collection)
+      internal void SetDirty()
+  7 ¸ö Field:
+      private StatCollection collection
+      private string key
+      private bool display
+      private float baseValue
+      private bool _dirty
+      private float cachedBaseValue
+      private float cachedValue
+  11 ¸ö Property:
+      public Item Master
+      private StringList referenceKeys
+      public string Key
+      public string DisplayNameKey
+      public string DisplayName
+      public float BaseValue
+      public List<Modifier> Modifiers
+      private bool Dirty
+      public float Value
+      private string ValueToolTip
+      public bool Display

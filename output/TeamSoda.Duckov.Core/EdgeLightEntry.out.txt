@@ -1,0 +1,10 @@
+public class EdgeLightEntry: MonoBehaviour
+
+  4 ¸ö Method:
+      public static void SetEnabled(bool enabled)
+      private void Awake()
+      private void OnDestroy()
+      private void OnSettingChanged()
+  2 ¸ö Field:
+      private static bool settingEnabled
+      private static event Action OnSettingChangedEvent

@@ -1,0 +1,57 @@
+public class CharacterModel: MonoBehaviour
+
+  17 ¸ö Method:
+      private void Awake()
+      private void Start()
+      private void LateUpdate()
+      public void OnMainCharacterSetted(CharacterMainControl _characterMainControl)
+      private void CharacterMainControl_OnShootEvent(DuckovItemAgent obj)
+      private void OnHelmatSlotContentChange(Slot slot)
+      private void OnFaceMaskSlotContentChange(Slot slot)
+      private void OnDestroy()
+      private void SyncRightHandRotation()
+      public void AddSubVisuals(CharacterSubVisuals visuals)
+      public void RemoveVisual(CharacterSubVisuals _subVisuals)
+      public void SyncHiddenToMainCharacter()
+      public void SetFaceFromPreset(CustomFacePreset preset)
+      public void SetFaceFromData(CustomFaceSettingData data)
+      private void OnAttack()
+      public void ForcePlayAttackAnimation()
+      private void OnShoot(DuckovItemAgent agent)
+  25 ¸ö Field:
+      public CharacterMainControl characterMainControl
+      public bool invisable
+      private Transform lefthandSocket
+      private Transform rightHandSocket
+      private Quaternion defaultRightHandLocalRotation
+      private HurtVisual hurtVisual
+      private Transform armorSocket
+      private Transform helmatSocket
+      private Transform faceSocket
+      private Transform backpackSocket
+      private Transform meleeWeaponSocket
+      private Transform popTextSocket
+      private List<CharacterSubVisuals> subVisuals
+      private List<Renderer> renderers
+      private CustomFaceInstance customFace
+      public bool autoSyncRightHandRotation
+      public float damageReceiverRadius
+      public float attackFxZOffset
+      private int showHairHash
+      private int showMouthHash
+      private bool helmatShowMouth
+      private bool helmatShowHair
+      private bool faceMaskShowHair
+      private bool faceMaskShowMouth
+      private bool destroied
+  10 ¸ö Property:
+      public Transform LefthandSocket
+      public Transform RightHandSocket
+      public Transform ArmorSocket
+      public Transform HelmatSocket
+      public Transform FaceMaskSocket
+      public Transform BackpackSocket
+      public Transform MeleeWeaponSocket
+      public Transform PopTextSocket
+      public CustomFaceInstance CustomFace
+      public bool Hidden

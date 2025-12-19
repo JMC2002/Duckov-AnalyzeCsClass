@@ -1,0 +1,13 @@
+public static class ItemExtensions
+  8 ¸ö Method:
+      private static ItemAgent CreatePickupAgent(this Item itemInstance, Vector3 pos)
+      public static ItemAgent CreateHandheldAgent(this Item itemInstance)
+      public static DuckovItemAgent Drop(this Item item, Vector3 pos, bool createRigidbody, Vector3 dropDirection, float randomAngle)
+      public static void Drop(this Item item, CharacterMainControl character, bool createRigidbody)
+      public static async UniTask<List<Item>> GetItemsOfAmount(this Inventory inventory, int itemTypeID, int amount)
+      public static bool TryFindItemsOfAmount(this IEnumerable<Inventory> inventories, int itemTypeID, int requiredAmount, out List<Item> result)
+      public static void ConsumeItemsOfAmount(this IEnumerable<Item> itemsToBeConsumed, int amount)
+      private static bool TryMerge(IEnumerable<Item> itemsOfSameTypeID, out List<Item> result)
+  2 ¸ö Field:
+      public static readonly int PickupHash
+      public static readonly int HandheldHash

@@ -1,9 +1,0 @@
-namespace Duckov.MiniGames.GoldMiner
-public class GoldMinerShopUIContinueBtn: MonoBehaviour
-	
-  2 ¸ö Method:
-      private void Awake()
-      private void OnInteract(NavEntry entry)
-  2 ¸ö Field:
-      private GoldMinerShop shop
-      private NavEntry navEntry

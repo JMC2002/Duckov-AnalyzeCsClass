@@ -1,0 +1,28 @@
+namespace Duckov
+public class DeadBodyManager: MonoBehaviour
+
+  1 个 ClassLike:
+      public class DeathInfo
+  12 个 Method:
+      private void AppendDeathInfo(DeathInfo deathInfo)
+      private static List<DeathInfo> LoadDeathInfos()
+      internal static void RecordDeath(CharacterMainControl mainCharacter)
+      private void Awake()
+      private void OnDestroy()
+      private void LevelInitialize()
+      private void Save()
+      private void OnSubSceneLoaded(MultiSceneCore core, Scene scene)
+      private async UniTask SpawnDeadBody(DeathInfo info)
+      private static void NotifyDeadbodyTouched(DeathInfo info)
+      private void OnDeadbodyTouched(DeathInfo info)
+      private bool ShouldSpawnDeadBody(DeathInfo info)
+  7 个 Field:
+      public bool valid
+      public uint raidID
+      public string subSceneID
+      public Vector3 worldPosition
+      public ItemTreeData itemTreeData
+      public bool spawned
+      public bool touched
+  1 个 Property:
+      public static DeadBodyManager Instance

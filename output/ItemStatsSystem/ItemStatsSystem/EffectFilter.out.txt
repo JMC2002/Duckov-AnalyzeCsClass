@@ -1,0 +1,13 @@
+namespace ItemStatsSystem
+public class EffectFilter: EffectComponent, ISelfValidator
+
+  3 ¸ö Method:
+      public bool Evaluate(EffectTriggerEventContext context)
+      protected virtual bool OnEvaluate(EffectTriggerEventContext context)
+      public override void Validate(SelfValidationResult result)
+  1 ¸ö Field:
+      private bool ignoreNegativeTrigger
+  3 ¸ö Property:
+      protected override Color ActiveLabelColor
+      public override string DisplayName
+      protected bool IgnoreNegativeTrigger

@@ -1,0 +1,43 @@
+namespace ItemStatsSystem
+public class ItemAssetsCollection: ScriptableObject, ISelfValidator
+
+  2 个 ClassLike:
+      public class Entry: ISelfValidator
+	
+      public class DynamicEntry
+  19 个 Method:
+      public void RefreshMetaData()
+      public void Validate(SelfValidationResult result)
+      public static bool TryGetDynamicEntry(int typeID, out DynamicEntry entry)
+      public static bool AddDynamicEntry(Item prefab)
+      public static bool RemoveDynamicEntry(Item prefab)
+      private Entry GetEntry(int typeID)
+      public async UniTask<Item> InstantiateAsync_Local(int typeID)
+      public static async UniTask<Item> InstantiateAsync(int typeID)
+      public static Item InstantiateSync(int typeID)
+      public static Item InstantiateFallbackItem(int typeID)
+      public static ItemMetaData GetMetaData(int typeID)
+      public static Item GetPrefab(int typeID)
+      public void Validate(SelfValidationResult result)
+      public void Collect()
+      private void SetFolderTag(Item item)
+      public void RefreshMeta()
+      public static int[] GetAllTypeIds(ItemFilter filter)
+      public static int[] Search(ItemFilter filter)
+      public static int TryGetIDByName(string name, bool ignoreCase = false)
+  11 个 Field:
+      public int typeID
+      public Item prefab
+      public ItemMetaData metaData
+      public int typeID
+      public Item prefab
+      private ItemMetaData? _metaData
+      private static ItemAssetsCollection instanceCache
+      private bool editNextTypeID
+      private int nextTypeID
+      public List<Entry> entries
+      private Dictionary<int, Entry> dic
+  3 个 Property:
+      public ItemMetaData MetaData
+      public static ItemAssetsCollection Instance
+      public int NextTypeID

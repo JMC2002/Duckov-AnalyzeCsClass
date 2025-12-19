@@ -1,0 +1,16 @@
+namespace SodaCraft.Localizations
+public class ImageLocalizor: MonoBehaviour
+
+  1 ¸ö ClassLike:
+      private struct LanguageSpritePair
+  5 ¸ö Method:
+      private void Awake()
+      private void OnDestroy()
+      private void OnSetLanguage(SystemLanguage language)
+      private void Refresh()
+      private void OnValidate()
+  4 ¸ö Field:
+      public SystemLanguage language
+      public Sprite sprite
+      private List<LanguageSpritePair> entries
+      private Image spriteRenderer

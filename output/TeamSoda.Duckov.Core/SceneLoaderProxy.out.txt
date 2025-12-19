@@ -1,0 +1,16 @@
+public class SceneLoaderProxy: MonoBehaviour
+
+  3 ¸ö Method:
+      public void LoadScene()
+      private async UniTask Task()
+      public void LoadMainMenu()
+  9 ¸ö Field:
+      private string sceneID
+      private bool useLocation
+      private MultiSceneLocation location
+      private bool showClosure
+      private bool notifyEvacuation
+      private SceneReference overrideCurtainScene
+      private bool hideTips
+      private bool circleFade
+      private bool saveToFile

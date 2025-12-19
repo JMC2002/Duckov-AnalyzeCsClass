@@ -1,3 +1,0 @@
-namespace Duckov.BasketBalls
-public class BasketBall: MonoBehaviour
-	

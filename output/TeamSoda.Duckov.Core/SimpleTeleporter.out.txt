@@ -1,0 +1,20 @@
+public class SimpleTeleporter: InteractableBase
+
+  1 个 ClassLike:
+      public enum TransitionTypes
+  4 个 Method:
+      protected override void Awake()
+      protected override void OnInteractFinished()
+      private async UniTask Teleport(CharacterMainControl targetCharacter)
+      private async UniTask VolumeFx(bool show, float time)
+  8 个 Field:
+      public Transform target
+      private Transform selfTeleportPoint
+      private TransitionTypes transitionType
+      public float transitionTime
+      private float delay
+      public Volume teleportVolume
+      private int fxShaderID
+      private bool blackScreen
+  1 个 Property:
+      public Transform TeleportPoint

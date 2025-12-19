@@ -1,0 +1,15 @@
+namespace SodaCraft.Localizations
+public class LanguageSettings
+  5 ¸ö Method:
+      private void LoadProvider()
+      public string GetPlainText(string key)
+      public string GetDisplayName()
+      internal void Reinitialize()
+      public static LanguageSettings CreateFromPath(string path)
+  2 ¸ö Field:
+      private SystemLanguage language
+      private CSVFileLocalizor _provider
+  3 ¸ö Property:
+      public string path
+      public ILocalizationProvider Provider
+      public SystemLanguage Language

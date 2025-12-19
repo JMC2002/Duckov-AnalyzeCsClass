@@ -1,8 +1,0 @@
-namespace Duckov.UI
-public class KontextMenuDataEntry
-  1 ¸ö Method:
-      public void Invoke()
-  3 ¸ö Field:
-      public Sprite icon
-      public string text
-      public Action action

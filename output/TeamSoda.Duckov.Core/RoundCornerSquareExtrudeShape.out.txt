@@ -1,0 +1,8 @@
+public class RoundCornerSquareExtrudeShape: ShapeProvider
+
+  2 ¸ö Method:
+      public override PipeRenderer.OrientedPoint[] GenerateShape()
+      static PipeRenderer.OrientedPoint Rotate(PipeRenderer.OrientedPoint original)
+  2 ¸ö Field:
+      public float size
+      public float bevelSize

@@ -1,0 +1,2 @@
+namespace Duckov.Consoles
+public interface IDCommand

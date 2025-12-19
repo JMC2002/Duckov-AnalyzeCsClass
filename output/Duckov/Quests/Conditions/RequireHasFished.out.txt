@@ -1,7 +1,0 @@
-namespace Duckov.Quests.Conditions
-public class RequireHasFished: Condition
-	
-  3 ¸ö Method:
-      public override bool Evaluate()
-      public static void SetHasFished()
-      public static bool GetHasFished()

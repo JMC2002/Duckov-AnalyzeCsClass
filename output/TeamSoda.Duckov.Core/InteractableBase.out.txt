@@ -1,0 +1,75 @@
+public class InteractableBase: MonoBehaviour, IProgress
+
+  1 个 ClassLike:
+      public enum WhenToUseRequireItemTypes
+  27 个 Method:
+      public List<InteractableBase> GetInteractableList()
+      protected virtual void Awake()
+      protected virtual void Start()
+      private void ActiveMarker()
+      public void SetMarkerUsed()
+      public bool StartInteract(CharacterMainControl _interactCharacter)
+      public InteractableBase GetInteractableInGroup(int index)
+      public void InternalStopInteract()
+      public void StopInteract()
+      public void UpdateInteract(CharacterMainControl _interactCharacter, float deltaTime)
+      public void FinishInteract(CharacterMainControl _interactCharacter)
+      protected virtual void OnUpdate(CharacterMainControl _interactCharacter, float deltaTime)
+      protected virtual void OnTimeOut()
+      private bool UseRequiredItem(CharacterMainControl interactCharacter)
+      public bool CheckInteractable()
+      protected virtual bool IsInteractable()
+      protected virtual void OnInteractStart(CharacterMainControl interactCharacter)
+      protected virtual void OnInteractStop()
+      protected virtual void OnInteractFinished()
+      public string GetInteractName()
+      public string GetRequiredItemName()
+      public Sprite GetRequireditemIcon()
+      protected virtual void OnDestroy()
+      public virtual Progress GetProgress()
+      private int GetKey()
+      public void InteractWithMainCharacter()
+      private void OnDrawGizmos()
+  33 个 Field:
+      public bool interactableGroup
+      private List<InteractableBase> otherInterablesInGroup
+      public bool zoomIn
+      private float interactTime
+      public bool finishWhenTimeOut
+      private float interactTimer
+      public Vector3 interactMarkerOffset
+      public bool overrideInteractName
+      private string defaultInteractNameKey
+      public string _overrideInteractNameKey
+      public Collider interactCollider
+      public bool requireItem
+      public bool requireOnce
+      public int requireItemId
+      public float unlockTime
+      public bool overrideItemUsedKey
+      public string overrideItemUsedSaveKey
+      public WhenToUseRequireItemTypes whenToUseRequireItem
+      public UnityEvent OnRequiredItemUsedEvent
+      private int requireItemDataKeyCached
+      private bool requireItemUsed
+      private ItemMetaData? _cachedMeta
+      public UnityEvent<CharacterMainControl, InteractableBase> OnInteractStartEvent
+      public UnityEvent<CharacterMainControl, InteractableBase> OnInteractTimeoutEvent
+      public UnityEvent<CharacterMainControl, InteractableBase> OnInteractFinishedEvent
+      public bool disableOnFinish
+      public float coolTime
+      private float lastStopTime
+      protected CharacterMainControl interactCharacter
+      private bool timeOut
+      private bool interactMarkerVisible
+      private InteractMarker markerObject
+      public static event Action<InteractableBase> OnInteractStartStaticEvent
+  8 个 Property:
+      public float InteractTime
+      public string InteractName
+      private bool ShowBaseInteractName
+      protected virtual bool ShowBaseInteractNameInspector
+      private ItemMetaData CachedMeta
+      protected virtual bool ShowUnityEvents
+      public bool Interacting
+      public bool MarkerActive

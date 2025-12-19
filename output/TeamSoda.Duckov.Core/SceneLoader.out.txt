@@ -1,0 +1,36 @@
+public class SceneLoader: MonoBehaviour
+
+  8 ¸ö Method:
+      private void Awake()
+      public async UniTask LoadScene(string sceneID, MultiSceneLocation location, SceneReference overrideCurtainScene = null, bool clickToConinue = false, bool notifyEvacuation = false, bool doCircleFade = true, bool saveToFile = true, bool hideTips = false)
+      public void LoadTarget()
+      public async UniTask LoadBaseScene(SceneReference overrideCurtainScene = null, bool doCircleFade = true)
+      public void NotifyPointerClick(PointerEventData eventData)
+      internal static void StaticLoadSingle(SceneReference sceneReference)
+      internal static void StaticLoadSingle(string sceneID)
+      public static void LoadMainMenu(bool circleFade = true)
+  19 ¸ö Field:
+      public SceneReference defaultCurtainScene
+      private OnPointerClick pointerClickEventRecevier
+      private float minimumLoadingTime
+      private float waitAfterSceneLoaded
+      private FadeGroup content
+      private FadeGroup loadingIndicator
+      private FadeGroup clickIndicator
+      private AnimationCurve fadeCurve1
+      private AnimationCurve fadeCurve2
+      private AnimationCurve fadeCurve3
+      private AnimationCurve fadeCurve4
+      private string _loadingComment
+      private SceneReference target
+      private bool clicked
+      public static event Action<SceneLoadingContext> onStartedLoadingScene
+      public static event Action<SceneLoadingContext> onFinishedLoadingScene
+      public static event Action<SceneLoadingContext> onBeforeSetSceneActive
+      public static event Action<SceneLoadingContext> onAfterSceneInitialize
+      public static event Action<string> OnSetLoadingComment
+  4 ¸ö Property:
+      public static SceneLoader Instance
+      public static bool IsSceneLoading
+      public static string LoadingComment
+      public static bool HideTips

@@ -1,2 +1,0 @@
-namespace Duckov.Crops
-public interface IGardenSizeAdder

@@ -1,9 +1,0 @@
-namespace Duckov.UI.Animations
-public abstract class LooperElement: MonoBehaviour
-	
-  3 ¸ö Method:
-      protected virtual void OnEnable()
-      protected virtual void OnDisable()
-      protected abstract void OnTick(LooperClock clock, float t)
-  1 ¸ö Field:
-      private LooperClock clock

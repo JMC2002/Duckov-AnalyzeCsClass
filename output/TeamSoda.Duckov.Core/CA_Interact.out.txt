@@ -1,0 +1,30 @@
+public class CA_Interact: CharacterActionBase, IProgress
+
+  14 ¸ö Method:
+      private void Awake()
+      public void SearchInteractableAround()
+      public void SwitchInteractable(int dir)
+      public void SetInteractableTarget(InteractableBase interactable)
+      protected override bool OnStart()
+      protected override void OnUpdateAction(float deltaTime)
+      public override ActionPriorities ActionPriority()
+      public override bool CanMove()
+      protected override void OnStop()
+      public override bool CanRun()
+      public override bool CanUseHand()
+      public override bool CanControlAim()
+      public override bool IsReady()
+      public Progress GetProgress()
+  7 ¸ö Field:
+      private InteractableBase masterInteractableAround
+      private int interactIndexInGroup
+      private InteractableBase interactingTarget
+      private LayerMask interactLayers
+      private InteractableBase minDistanceInteractable
+      private Collider[] colliders
+      private Progress progress
+  4 ¸ö Property:
+      public InteractableBase MasterInteractableAround
+      public InteractableBase InteractTarget
+      public int InteractIndexInGroup
+      public InteractableBase InteractingTarget

@@ -1,0 +1,15 @@
+namespace ItemStatsSystem
+public class ItemComponent: MonoBehaviour, ISelfValidator
+
+  6 ¸ö Method:
+      private void Awake()
+      private void Start()
+      protected virtual void OnAwake()
+      internal void Initialize()
+      internal virtual void OnInitialize()
+      public void Validate(SelfValidationResult result)
+  2 ¸ö Field:
+      private Item master
+      private bool initialized
+  1 ¸ö Property:
+      public Item Master

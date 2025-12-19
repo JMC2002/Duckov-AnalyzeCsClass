@@ -1,0 +1,21 @@
+public class CraftingManager: MonoBehaviour
+
+  9 个 Method:
+      private void Awake()
+      private void OnDestroy()
+      private void Save()
+      private void Load()
+      public static void UnlockFormula(string formulaID)
+      private async UniTask<List<Item>> Craft(CraftingFormula formula)
+      public async UniTask<List<Item>> Craft(string id)
+      internal static bool IsFormulaUnlocked(string value)
+      internal static CraftingFormula GetFormula(string id)
+  2 个 Field:
+      public static Action<CraftingFormula, Item> OnItemCrafted
+      public static Action<string> OnFormulaUnlocked
+  3 个 Property:
+      private static CraftingFormulaCollection FormulaCollection
+      public static CraftingManager Instance
+      public static IEnumerable<string> UnlockedFormulaIDs
+  1 个 Constant:
+      private const string SaveKey

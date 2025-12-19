@@ -1,0 +1,12 @@
+namespace Saves
+public static class ItemSavesUtilities
+  6 ¸ö Method:
+      public static void SaveAsLastDeadCharacter(Item item)
+      public static async UniTask<Item> LoadLastDeadCharacterItem()
+      public static void Save(this Item item, string key)
+      public static void Save(this Inventory inventory, string key)
+      public static async UniTask<Item> LoadItem(string key)
+      public static async UniTask LoadInventory(string key, Inventory inventoryInstance)
+  2 ¸ö Constant:
+      private const string InventoryPrefix
+      private const string ItemPrefix

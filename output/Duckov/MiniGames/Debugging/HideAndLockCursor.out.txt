@@ -1,7 +1,0 @@
-namespace Duckov.MiniGames.Debugging
-public class HideAndLockCursor: MonoBehaviour
-	
-  3 ¸ö Method:
-      private void OnEnable()
-      private void OnDisable()
-      private void Update()

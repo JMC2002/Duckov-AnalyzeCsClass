@@ -1,8 +1,0 @@
-namespace Duckov.MiniMaps
-public class MiniMapCompass: MonoBehaviour
-	
-  2 ¸ö Method:
-      private void SetupRotation()
-      private void Update()
-  1 ¸ö Field:
-      private Transform arrow

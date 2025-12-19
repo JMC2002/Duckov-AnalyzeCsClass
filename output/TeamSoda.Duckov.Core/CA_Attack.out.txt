@@ -1,0 +1,26 @@
+public class CA_Attack: CharacterActionBase, IProgress
+
+  12 ¸ö Method:
+      public override ActionPriorities ActionPriority()
+      public override bool CanMove()
+      public override bool CanRun()
+      public override bool CanUseHand()
+      public override bool CanControlAim()
+      public Progress GetProgress()
+      public override bool IsReady()
+      protected override bool OnStart()
+      private void CreateAttackSound()
+      private void HardwareEvent()
+      protected override void OnStop()
+      protected override void OnUpdateAction(float deltaTime)
+  8 ¸ö Field:
+      private float attackActionTime
+      private ItemAgent_MeleeWeapon meleeWeapon
+      private float dealDamageTime
+      private bool damageDealed
+      private float lastAttackTime
+      private float cd
+      private bool slashFxSpawned
+      private float slashFxDelayTime
+  1 ¸ö Property:
+      public bool DamageDealed

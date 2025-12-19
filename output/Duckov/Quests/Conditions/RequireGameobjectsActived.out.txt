@@ -1,7 +1,0 @@
-namespace Duckov.Quests.Conditions
-public class RequireGameobjectsActived: Condition
-	
-  1 ¸ö Method:
-      public override bool Evaluate()
-  1 ¸ö Field:
-      private GameObject[] targets

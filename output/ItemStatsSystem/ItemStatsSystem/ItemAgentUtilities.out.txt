@@ -1,0 +1,22 @@
+namespace ItemStatsSystem
+public class ItemAgentUtilities
+  1 个 ClassLike:
+      public class AgentKeyPair
+  6 个 Method:
+      public ItemAgent GetPrefab(int hash)
+      public ItemAgent GetPrefab(string key)
+      public void Initialize(Item master)
+      public ItemAgent CreateAgent(int hash, ItemAgent.AgentTypes agentType)
+      public ItemAgent CreateAgent(ItemAgent prefab, ItemAgent.AgentTypes agentType)
+      public void ReleaseActiveAgent()
+  5 个 Field:
+      public string key
+      public ItemAgent agentPrefab
+      private Item master
+      private ItemAgent activeAgent
+      private Dictionary<int, AgentKeyPair> hashedAgentsCache
+  4 个 Property:
+      private StringList avaliableKeys
+      public Item Master
+      public ItemAgent ActiveAgent
+      private Dictionary<int, AgentKeyPair> HashedAgents

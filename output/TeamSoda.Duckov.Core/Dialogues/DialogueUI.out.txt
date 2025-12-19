@@ -1,0 +1,52 @@
+namespace Dialogues
+public class DialogueUI: MonoBehaviour, IPointerClickHandler, IEventSystemHandler
+
+  24 ¸ö Method:
+      private void Awake()
+      private void OnDestroy()
+      private void Update()
+      private void OnEnable()
+      private void OnDisable()
+      private void RegisterEvents()
+      private void UnregisterEvents()
+      private void OnMultipleChoiceRequest(MultipleChoiceRequestInfo info)
+      private void OnSubtitlesRequest(SubtitlesRequestInfo info)
+      public static void HideTextFadeGroup()
+      private void MHideTextFadeGroup()
+      private void OnDialogueFinished(DialogueTree tree)
+      private void OnDialoguePaused(DialogueTree tree)
+      private void OnDialogueStarted(DialogueTree tree)
+      public async UniTask DoSubtitle(SubtitlesRequestInfo info)
+      private void SetupActorInfo(IDialogueActor actor)
+      private void RefreshActorPositionIndicator()
+      private async UniTask DoMultipleChoice(MultipleChoiceRequestInfo info)
+      private async UniTask DisplayOptions(Dictionary<IStatement, int> options)
+      internal void NotifyChoiceConfirmed(DialogueUIChoice choice)
+      private async UniTask<int> WaitForChoice()
+      public void Confirm()
+      private async UniTask WaitForConfirm()
+      public void OnPointerClick(PointerEventData eventData)
+  19 ¸ö Field:
+      private FadeGroup mainFadeGroup
+      private FadeGroup textAreaFadeGroup
+      private TextMeshProUGUI text
+      private GameObject continueIndicator
+      private float speed
+      private RectTransform actorPositionIndicator
+      private FadeGroup actorNameFadeGroup
+      private TextMeshProUGUI actorNameText
+      private GameObject actorPortraitContainer
+      private Image actorPortraitDisplay
+      private FadeGroup choiceListFadeGroup
+      private Menu choiceMenu
+      private DialogueUIChoice choiceTemplate
+      private PrefabPool<DialogueUIChoice> _choicePool
+      private DuckovDialogueActor talkingActor
+      private int confirmedChoice
+      private bool waitingForChoice
+      private bool confirmed
+      public static event Action OnDialogueStatusChanged
+  3 ¸ö Property:
+      public static DialogueUI instance
+      private PrefabPool<DialogueUIChoice> ChoicePool
+      public static bool Active

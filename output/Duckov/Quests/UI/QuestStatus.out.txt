@@ -1,2 +1,0 @@
-namespace Duckov.Quests.UI
-public enum QuestStatus

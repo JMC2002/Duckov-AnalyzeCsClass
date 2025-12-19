@@ -1,0 +1,10 @@
+public class CustomerServiceInfo: MonoBehaviour
+
+  4 ¸ö Method:
+      private void Awake()
+      private void OnDestroy()
+      private void OnEnable()
+      private void Refresh(SystemLanguage language)
+  2 ¸ö Field:
+      private GameObject chineseInfo
+      private GameObject nonChineseInfo

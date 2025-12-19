@@ -1,0 +1,22 @@
+namespace ItemStatsSystem
+public class ModifierDescriptionCollection: ItemComponent, ICollection<ModifierDescription>, IEnumerable<ModifierDescription>, IEnumerable
+
+  12 ¸ö Method:
+      internal override void OnInitialize()
+      private void OnDurabilityChange(Item item)
+      private void OnDestroy()
+      private void OnItemTreeChange(Item item)
+      public void ReapplyModifiers()
+      public void Add(ModifierDescription item)
+      public void Clear()
+      public bool Contains(ModifierDescription item)
+      public void CopyTo(ModifierDescription[] array, int arrayIndex)
+      public bool Remove(ModifierDescription item)
+      public IEnumerator<ModifierDescription> GetEnumerator()
+      public ModifierDescription Find(Predicate<ModifierDescription> predicate)
+  1 ¸ö Field:
+      private bool _modifierEnableCache
+  3 ¸ö Property:
+      public int Count
+      public bool ModifierEnable
+      public bool IsReadOnly

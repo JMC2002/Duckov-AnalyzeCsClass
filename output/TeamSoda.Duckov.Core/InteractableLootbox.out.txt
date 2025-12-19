@@ -1,0 +1,43 @@
+public class InteractableLootbox: InteractableBase
+
+  1 个 ClassLike:
+      public enum LootBoxStates
+  15 个 Method:
+      public static Inventory GetOrCreateInventory(InteractableLootbox lootBox)
+      private int GetKey()
+      protected override void Start()
+      protected override bool IsInteractable()
+      protected override void OnUpdate(CharacterMainControl interactCharacter, float deltaTime)
+      private void StartInspectItem(Item item)
+      private void UpdateInspect()
+      private Item FindFistUninspectedItem()
+      protected override void OnInteractStart(CharacterMainControl interactCharacter)
+      protected override void OnInteractStop()
+      protected override void OnInteractFinished()
+      public void CheckHideIfEmpty()
+      private bool StartLoot()
+      private void CreateLocalInventory()
+      public static InteractableLootbox CreateFromItem(Item item, Vector3 position, Quaternion rotation, bool moveToMainScene = true, InteractableLootbox prefab = null, bool filterDontDropOnDead = false)
+  14 个 Field:
+      public bool useDefaultInteractName
+      private bool showSortButton
+      private bool usePages
+      public bool needInspect
+      public bool showPickAllButton
+      public Transform hideIfEmpty
+      private string displayNameKey
+      private Inventory inventoryReference
+      private Item inspectingItem
+      private float inspectTime
+      private float inspectTimer
+      private LootBoxStates lootState
+      public static event Action<InteractableLootbox> OnStartLoot
+      public static event Action<InteractableLootbox> OnStopLoot
+  7 个 Property:
+      public bool ShowSortButton
+      public bool UsePages
+      public static Transform LootBoxInventoriesParent
+      public static Dictionary<int, Inventory> Inventories
+      public Inventory Inventory
+      public bool Looted
+      public static InteractableLootbox Prefab

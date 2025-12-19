@@ -1,0 +1,17 @@
+public class CSVFileLocalizor: ILocalizationProvider
+
+  6 个 Method:
+      public void BuildDictionary()
+      public string Get(string key)
+      private static string ConvertFromEscapes(string origin)
+      private static string ConvertToEscapes(string origin)
+      public DataEntry GetEntry(string key)
+      public bool HasKey(string key)
+  2 个 Field:
+      private string path
+      private SystemLanguage _language
+  2 个 Property:
+      public string Path
+      public SystemLanguage Language
+  1 个 Constant:
+      private const bool convertFromEscapes

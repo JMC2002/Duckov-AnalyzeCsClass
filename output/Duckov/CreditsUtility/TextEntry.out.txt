@@ -1,8 +1,0 @@
-namespace Duckov.CreditsUtility
-public class TextEntry: MonoBehaviour
-	
-  1 ¸ö Method:
-      internal void Setup(string text, Color color, int size = -1, bool bold = false)
-  2 ¸ö Field:
-      private TextMeshProUGUI text
-      public int defaultSize

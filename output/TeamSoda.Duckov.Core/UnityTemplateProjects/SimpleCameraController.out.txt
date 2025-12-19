@@ -1,0 +1,40 @@
+namespace UnityTemplateProjects
+public class SimpleCameraController: MonoBehaviour
+
+  1 ¸ö ClassLike:
+      private class CameraState
+  15 ¸ö Method:
+      public void SetFromTransform(Transform t)
+      public void Translate(Vector3 translation)
+      public void LerpTowards(CameraState target, float positionLerpPct, float rotationLerpPct)
+      public void UpdateTransform(Transform t)
+      private void Start()
+      private void OnEnable()
+      private Vector3 GetInputTranslationDirection()
+      private void Update()
+      private float GetBoostFactor()
+      private Vector2 GetInputLookRotation()
+      private bool IsBoostPressed()
+      private bool IsEscapePressed()
+      private bool IsCameraRotationAllowed()
+      private bool IsRightMouseButtonDown()
+      private bool IsRightMouseButtonUp()
+  18 ¸ö Field:
+      public float yaw
+      public float pitch
+      public float roll
+      public float x
+      public float y
+      public float z
+      private CameraState m_TargetCameraState
+      private CameraState m_InterpolatingCameraState
+      public float boost
+      public float positionLerpTime
+      public AnimationCurve mouseSensitivityCurve
+      public float rotationLerpTime
+      public bool invertY
+      private InputAction movementAction
+      private InputAction verticalMovementAction
+      private InputAction lookAction
+      private InputAction boostFactorAction
+      private bool mouseRightButtonPressed

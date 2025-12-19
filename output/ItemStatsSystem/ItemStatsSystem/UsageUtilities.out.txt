@@ -1,0 +1,16 @@
+namespace ItemStatsSystem
+public class UsageUtilities: ItemComponent
+
+  2 ¸ö Method:
+      public bool IsUsable(Item item, object user)
+      public void Use(Item item, object user)
+  7 ¸ö Field:
+      private float useTime
+      public bool hasSound
+      public string actionSound
+      public string useSound
+      public bool useDurability
+      public int durabilityUsage
+      public static event Action<Item> OnItemUsedStaticEvent
+  1 ¸ö Property:
+      public float UseTime

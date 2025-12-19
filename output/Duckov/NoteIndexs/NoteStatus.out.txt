@@ -1,2 +1,0 @@
-namespace Duckov.NoteIndexs
-public enum NoteStatus

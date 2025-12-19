@@ -1,0 +1,146 @@
+namespace Duckov.MiniGames.BubblePoppers
+public class BubblePopper: MiniGameBehaviour
+
+  3 个 ClassLike:
+      public struct Pallette
+      public enum Status
+      public struct CastResult
+  53 个 Method:
+      public void NextPallette()
+      private void OnGetBubble(Bubble bubble)
+      protected override void Start()
+      private void RefreshScoreText()
+      private void RefreshLevelText()
+      protected override void OnUpdate(float deltaTime)
+      private void ShowStartScreen()
+      private void HideStartScreen()
+      private void ShowEndScreen()
+      private void HideEndScreen()
+      private void NewGame()
+      private void NextLevel()
+      private int[] LoadLevelData(int levelIndex)
+      private Vector2Int LevelDataIndexToCoord(int index)
+      private void StartNewLevel(int[] levelData)
+      private void ResetFloor()
+      private void StepFloor()
+      private void RefreshLayoutPosition()
+      private void UpdateStatus(float deltaTime)
+      private void BeginMovingCeiling()
+      private void UpdateMoveCeiling(float deltaTime)
+      private void UpdateSettled(float deltaTime)
+      private void HandleFloorStep()
+      private bool CheckGameOver()
+      private void SetStatus(Status newStatus)
+      private void ShowGameOverScreen()
+      private void OnExitStatus(Status status)
+      private void Set(Bubble bubble, Vector2Int coord)
+      private void Attach(Bubble bubble, Vector2Int coord)
+      private void CalculateAndAddScore(HashSet<Vector2Int> detached, List<Vector2Int> exploded)
+      private void Explode(Vector2Int coord, Vector2Int origin)
+      private List<Vector2Int> GetContinousCoords(Vector2Int root)
+      private HashSet<Vector2Int> GetLooseCoords(HashSet<Vector2Int> roots)
+      private void Detach(Vector2Int coord)
+      private void UpdateAimingLine()
+      private void UpdateLaunched(float deltaTime)
+      private void HandleInput(float deltaTime)
+      public void MoveBubble(Bubble bubble, float deltaTime)
+      private Bubble LaunchBubble(Vector2 origin, Vector2 direction, int colorIndex)
+      private void LaunchBubble()
+      private void PunchLoadedIndicator()
+      private void PunchWaitingIndicator()
+      private void PushRandomColor()
+      private void RefreshColorIndicators()
+      private bool IsCoordOccupied(Vector2Int coord, out Bubble touchingBubble, out bool ceiling)
+      public CastResult SlideCast(Vector2 origin, Vector2 delta)
+      private bool BubbleCast(Vector2 pos, Vector2 origin, Vector2 direction, float distance, out Vector2 hitCircleCenter)
+      private void OnDrawGizmos()
+      internal void Release(Bubble bubble)
+      internal Color GetDisplayColor(int colorIndex)
+      public void SetPallette(Color[] colors)
+      private async UniTask Shockwave(Vector2Int origin, float amplitude)
+      private void PunchCamera()
+  67 个 Field:
+      public Color[] colors
+      public Vector2 origin
+      public Vector2 castDirection
+      public float castDistance
+      public bool clipWall
+      public bool touchWall
+      public int touchWallDirection
+      public bool collide
+      public Bubble touchingBubble
+      public Vector2Int touchBubbleCoord
+      public bool touchCeiling
+      public Vector2 endPosition
+      public Vector2Int endCoord
+      private Bubble bubbleTemplate
+      private BubblePopperLayout layout
+      private Image waitingColorIndicator
+      private Image loadedColorIndicator
+      private Transform cannon
+      private LineRenderer aimingLine
+      private Transform cameraParent
+      private Animator duckAnimator
+      private Transform gear
+      private TextMeshProUGUI scoreText
+      private TextMeshProUGUI levelText
+      private TextMeshProUGUI highScoreText
+      private GameObject startScreen
+      private GameObject endScreen
+      private GameObject failIndicator
+      private GameObject clearIndicator
+      private GameObject newRecordIndicator
+      private GameObject allLevelsClearIndicator
+      private TextMeshProUGUI endScreenLevelText
+      private TextMeshProUGUI endScreenScoreText
+      private BubblePopperLevelDataProvider levelDataProvider
+      private Color[] colorPallette
+      private int palletteIndex
+      public List<Pallette> pallettes
+      private float aimingDistance
+      private Vector2 cannonAngleRange
+      private float cannonRotateSpeed
+      private int ceilingYCoord
+      private int initialFloorYCoord
+      private int floorStepAfterShots
+      private float bubbleMoveSpeed
+      private float shockwaveStrength
+      private float moveCeilingTime
+      private AnimationCurve moveCeilingCurve
+      private PrefabPool<Bubble> _bubblePool
+      private float cannonAngle
+      private int waitingColor
+      private int loadedColor
+      private Bubble activeBubble
+      private bool clear
+      private bool fail
+      private bool allLevelsClear
+      private bool playing
+      private int floorYCoord
+      private int levelIndex
+      private int _score
+      private bool isHighScore
+      private bool movingCeiling
+      private float moveCeilingT
+      private Vector2 originalCeilingPos
+      private Vector3[] aimlinePoints
+      private bool drawGizmos
+      private float distance
+      public static event Action<int> OnLevelClear
+  12 个 Property:
+      public bool Collide
+      public int AvaliableColorCount
+      public BubblePopperLayout Layout
+      public float BubbleRadius
+      public Bubble BubbleTemplate
+      private PrefabPool<Bubble> BubblePool
+      public Status status
+      public int FloorStepETA
+      public int Score
+      public static int HighScore
+      public static int HighLevel
+      public bool Busy
+  3 个 Constant:
+      private const string HighScoreSaveKey
+      private const string HighLevelSaveKey
+      private const int CriticalCount

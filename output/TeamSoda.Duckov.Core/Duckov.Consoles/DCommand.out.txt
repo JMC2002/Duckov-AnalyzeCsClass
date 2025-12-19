@@ -1,0 +1,7 @@
+namespace Duckov.Consoles
+public abstract class DCommand: ScriptableObject, IDCommand
+
+  1 ¸ö Method:
+      public abstract string Execute(DConsole console, string[] args)
+  1 ¸ö Property:
+      public abstract string CommandWord

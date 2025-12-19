@@ -1,2 +1,0 @@
-namespace Duckov.Weathers
-public enum Weather

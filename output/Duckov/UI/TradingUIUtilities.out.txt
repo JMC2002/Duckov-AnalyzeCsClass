@@ -1,7 +1,0 @@
-namespace Duckov.UI
-public static class TradingUIUtilities
-  2 ¸ö Field:
-      public static event Action<IMerchant> OnActiveMerchantChanged
-      private static UnityEngine.Object activeMerchant
-  1 ¸ö Property:
-      public static IMerchant ActiveMerchant

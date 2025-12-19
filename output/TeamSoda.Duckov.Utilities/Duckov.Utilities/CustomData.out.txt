@@ -1,0 +1,30 @@
+namespace Duckov.Utilities
+public class CustomData
+  11 个 Method:
+      public byte[] GetRawCopied()
+      public void SetRaw(byte[] value)
+      public float GetFloat()
+      public void SetFloat(float value)
+      public int GetInt()
+      public void SetInt(int value)
+      public bool GetBool()
+      public void SetBool(bool value)
+      public string GetString()
+      public void SetString(string value)
+      public string GetValueDisplayString(string format = "")
+  4 个 Field:
+      private string key
+      private CustomDataType dataType
+      private byte[] data
+      private bool display
+  6 个 Property:
+      private byte[] Data
+      private string displayNameKey
+      public bool Display
+      public string DisplayName
+      public string Key
+      public CustomDataType DataType
+  3 个 Constant:
+      private const bool ReturnDefaultIfTryingToGetOtherType
+      private const bool LogWarningWhenTryingToGetOtherType
+      private const bool AllowChangeTypeWithSet

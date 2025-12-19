@@ -1,0 +1,262 @@
+namespace Duckov.Utilities
+public class GameplayDataSettings: ScriptableObject
+
+  18 个 ClassLike:
+      public class LootingData
+      public class TagsData
+      public class PrefabsData
+      public class BuffsData
+      public class ItemAssetsData
+      public class StringListsData
+      public class LayersData
+      public class DialogData
+      public class SceneManagementData
+      public class QuestsData
+      public class QuestGiverInfo
+      public class EconomyData
+      public class UIStyleData
+      public class DisplayQualityLook
+      public class DisplayElementDamagePopTextLook
+      public class SpritesData
+      public struct Entry
+      public class CharacterRandomPresets
+  15 个 Method:
+      public float MGetInspectingTime(Item item)
+      public static float GetInspectingTime(Item item)
+      internal Tag Get(string name)
+      public string GetBuffDisplayName(int id)
+      public static bool IsLayerInLayerMask(int layer, LayerMask layerMask)
+      public string GetColdDialog()
+      public string GetSuperColdDialog()
+      public QuestGiverInfo GetInfo(QuestGiverID id)
+      public string GetDisplayName(QuestGiverID id)
+      public void Apply(TrueShadow trueShadow)
+      public void ApplyDisplayQualityShadow(DisplayQuality displayQuality, TrueShadow target)
+      public DisplayQualityLook GetDisplayQualityLook(DisplayQuality q)
+      public DisplayElementDamagePopTextLook GetElementDamagePopTextLook(ElementTypes elementType)
+      public Sprite GetSprite(string key)
+      internal static Sprite GetSprite(string key)
+  125 个 Field:
+      public float[] inspectingTimes
+      private Tag character
+      private Tag lockInDemoTag
+      private Tag helmat
+      private Tag armor
+      private Tag backpack
+      private Tag bullet
+      private Tag bait
+      private Tag advancedDebuffMode
+      private Tag special
+      private Tag destroyOnLootBox
+      private Tag dontDropOnDeadInSlot
+      private ReadOnlyCollection<Tag> tagsReadOnly
+      private Tag gun
+      private LevelManager levelManagerPrefab
+      private CharacterMainControl characterPrefab
+      private GameObject bulletHitObsticleFx
+      private GameObject questMarker
+      private DuckovItemAgent pickupAgentPrefab
+      private DuckovItemAgent pickupAgentNoRendererPrefab
+      private DuckovItemAgent handheldAgentPrefab
+      private InteractableLootbox lootBoxPrefab
+      private InteractableLootbox lootBoxPrefab_Tomb
+      private InteractMarker interactMarker
+      private HeadCollider headCollider
+      private Projectile defaultBullet
+      private UIInputManager uiInputManagerPrefab
+      private GameObject buildingBlockAreaMesh
+      private GameObject alertFxPrefab
+      private GameObject kazooUi
+      private Buff bleedSBuff
+      private Buff unlimitBleedBuff
+      private Buff boneCrackBuff
+      private Buff woundBuff
+      private Buff weight_Light
+      private Buff weight_Heavy
+      private Buff weight_SuperHeavy
+      private Buff weight_Overweight
+      private Buff pain
+      private Buff baseBuff
+      private Buff starve
+      private Buff thirsty
+      private Buff burn
+      private Buff poison
+      private Buff electric
+      private Buff space
+      private Buff cold
+      private Buff superCold
+      private List<Buff> allBuffs
+      private int defaultCharacterItemTypeID
+      private int cashItemTypeID
+      public static StringList StatKeys
+      public static StringList SlotTypes
+      public static StringList ItemAgentKeys
+      public LayerMask damageReceiverLayerMask
+      public LayerMask wallLayerMask
+      public LayerMask groundLayerMask
+      public LayerMask halfObsticleLayer
+      public LayerMask fowBlockLayers
+      public LayerMask fowBlockLayersWithThermal
+      private List<string> coldDialogKeys
+      private List<string> superColdDialogKeys
+      private SceneInfoCollection sceneInfoCollection
+      private SceneReference prologueScene
+      private SceneReference mainMenuScene
+      private SceneReference baseScene
+      private SceneReference failLoadingScreenScene
+      private SceneReference evacuateScreenScene
+      public QuestGiverID id
+      private string displayName
+      private QuestCollection questCollection
+      private QuestRelationGraph questRelation
+      private List<QuestGiverInfo> questGiverInfos
+      private string defaultQuestGiverDisplayName
+      public DisplayQuality quality
+      public float shadowOffset
+      public Color shadowColor
+      public bool innerGlow
+      public ElementTypes elementType
+      public float normalSize
+      public float critSize
+      public Color color
+      private float defaultDisplayQualityShadowOffset
+      private Color defaultDisplayQualityShadowColor
+      private bool defaultDIsplayQualityShadowInnerGlow
+      private Sprite defaultTeleporterIcon
+      private float teleporterIconScale
+      private Sprite critPopSprite
+      private Sprite fallbackItemIcon
+      private Sprite eleteCharacterIcon
+      private Sprite bossCharacterIcon
+      private Sprite pmcCharacterIcon
+      private Sprite merchantCharacterIcon
+      private Sprite petCharacterIcon
+      private TMP_Asset defaultFont
+      private TextMeshProUGUI templateTextUGUI
+      public string key
+      public Sprite sprite
+      public List<Entry> entries
+      public List<CharacterRandomPreset> presets
+      private static GameplayDataSettings cachedDefault
+      private TagsData tags
+      private PrefabsData prefabs
+      private UIPrefabsReference uiPrefabs
+      private ItemAssetsData itemAssets
+      private StringListsData stringLists
+      private LayersData layers
+      private SceneManagementData sceneManagement
+      private BuffsData buffs
+      private QuestsData quests
+      private EconomyData economyData
+      private UIStyleData uiStyleData
+      private InputActionAsset inputActions
+      private BuildingDataCollection buildingDataCollection
+      private CustomFaceData customFaceData
+      private CraftingFormulaCollection craftingFormulas
+      private DecomposeDatabase decomposeDatabase
+      private StatInfoDatabase statInfo
+      private StockShopDatabase stockShopDatabase
+      private LootingData looting
+      private AchievementDatabase achivementDatabase
+      private CropDatabase cropDatabase
+      private SpritesData spriteData
+      private CharacterRandomPresets characterRandomPresets
+      private DialogData dialogDatas
+  97 个 Property:
+      public Tag Character
+      public Tag LockInDemoTag
+      public Tag Helmat
+      public Tag Armor
+      public Tag Backpack
+      public Tag Bullet
+      public Tag Bait
+      public Tag AdvancedDebuffMode
+      public Tag Special
+      public Tag DestroyOnLootBox
+      public Tag DontDropOnDeadInSlot
+      public ReadOnlyCollection<Tag> AllTags
+      public Tag Gun
+      public LevelManager LevelManagerPrefab
+      public CharacterMainControl CharacterPrefab
+      public GameObject BulletHitObsticleFx
+      public GameObject QuestMarker
+      public DuckovItemAgent PickupAgentPrefab
+      public DuckovItemAgent PickupAgentNoRendererPrefab
+      public DuckovItemAgent HandheldAgentPrefab
+      public InteractableLootbox LootBoxPrefab
+      public InteractableLootbox LootBoxPrefab_Tomb
+      public InteractMarker InteractMarker
+      public HeadCollider HeadCollider
+      public Projectile DefaultBullet
+      public GameObject BuildingBlockAreaMesh
+      public GameObject AlertFxPrefab
+      public GameObject KazooUi
+      public UIInputManager UIInputManagerPrefab
+      public Buff BleedSBuff
+      public Buff UnlimitBleedBuff
+      public Buff BoneCrackBuff
+      public Buff WoundBuff
+      public Buff Weight_Light
+      public Buff Weight_Heavy
+      public Buff Weight_SuperHeavy
+      public Buff Weight_Overweight
+      public Buff Pain
+      public Buff BaseBuff
+      public Buff Starve
+      public Buff Thirsty
+      public Buff Burn
+      public Buff Poison
+      public Buff Electric
+      public Buff Space
+      public Buff Cold
+      public Buff SuperCold
+      public int DefaultCharacterItemTypeID
+      public int CashItemTypeID
+      public SceneInfoCollection SceneInfoCollection
+      public SceneReference PrologueScene
+      public SceneReference MainMenuScene
+      public SceneReference BaseScene
+      public SceneReference FailLoadingScreenScene
+      public SceneReference EvacuateScreenScene
+      public string DisplayName
+      private string DefaultQuestGiverDisplayName
+      public QuestCollection QuestCollection
+      public QuestRelationGraph QuestRelation
+      public ReadOnlyCollection<int> UnlockedItemByDefault
+      public Sprite CritPopSprite
+      public Sprite DefaultTeleporterIcon
+      public Sprite EleteCharacterIcon
+      public Sprite BossCharacterIcon
+      public Sprite PmcCharacterIcon
+      public Sprite MerchantCharacterIcon
+      public Sprite PetCharacterIcon
+      public float TeleporterIconScale
+      public Sprite FallbackItemIcon
+      public TextMeshProUGUI TemplateTextUGUI
+      private TMP_Asset DefaultFont
+      private static GameplayDataSettings Default
+      public static InputActionAsset InputActions
+      public static CustomFaceData CustomFaceData
+      public static TagsData Tags
+      public static PrefabsData Prefabs
+      public static UIPrefabsReference UIPrefabs
+      public static ItemAssetsData ItemAssets
+      public static StringListsData StringLists
+      public static LayersData Layers
+      public static SceneManagementData SceneManagement
+      public static BuffsData Buffs
+      public static QuestsData Quests
+      public static QuestCollection QuestCollection
+      public static QuestRelationGraph QuestRelation
+      public static EconomyData Economy
+      public static UIStyleData UIStyle
+      public static BuildingDataCollection BuildingDataCollection
+      public static CraftingFormulaCollection CraftingFormulas
+      public static DecomposeDatabase DecomposeDatabase
+      public static StatInfoDatabase StatInfo
+      public static StockShopDatabase StockshopDatabase
+      public static LootingData Looting
+      public static AchievementDatabase AchievementDatabase
+      public static CropDatabase CropDatabase
+      public static CharacterRandomPresets CharacterRandomPresetData
+      public static DialogData DialogDatas

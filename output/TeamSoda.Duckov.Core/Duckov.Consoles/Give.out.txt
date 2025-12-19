@@ -1,0 +1,7 @@
+namespace Duckov.Consoles
+public class Give: DCommand
+
+  1 ¸ö Method:
+      public override string Execute(DConsole console, string[] args)
+  1 ¸ö Property:
+      public override string CommandWord

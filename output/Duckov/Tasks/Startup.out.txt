@@ -1,9 +1,0 @@
-namespace Duckov.Tasks
-public class Startup: MonoBehaviour
-	
-  5 ¸ö Method:
-      private void Awake()
-      private void MoveOldSaves()
-      private void Start()
-      private UniTask StartupFlow()
-      private bool EvaluateWaitList()

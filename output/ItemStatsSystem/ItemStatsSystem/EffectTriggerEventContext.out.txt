@@ -1,0 +1,5 @@
+namespace ItemStatsSystem
+public struct EffectTriggerEventContext
+  2 ¸ö Field:
+      public EffectTrigger source
+      public bool positive

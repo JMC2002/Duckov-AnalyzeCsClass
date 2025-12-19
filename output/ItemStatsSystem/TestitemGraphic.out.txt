@@ -1,8 +1,0 @@
-namespace ItemStatsSystem
-public class TestitemGraphic: MonoBehaviour
-	
-  2 ¸ö Method:
-      private void Start()
-      private void Update()
-  1 ¸ö Field:
-      private ItemGraphicInfo instance

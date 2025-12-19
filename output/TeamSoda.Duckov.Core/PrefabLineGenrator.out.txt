@@ -1,0 +1,27 @@
+public class PrefabLineGenrator: MonoBehaviour, IOnPointsChanged
+
+  2 个 ClassLike:
+      public struct SapwnInfo
+      public struct PrefabPair
+  2 个 Method:
+      public GameObject GetRandomPrefab()
+      public void OnPointsChanged()
+  16 个 Field:
+      public List<PrefabPair> prefabs
+      public float rotateOffset
+      public float flatten
+      public Vector3 posOffset
+      public GameObject prefab
+      public float weight
+      private float prefabLength
+      public SapwnInfo spawnPrefab
+      public SapwnInfo startPrefab
+      public SapwnInfo endPrefab
+      private Points points
+      private List<BoxCollider> colliderObjects
+      private float updateTick
+      private float lastModifyTime
+      private bool dirty
+      public List<Vector3> searchedPointsLocalSpace
+  1 个 Property:
+      private List<Vector3> originPoints

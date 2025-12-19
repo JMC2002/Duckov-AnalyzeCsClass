@@ -1,0 +1,14 @@
+public class NamedFormatTest: MonoBehaviour
+
+  1 ¸ö ClassLike:
+      public struct Content
+  2 ¸ö Method:
+      private void Test()
+      private void Test2()
+  6 ¸ö Field:
+      public string textA
+      public string textB
+      public string format
+      public string format2
+      public Content content
+      private int loopCount

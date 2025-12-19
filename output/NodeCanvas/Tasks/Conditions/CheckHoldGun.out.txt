@@ -1,8 +1,0 @@
-namespace NodeCanvas.Tasks.Conditions
-public class CheckHoldGun: ConditionTask<AICharacterController>
-	
-  4 ¸ö Method:
-      protected override string OnInit()
-      protected override void OnEnable()
-      protected override void OnDisable()
-      protected override bool OnCheck()

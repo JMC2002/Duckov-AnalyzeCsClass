@@ -1,0 +1,12 @@
+namespace Debugging
+public class InventorySaveLoad: MonoBehaviour
+
+  4 ¸ö Method:
+      public void Save()
+      public async UniTask Load()
+      private void OnLoadFinished()
+      public void BeginLoad()
+  3 ¸ö Field:
+      public Inventory inventory
+      public string key
+      private bool loading

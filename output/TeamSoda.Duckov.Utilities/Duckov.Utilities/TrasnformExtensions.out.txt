@@ -1,0 +1,4 @@
+namespace Duckov.Utilities
+public static class TrasnformExtensions
+  1 ¸ö Method:
+      public static void DestroyAllChildren(this Transform transform)

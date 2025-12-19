@@ -1,0 +1,17 @@
+public class ItemGraphicInfo: MonoBehaviour
+
+  1 个 ClassLike:
+      public struct ItemGraphicSocket
+  2 个 Method:
+      public static ItemGraphicInfo CreateAGraphic(Item item, Transform parent)
+      public void Setup(Item item)
+  7 个 Field:
+      public Transform socketPoint
+      public GameObject showIfPluged
+      public GameObject hideIfPluged
+      private List<ItemGraphicSocket> sockets
+      public Dictionary<string, ItemGraphicSocket> socketsDictionary
+      private Item itemRefrence
+      private List<ItemGraphicInfo> subGraphics
+  1 个 Property:
+      public Item ItemRefrence

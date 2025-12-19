@@ -1,7 +1,0 @@
-namespace Duckov.UI
-public class CopyTextButton: MonoBehaviour, IPointerClickHandler, IEventSystemHandler
-	
-  1 ¸ö Method:
-      public void OnPointerClick(PointerEventData eventData)
-  1 ¸ö Field:
-      private string text

@@ -1,0 +1,13 @@
+namespace ItemStatsSystem
+public class OnBuffLayerChanged: EffectTrigger
+
+  6 ¸ö Method:
+      private void OnEnable()
+      protected override void OnDisable()
+      protected override void OnMasterSetTargetItem(Effect effect, Item item)
+      private void RegisterEvents()
+      private void UnregisterEvents()
+      private void OnBufflayerChanged()
+  2 ¸ö Field:
+      public Buff buff
+      public bool needMaxLayers

@@ -1,8 +1,0 @@
-namespace Duckov.DeathLotteries
-public class DeathLotteryInteractable: InteractableBase
-	
-  2 ¸ö Method:
-      protected override bool IsInteractable()
-      protected override void OnInteractFinished()
-  1 ¸ö Field:
-      private DeathLottery deathLottery

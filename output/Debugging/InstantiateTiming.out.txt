@@ -1,9 +1,0 @@
-namespace Debugging
-public class InstantiateTiming: MonoBehaviour
-	
-  3 ¸ö Method:
-      public void InstantiatePrefab()
-      private void Awake()
-      private void Start()
-  1 ¸ö Field:
-      public GameObject prefab

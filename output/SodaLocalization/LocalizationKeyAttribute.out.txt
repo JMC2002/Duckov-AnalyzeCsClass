@@ -1,0 +1,4 @@
+public class LocalizationKeyAttribute: Attribute
+
+  1 ¸ö Field:
+      public string fallbackFile

@@ -1,0 +1,15 @@
+public class ItemMetaDisplay: MonoBehaviour, IPointerEnterHandler, IEventSystemHandler, IPointerExitHandler, IItemMetaDataProvider
+
+  6 ¸ö Method:
+      public ItemMetaData GetMetaData()
+      public void OnPointerEnter(PointerEventData eventData)
+      public void OnPointerExit(PointerEventData eventData)
+      public void Setup(int typeID)
+      public void Setup(ItemMetaData data)
+      internal void Setup(object rootTypeID)
+  5 ¸ö Field:
+      private Image icon
+      private TrueShadow displayQualityShadow
+      private ItemMetaData data
+      public static event Action<ItemMetaDisplay> OnMouseEnter
+      public static event Action<ItemMetaDisplay> OnMouseExit

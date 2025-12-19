@@ -1,0 +1,20 @@
+namespace Duckov.Consoles
+public class DConsole: MonoBehaviour
+
+  10 ¸ö Method:
+      private void Awake()
+      private char OnValidateInput(string text, int charIndex, char addedChar)
+      private void Update()
+      private void ShowConsole()
+      private void HideConsole()
+      public static void RegisterCommand(IDCommand command)
+      public void Process(string command)
+      public void Echo(string result)
+      public void EchoWarning(string message)
+      private bool TryGetCommand(string commandWord, out IDCommand dCommand)
+  3 ¸ö Field:
+      private FadeGroup uiFadeGroup
+      private TMP_InputField inputField
+      private int frameCounter
+  1 ¸ö Property:
+      public static DConsole Instance

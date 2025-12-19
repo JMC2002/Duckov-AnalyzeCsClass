@@ -1,0 +1,12 @@
+namespace Duckov
+public class CheatMode
+  3 ¸ö Method:
+      public static void Activate()
+      public static void Deactivate()
+      private static bool CheatFileExists()
+  2 ¸ö Field:
+      private static bool _acitive
+      public static event Action<bool> OnCheatModeStatusChanged
+  2 ¸ö Property:
+      public static bool Active
+      private bool Cheated

@@ -1,0 +1,7 @@
+public class LocalizationDataModel
+  1 ¸ö Method:
+      public string GetPlainText(string key)
+  1 ¸ö Field:
+      internal LanguageSettings settings
+  1 ¸ö Property:
+      public string DisplayName

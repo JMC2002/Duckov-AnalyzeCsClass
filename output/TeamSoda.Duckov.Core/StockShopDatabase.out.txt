@@ -1,0 +1,18 @@
+public class StockShopDatabase: ScriptableObject
+
+  2 个 ClassLike:
+      public class MerchantProfile
+      public class ItemEntry
+  1 个 Method:
+      public MerchantProfile GetMerchantProfile(string merchantID)
+  8 个 Field:
+      public string merchantID
+      public int typeID
+      public int maxStock
+      public bool forceUnlock
+      public float priceFactor
+      public float possibility
+      public bool lockInDemo
+      public List<MerchantProfile> merchantProfiles
+  1 个 Property:
+      public static StockShopDatabase Instance

@@ -1,0 +1,17 @@
+namespace Duckov.UI
+public class UIPrefabsReference: ScriptableObject
+
+  6 ¸ö Field:
+      private ItemDisplay itemDisplay
+      private SlotIndicator slotIndicator
+      private SlotDisplay slotDisplay
+      private InventoryEntry inventoryEntry
+      private Button button
+      private ScrollRect scrollRect
+  6 ¸ö Property:
+      public ItemDisplay ItemDisplay
+      public SlotIndicator SlotIndicator
+      public SlotDisplay SlotDisplay
+      public InventoryEntry InventoryEntry
+      public Button Button
+      public ScrollRect ScrollRect

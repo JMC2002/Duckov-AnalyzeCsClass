@@ -1,0 +1,34 @@
+namespace ItemStatsSystem
+public class Effect: MonoBehaviour, ISelfValidator
+
+  13 ¸ö Method:
+      public string GetDisplayString()
+      private bool EvaluateFilters(EffectTriggerEventContext context)
+      internal void Trigger(EffectTriggerEventContext context)
+      private void OnValidate()
+      public void SetItem(Item targetItem)
+      private void RegisterItemEvents()
+      private void UnregisterItemEvents()
+      private void OnItemTreeChanged(Item item)
+      public void Validate(SelfValidationResult result)
+      static bool AnyDuplicate<T>(List<T> list)
+      static bool AnyNull<T>(List<T> list)
+      internal void AddEffectComponent(EffectComponent effectComponent)
+      private void Awake()
+  6 ¸ö Field:
+      private Item item
+      private bool display
+      private string description
+      private ReadOnlyCollection<EffectTrigger> _Triggers
+      private ReadOnlyCollection<EffectFilter> _Filters
+      private ReadOnlyCollection<EffectAction> _Actions
+  9 ¸ö Property:
+      public Item Item
+      public bool Display
+      public string Description
+      public ReadOnlyCollection<EffectTrigger> Triggers
+      public ReadOnlyCollection<EffectFilter> Filters
+      public ReadOnlyCollection<EffectAction> Actions
+      private static Color TriggerColor
+      private static Color FilterColor
+      private static Color ActionColor

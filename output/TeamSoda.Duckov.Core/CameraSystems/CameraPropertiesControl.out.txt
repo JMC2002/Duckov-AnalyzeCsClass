@@ -1,0 +1,10 @@
+namespace CameraSystems
+public class CameraPropertiesControl: MonoBehaviour
+
+  2 ¸ö Method:
+      private void Awake()
+      private void Update()
+  3 ¸ö Field:
+      private CinemachineVirtualCamera vCam
+      private CinemachineVolumeSettings volumeSettings
+      private VolumeProfile volumeProfile

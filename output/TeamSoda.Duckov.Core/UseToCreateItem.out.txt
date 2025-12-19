@@ -1,0 +1,17 @@
+public class UseToCreateItem: UsageBehavior
+
+  1 个 ClassLike:
+      private struct Entry
+  4 个 Method:
+      public override bool CanBeUsed(Item item, object user)
+      protected override void OnUse(Item item, object user)
+      private async UniTask Generate(int typeID, CharacterMainControl character)
+      private void OnValidate()
+  5 个 Field:
+      public int itemTypeID
+      private RandomContainer<Entry> entries
+      public string descKey
+      public string notificationKey
+      private bool running
+  1 个 Property:
+      public override DisplaySettingsData DisplaySettings

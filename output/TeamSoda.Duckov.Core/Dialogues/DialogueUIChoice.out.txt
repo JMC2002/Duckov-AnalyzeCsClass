@@ -1,0 +1,24 @@
+namespace Dialogues
+public class DialogueUIChoice: MonoBehaviour, IPointerClickHandler, IEventSystemHandler, IPointerEnterHandler
+
+  9 ¸ö Method:
+      private void Awake()
+      private void OnConfirm(MenuItem item)
+      private void AnimateConfirm()
+      private void Refresh(MenuItem item, bool focus)
+      private void Refresh(MenuItem item)
+      private void Confirm()
+      public void OnPointerClick(PointerEventData eventData)
+      public void OnPointerEnter(PointerEventData eventData)
+      internal void Setup(DialogueUI master, KeyValuePair<IStatement, int> cur)
+  8 ¸ö Field:
+      private MenuItem menuItem
+      private GameObject selectionIndicator
+      private Image confirmIndicator
+      private Gradient confirmAnimationColor
+      private float confirmAnimationDuration
+      private TextMeshProUGUI text
+      private DialogueUI master
+      private int index
+  1 ¸ö Property:
+      public int Index

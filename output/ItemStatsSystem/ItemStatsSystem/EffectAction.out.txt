@@ -1,0 +1,13 @@
+namespace ItemStatsSystem
+public class EffectAction: EffectComponent, ISelfValidator
+
+  6 ¸ö Method:
+      internal void NotifyTriggered(EffectTriggerEventContext context)
+      protected virtual void OnTriggered(bool positive)
+      protected virtual void OnTriggeredPositive()
+      protected virtual void OnTriggeredNegative()
+      private void OnDisable()
+      public override void Validate(SelfValidationResult result)
+  2 ¸ö Property:
+      protected override Color ActiveLabelColor
+      public override string DisplayName

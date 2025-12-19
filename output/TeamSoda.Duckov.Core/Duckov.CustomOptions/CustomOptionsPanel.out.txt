@@ -1,0 +1,9 @@
+namespace Duckov.CustomOptions
+public class CustomOptionsPanel: MonoBehaviour
+
+  2 ¸ö Method:
+      private void OnEnable()
+      private void OnDisable()
+  2 ¸ö Field:
+      private RectTransform rectTransform
+      public static Action<RectTransform> OnPanelEnabled

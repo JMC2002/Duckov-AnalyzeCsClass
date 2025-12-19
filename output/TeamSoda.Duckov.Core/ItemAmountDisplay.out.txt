@@ -1,0 +1,25 @@
+public class ItemAmountDisplay: MonoBehaviour, IPointerEnterHandler, IEventSystemHandler, IPointerExitHandler, IItemMetaDataProvider
+
+  7 ¸ö Method:
+      public ItemMetaData GetMetaData()
+      private void Awake()
+      private void OnDestroy()
+      public void Setup(int itemTypeID, long amount)
+      private void Refresh()
+      public void OnPointerEnter(PointerEventData eventData)
+      public void OnPointerExit(PointerEventData eventData)
+  11 ¸ö Field:
+      private Image background
+      private Image icon
+      private TextMeshProUGUI amountText
+      private string amountFormat
+      private Color normalColor
+      private Color enoughColor
+      private int typeID
+      private long amount
+      private ItemMetaData metaData
+      public static event Action<ItemAmountDisplay> OnMouseEnter
+      public static event Action<ItemAmountDisplay> OnMouseExit
+  2 ¸ö Property:
+      public int TypeID
+      public ItemMetaData MetaData

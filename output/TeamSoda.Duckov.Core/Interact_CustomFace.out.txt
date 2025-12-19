@@ -1,0 +1,21 @@
+public class Interact_CustomFace: InteractableBase
+
+  7 ¸ö Method:
+      protected override void Awake()
+      protected override void OnInteractStart(CharacterMainControl interactCharacter)
+      protected override void OnInteractStop()
+      private async UniTaskVoid Show()
+      private async UniTaskVoid Hide()
+      public void CopyToClipboard()
+      public void PastyDataAndApply()
+  10 ¸ö Field:
+      public GameObject activePart
+      public CustomFaceUI customFaceUI
+      public CanvasGroupFade fade
+      public CustomFaceInstance customFaceInstance
+      public UnityEvent OnCustomFaceUiClosedEvent
+      public string OnCopyNotificationKey
+      public string OnPastySuccessNotificationKey
+      public string OnPastyFailedNotificationKey
+      public static event Action OnCustomFaceStartEvent
+      public static event Action OnCustomFaceFinishedEvent

@@ -1,0 +1,36 @@
+namespace Duckov.Utilities
+public class LootBoxLoader: MonoBehaviour
+
+  1 个 ClassLike:
+      private struct Entry
+  9 个 Method:
+      public void CalculateChances()
+      public static int[] Search(ItemFilter filter)
+      private void Awake()
+      private int GetKey()
+      private void RandomActive()
+      public void StartSetup()
+      public async UniTask Setup()
+      private async UniTask CreateCash()
+      private void OnValidate()
+  17 个 Field:
+      public int itemTypeID
+      public bool autoSetup
+      public bool dropOnSpawnItem
+      private float activeChance
+      private int inventorySize
+      public bool ignoreLevelConfig
+      private Vector2Int randomCount
+      public bool randomFromPool
+      private RandomContainer<Tag> tags
+      private List<Tag> excludeTags
+      private RandomContainer<int> qualities
+      private RandomContainer<Entry> randomPool
+      public float GenrateCashChance
+      public int maxRandomCash
+      private List<int> fixedItems
+      private float fixedItemSpawnChance
+      private InteractableLootbox _lootBox
+  2 个 Property:
+      public List<int> FixedItems
+      private Inventory Inventory

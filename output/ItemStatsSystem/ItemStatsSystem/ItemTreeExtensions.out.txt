@@ -1,0 +1,9 @@
+namespace ItemStatsSystem
+public static class ItemTreeExtensions
+  6 ¸ö Method:
+      public static List<Item> GetAllChildren(this Item item, bool includingGrandChildren = true, bool excludeSelf = false)
+      public static List<Item> GetAllParents(this Item item, bool excludeSelf = false)
+      public static Item GetRoot(this Item item)
+      public static void DestroyTree(this Item item)
+      public static void DestroyTreeImmediate(this Item item)
+      public static List<Item> GetAllConnected(this Item item)

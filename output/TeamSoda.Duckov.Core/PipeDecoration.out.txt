@@ -1,0 +1,15 @@
+public class PipeDecoration: MonoBehaviour
+
+  1 ¸ö ClassLike:
+      public class GameObjectOffset
+  3 ¸ö Method:
+      private void OnDrawGizmosSelected()
+      private void Refresh()
+      public void OnValidate()
+  6 ¸ö Field:
+      public GameObject gameObject
+      public float offset
+      public PipeRenderer pipeRenderer
+      public Vector3 rotate
+      public Vector3 scale
+      public float uniformScale

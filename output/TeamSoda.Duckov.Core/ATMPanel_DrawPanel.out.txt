@@ -1,0 +1,20 @@
+public class ATMPanel_DrawPanel: MonoBehaviour
+
+  11 ¸ö Method:
+      private void OnEnable()
+      private void OnDisable()
+      private void Awake()
+      private void OnQuitButtonClicked()
+      private void OnMoneyChanged(long arg1, long arg2)
+      private void OnConfirmButtonClicked()
+      private async UniTask DrawTask(long value)
+      private void OnInputValueChanged(string v)
+      private void Refresh()
+      internal void Show()
+      internal void Hide(bool skip)
+  5 ¸ö Field:
+      private FadeGroup fadeGroup
+      private DigitInputPanel inputPanel
+      private Button confirmButton
+      private GameObject insufficientIndicator
+      private Button quitButton

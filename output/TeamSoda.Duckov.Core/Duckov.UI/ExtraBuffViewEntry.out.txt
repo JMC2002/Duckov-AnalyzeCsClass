@@ -1,0 +1,15 @@
+namespace Duckov.UI
+public class ExtraBuffViewEntry: MonoBehaviour, IPointerEnterHandler, IEventSystemHandler, IPointerExitHandler
+
+  4 ¸ö Method:
+      internal void Setup(ExtraBuffView master, Buff buff)
+      private void SetupEmpty()
+      public void OnPointerEnter(PointerEventData eventData)
+      public void OnPointerExit(PointerEventData eventData)
+  3 ¸ö Field:
+      private TextMeshProUGUI displayName
+      private Image icon
+      private TextMeshProUGUI layersCount
+  2 ¸ö Property:
+      public ExtraBuffView Master
+      public Buff target

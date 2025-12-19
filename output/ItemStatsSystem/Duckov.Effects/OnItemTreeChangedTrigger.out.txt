@@ -1,0 +1,10 @@
+namespace Duckov.Effects
+public class OnItemTreeChangedTrigger: EffectTrigger
+
+  3 ¸ö Method:
+      protected override void Awake()
+      private void OnDestroy()
+      private void OnItemTreeChanged(Effect effect, Item item)
+  2 ¸ö Field:
+      private bool triggerFalseWheneverChanged
+      private bool triggerInInventory

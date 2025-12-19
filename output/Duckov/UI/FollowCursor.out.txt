@@ -1,9 +1,0 @@
-namespace Duckov.UI
-public class FollowCursor: MonoBehaviour
-	
-  2 ¸ö Method:
-      private void Awake()
-      private unsafe void Update()
-  2 ¸ö Field:
-      private RectTransform parentRectTransform
-      private RectTransform rectTransform

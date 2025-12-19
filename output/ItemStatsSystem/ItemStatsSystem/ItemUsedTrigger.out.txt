@@ -1,0 +1,9 @@
+namespace ItemStatsSystem
+public class ItemUsedTrigger: EffectTrigger
+
+  3 ¸ö Method:
+      private void OnEnable()
+      private new void OnDisable()
+      private void OnItemUsed(Item item, object user)
+  1 ¸ö Property:
+      public override string DisplayName

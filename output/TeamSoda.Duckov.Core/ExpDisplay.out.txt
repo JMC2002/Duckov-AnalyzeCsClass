@@ -1,0 +1,24 @@
+public class ExpDisplay: MonoBehaviour
+
+  10 ¸ö Method:
+      private void Refresh()
+      private void OnDisplayingLevelChanged()
+      private void SnapToCurrent()
+      private async UniTask Animate(long targetExp, float duration, AnimationCurve curve)
+      private long LongLerp(long a, long b, float t)
+      private void OnEnable()
+      private void OnDisable()
+      private void RegisterEvents()
+      private void UnregisterEvents()
+      private void OnExpChanged(long exp)
+  10 ¸ö Field:
+      private TextMeshProUGUI txtLevel
+      private TextMeshProUGUI txtCurrentExp
+      private TextMeshProUGUI txtMaxExp
+      private Image expBarFill
+      private bool snapToCurrentOnEnable
+      private float animationDuration
+      private AnimationCurve animationCurve
+      private long displayExp
+      private int displayingLevel
+      private int currentToken

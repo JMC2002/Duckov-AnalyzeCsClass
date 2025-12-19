@@ -1,0 +1,12 @@
+namespace Duckov.NoteIndexs
+public class Note
+  3 ¸ö Field:
+      public string key
+      public Sprite image
+      public bool hide
+  5 ¸ö Property:
+      public string titleKey
+      public string contentKey
+      public string Title
+      private Sprite previewSprite
+      public string Content

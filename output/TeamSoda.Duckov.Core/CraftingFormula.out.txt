@@ -1,0 +1,16 @@
+public struct CraftingFormula
+  1 ¸ö ClassLike:
+      public struct ItemEntry
+  10 ¸ö Field:
+      public int id
+      public int amount
+      public string id
+      public ItemEntry result
+      public string[] tags
+      public Cost cost
+      public bool unlockByDefault
+      public bool lockInDemo
+      public string requirePerk
+      public bool hideInIndex
+  1 ¸ö Property:
+      public bool IDValid

@@ -1,0 +1,9 @@
+namespace Duckov.Utilities
+public class StringList: ScriptableObject, IEnumerable<string>, IEnumerable
+
+  1 ¸ö Method:
+      public IEnumerator<string> GetEnumerator()
+  1 ¸ö Field:
+      private ReadOnlyCollection<string> strings_ReadOnly
+  1 ¸ö Property:
+      public ReadOnlyCollection<string> Strings

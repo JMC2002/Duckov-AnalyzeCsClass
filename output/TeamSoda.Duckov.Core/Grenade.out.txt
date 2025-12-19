@@ -1,0 +1,49 @@
+public class Grenade: MonoBehaviour
+
+  11 ¸ö Method:
+      private void OnCollisionEnter(Collision collision)
+      public void BindAgent(ItemAgent _agent)
+      private void Update()
+      private void Explode()
+      private async UniTask DestroyOverTime()
+      private void OnDestroy()
+      private async UniTask ActiveLandmine()
+      private void OnLinemineTriggerd()
+      public void SetWeaponIdInfo(int typeId)
+      public void Launch(Vector3 startPoint, Vector3 velocity, CharacterMainControl fromCharacter, bool canHurtSelf)
+      private async UniTask IgnoreCollisionForSeconds(Collider col1, Collider col2, float ignoreTime)
+  32 ¸ö Field:
+      public bool hasCollideSound
+      public string collideSound
+      public int makeSoundCount
+      private float makeSoundTimeMarker
+      public float damageRange
+      public bool isDangerForAi
+      public bool isLandmine
+      public float landmineTriggerRange
+      private bool landmineActived
+      private bool landmineTriggerd
+      public ExplosionFxTypes fxType
+      public GameObject fx
+      public Animator animator
+      private Rigidbody rb
+      private int groundLayer
+      public bool delayFromCollide
+      public float delayTime
+      public bool createExplosion
+      public float explosionShakeStrength
+      public DamageInfo damageInfo
+      private bool bindAgent
+      private ItemAgent bindedAgent
+      private float lifeTimer
+      private float delayTimer
+      private Teams selfTeam
+      public GameObject createOnExlode
+      public float destroyDelay
+      public UnityEvent onExplodeEvent
+      private bool exploded
+      private bool canHurtSelf
+      private bool collide
+      private bool destroied
+  1 ¸ö Property:
+      private bool needCustomFx

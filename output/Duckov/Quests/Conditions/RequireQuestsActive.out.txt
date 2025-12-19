@@ -1,9 +1,0 @@
-namespace Duckov.Quests.Conditions
-public class RequireQuestsActive: Condition
-	
-  1 ¸ö Method:
-      public override bool Evaluate()
-  1 ¸ö Field:
-      private int[] requiredQuestIDs
-  1 ¸ö Property:
-      public int[] RequiredQuestIDs

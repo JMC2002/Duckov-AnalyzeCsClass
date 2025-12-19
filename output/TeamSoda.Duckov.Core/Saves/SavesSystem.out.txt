@@ -1,0 +1,79 @@
+namespace Saves
+public class SavesSystem
+  1 个 ClassLike:
+      public struct BackupInfo
+  40 个 Method:
+      public static string GetFullPathToSavesFolder()
+      public static string GetFilePath(int slot)
+      public static string GetSaveFileName(int slot)
+      public static bool IsOldSave(int index)
+      public static void SetFile(int index)
+      public static BackupInfo[] GetBackupList()
+      public static BackupInfo[] GetBackupList(int slot)
+      public static BackupInfo[] GetBackupList(string mainPath, int slot = -1)
+      private static int GetEmptyOrOldestBackupIndex()
+      private static int GetOldestBackupIndex()
+      private static int GetNewestBackupIndex()
+      private static string GetBackupPathByIndex(int index)
+      private static string GetBackupPathByIndex(int slot, int index)
+      private static string GetBackupPathByIndex(string path, int index)
+      private static void CreateIndexedBackup(int index = -1)
+      private static void CreateBackup()
+      private static void CreateBackup(string path)
+      public static void UpgradeSaveFileAssemblyInfo(string path)
+      public static void RestoreIndexedBackup(int slot, int index)
+      private static bool RestoreBackup(string path)
+      public DateTime GetSaveTimeUTC(int slot = -1)
+      public DateTime GetSaveTimeLocal(int slot = -1)
+      public static void SaveFile(bool writeSaveTime = true)
+      private static void CacheFile()
+      private static void CacheFile(int slot)
+      private static bool CacheFile(string path)
+      public static void Save<T>(string prefix, string key, T value)
+      public static void Save<T>(string realKey, T value)
+      public static T Load<T>(string prefix, string key)
+      public static T Load<T>(string realKey)
+      public static bool KeyExisits(string prefix, string key)
+      public static bool KeyExisits(string realKey)
+      public static bool KeyExisits(string realKey, int slotIndex)
+      public static T Load<T>(string realKey, int slotIndex)
+      public static void SaveGlobal<T>(string key, T value)
+      public static void CollectSaveData()
+      public static bool IsOldGame()
+      public static bool IsOldGame(int index)
+      private static void SetAsOldGame()
+      public static void DeleteCurrentSave()
+  17 个 Field:
+      public int slot
+      public int index
+      public string path
+      public bool exists
+      public long time_raw
+      private static int? _currentSlot
+      private static bool saving
+      private static ES3Settings settings
+      private static bool cached
+      private static DateTime _lastSavedTime
+      private static DateTime _lastIndexedBackupTime
+      private static bool globalCached
+      private static ES3Settings GlobalFileSetting
+      public static event Action OnSetFile
+      public static event Action OnSaveDeleted
+      public static event Action OnCollectSaveData
+      public static event Action OnRestoreFailureDetected
+  13 个 Property:
+      public bool TimeValid
+      public DateTime Time
+      public static int CurrentSlot
+      public static string CurrentFilePath
+      public static bool IsSaving
+      public static string SavesFolder
+      public static bool RestoreFailureMarker
+      private static DateTime LastSavedTime
+      private static TimeSpan TimeSinceLastSave
+      private static DateTime LastIndexedBackupTime
+      private static TimeSpan TimeSinceLastIndexedBackup
+      public static string GlobalSaveDataFilePath
+      public static string GlobalSaveDataFileName
+  1 个 Constant:
+      private const int BackupListCount

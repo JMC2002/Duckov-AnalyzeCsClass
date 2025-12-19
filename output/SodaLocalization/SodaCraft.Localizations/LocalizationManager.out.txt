@@ -1,0 +1,23 @@
+namespace SodaCraft.Localizations
+public static class LocalizationManager
+  11 ¸ö Method:
+      public static void SetOverrideText(string key, string value)
+      public static bool TryGetOverrideText(string key, out string value)
+      public static bool RemoveOverrideText(string key)
+      public static void SetLanguage(SystemLanguage language)
+      public static string GetDisplayName(SystemLanguage language)
+      private static void Initialize()
+      public static string GetPlainText(string key)
+      public static string ToPlainText(this string key)
+      public static void SetLanguage(string name)
+      public static void SetLanguage(int index)
+      internal static void SetLanguage()
+  2 ¸ö Field:
+      private static LocalizationDataModel _fallbackDataModel
+      public static event Action<SystemLanguage> OnSetLanguage
+  5 ¸ö Property:
+      public static bool Initialized
+      public static SystemLanguage CurrentLanguage
+      public static string CurrentLanguageDisplayName
+      public static LocalizationDataModel DataModel
+      public static LocalizationDataModel FallbackDataModel

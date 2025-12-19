@@ -1,0 +1,9 @@
+namespace ItemStatsSystem
+public class BoolFilter: EffectFilter
+
+  1 ¸ö Method:
+      protected override bool OnEvaluate(EffectTriggerEventContext context)
+  1 ¸ö Field:
+      public bool value
+  1 ¸ö Property:
+      public override string DisplayName

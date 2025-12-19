@@ -1,0 +1,17 @@
+public class HealthSimpleBase: MonoBehaviour
+
+  3 ¸ö Method:
+      private void Awake()
+      private void OnHurt(DamageInfo dmgInfo)
+      private void Dead(DamageInfo dmgInfo)
+  8 ¸ö Field:
+      public Teams team
+      public bool onlyReceiveExplosion
+      public float maxHealthValue
+      private float healthValue
+      public DamageReceiver dmgReceiver
+      public float damageMultiplierIfNotMainCharacter
+      public static event Action<HealthSimpleBase, DamageInfo> OnSimpleHealthHit
+      public static event Action<HealthSimpleBase, DamageInfo> OnSimpleHealthDead
+  1 ¸ö Property:
+      public float HealthValue

@@ -1,0 +1,19 @@
+namespace Duckov.Utilities
+public class RandomContainer<T>: IPercentRefreshable
+
+  1 个 ClassLike:
+      public struct Entry
+  7 个 Method:
+      public void AddEntry(T _value, float _weight)
+      public T GetRandom(float lowPercent = 0f)
+      public T GetRandom(System.Random overrideRandom, float lowPercent = 0f)
+      public T GetRandom(System.Random overrideRandom, Func<T, bool> predicator, float lowPercent = 0f)
+      public List<T> GetRandomMultiple(int count, bool repeatable = true)
+      public void RefreshPercent()
+      public static RandomContainer<string> FromString(string str)
+  3 个 Field:
+      public T value
+      public float weight
+      public string percent
+  1 个 Property:
+      public int Count

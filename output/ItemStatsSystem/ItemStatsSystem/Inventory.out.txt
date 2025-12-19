@@ -1,0 +1,53 @@
+namespace ItemStatsSystem
+public class Inventory: MonoBehaviour, ISelfValidator, IEnumerable<Item>, IEnumerable
+
+  27 个 Method:
+      public void LockIndex(int index)
+      public void UnlockIndex(int index)
+      public bool IsIndexLocked(int index)
+      public void ToggleLockIndex(int index)
+      private void Start()
+      public bool IsEmpty()
+      public void Sort(Comparison<Item> comparison)
+      public void Sort()
+      static Tag GetFirstTag(Item item2)
+      private static bool TryMerge(IEnumerable<Item> itemsOfSameTypeID, out List<Item> result)
+      public int GetFirstEmptyPosition(int preferedFirstPosition = 0)
+      public int GetLastItemPosition()
+      public bool AddAt(Item item, int atPosition)
+      public bool RemoveAt(int position, out Item removedItem)
+      public bool AddItem(Item item)
+      public bool RemoveItem(Item item)
+      public Item GetItemAt(int position)
+      public void Validate(SelfValidationResult result)
+      public IEnumerator<Item> GetEnumerator()
+      public void DestroyAllContent()
+      public List<Item> FindAll(Predicate<Item> match)
+      public void RecalculateWeight()
+      public void SetCapacity(int capacity)
+      public int GetItemCount()
+      internal void NotifyContentChanged(Item item)
+      public int GetIndex(Item item)
+      public Item Find(int typeID)
+  8 个 Field:
+      private bool loading
+      private string displayNameKey
+      private int defaultCapacity
+      private Item attachedToItem
+      private bool needInspection
+      private bool acceptSticky
+      public bool hasBeenInspectedInLootBox
+      private float? cachedWeight
+  9 个 Property:
+      public bool Loading
+      public string DisplayNameKey
+      public string DisplayName
+      public List<Item> Content
+      public bool AcceptSticky
+      public bool NeedInspection
+      public int Capacity
+      public Item AttachedToItem
+      public float CachedWeight
+  2 个 Constant:
+      private const string defaultDisplayNameKey
+      private const bool TrimListWhenRemovingItem

@@ -1,0 +1,6 @@
+namespace ItemStatsSystem
+public class LogWhenUsed: UsageBehavior
+
+  2 ¸ö Method:
+      public override bool CanBeUsed(Item item, object user)
+      protected override void OnUse(Item item, object user)

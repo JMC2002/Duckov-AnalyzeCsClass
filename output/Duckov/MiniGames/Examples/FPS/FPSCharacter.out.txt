@@ -1,6 +1,0 @@
-namespace Duckov.MiniGames.Examples.FPS
-public class FPSCharacter: MonoBehaviour
-	
-  2 ¸ö Field:
-      private FPSMovement movement
-      private FPSGunControl gunControl

@@ -1,3 +1,0 @@
-namespace Duckov.Scenes
-public class SceneIDAttribute: Attribute
-	

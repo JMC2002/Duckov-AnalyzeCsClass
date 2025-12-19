@@ -1,0 +1,15 @@
+namespace Duckov.Utilities
+public class UpdatableInvoker: MonoBehaviour
+
+  7 ¸ö Method:
+      private static void CreateInstance()
+      private void Awake()
+      private void Update()
+      private static void DoUpdate()
+      private static void ActivateIncomingObjects()
+      public static void Register(IUpdatable updatable)
+      public static bool Unregister(IUpdatable updatable)
+  1 ¸ö Field:
+      private static UpdatableInvoker instance
+  1 ¸ö Property:
+      public static UpdatableInvoker Instance

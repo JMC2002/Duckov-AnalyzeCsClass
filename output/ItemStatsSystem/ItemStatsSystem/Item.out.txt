@@ -1,0 +1,166 @@
+namespace ItemStatsSystem
+public class Item: MonoBehaviour, ISelfValidator
+
+  64 个 Method:
+      public void SetTypeID(int id)
+      public void CreateStatsComponent()
+      public void CreateSlotsComponent()
+      public void CreateModifiersComponent()
+      public void CreateInventoryComponent()
+      public bool IsUsable(object user)
+      public void AddUsageUtilitiesComponent()
+      private void Awake()
+      private void OnInventoryContentChanged(Inventory inventory, int index)
+      public void Initialize()
+      public Item GetCharacterItem()
+      public bool IsInCharacterSlot()
+      public Item CreateInstance()
+      public void Detach()
+      internal void NotifyPluggedTo(Slot slot)
+      internal void NotifyUnpluggedFrom(Slot slot)
+      internal void NotifySlotPlugged(Slot slot)
+      internal void NotifySlotUnplugged(Slot slot)
+      internal void NotifyRemovedFromInventory(Inventory inventory)
+      internal void NotifyAddedToInventory(Inventory inventory)
+      internal void NotifyItemTreeChanged()
+      private void HandleEffectsActive()
+      internal void InitiateNotifyItemTreeChanged()
+      internal void NotifyChildChanged()
+      internal void NotifySlotTreeChanged()
+      public void Use(object user)
+      public CustomData GetVariableEntry(string variableKey)
+      public CustomData GetVariableEntry(int hash)
+      public float GetFloat(string key, float defaultResult = 0f)
+      public int GetInt(string key, int defaultResult = 0)
+      public bool GetBool(string key, bool defaultResult = false)
+      public string GetString(string key, string defaultResult = null)
+      public float GetFloat(int hash, float defaultResult = 0f)
+      public int GetInt(int hash, int defaultResult = 0)
+      public bool GetBool(int hash, bool defaultResult = false)
+      public string GetString(int hash, string defaultResult = null)
+      public void SetFloat(string key, float value, bool createNewIfNotExist = true)
+      public void SetInt(string key, int value, bool createNewIfNotExist = true)
+      public void SetBool(string key, bool value, bool createNewIfNotExist = true)
+      public void SetString(string key, string value, bool createNewIfNotExist = true)
+      public void SetFloat(int hash, float value)
+      public void SetInt(int hash, int value)
+      public void SetBool(int hash, bool value)
+      public void SetString(int hash, string value)
+      internal void ForceSetStackCount(int value)
+      public void Combine(Item incomingItem)
+      public void CombineInto(Item otherItem)
+      public async UniTask<Item> Split(int count)
+      public override string ToString()
+      public void MarkDestroyed()
+      private void OnDestroy()
+      public Stat GetStat(int hash)
+      public Stat GetStat(string key)
+      public float GetStatValue(int hash)
+      public static Stat GetStat(Item item, int hash)
+      public static float GetStatValue(Item item, int hash)
+      private void OnValidate()
+      public void Validate(SelfValidationResult result)
+      public float RecalculateTotalWeight()
+      public void AddEffect(Effect instance)
+      private void CreateNewEffect()
+      public int GetTotalRawValue()
+      public int RemoveAllModifiersFrom(object endowmentEntry)
+      public bool AddModifier(string statKey, Modifier modifier)
+  34 个 Field:
+      private int typeID
+      private int order
+      private string displayName
+      private Sprite icon
+      private int maxStackCount
+      private int value
+      private int quality
+      private DisplayQuality displayQuality
+      private float weight
+      private float _cachedWeight
+      private float? _cachedTotalWeight
+      private int handheldHash
+      private TagCollection tags
+      private ItemAgentUtilities agentUtilities
+      private ItemGraphicInfo itemGraphic
+      private StatCollection stats
+      private SlotCollection slots
+      private ModifierDescriptionCollection modifiers
+      private CustomDataCollection variables
+      private CustomDataCollection constants
+      private Inventory inventory
+      private UsageUtilities usageUtilities
+      private Slot pluggedIntoSlot
+      private Inventory inInventory
+      private bool initialized
+      private static readonly int StackCountVariableHash
+      private static readonly int FromInfoVariableHash
+      private static readonly int InspectedVariableHash
+      private static readonly int MaxDurabilityConstantHash
+      private static readonly int DurabilityVariableHash
+      private bool _inspecting
+      public string soundKey
+      private bool isBeingDestroyed
+      public static event Action<Item, object> onUseStatic
+  56 个 Property:
+      public int TypeID
+      public int Order
+      public string DisplayName
+      public string DisplayNameRaw
+      private string description
+      public string DescriptionRaw
+      public string Description
+      public Sprite Icon
+      private string MaxStackCountSuffixLabel
+      public int MaxStackCount
+      public bool Stackable
+      public int Value
+      public int Quality
+      public DisplayQuality DisplayQuality
+      public float UnitSelfWeight
+      public float SelfWeight
+      public bool Sticky
+      public bool CanBeSold
+      public bool CanDrop
+      public float TotalWeight
+      public bool HasHandHeldAgent
+      private string TagsLabelText
+      public ItemAgentUtilities AgentUtilities
+      public ItemAgent ActiveAgent
+      public ItemGraphicInfo ItemGraphic
+      private string StatsTabLabelText
+      private string SlotsTabLabelText
+      private string ModifiersTabLabelText
+      public UsageUtilities UsageUtilities
+      public float UseTime
+      public StatCollection Stats
+      public ModifierDescriptionCollection Modifiers
+      public SlotCollection Slots
+      public Inventory Inventory
+      public List<Effect> Effects
+      public Slot PluggedIntoSlot
+      public Inventory InInventory
+      public Item ParentItem
+      public UnityEngine.Object ParentObject
+      public TagCollection Tags
+      public CustomDataCollection Variables
+      public CustomDataCollection Constants
+      public bool IsCharacter
+      public int StackCount
+      public string FromInfoKey
+      public bool UseDurability
+      public float MaxDurability
+      public float MaxDurabilityWithLoss
+      public float DurabilityLoss
+      public float Durability
+      public bool Inspected
+      public bool Inspecting
+      public bool NeedInspection
+      public bool IsBeingDestroyed
+      public bool Repairable
+      public string SoundKey
+  5 个 Constant:
+      private const string StackCountVariableKey
+      private const string FromInfoVariableKey
+      private const string InspectedVariableKey
+      private const string MaxDurabilityConstantKey
+      private const string DurabilityVariableKey

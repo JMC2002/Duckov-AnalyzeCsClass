@@ -1,0 +1,23 @@
+namespace ItemStatsSystem.Items
+public class Slot
+  6 ¸ö Method:
+      public void Initialize(SlotCollection collection)
+      public void ForceInvokeSlotContentChangedEvent()
+      public bool Plug(Item otherItem, out Item unpluggedItem)
+      private bool CheckAbleToPlug(Item otherItem)
+      public Item Unplug()
+      public bool CanPlug(Item item)
+  5 ¸ö Field:
+      private SlotCollection collection
+      private string key
+      private Sprite slotIcon
+      private Item content
+      private bool forbidItemsWithSameID
+  7 ¸ö Property:
+      public Item Master
+      public Item Content
+      private StringList referenceKeys
+      public Sprite SlotIcon
+      public bool ForbidItemsWithSameID
+      public string Key
+      public string DisplayName

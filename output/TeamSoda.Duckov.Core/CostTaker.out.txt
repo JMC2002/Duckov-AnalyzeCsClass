@@ -1,0 +1,19 @@
+public class CostTaker: InteractableBase
+
+  7 ¸ö Method:
+      protected override bool IsInteractable()
+      protected override void OnInteractFinished()
+      private void OnEnable()
+      private void OnDisable()
+      public static void Register(CostTaker costTaker)
+      public static void Unregister(CostTaker costTaker)
+      public void SetCost(Cost cost)
+  5 ¸ö Field:
+      private Cost cost
+      public UnityEvent<CostTaker> onPayedUnityEvent
+      private static ReadOnlyCollection<CostTaker> _activeCostTakers_ReadOnly
+      public static event Action<CostTaker> OnCostTakerRegistered
+      public static event Action<CostTaker> OnCostTakerUnregistered
+  2 ¸ö Property:
+      public Cost Cost
+      public static ReadOnlyCollection<CostTaker> ActiveCostTakers

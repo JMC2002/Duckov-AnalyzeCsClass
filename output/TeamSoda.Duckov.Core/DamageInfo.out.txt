@@ -1,0 +1,26 @@
+public struct DamageInfo
+  2 ¸ö Method:
+      public void AddElementFactor(ElementTypes _type, float _factor)
+      public string GenerateDescription()
+  21 ¸ö Field:
+      public DamageTypes damageType
+      public bool isFromBuffOrEffect
+      public float damageValue
+      public bool ignoreArmor
+      public bool ignoreDifficulty
+      public float critDamageFactor
+      public float critRate
+      public float armorPiercing
+      public List<ElementFactor> elementFactors
+      public bool isExplosion
+      public float armorBreak
+      public float finalDamage
+      public CharacterMainControl fromCharacter
+      public DamageReceiver toDamageReceiver
+      public Vector3 damagePoint
+      public Vector3 damageNormal
+      public int crit
+      public int fromWeaponItemID
+      public float buffChance
+      public Buff buff
+      public float bleedChance

@@ -1,0 +1,20 @@
+public class Radar: MonoBehaviour
+
+  6 ¸ö Method:
+      private Transform GetTarget()
+      private Vector3 GetDelta()
+      private float CalculateFrequency()
+      private void OnEnable()
+      private void Update()
+      private void Beep()
+  6 ¸ö Field:
+      private float nearestDist
+      private float maxFreq
+      public Transform overrideTarget
+      private static Transform _sTarget
+      private float buffer
+      public static event Action<Transform> OnSetTarget
+  3 ¸ö Property:
+      private Vector3 CenterPosition
+      public Vector3 TargetPosition
+      public static Transform Target

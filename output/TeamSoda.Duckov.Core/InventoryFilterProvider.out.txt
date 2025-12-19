@@ -1,0 +1,14 @@
+public class InventoryFilterProvider: MonoBehaviour
+
+  1 个 ClassLike:
+      public struct FilterEntry
+  2 个 Method:
+      private bool FilterFunction(Item item)
+      public Func<Item, bool> GetFunction()
+  4 个 Field:
+      public string name
+      public Sprite icon
+      public Tag[] requireTags
+      public FilterEntry[] entries
+  1 个 Property:
+      public string DisplayName

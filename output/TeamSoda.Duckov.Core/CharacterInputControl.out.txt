@@ -1,0 +1,99 @@
+public class CharacterInputControl: MonoBehaviour
+
+  1 个 ClassLike:
+      private class InputActionReferences
+  43 个 Method:
+      private void Awake()
+      private void OnDestroy()
+      private void RegisterEvents()
+      private void UnregisterEvent()
+      private void Bind(InputAction action, Action<InputAction.CallbackContext> method)
+      private void Unbind(InputAction action, Action<InputAction.CallbackContext> method)
+      private void Update()
+      public void OnPlayerMoveInput(InputAction.CallbackContext context)
+      public void OnPlayerRunInput(InputAction.CallbackContext context)
+      public void OnPlayerAdsInput(InputAction.CallbackContext context)
+      public void OnToggleViewInput(InputAction.CallbackContext context)
+      public void OnToggleNightVisionInput(InputAction.CallbackContext context)
+      public void OnPlayerTriggerInputUsingMouseKeyboard(InputAction.CallbackContext context)
+      public void OnPlayerMouseMove(InputAction.CallbackContext context)
+      public void OnPlayerMouseDelta(InputAction.CallbackContext context)
+      public void OnPlayerStopAction(InputAction.CallbackContext context)
+      public void OnPlayerSwitchItemAgent1(InputAction.CallbackContext context)
+      public void OnPlayerSwitchItemAgent2(InputAction.CallbackContext context)
+      public void OnPlayerSwitchItemAgentMelee(InputAction.CallbackContext context)
+      public void OnStartCharacterSkillAim(InputAction.CallbackContext context)
+      public void OnCharacterSkillRelease()
+      public void OnReloadInput(InputAction.CallbackContext context)
+      public void OnUIInventoryInput(InputAction.CallbackContext context)
+      public void OnUIQuestViewInput(InputAction.CallbackContext context)
+      public void OnDashInput(InputAction.CallbackContext context)
+      public void OnUIMapInput(InputAction.CallbackContext context)
+      public void OnCancelSkillInput(InputAction.CallbackContext context)
+      public void OnInteractInput(InputAction.CallbackContext context)
+      public void OnQuackInput(InputAction.CallbackContext context)
+      public void OnPutAwayInput(InputAction.CallbackContext context)
+      public void OnMouseScollerInput(InputAction.CallbackContext context)
+      private void UpdateScollerInput()
+      public void OnSwitchWeaponInput(InputAction.CallbackContext context)
+      public void OnSwitchInteractAndBulletTypeInput(InputAction.CallbackContext context)
+      private void ShortCutInput(int index)
+      public void OnShortCutInput3(InputAction.CallbackContext context)
+      public void OnShortCutInput4(InputAction.CallbackContext context)
+      public void OnShortCutInput5(InputAction.CallbackContext context)
+      public void OnShortCutInput6(InputAction.CallbackContext context)
+      public void OnShortCutInput7(InputAction.CallbackContext context)
+      public void OnShortCutInput8(InputAction.CallbackContext context)
+      internal static InputAction GetInputAction(string name)
+      public static bool GetChangeBulletTypeWasPressed()
+  46 个 Field:
+      public InputAction MoveAxis
+      public InputAction Run
+      public InputAction Aim
+      public InputAction MousePos
+      public InputAction ItemShortcut1
+      public InputAction ItemShortcut2
+      public InputAction Skill_1_StartAim
+      public InputAction Reload
+      public InputAction UI_Inventory
+      public InputAction UI_Map
+      public InputAction Interact
+      public InputAction ScrollWheel
+      public InputAction SwitchWeapon
+      public InputAction SwitchInteractAndBulletType
+      public InputAction Trigger
+      public InputAction ToggleView
+      public InputAction ToggleNightVision
+      public InputAction CancelSkill
+      public InputAction Dash
+      public InputAction ItemShortcut3
+      public InputAction ItemShortcut4
+      public InputAction ItemShortcut5
+      public InputAction ItemShortcut6
+      public InputAction ItemShortcut7
+      public InputAction ItemShortcut8
+      public InputAction Quack
+      public InputAction ADS
+      public InputAction UI_Quest
+      public InputAction StopAction
+      public InputAction PutAway
+      public InputAction ItemShortcut_Melee
+      public InputAction MouseDelta
+      public InputAction SwitchBulletType
+      public InputManager inputManager
+      private bool runInput
+      private bool adsInput
+      private bool aimDown
+      private Vector2 mousePos
+      private Vector2 mouseDelta
+      private bool mouseKeyboardTriggerInput
+      private bool mouseKeyboardTriggerReleaseThisFrame
+      private bool mouseKeyboardTriggerInputThisFrame
+      private CharacterMainControl character
+      private InputActionReferences inputActions
+      private float scollY
+      private int scollYZeroFrames
+  3 个 Property:
+      public static CharacterInputControl Instance
+      private PlayerInput PlayerInput
+      private bool usingMouseAndKeyboard

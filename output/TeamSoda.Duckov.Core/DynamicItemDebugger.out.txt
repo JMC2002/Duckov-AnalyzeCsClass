@@ -1,0 +1,9 @@
+public class DynamicItemDebugger: MonoBehaviour
+
+  4 ¸ö Method:
+      private void Awake()
+      private void Add()
+      private void CreateCorresponding()
+      private async UniTask CreateTask()
+  1 ¸ö Field:
+      private List<Item> prefabs

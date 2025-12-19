@@ -1,0 +1,26 @@
+namespace UI
+public class MenuItem: MonoBehaviour
+
+  9 ¸ö Method:
+      private void OnTransformParentChanged()
+      private void OnEnable()
+      private void OnDisable()
+      public void Select()
+      internal void NotifySelected()
+      internal void NotifyDeselected()
+      internal void NotifyConfirmed()
+      internal void NotifyCanceled()
+      internal void NotifyMasterFocusStatusChanged()
+  8 ¸ö Field:
+      private Menu _master
+      private bool selectable
+      private bool cacheSelected
+      public Action<MenuItem> onSelected
+      public Action<MenuItem> onDeselected
+      public Action<MenuItem> onConfirmed
+      public Action<MenuItem> onCanceled
+      public Action<MenuItem, bool> onFocusStatusChanged
+  3 ¸ö Property:
+      public Menu Master
+      public bool Selectable
+      public bool IsSelected

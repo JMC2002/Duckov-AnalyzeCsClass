@@ -1,0 +1,22 @@
+namespace ItemStatsSystem.Items
+public class SlotCollection: ItemComponent, ICollection<Slot>, IEnumerable<Slot>, IEnumerable
+
+  11 ¸ö Method:
+      public Slot GetSlotByIndex(int index)
+      public Slot GetSlot(int hash)
+      public Slot GetSlot(string key)
+      private void BuildDictionary()
+      internal override void OnInitialize()
+      public IEnumerator<Slot> GetEnumerator()
+      public void Add(Slot item)
+      public void Clear()
+      public bool Contains(Slot item)
+      public void CopyTo(Slot[] array, int arrayIndex)
+      public bool Remove(Slot item)
+  2 ¸ö Field:
+      public Action<Slot> OnSlotContentChanged
+      private Dictionary<int, Slot> _cachedSlotsDictionary
+  3 ¸ö Property:
+      private Dictionary<int, Slot> slotsDictionary
+      public int Count
+      public bool IsReadOnly

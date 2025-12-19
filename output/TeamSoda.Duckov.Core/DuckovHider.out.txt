@@ -1,0 +1,14 @@
+public class DuckovHider: HiderBehavior
+
+  6 ¸ö Method:
+      protected override void Awake()
+      private void OnDestroy()
+      protected override void OnHide()
+      protected override void OnReveal()
+      private async UniTask HideDelay()
+      private void OnMainCharacterDie(DamageInfo damageInfo)
+  4 ¸ö Field:
+      public CharacterMainControl character
+      private float hideDelay
+      private bool targetHide
+      private bool mainCharacterDied
