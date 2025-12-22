@@ -9,12 +9,27 @@ public class AIMainBrain: MonoBehaviour
       public void Awake()
       private void Start()
       private void Update()
-      private void DoSearch(SearchTaskContext context)
+      private void DoSearch(AIMainBrain.SearchTaskContext context)
       public void AddSearchTask(Vector3 center, Vector3 dir, float searchAngle, float searchDistance, Teams selfTeam, bool checkObsticle, bool thermalOn, bool ignoreFowBlockLayer, int searchPickupID, Action<DamageReceiver, InteractablePickup> callback)
-      private void DoCheckObsticle(CheckObsticleTaskContext context)
+      private void DoCheckObsticle(AIMainBrain.CheckObsticleTaskContext context)
       public void AddCheckObsticleTask(Vector3 start, Vector3 end, bool thermalOn, bool ignoreFowBlockLayer, Action<bool> callback)
       private bool CheckObsticle(Vector3 startPoint, Vector3 endPoint, bool thermalOn, bool ignoreFowBlockLayer)
   30 ¸ö Field:
+      public static event Action<AISound> OnSoundSpawned
+      public static event Action<AISound> OnPlayerHearSound
+      private Queue<AIMainBrain.SearchTaskContext> searchTasks
+      private Queue<AIMainBrain.CheckObsticleTaskContext> checkObsticleTasks
+      private LayerMask dmgReceiverLayers
+      private LayerMask interactLayers
+      private LayerMask obsticleLayers
+      private LayerMask obsticleLayersWithThermal
+      private Collider[] cols
+      private RaycastHit[] ObsHits
+      public int maxSeachCount
+      public int maxCheckObsticleCount
+      private static CharacterMainControl _mc
+      private int fowBlockLayer
+      private DamageReceiver dmgReceiverTemp
       public Vector3 searchCenter
       public Vector3 searchDirection
       public float searchAngle
@@ -30,20 +45,5 @@ public class AIMainBrain: MonoBehaviour
       public bool thermalOn
       public bool ignoreFowBlockLayer
       public Action<bool> onCheckFinishCallback
-      private Queue<SearchTaskContext> searchTasks
-      private Queue<CheckObsticleTaskContext> checkObsticleTasks
-      private LayerMask dmgReceiverLayers
-      private LayerMask interactLayers
-      private LayerMask obsticleLayers
-      private LayerMask obsticleLayersWithThermal
-      private Collider[] cols
-      private RaycastHit[] ObsHits
-      public int maxSeachCount
-      public int maxCheckObsticleCount
-      private static CharacterMainControl _mc
-      private int fowBlockLayer
-      private DamageReceiver dmgReceiverTemp
-      public static event Action<AISound> OnSoundSpawned
-      public static event Action<AISound> OnPlayerHearSound
   1 ¸ö Property:
       private static CharacterMainControl mainCharacter

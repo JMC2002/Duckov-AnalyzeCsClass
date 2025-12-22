@@ -1,0 +1,10 @@
+namespace Duckov.BasketBalls
+public class Basket: MonoBehaviour
+	
+  2 ¸ö Method:
+      private void Awake()
+      private void OnGoal(BasketBall ball)
+  3 ¸ö Field:
+      private Animator netAnimator
+      private BasketTrigger trigger
+      public UnityEvent<BasketBall> onGoal

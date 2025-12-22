@@ -1,0 +1,5 @@
+namespace Duckov.CreditsUtility
+public class HorizontalEntry: MonoBehaviour
+	
+  1 ¸ö Method:
+      public void Setup(params string[] args)

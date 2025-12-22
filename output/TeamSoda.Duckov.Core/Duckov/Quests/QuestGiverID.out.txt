@@ -1,0 +1,2 @@
+namespace Duckov.Quests
+public enum QuestGiverID

@@ -1,0 +1,7 @@
+namespace ItemStatsSystem
+public class UpdateTrigger: EffectTrigger
+	
+  1 ¸ö Method:
+      private void Update()
+  1 ¸ö Property:
+      public override string DisplayName

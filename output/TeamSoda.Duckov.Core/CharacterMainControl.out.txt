@@ -2,7 +2,7 @@ public class CharacterMainControl: MonoBehaviour
 
   1 个 ClassLike:
       public enum WeightStates
-  101 个 Method:
+  100 个 Method:
       public float GetAimRange()
       public Vector3 GetCurrentAimPoint()
       public Vector3 GetCurrentSkillAimPoint()
@@ -66,7 +66,6 @@ public class CharacterMainControl: MonoBehaviour
       private void UpdateAction(float deltaTime)
       private void UpdateStats(float deltaTime)
       public void TickVariables(float deltaTime, float tickTime)
-      public void UpdateCold()
       public void UpdateThirstyAndStarve()
       public void UpdateWeightState()
       public bool PickupItem(Item item)
@@ -104,7 +103,8 @@ public class CharacterMainControl: MonoBehaviour
       public static float EquipmentRepairLossFactor()
       private float GetFloatStatValue(int hash)
       public void UseStamina(float value)
-  105 个 Field:
+  99 个 Field:
+      public static event Action<Item> OnMainCharacterStartUseItem
       public CharacterRandomPreset characterPreset
       private AudioManager.VoiceType audioVoiceType
       private AudioManager.FootStepMaterialType footStepMaterialType
@@ -114,7 +114,6 @@ public class CharacterMainControl: MonoBehaviour
       public ItemAgentHolder agentHolder
       public CA_Carry carryAction
       public CharacterModel characterModel
-      public AICharacterController aiCharacterController
       private bool hidden
       public bool dropBoxOnDead
       public InteractableLootbox deadLootBoxPrefab
@@ -145,14 +144,12 @@ public class CharacterMainControl: MonoBehaviour
       public DamageReceiver mainDamageReceiver
       private HashSet<GameObject> nearByHalfObsticles
       private int weaponSwitchIndex
-      private WeightStates weightState
+      private CharacterMainControl.WeightStates weightState
       private int meleeWeaponSlotHash
       private int primWeaponSlotHash
       private int secWeaponSlotHash
       private float staminaRecoverTimer
       private float variableTickTimer
-      private float coldTickTimer
-      private float coldDialogTimer
       private string hideShowRecorder
       private int walkSpeedHash
       private int walkAccHash
@@ -160,8 +157,6 @@ public class CharacterMainControl: MonoBehaviour
       private int stormProtectionHash
       private int waterEnergyRecoverMultiplierHash
       private int gunDistanceMultiplierHash
-      private int ColdProtectionHash
-      private int HeatProtectionHash
       private int moveabilityHash
       private int runAccHash
       private int turnSpeedHash
@@ -197,7 +192,6 @@ public class CharacterMainControl: MonoBehaviour
       private static int meleeCritRateGainHash
       private static int meleeCritDamageGainHash
       private static int gunDamageMultiplierHash
-      private static int gunShootSpeedMultiplierHash
       private static int reloadSpeedGainHash
       private static int gunCritRateGainHash
       private static int gunBulletSpeedMultiplierHash
@@ -209,8 +203,7 @@ public class CharacterMainControl: MonoBehaviour
       private int walkSoundRangeHash
       private int runSoundRangeHash
       private static int flashLightHash
-      public static event Action<Item> OnMainCharacterStartUseItem
-  84 个 Property:
+  80 个 Property:
       public AudioManager.VoiceType AudioVoiceType
       public AudioManager.FootStepMaterialType FootStepMaterialType
       public static CharacterMainControl Main
@@ -241,13 +234,10 @@ public class CharacterMainControl: MonoBehaviour
       public float CharacterWalkSpeed
       public float AdsWalkSpeedMultiplier
       public float CharacterOriginWalkSpeed
-      public float CharacterOriginRunSpeed
       public float CharacterRunSpeed
       public float StormProtection
       public float WaterEnergyRecoverMultiplier
       public float GunDistanceMultiplier
-      public float ColdProtection
-      public float HeatProtection
       public float CharacterMoveability
       public float CharacterRunAcc
       public float CharacterTurnSpeed
@@ -282,7 +272,6 @@ public class CharacterMainControl: MonoBehaviour
       public float MeleeCritRateGain
       public float MeleeCritDamageGain
       public float GunDamageMultiplier
-      public float GunShootSpeedMultiplier
       public float ReloadSpeedGain
       public float GunCritRateGain
       public float GunCritDamageGain

@@ -1,0 +1,30 @@
+namespace Fishing.UI
+public class BaitSelectPanel: MonoBehaviour, ISingleSelectionMenu<BaitSelectPanelEntry>
+	
+  12 ¸ö Method:
+      internal UniTask DoBaitSelection(ICollection<Item> availableBaits, Func<Item, bool> baitSelectionResultCallback)
+      private void Open()
+      private void Close()
+      private UniTask<Item> WaitForSelection()
+      private void Setup(ICollection<Item> availableBaits)
+      internal void NotifyStop()
+      private void Awake()
+      private void OnConfirmButtonClicked()
+      private void OnCancelButtonClicked()
+      internal void NotifySelect(BaitSelectPanelEntry baitSelectPanelEntry)
+      public BaitSelectPanelEntry GetSelection()
+      public bool SetSelection(BaitSelectPanelEntry selection)
+  10 ¸ö Field:
+      private FadeGroup fadeGroup
+      private Button confirmButton
+      private Button cancelButton
+      private ItemDetailsDisplay details
+      private FadeGroup detailsFadeGroup
+      private BaitSelectPanelEntry entry
+      private PrefabPool<BaitSelectPanelEntry> _entryPool
+      private BaitSelectPanelEntry selectedEntry
+      private bool canceled
+      private bool confirmed
+  2 ¸ö Property:
+      private PrefabPool<BaitSelectPanelEntry> EntryPool
+      private Item SelectedItem

@@ -1,0 +1,44 @@
+namespace Duckov.Modding
+public class ModManager: MonoBehaviour
+	
+  24 个 Method:
+      private List<string> GetActiveModList()
+      private void SaveActiveModList()
+      public static List<string> LoadLastActiveModList()
+      public static List<string> GetCurrentActiveModList()
+      private void Awake()
+      private void OnDestroy()
+      private void OnCollectSaveData()
+      private void Start()
+      public void ScanAndActivateMods()
+      private static void SortModInfosByPriority()
+      private static void Save<T>(string key, T value)
+      public static void SetModPriority(string name, int priority)
+      public static int GetModPriority(string name)
+      private void SetShouldActivateMod(ModInfo info, bool value)
+      private bool ShouldActivateMod(ModInfo info)
+      public static void Rescan()
+      private static void RegeneratePriorities()
+      public static bool Reorder(int fromIndex, int toIndex)
+      public static bool TryProcessModFolder(string path, out ModInfo info, bool isSteamItem = false, ulong publishedFileId = 0UL)
+      public static bool IsModActive(ModInfo info, out ModBehaviour instance)
+      public ModBehaviour GetActiveModBehaviour(ModInfo info)
+      public void DeactivateMod(ModInfo info)
+      public ModBehaviour ActivateMod(ModInfo info)
+      internal static void WriteModInfoINI(ModInfo modInfo)
+  8 个 Field:
+      public static event Action OnReorder
+      public static event Action<List<ModInfo>> OnScan
+      public static event Action<ModInfo, ModBehaviour> OnModActivated
+      public static event Action<ModInfo, ModBehaviour> OnModWillBeDeactivated
+      public static event Action OnModStatusChanged
+      private Transform modParent
+      public static Action<string, string> OnModLoadingFailed
+      private static ES3Settings _settings
+  4 个 Property:
+      public static bool AllowActivatingMod
+      private static ES3Settings settings
+      public static string DefaultModFolderPath
+      public static ModManager Instance
+  1 个 Constant:
+      private const string LoadedModListSaveKey

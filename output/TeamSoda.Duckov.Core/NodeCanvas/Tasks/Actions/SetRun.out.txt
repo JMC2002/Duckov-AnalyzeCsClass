@@ -1,0 +1,12 @@
+namespace NodeCanvas.Tasks.Actions
+public class SetRun: ActionTask<AICharacterController>
+	
+  4 ¸ö Method:
+      protected override string OnInit()
+      protected override void OnExecute()
+      protected override void OnStop()
+      protected override void OnPause()
+  1 ¸ö Field:
+      public BBParameter<bool> run
+  1 ¸ö Property:
+      protected override string info

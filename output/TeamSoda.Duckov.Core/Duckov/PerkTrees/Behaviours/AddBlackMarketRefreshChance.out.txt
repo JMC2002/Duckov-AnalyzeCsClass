@@ -1,0 +1,10 @@
+namespace Duckov.PerkTrees.Behaviours
+public class AddBlackMarketRefreshChance: PerkBehaviour
+	
+  4 ¸ö Method:
+      protected override void OnAwake()
+      protected override void OnOnDestroy()
+      private void HandleEvent(BlackMarket.OnRequestMaxRefreshChanceEventContext context)
+      protected override void OnUnlocked()
+  1 ¸ö Field:
+      private int addAmount

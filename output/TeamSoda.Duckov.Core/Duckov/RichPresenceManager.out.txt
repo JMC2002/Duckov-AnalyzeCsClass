@@ -1,6 +1,6 @@
 namespace Duckov
 public class RichPresenceManager: MonoBehaviour
-
+	
   8 ¸ö Method:
       private void InvokeChangeEvent()
       private void Awake()

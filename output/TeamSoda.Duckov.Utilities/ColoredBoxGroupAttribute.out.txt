@@ -1,0 +1,10 @@
+namespace Duckov.Utilities
+public class ColoredBoxGroupAttribute: PropertyGroupAttribute
+	
+  1 ¸ö Method:
+      protected override void CombineValuesWith(PropertyGroupAttribute other)
+  4 ¸ö Field:
+      public float R
+      public float G
+      public float B
+      public float A

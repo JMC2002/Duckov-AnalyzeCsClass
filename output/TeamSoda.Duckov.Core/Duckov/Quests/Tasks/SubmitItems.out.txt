@@ -1,0 +1,35 @@
+namespace Duckov.Quests.Tasks
+public class SubmitItems: Task
+	
+  11 ¸ö Method:
+      protected override void OnInit()
+      private void OnDestroy()
+      private void OnPlayerStorageChanged(PlayerStorage storage, Inventory inventory, int index)
+      private void OnMainCharacterInventoryChanged(CharacterMainControl control, Inventory inventory, int index)
+      private bool CheckItemEnough()
+      private void SetMapElementVisable(bool visable)
+      public void Submit(Item item)
+      protected override bool CheckFinished()
+      public override object GenerateSaveData()
+      public override void SetupSaveData(object data)
+      public override void Interact()
+  6 ¸ö Field:
+      public static event Action<SubmitItems> onItemEnough
+      private int itemTypeID
+      private int requiredAmount
+      private int submittedAmount
+      private ItemMetaData? _cachedMeta
+      private MapElementForTask mapElement
+  12 ¸ö Property:
+      public int ItemTypeID
+      private ItemMetaData CachedMeta
+      private string descriptionFormatKey
+      private string DescriptionFormat
+      private string havingAmountFormatKey
+      private string HavingAmountFormat
+      public override string Description
+      public override Sprite Icon
+      public override bool Interactable
+      public override bool PossibleValidInteraction
+      public override string InteractText
+      public override bool NeedInspection

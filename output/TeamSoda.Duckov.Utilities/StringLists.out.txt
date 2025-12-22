@@ -1,0 +1,13 @@
+namespace Duckov.Utilities
+public class StringLists: ScriptableObject
+	
+  4 ¸ö Field:
+      private static StringLists cachedDefault
+      private StringList statKeys
+      private StringList slotNames
+      private StringList itemAgentKeys
+  4 ¸ö Property:
+      private static StringLists Default
+      public static StringList StatKeys
+      public static StringList SlotNames
+      public static StringList ItemAgentKeys

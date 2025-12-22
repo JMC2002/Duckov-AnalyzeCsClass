@@ -4,28 +4,25 @@ public class CraftView: View, ISingleSelectionMenu<CraftView_ListEntry>
       public struct FilterInfo
   19 ¸ö Method:
       public void SetFilter(int index)
-      private static bool CheckFilter(CraftingFormula formula, FilterInfo filter)
+      private static bool CheckFilter(CraftingFormula formula, CraftView.FilterInfo filter)
       protected override void Awake()
       private void OnCraftButtonClicked()
-      private async UniTask CraftTask()
+      private UniTask CraftTask()
       private void OnCraftFinished(Item item)
       protected override void OnOpen()
       protected override void OnClose()
       public static void SetupAndOpenView(Predicate<CraftingFormula> predicate)
       public void SetupAndOpen(Predicate<CraftingFormula> predicate)
       private void RefreshList(Predicate<CraftingFormula> predicate)
-      private int CountFilter(FilterInfo filter)
+      private int CountFilter(CraftView.FilterInfo filter)
       private void RefreshFilterButtons()
       public CraftView_ListEntry GetSelection()
       public bool SetSelection(CraftView_ListEntry selection)
       private void RefreshDetails()
       private int NewRefreshToken()
-      private async UniTask RefreshTask(int token)
+      private UniTask RefreshTask(int token)
       private void TestShow()
   25 ¸ö Field:
-      public string displayNameKey
-      public Sprite icon
-      public Tag[] requireTags
       private FadeGroup fadeGroup
       private CraftView_ListEntry listEntryTemplate
       private PrefabPool<CraftView_ListEntry> _listEntryPool
@@ -40,7 +37,7 @@ public class CraftView: View, ISingleSelectionMenu<CraftView_ListEntry>
       private Button craftButton
       private string notificationFormatKey
       private CraftViewFilterBtnEntry filterBtnTemplate
-      private FilterInfo[] filters
+      private CraftView.FilterInfo[] filters
       private PrefabPool<CraftViewFilterBtnEntry> _filterBtnPool
       private int currentFilterIndex
       private bool crafting
@@ -48,9 +45,12 @@ public class CraftView: View, ISingleSelectionMenu<CraftView_ListEntry>
       private CraftView_ListEntry selectedEntry
       private int refreshTaskToken
       private Item tempItem
+      public string displayNameKey
+      public Sprite icon
+      public Tag[] requireTags
   5 ¸ö Property:
       private static CraftView Instance
       private PrefabPool<CraftView_ListEntry> ListEntryPool
       private string NotificationFormat
       private PrefabPool<CraftViewFilterBtnEntry> FilterBtnPool
-      private FilterInfo CurrentFilter
+      private CraftView.FilterInfo CurrentFilter

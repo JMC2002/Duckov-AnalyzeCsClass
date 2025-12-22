@@ -7,7 +7,7 @@ public class CA_Interact: CharacterActionBase, IProgress
       public void SetInteractableTarget(InteractableBase interactable)
       protected override bool OnStart()
       protected override void OnUpdateAction(float deltaTime)
-      public override ActionPriorities ActionPriority()
+      public override CharacterActionBase.ActionPriorities ActionPriority()
       public override bool CanMove()
       protected override void OnStop()
       public override bool CanRun()

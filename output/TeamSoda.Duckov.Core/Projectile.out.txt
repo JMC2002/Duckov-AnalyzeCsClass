@@ -10,7 +10,7 @@ public class Projectile: MonoBehaviour
       public void Init(ProjectileContext _context)
       private void UpdateMoveAndCheck()
       private void UpdateAimDirection()
-  29 ¸ö Field:
+  28 ¸ö Field:
       public ProjectileContext context
       public float radius
       private float traveledDistance
@@ -35,7 +35,6 @@ public class Projectile: MonoBehaviour
       public bool random
       public MeshRenderer mesh
       public string colorName
-      private float traceLerpValue
       private bool inited
       private DamageReceiver _dmgReceiverTemp
       private float _distanceThisFrame

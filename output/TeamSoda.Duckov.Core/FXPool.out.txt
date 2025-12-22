@@ -3,6 +3,12 @@ public class FXPool: MonoBehaviour
   1 个 ClassLike:
       private class Pool
   13 个 Method:
+      private void Awake()
+      private void FixedUpdate()
+      private FXPool.Pool GetOrCreatePool(ParticleSystem prefab)
+      private static ParticleSystem Get(ParticleSystem prefab)
+      public static ParticleSystem Play(ParticleSystem prefab, Vector3 postion, Quaternion rotation)
+      public static ParticleSystem Play(ParticleSystem prefab, Vector3 postion, Quaternion rotation, Color color)
       private ParticleSystem Create()
       public void OnEntryGet(ParticleSystem obj)
       public void OnEntryRelease(ParticleSystem obj)
@@ -10,13 +16,8 @@ public class FXPool: MonoBehaviour
       public ParticleSystem Get()
       public void Release(ParticleSystem obj)
       public void Tick()
-      private void Awake()
-      private void FixedUpdate()
-      private Pool GetOrCreatePool(ParticleSystem prefab)
-      private static ParticleSystem Get(ParticleSystem prefab)
-      public static ParticleSystem Play(ParticleSystem prefab, Vector3 postion, Quaternion rotation)
-      public static ParticleSystem Play(ParticleSystem prefab, Vector3 postion, Quaternion rotation, Color color)
   8 个 Field:
+      private Dictionary<ParticleSystem, FXPool.Pool> poolsDic
       private ParticleSystem prefab
       private Transform parent
       private ObjectPool<ParticleSystem> pool
@@ -24,6 +25,5 @@ public class FXPool: MonoBehaviour
       private Action<ParticleSystem> onGet
       private Action<ParticleSystem> onRelease
       private Action<ParticleSystem> onDestroy
-      private Dictionary<ParticleSystem, Pool> poolsDic
   1 个 Property:
       public static FXPool Instance

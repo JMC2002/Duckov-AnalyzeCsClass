@@ -1,0 +1,23 @@
+namespace Duckov.Utilities
+public class Tag: ScriptableObject
+	
+  3 ¸ö Method:
+      public override string ToString()
+      private static int GetHash(string name)
+      public static bool Match(Tag tag, string name)
+  5 ¸ö Field:
+      private bool show
+      private bool showDescription
+      private Color color
+      private int priority
+      private int? _hash
+  9 ¸ö Property:
+      private string displayNameKey
+      private string descriptionKey
+      public bool Show
+      public bool ShowDescription
+      public int Priority
+      public string DisplayName
+      public string Description
+      public int Hash
+      public Color Color

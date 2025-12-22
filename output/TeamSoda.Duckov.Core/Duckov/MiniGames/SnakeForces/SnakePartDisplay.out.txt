@@ -1,0 +1,15 @@
+namespace Duckov.MiniGames.SnakeForces
+public class SnakePartDisplay: MiniGameBehaviour
+	
+  5 ¸ö Method:
+      internal void Setup(SnakeDisplay master, SnakeForce.Part part)
+      private void OnTargetMove(SnakeForce.Part part)
+      private void DoMove(Vector3 vector3)
+      internal void Punch()
+      internal void PunchColor(Color color)
+  2 ¸ö Field:
+      private Image image
+      private Vector2Int cachedCoord
+  2 ¸ö Property:
+      public SnakeDisplay Master
+      public SnakeForce.Part Target

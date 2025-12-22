@@ -1,0 +1,6 @@
+namespace SodaCraft.Localizations
+public static class CSVUtilities
+  3 ¸ö Method:
+      public static void SaveAsCSV(List<List<string>> table, string path)
+      public static List<List<string>> ReadCSV(string csvContent)
+      public static string ToCSVString(this List<List<string>> table)

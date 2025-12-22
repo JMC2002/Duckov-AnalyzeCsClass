@@ -1,0 +1,19 @@
+namespace SodaCraft.Localizations
+public class TextLocalizor: MonoBehaviour
+	
+  9 ¸ö Method:
+      private void Awake()
+      private void OnEnable()
+      private void OnDestroy()
+      private void OnSetLanguage(SystemLanguage language)
+      private void Refresh()
+      private void RefreshDataModel()
+      private void RefreshReferences()
+      private void RefreshTexts()
+      private void OnValidate()
+  3 ¸ö Field:
+      private Text text
+      private TMP_Text tmpText
+      private string key
+  1 ¸ö Property:
+      public string Key

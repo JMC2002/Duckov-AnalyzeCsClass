@@ -1,0 +1,10 @@
+namespace Duckov.UI.Animations
+public class ChangeGraphicsColorToggle: ToggleComponent
+	
+  1 ¸ö Method:
+      protected override void OnSetToggle(ToggleAnimation master, bool value)
+  4 ¸ö Field:
+      private Image image
+      private Color trueColor
+      private Color falseColor
+      private float duration

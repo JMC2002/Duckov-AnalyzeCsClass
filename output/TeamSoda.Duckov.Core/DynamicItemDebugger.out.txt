@@ -4,6 +4,6 @@ public class DynamicItemDebugger: MonoBehaviour
       private void Awake()
       private void Add()
       private void CreateCorresponding()
-      private async UniTask CreateTask()
+      private UniTask CreateTask()
   1 ¸ö Field:
       private List<Item> prefabs

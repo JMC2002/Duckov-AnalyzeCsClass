@@ -13,7 +13,7 @@ public class CharacterSpawnerRoot: MonoBehaviour
       private void DoOnTriggerEnter()
       private void DoOnTriggerLeave()
       public void AddCreatedCharacter(CharacterMainControl c)
-  26 ¸ö Field:
+  24 ¸ö Field:
       public bool needTrigger
       public OnTriggerEnterEvent trigger
       private bool playerInTrigger
@@ -21,8 +21,6 @@ public class CharacterSpawnerRoot: MonoBehaviour
       private bool inited
       public float spawnChance
       public float minDistanceToPlayer
-      public float maxDistanceToPlayer
-      public bool forceTracePlayer
       public bool useTimeOfDay
       public float whenToSpawn
       public float spawnTimeRangeFrom

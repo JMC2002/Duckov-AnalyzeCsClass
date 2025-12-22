@@ -2,7 +2,7 @@ public class ItemAgent_Gun: DuckovItemAgent
 
   1 个 ClassLike:
       public enum GunStates
-  36 个 Method:
+  34 个 Method:
       private void Update()
       protected override void OnDestroy()
       private void UpdateScatterFactor()
@@ -12,7 +12,6 @@ public class ItemAgent_Gun: DuckovItemAgent
       private void UpdateAds()
       private void TransToBurstCooling()
       private void TransToReady()
-      private void SearchTraceTarget()
       private void TransToFire(bool isFirstShot)
       private void TransToBurstEachShotCooling()
       private void TransToEmpty()
@@ -38,16 +37,12 @@ public class ItemAgent_Gun: DuckovItemAgent
       public void SetMuzzleSocketLocalPos(Vector3 pos)
       public void SetTecSocketLocalPosition(Vector3 pos)
       public static ItemAgent_Gun BuildAgent(GameObject modelPfb)
-      static Transform CreateSocket(Transform _socketParent, string name)
-  89 个 Field:
+  82 个 Field:
+      public static event Action<ItemAgent_Gun> OnMainCharacterShootEvent
       private Item _bulletItem
       private static int ShootSpeedHash
-      private static int ShootSpeedGainEachShootHash
-      private static int ShootSpeedGainByShootMaxHash
-      private float shootSpeedGainOverShoot
       private static int ReloadTimeHash
       private static int CapacityHash
-      private static int TraceAbilityHash
       private static int DurabilityHash
       private float maxDurability
       private static int DamageHash
@@ -102,7 +97,6 @@ public class ItemAgent_Gun: DuckovItemAgent
       private int muzzleIndex
       public GameObject loadedVisualObject
       private float adsValue
-      private CharacterMainControl traceTarget
       private Transform _mz1
       private Transform _mz2
       private bool hasMz2
@@ -115,12 +109,10 @@ public class ItemAgent_Gun: DuckovItemAgent
       private float scatterBeforeControl
       private EventInstance? _shootSoundEvent
       private EventInstance? _reloadSoundLoopEvent
-      private Collider[] traceColliders
-      private LayerMask damageReceiverLayermask
       private float stateTimer
       private int burstCounter
       private Projectile projInst
-      private GunStates gunState
+      private ItemAgent_Gun.GunStates gunState
       private bool needAutoReload
       private bool loadBulletsStarted
       private float _recoilMoveValue
@@ -128,15 +120,11 @@ public class ItemAgent_Gun: DuckovItemAgent
       private float _recoilBackSpeed
       private float _recoilRecoverSpeed
       private bool _recoilBack
-      public static event Action<ItemAgent_Gun> OnMainCharacterShootEvent
-  74 个 Property:
+  69 个 Property:
       public Item BulletItem
       public float ShootSpeed
-      public float ShootSpeedGainEachShoot
-      public float ShootSpeedGainByShootMax
       public float ReloadTime
       public int Capacity
-      public float TraceAbility
       public float durabilityPercent
       public float Durability
       public float MaxDurability
@@ -185,7 +173,6 @@ public class ItemAgent_Gun: DuckovItemAgent
       public float BulletArmorBreakGain
       public float bulletDurabilityCost
       public float CharacterDamageMultiplier
-      public float CharacterShootSpeedMultiplier
       public float CharacterReloadSpeedGain
       public float CharacterGunCritRateGain
       public float CharacterGunCritDamageGain
@@ -193,7 +180,6 @@ public class ItemAgent_Gun: DuckovItemAgent
       public float CharacterScatterMultiplier
       public int BulletCount
       public float AdsValue
-      public CharacterMainControl TraceTarget
       public Transform muzzle
       private Transform muzzle1
       private Transform muzzle2
@@ -203,4 +189,4 @@ public class ItemAgent_Gun: DuckovItemAgent
       public float CurrentScatter
       public float MinScatter
       public float StateTimer
-      public GunStates GunState
+      public ItemAgent_Gun.GunStates GunState

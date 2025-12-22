@@ -1,0 +1,25 @@
+namespace ItemStatsSystem.Data
+public class ItemTreeData
+  3 个 ClassLike:
+      public class DataEntry
+      public class SlotInstanceIDPair
+      public class InventoryDataEntry
+  4 个 Method:
+      public static ItemTreeData FromItem(Item item)
+      public static UniTask<Item> InstantiateAsync(ItemTreeData data)
+      public ItemTreeData.DataEntry GetEntry(int instanceID)
+      public override string ToString()
+  8 个 Field:
+      public static event Action<Item> OnItemLoaded
+      public int rootInstanceID
+      public int instanceID
+      public int typeID
+      public string slot
+      public int instanceID
+      public int position
+      public int instanceID
+  4 个 Property:
+      public ItemTreeData.DataEntry RootData
+      public int RootTypeID
+      public string TypeName
+      public int StackCount

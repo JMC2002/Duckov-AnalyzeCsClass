@@ -1,0 +1,14 @@
+namespace ItemStatsSystem
+public class EffectTrigger: EffectComponent, ISelfValidator
+	
+  7 ¸ö Method:
+      protected void Trigger(bool positive = true)
+      protected void TriggerPositive()
+      protected void TriggerNegative()
+      public override void Validate(SelfValidationResult result)
+      protected virtual void OnDisable()
+      protected virtual void OnMasterSetTargetItem(Effect effect, Item item)
+      internal void NotifySetItem(Effect effect, Item targetItem)
+  2 ¸ö Property:
+      protected override Color ActiveLabelColor
+      public override string DisplayName

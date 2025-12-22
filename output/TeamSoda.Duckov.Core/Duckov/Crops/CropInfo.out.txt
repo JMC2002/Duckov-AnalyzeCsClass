@@ -1,0 +1,16 @@
+namespace Duckov.Crops
+public struct CropInfo
+  1 ¸ö Method:
+      public int GetProduct(ProductRanking ranking)
+  8 ¸ö Field:
+      public string id
+      public GameObject displayPrefab
+      public int resultPoor
+      public int resultNormal
+      public int resultGood
+      private ItemMetaData? _normalMetaData
+      public int resultAmount
+      public long totalGrowTicks
+  2 ¸ö Property:
+      public string DisplayName
+      public TimeSpan GrowTime

@@ -1,0 +1,8 @@
+namespace Duckov.CreditsUtility
+public class ImageEntry: MonoBehaviour
+	
+  1 ¸ö Method:
+      internal void Setup(string[] elements)
+  2 ¸ö Field:
+      private Image image
+      private LayoutElement layoutElement

@@ -13,22 +13,18 @@ public class Door: MonoBehaviour
       public void Close()
       public void ForceSetClosed(bool _closed, bool triggerEvent)
       private void SetClosed(bool _closed, bool triggerEvent = true)
-      private List<DoorTransformInfo> GetCurrentTransformInfos()
-      public void SetParts(List<DoorTransformInfo> transforms)
+      private List<Door.DoorTransformInfo> GetCurrentTransformInfos()
+      public void SetParts(List<Door.DoorTransformInfo> transforms)
       private void SetPartsByLerpValue(bool setActivation)
       private int GetKey()
   22 ¸ö Field:
-      public Transform target
-      public Vector3 localPosition
-      public quaternion localRotation
-      public bool activation
       private bool closed
       private float closedLerpValue
       private float targetLerpValue
       private float lerpTime
       private List<Transform> doorParts
-      private List<DoorTransformInfo> closeTransforms
-      private List<DoorTransformInfo> openTransforms
+      private List<Door.DoorTransformInfo> closeTransforms
+      private List<Door.DoorTransformInfo> openTransforms
       private DoorTrigger doorTrigger
       private Collider doorCollider
       private bool activeNavmeshCutWhenDoorIsOpen
@@ -40,6 +36,10 @@ public class Door: MonoBehaviour
       public string closeSound
       public UnityEvent OnOpenEvent
       public UnityEvent OnCloseEvent
+      public Transform target
+      public Vector3 localPosition
+      public quaternion localRotation
+      public bool activation
   3 ¸ö Property:
       public bool IsOpen
       public bool NoRequireItem

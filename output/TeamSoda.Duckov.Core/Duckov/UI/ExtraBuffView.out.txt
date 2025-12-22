@@ -1,0 +1,21 @@
+namespace Duckov.UI
+public class ExtraBuffView: View
+	
+  9 ¸ö Method:
+      protected override void OnOpen()
+      protected override void OnClose()
+      private void Setup()
+      private void TearDown()
+      private void OnAddBuff(CharacterBuffManager manager, Buff buff)
+      private void OnRemoveBuff(CharacterBuffManager manager, Buff buff)
+      private void Refresh()
+      internal void NotifyPointerEnter(ExtraBuffViewEntry extraBuffViewEntry)
+      internal void NotifyPointerExit(ExtraBuffViewEntry extraBuffViewEntry)
+  5 ¸ö Field:
+      private FadeGroup fadeGroup
+      private ExtraBuffViewHoverPanel hoverPanel
+      private ExtraBuffViewEntry entryTemplate
+      private PrefabPool<ExtraBuffViewEntry> _pool
+      private CharacterBuffManager buffManager
+  1 ¸ö Property:
+      private PrefabPool<ExtraBuffViewEntry> Pool

@@ -2,7 +2,7 @@ public class ItemStarterkit: InteractableBase
 
   10 ¸ö Method:
       protected override bool IsInteractable()
-      private async UniTask CacheItems()
+      private UniTask CacheItems()
       protected override void Awake()
       protected override void OnDestroy()
       private void OnStartedLoadingScene(SceneLoadingContext context)

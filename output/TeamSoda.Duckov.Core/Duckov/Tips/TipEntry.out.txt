@@ -1,0 +1,8 @@
+namespace Duckov.Tips
+internal struct TipEntry
+  1 ¸ö Field:
+      private string tipID
+  3 ¸ö Property:
+      public string TipID
+      public string DescriptionKey
+      public string Description

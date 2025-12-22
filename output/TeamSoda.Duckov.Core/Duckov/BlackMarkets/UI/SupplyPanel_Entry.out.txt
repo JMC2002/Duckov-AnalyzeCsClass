@@ -1,0 +1,29 @@
+namespace Duckov.BlackMarkets.UI
+public class SupplyPanel_Entry: MonoBehaviour, IPoolable
+	
+  10 ¸ö Method:
+      private bool CanInteract()
+      public void NotifyPooled()
+      public void NotifyReleased()
+      private void OnChanged(BlackMarket.DemandSupplyEntry entry)
+      internal void Setup(BlackMarket.DemandSupplyEntry target)
+      private void OnEnable()
+      private void OnDisable()
+      private void Awake()
+      private void OnDealButtonClicked()
+      private void Refresh()
+  10 ¸ö Field:
+      private TextMeshProUGUI titleDisplay
+      private CostDisplay costDisplay
+      private ItemAmountDisplay resultDisplay
+      private GameObject remainingInfoContainer
+      private TextMeshProUGUI remainingAmountDisplay
+      private GameObject canInteractIndicator
+      private GameObject outOfStockIndicator
+      private string titleFormatKey_Normal
+      private string titleFormatKey_Low
+      private Button dealButton
+  3 ¸ö Property:
+      public BlackMarket.DemandSupplyEntry Target
+      private string TitleFormatKey
+      private string TitleText

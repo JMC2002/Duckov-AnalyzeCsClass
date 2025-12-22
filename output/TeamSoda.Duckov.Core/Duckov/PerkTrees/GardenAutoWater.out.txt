@@ -1,0 +1,12 @@
+namespace Duckov.PerkTrees
+public class GardenAutoWater: PerkBehaviour, IGardenAutoWaterProvider
+	
+  3 ¸ö Method:
+      protected override void OnUnlocked()
+      protected override void OnOnDestroy()
+      public bool TakeEffect(string gardenID)
+  2 ¸ö Field:
+      private string descriptionKey
+      private string gardenID
+  1 ¸ö Property:
+      public override string Description

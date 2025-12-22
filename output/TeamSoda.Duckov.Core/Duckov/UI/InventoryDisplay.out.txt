@@ -1,0 +1,71 @@
+namespace Duckov.UI
+public class InventoryDisplay: MonoBehaviour, IPoolable
+	
+  28 ¸ö Method:
+      private void RegisterEvents()
+      private void UnregisterEvents()
+      private void OnTargetSetIndexLock(Inventory inventory, int index)
+      private void OnTargetSorted(Inventory inventory)
+      private void OnTargetContentChanged(Inventory inventory, int position)
+      private void RefreshCapacityText()
+      public void Setup(Inventory target, Func<Item, bool> funcShouldHighLight = null, Func<Item, bool> funcCanOperate = null, bool movable = false, Func<Item, bool> filter = null)
+      private void RefreshGridLayoutPreferredHeight()
+      public void SetPage(int page)
+      public void NextPage()
+      public void PreviousPage()
+      private void CacheIndexesToDisplay()
+      private UniTask LoadEntriesTask()
+      public void SetFilter(Func<Item, bool> filter)
+      private void Clear()
+      private void Awake()
+      private void OnSortButtonClicked()
+      private void OnEnable()
+      private void OnDisable()
+      private void Update()
+      private void OnCapacityChanged()
+      public bool IsShortcut(int index)
+      private InventoryEntry GetNewInventoryEntry()
+      internal void NotifyItemDoubleClicked(InventoryEntry inventoryEntry, PointerEventData data)
+      public void NotifyPooled()
+      public void NotifyReleased()
+      public void DisableItem(Item item)
+      internal bool EvaluateShouldHighlight(Item content)
+  25 ¸ö Field:
+      private InventoryEntry entryPrefab
+      private TextMeshProUGUI displayNameText
+      private TextMeshProUGUI capacityText
+      private string capacityTextFormat
+      private FadeGroup loadingIndcator
+      private FadeGroup contentFadeGroup
+      private GridLayoutGroup contentLayout
+      private LayoutElement gridLayoutElement
+      private GameObject placeHolder
+      private Transform entriesParent
+      private Button sortButton
+      private Vector2Int shortcutsRange
+      private bool editable
+      private bool showOperationButtons
+      private bool showSortButton
+      private bool usePages
+      private int itemsEachPage
+      public Func<Item, bool> filter
+      private PrefabPool<InventoryEntry> _entryPool
+      private Func<Item, bool> _func_ShouldHighlight
+      private Func<Item, bool> _func_CanOperate
+      private int cachedCapacity
+      private int activeTaskToken
+      private int cachedMaxPage
+      private int cachedSelectedPage
+  12 ¸ö Property:
+      private bool shortcuts
+      public bool UsePages
+      public bool Editable
+      public bool ShowOperationButtons
+      public bool Movable
+      public Inventory Target
+      private PrefabPool<InventoryEntry> EntryPool
+      public Func<Item, bool> Func_ShouldHighlight
+      public Func<Item, bool> Func_CanOperate
+      public bool ShowSortButton
+      public int MaxPage
+      public int SelectedPage

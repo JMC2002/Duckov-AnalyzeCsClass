@@ -1,0 +1,6 @@
+namespace Duckov.ItemBuilders
+public struct StatDesc
+  3 ¸ö Field:
+      public string key
+      public float value
+      public bool display

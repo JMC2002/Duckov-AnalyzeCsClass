@@ -1,0 +1,21 @@
+namespace ItemStatsSystem
+public struct ItemMetaData
+  12 ¸ö Field:
+      public int id
+      public int quality
+      public Tag[] tags
+      private string name
+      private string displayName
+      private string description
+      public int maxStackCount
+      public int defaultStackCount
+      public Sprite icon
+      public DisplayQuality displayQuality
+      public int priceEach
+      public string caliber
+  5 ¸ö Property:
+      public string Catagory
+      public string Name
+      public string DisplayNameKey
+      public string DisplayName
+      public string Description

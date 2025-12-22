@@ -5,7 +5,7 @@ public class Condition_CharacterLevel: Condition
   1 ¸ö Method:
       public override bool Evaluate()
   2 ¸ö Field:
-      private Relation relation
+      private Condition_CharacterLevel.Relation relation
       private int level
   3 ¸ö Property:
       private string DisplayTextFormatKey

@@ -1,0 +1,35 @@
+namespace Duckov.Modding.UI
+public class ModEntry: MonoBehaviour
+	
+  13 ¸ö Method:
+      private void Awake()
+      private void OnButtonReorderUpClicked()
+      private void OnButtonReorderDownClicked()
+      private void OnDestroy()
+      private void OnModLoadingFailed(string dllPath, string message)
+      private void OnUploadButtonClicked()
+      private void OnToggleButtonClicked()
+      private void OnEnable()
+      private void OnDisable()
+      private void OnModStatusChanged()
+      private void RefreshStatus()
+      private void RefreshInfo()
+      public void Setup(ModManagerUI master, ModInfo modInfo, int index)
+  17 ¸ö Field:
+      private TextMeshProUGUI textTitle
+      private TextMeshProUGUI textName
+      private TextMeshProUGUI textDescription
+      private RawImage preview
+      private GameObject activeIndicator
+      private GameObject nameCollisionIndicator
+      private Button toggleButton
+      private GameObject steamItemIndicator
+      private GameObject steamItemOwnerIndicator
+      private GameObject notSteamItemIndicator
+      private Button uploadButton
+      private GameObject failedIndicator
+      private Button btnReorderUp
+      private Button btnReorderDown
+      private int index
+      private ModManagerUI master
+      private ModInfo info

@@ -1,0 +1,29 @@
+namespace Duckov.UI
+public class ScrollViewMaxHeight: UIBehaviour, ILayoutElement
+	
+  7 ¸ö Method:
+      public virtual void CalculateLayoutInputHorizontal()
+      public virtual void CalculateLayoutInputVertical()
+      private void OnContentRectChange(RectTransform rectTransform)
+      protected override void OnEnable()
+      protected override void OnDisable()
+      private void Update()
+      protected void SetDirty()
+  8 ¸ö Field:
+      private ScrollRect scrollRect
+      private RectTransformChangeEventEmitter contentRectChangeEventEmitter
+      private int m_layoutPriority
+      private bool useTargetParentSize
+      private float targetParentHeight
+      private float parentLayoutMargin
+      private float maxHeight
+      private RectTransform _rectTransform
+  8 ¸ö Property:
+      public float preferredHeight
+      public virtual float minWidth
+      public virtual float minHeight
+      public virtual float preferredWidth
+      public virtual float flexibleWidth
+      public virtual float flexibleHeight
+      public virtual int layoutPriority
+      private RectTransform rectTransform

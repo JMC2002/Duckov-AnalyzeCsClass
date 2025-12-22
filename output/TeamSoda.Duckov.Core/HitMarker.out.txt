@@ -11,6 +11,8 @@ public class HitMarker: MonoBehaviour
       private void OnSimpleHealthKill(HealthSimpleBase health, DamageInfo dmgInfo)
       private void LateUpdate()
   15 ¸ö Field:
+      public static event Action OnHitMarker
+      public static event Action OnKillMarker
       public UnityEvent hitEvent
       public UnityEvent killEvent
       public Animator animator
@@ -24,7 +26,5 @@ public class HitMarker: MonoBehaviour
       public List<RectTransform> hitMarkerImages
       private float scatterOnHit
       private Camera _cam
-      public static event Action OnHitMarker
-      public static event Action OnKillMarker
   1 ¸ö Property:
       private Camera MainCam

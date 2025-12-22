@@ -1,0 +1,16 @@
+namespace ItemStatsSystem
+public class EffectComponent: MonoBehaviour, ISelfValidator
+	
+  4 ¸ö Method:
+      public virtual void Validate(SelfValidationResult result)
+      protected virtual void Awake()
+      private void Start()
+      private void RemoveThisComponent()
+  2 ¸ö Field:
+      private Effect master
+      private Empty label
+  4 ¸ö Property:
+      public Effect Master
+      public virtual string DisplayName
+      internal Color LabelColor
+      protected virtual Color ActiveLabelColor

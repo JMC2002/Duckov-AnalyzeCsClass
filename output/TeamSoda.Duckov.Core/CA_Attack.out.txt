@@ -1,7 +1,7 @@
 public class CA_Attack: CharacterActionBase, IProgress
 
   12 ¸ö Method:
-      public override ActionPriorities ActionPriority()
+      public override CharacterActionBase.ActionPriorities ActionPriority()
       public override bool CanMove()
       public override bool CanRun()
       public override bool CanUseHand()

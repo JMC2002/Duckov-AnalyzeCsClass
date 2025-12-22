@@ -1,6 +1,6 @@
 namespace Fishing
 public class FishingPool: ScriptableObject
-
+	
   1 ¸ö Method:
       public int GetRandom(WeightModifications[] modifications)
   1 ¸ö Field:

@@ -1,0 +1,11 @@
+namespace ItemStatsSystem.Data
+public class InventoryData
+  1 ¸ö ClassLike:
+      public class Entry
+  2 ¸ö Method:
+      public static InventoryData FromInventory(Inventory inventory)
+      public static UniTask LoadIntoInventory(InventoryData data, Inventory inventoryInstance)
+  3 ¸ö Field:
+      public int capacity
+      public int inventoryPosition
+      public ItemTreeData itemTreeData

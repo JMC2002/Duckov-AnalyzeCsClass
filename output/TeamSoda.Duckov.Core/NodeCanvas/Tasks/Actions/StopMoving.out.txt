@@ -1,0 +1,6 @@
+namespace NodeCanvas.Tasks.Actions
+public class StopMoving: ActionTask<AICharacterController>
+	
+  2 ¸ö Method:
+      protected override string OnInit()
+      protected override void OnExecute()

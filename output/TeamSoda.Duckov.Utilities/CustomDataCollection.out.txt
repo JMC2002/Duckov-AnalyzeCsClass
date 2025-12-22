@@ -1,0 +1,50 @@
+namespace Duckov.Utilities
+public class CustomDataCollection: ICollection<CustomData>, IEnumerable<CustomData>, IEnumerable
+	
+  39 ¸ö Method:
+      private void SetDirty()
+      private void RebuildDictionary()
+      public CustomData GetEntry(int hash)
+      public CustomData GetEntry(string key)
+      public void SetRaw(string key, CustomDataType type, byte[] bytes, bool createNewIfNotExist = true, bool display = false)
+      public void SetRaw(int hash, CustomDataType type, byte[] bytes)
+      public byte[] GetRawCopied(string key, byte[] defaultResult = null)
+      public byte[] GetRawCopied(int hash, byte[] defaultResult = null)
+      public float GetFloat(string key, float defaultResult = 0f)
+      public int GetInt(string key, int defaultResult = 0)
+      public bool GetBool(string key, bool defaultResult = false)
+      public string GetString(string key, string defaultResult = null)
+      public float GetFloat(int hash, float defaultResult = 0f)
+      public int GetInt(int hash, int defaultResult = 0)
+      public bool GetBool(int hash, bool defaultResult = false)
+      public string GetString(int hash, string defaultResult = null)
+      public void SetFloat(string key, float value, bool createNewIfNotExist = true)
+      public void SetInt(string key, int value, bool createNewIfNotExist = true)
+      public void SetBool(string key, bool value, bool createNewIfNotExist = true)
+      public void SetString(string key, string value, bool createNewIfNotExist = true)
+      public void SetFloat(int hash, float value)
+      public void SetInt(int hash, int value)
+      public void SetBool(int hash, bool value)
+      public void SetString(int hash, string value)
+      public void Set(string key, float value, bool createNewIfNotExist = true)
+      public void Set(string key, int value, bool createNewIfNotExist = true)
+      public void Set(string key, bool value, bool createNewIfNotExist = true)
+      public void Set(string key, string value, bool createNewIfNotExist = true)
+      public void Set(int hash, float value)
+      public void Set(int hash, int value)
+      public void Set(int hash, bool value)
+      public void Set(int hash, string value)
+      public void Add(CustomData item)
+      public void Clear()
+      public bool Contains(CustomData item)
+      public void CopyTo(CustomData[] array, int arrayIndex)
+      public bool Remove(CustomData item)
+      public IEnumerator<CustomData> GetEnumerator()
+      public void SetDisplay(string key, bool display)
+  2 ¸ö Field:
+      private bool dirty
+      private Dictionary<int, CustomData> _dictionary
+  3 ¸ö Property:
+      private Dictionary<int, CustomData> Dictionary
+      public int Count
+      public bool IsReadOnly

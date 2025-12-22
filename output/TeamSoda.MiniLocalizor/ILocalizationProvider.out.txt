@@ -1,0 +1,2 @@
+namespace MiniLocalizor
+public interface ILocalizationProvider

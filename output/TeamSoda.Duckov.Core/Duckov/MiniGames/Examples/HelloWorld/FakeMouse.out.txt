@@ -1,0 +1,10 @@
+namespace Duckov.MiniGames.Examples.HelloWorld
+public class FakeMouse: MiniGameBehaviour
+	
+  2 ¸ö Method:
+      private void Awake()
+      protected override void OnUpdate(float deltaTime)
+  3 ¸ö Field:
+      private float sensitivity
+      private RectTransform rectTransform
+      private RectTransform parentRectTransform

@@ -1,0 +1,29 @@
+namespace Duckov.Aquariums
+public class Aquarium: MonoBehaviour
+	
+  1 个 ClassLike:
+      private class ItemGraphicPair
+  10 个 Method:
+      private void Awake()
+      private void Start()
+      private void OnDestroy()
+      private UniTask Load()
+      private void OnChildChanged(Item item)
+      private void FixedUpdate()
+      private void Refresh()
+      private ItemGraphicInfo GetOrCreateGraphic(Item item)
+      public void Loot()
+      private void Save()
+  10 个 Field:
+      private string id
+      private Transform graphicsParent
+      private int aquariumItemTypeID
+      private Item aquariumItem
+      private bool loading
+      private bool loaded
+      private int loadToken
+      private bool dirty
+      public Item item
+      public ItemGraphicInfo graphic
+  1 个 Property:
+      private string ItemSaveKey

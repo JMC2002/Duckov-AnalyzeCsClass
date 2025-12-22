@@ -9,7 +9,7 @@ public class InputManager: MonoBehaviour
       private void Awake()
       public static void DisableInput(GameObject source)
       public static void ActiveInput(GameObject source)
-      public static void SetInputDevice(InputDevices _inputDevice)
+      public static void SetInputDevice(InputManager.InputDevices _inputDevice)
       private void UpdateCursor()
       private void Update()
       private void UpdateInputActived()
@@ -48,7 +48,10 @@ public class InputManager: MonoBehaviour
       public void AddRecoil(ItemAgent_Gun gun)
       private Vector2 ProcessMousePosViaRecoil(Vector2 mousePos, Vector2 mouseDelta, ItemAgent_Gun gun)
   53 ¸ö Field:
-      private static InputDevices inputDevice
+      public static event Action OnInputDeviceChanged
+      public static event Action<int> OnSwitchBulletTypeInput
+      public static event Action<int> OnSwitchWeaponInput
+      private static InputManager.InputDevices inputDevice
       public CharacterMainControl characterMainControl
       public AimTargetFinder aimTargetFinder
       public float runThreshold
@@ -98,11 +101,8 @@ public class InputManager: MonoBehaviour
       private float recoilTime
       private float recoilRecoverTime
       private Vector2 recoilThisShot
-      public static event Action OnInputDeviceChanged
-      public static event Action<int> OnSwitchBulletTypeInput
-      public static event Action<int> OnSwitchWeaponInput
   12 ¸ö Property:
-      public static InputDevices InputDevice
+      public static InputManager.InputDevices InputDevice
       public Vector3 WorldMoveInput
       public Transform AimTarget
       public Vector2 MoveAxisInput

@@ -2,35 +2,40 @@ public class LevelManager: MonoBehaviour
 
   1 个 ClassLike:
       public struct LevelInfo
-  24 个 Method:
+  25 个 Method:
       private void Start()
       private void OnDestroy()
       private void OnNewBoot()
       private void StartInit(SceneLoadingContext context)
-      private async UniTaskVoid InitLevel(SceneLoadingContext context)
-      private async UniTask CreateMate()
-      private async UniTask WaitForOtherInitialization()
+      private UniTaskVoid InitLevel(SceneLoadingContext context)
+      private UniTask CreateMate()
+      private UniTask WaitForOtherInitialization()
       private void HandleRaidInitialization()
       public void RefreshMainCharacterFace()
-      private async UniTask CreateMainCharacterAsync(Vector3 position, Quaternion rotation)
+      private UniTask CreateMainCharacterAsync(Vector3 position, Quaternion rotation)
       private void SetCharacterItemsInspected()
       private static void SetInstance()
-      private async UniTask<Item> LoadOrCreateCharacterItemInstance()
+      private UniTask<Item> LoadOrCreateCharacterItemInstance()
       public void NotifyEvacuated(EvacuationInfo info)
       public void NotifySaveBeforeLoadScene(bool saveToFile)
       private void OnMainCharacterDie(DamageInfo dmgInfo)
-      private async UniTaskVoid CharacterDieTask(DamageInfo dmgInfo)
+      private UniTaskVoid CharacterDieTask(DamageInfo dmgInfo)
       internal void SaveMainCharacter()
+      private ValueTuple<string, SubSceneEntry.Location> GetPlayerStartLocation()
       private void CreateMainCharacterMapElement()
       private void OnSubSceneLoaded()
       private bool IsPathCompatible(SubSceneEntry.Location location, string keyWord)
       public void TestTeleport()
-      private LevelInfo mGetInfo()
-      public static LevelInfo GetCurrentLevelInfo()
+      private LevelManager.LevelInfo mGetInfo()
+      public static LevelManager.LevelInfo GetCurrentLevelInfo()
   46 个 Field:
-      public bool isBaseLevel
-      public string sceneName
-      public string activeSubSceneID
+      public static event Action OnLevelBeginInitializing
+      public static event Action OnLevelInitialized
+      public static event Action OnAfterLevelInitialized
+      public static event Action<string> OnLevelInitializingCommentChanged
+      public static event Action<EvacuationInfo> OnEvacuated
+      public static event Action<DamageInfo> OnMainCharacterDead
+      public static event Action OnNewGameReport
       private Transform _lootBoxInventoriesParent
       private Dictionary<int, Inventory> _lootBoxInventories
       private Transform defaultStartPos
@@ -67,13 +72,9 @@ public class LevelManager: MonoBehaviour
       public static float enemySpawnCountFactor
       public static bool forceBossSpawn
       private bool dieTask
-      public static event Action OnLevelBeginInitializing
-      public static event Action OnLevelInitialized
-      public static event Action OnAfterLevelInitialized
-      public static event Action<string> OnLevelInitializingCommentChanged
-      public static event Action<EvacuationInfo> OnEvacuated
-      public static event Action<DamageInfo> OnMainCharacterDead
-      public static event Action OnNewGameReport
+      public bool isBaseLevel
+      public string sceneName
+      public string activeSubSceneID
   25 个 Property:
       public static LevelManager Instance
       public static Transform LootBoxInventoriesParent

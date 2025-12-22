@@ -1,6 +1,6 @@
 namespace Duckov
 public class SocialManager: MonoBehaviour
-
+	
   6 ¸ö Method:
       private void Awake()
       private void Start()

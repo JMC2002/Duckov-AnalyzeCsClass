@@ -1,0 +1,18 @@
+namespace ItemStatsSystem.Stats
+public class Modifier
+  3 ¸ö Method:
+      public void NotifyAddedToStat(Stat stat)
+      public void RemoveFromTarget()
+      public override string ToString()
+  6 ¸ö Field:
+      private Stat target
+      private ModifierType type
+      private float value
+      private bool overrideOrder
+      private int overrideOrderValue
+      private object source
+  4 ¸ö Property:
+      public int Order
+      public ModifierType Type
+      public float Value
+      public object Source

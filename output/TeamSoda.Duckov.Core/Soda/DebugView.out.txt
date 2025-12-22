@@ -1,6 +1,6 @@
 namespace Soda
 public class DebugView: MonoBehaviour
-
+	
   26 ¸ö Method:
       private void Awake()
       private void OnDestroy()
@@ -13,7 +13,7 @@ public class DebugView: MonoBehaviour
       public void SetTexture(TextureModes mode)
       private void OnlevelInited()
       private void OnSceneLoaded(Scene s1, Scene s2)
-      private async UniTaskVoid SetShadow()
+      private UniTaskVoid SetShadow()
       public void ToggleBloom()
       private void SetBloom(bool active)
       public void ToggleEdgeLight()
@@ -27,8 +27,9 @@ public class DebugView: MonoBehaviour
       private void SetDof(bool active)
       private void SetInvincible(bool active)
       public void CreateItem()
-      private async UniTaskVoid CreateItemTask()
+      private UniTaskVoid CreateItemTask()
   32 ¸ö Field:
+      public static event Action<DebugView> OnDebugViewConfigChanged
       private DebugView instance
       private Vector2 screenRes
       private ResModes resMode
@@ -60,7 +61,6 @@ public class DebugView: MonoBehaviour
       private bool reporterActive
       private Light light
       public int createItemID
-      public static event Action<DebugView> OnDebugViewConfigChanged
   2 ¸ö Property:
       public DebugView Instance
       public bool EdgeLightActive

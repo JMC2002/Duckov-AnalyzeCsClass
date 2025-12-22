@@ -18,7 +18,7 @@ public class CharacterModel: MonoBehaviour
       private void OnAttack()
       public void ForcePlayAttackAnimation()
       private void OnShoot(DuckovItemAgent agent)
-  25 ¸ö Field:
+  24 ¸ö Field:
       public CharacterMainControl characterMainControl
       public bool invisable
       private Transform lefthandSocket
@@ -36,7 +36,6 @@ public class CharacterModel: MonoBehaviour
       private CustomFaceInstance customFace
       public bool autoSyncRightHandRotation
       public float damageReceiverRadius
-      public float attackFxZOffset
       private int showHairHash
       private int showMouthHash
       private bool helmatShowMouth

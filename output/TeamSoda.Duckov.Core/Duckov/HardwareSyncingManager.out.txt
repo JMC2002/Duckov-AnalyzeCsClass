@@ -1,6 +1,6 @@
 namespace Duckov
 public class HardwareSyncingManager: MonoBehaviour
-
+	
   17 ¸ö Method:
       public static void SetEvent(string eventName)
       private void Awake()

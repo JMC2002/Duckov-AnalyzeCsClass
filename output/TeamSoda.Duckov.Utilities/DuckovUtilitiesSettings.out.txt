@@ -1,0 +1,23 @@
+namespace Duckov.Utilities
+public class DuckovUtilitiesSettings: ScriptableObject
+	
+  1 个 ClassLike:
+      public class ColorsData
+  3 个 Method:
+      private static DuckovUtilitiesSettings Load()
+      private static void CreateAsset()
+      private static void LoadOrCreate()
+  5 个 Field:
+      private static DuckovUtilitiesSettings _instance
+      private DuckovUtilitiesSettings.ColorsData colors
+      private Color effectTrigger
+      private Color effectFilter
+      private Color effectAction
+  5 个 Property:
+      private static DuckovUtilitiesSettings Instance
+      public static DuckovUtilitiesSettings.ColorsData Colors
+      public Color EffectTrigger
+      public Color EffectFilter
+      public Color EffectAction
+  1 个 Constant:
+      private const string fileName

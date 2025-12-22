@@ -1,0 +1,32 @@
+namespace Duckov.UI
+public class NoteIndexView: View
+	
+  16 ¸ö Method:
+      private void OnEnable()
+      private void OnDisable()
+      private void Update()
+      private void OnNoteStatusChanged(string noteKey)
+      public void DoOpen()
+      protected override void OnOpen()
+      protected override void OnClose()
+      protected override void OnCancel()
+      private void RefreshNoteCount()
+      private void RefreshEntries()
+      private string GetDisplayingNote()
+      public void SetDisplayTargetNote(string noteKey)
+      private void OnEntryClicked(NoteIndexView_Entry entry)
+      public static void ShowNote(string noteKey, bool unlock = true)
+      private void MoveScrollViewToActiveEntry()
+      private NoteIndexView_Entry GetDisplayingEntry()
+  9 ¸ö Field:
+      private FadeGroup mainFadeGroup
+      private GameObject noEntryIndicator
+      private NoteIndexView_Entry entryTemplate
+      private NoteIndexView_Inspector inspector
+      private TextMeshProUGUI noteCountText
+      private ScrollRect indexScrollView
+      private PrefabPool<NoteIndexView_Entry> _pool
+      private string displayingNote
+      private bool needFocus
+  1 ¸ö Property:
+      private PrefabPool<NoteIndexView_Entry> Pool

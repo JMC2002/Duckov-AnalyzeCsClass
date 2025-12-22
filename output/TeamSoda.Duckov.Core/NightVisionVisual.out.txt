@@ -10,13 +10,9 @@ public class NightVisionVisual: MonoBehaviour
       private int CheckNightVisionType()
       public void Refresh()
   16 ¸ö Field:
-      public string intro
-      public VolumeProfile profile
-      public bool thermalOn
-      public bool thermalBackground
       private int nightVisionType
       public Volume thermalVolume
-      public NightVisionType[] nightVisionTypes
+      public NightVisionVisual.NightVisionType[] nightVisionTypes
       private CharacterMainControl character
       public ScriptableRendererData rendererData
       public List<string> renderFeatureNames
@@ -26,3 +22,7 @@ public class NightVisionVisual: MonoBehaviour
       public string thermalCharacterRednerFeatureKey
       public string thermalBackgroundRednerFeatureKey
       private bool levelInited
+      public string intro
+      public VolumeProfile profile
+      public bool thermalOn
+      public bool thermalBackground

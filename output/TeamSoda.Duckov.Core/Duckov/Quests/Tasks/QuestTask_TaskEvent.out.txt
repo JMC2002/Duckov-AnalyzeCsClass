@@ -1,0 +1,19 @@
+namespace Duckov.Quests.Tasks
+public class QuestTask_TaskEvent: Task
+	
+  7 ¸ö Method:
+      private void OnTaskEvent(string _key)
+      protected override void OnInit()
+      private void OnDisable()
+      protected override bool CheckFinished()
+      public override object GenerateSaveData()
+      public override void SetupSaveData(object data)
+      private void SetMapElementVisable(bool visable)
+  4 ¸ö Field:
+      private string eventKey
+      private string description
+      private bool finished
+      private MapElementForTask mapElement
+  2 ¸ö Property:
+      public string EventKey
+      public override string Description

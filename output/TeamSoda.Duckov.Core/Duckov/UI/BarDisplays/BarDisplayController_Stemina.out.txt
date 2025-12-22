@@ -1,0 +1,13 @@
+namespace Duckov.UI.BarDisplays
+public class BarDisplayController_Stemina: BarDisplayController
+	
+  1 ¸ö Method:
+      private void Update()
+  3 ¸ö Field:
+      private CharacterMainControl _target
+      private float displayingStemina
+      private float displayingMaxStemina
+  3 ¸ö Property:
+      private CharacterMainControl Target
+      protected override float Current
+      protected override float Max

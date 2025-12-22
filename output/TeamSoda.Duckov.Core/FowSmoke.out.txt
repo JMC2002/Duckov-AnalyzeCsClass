@@ -2,7 +2,7 @@ public class FowSmoke: MonoBehaviour
 
   3 ¸ö Method:
       private void Start()
-      private async UniTaskVoid UpdateSmoke()
+      private UniTaskVoid UpdateSmoke()
       private void OnDrawGizmosSelected()
   10 ¸ö Field:
       private int res

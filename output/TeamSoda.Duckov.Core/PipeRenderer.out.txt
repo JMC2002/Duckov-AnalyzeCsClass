@@ -4,17 +4,11 @@ public class PipeRenderer: MonoBehaviour
       public struct OrientedPoint
   5 ¸ö Method:
       public float GetTotalLength()
-      public static Mesh GeneratePipeMesh(OrientedPoint[] extrudeShape, OrientedPoint[] splineShape, Color vertexColor, float uvTwist = 0f, float extrudeShapeScale = 1f, AnimationCurve extrudeShapeScaleCurve = null, float sectionLength = 0f, bool caps = false, bool recalculateNormal = true, bool revertFaces = false)
+      public static Mesh GeneratePipeMesh(PipeRenderer.OrientedPoint[] extrudeShape, PipeRenderer.OrientedPoint[] splineShape, Color vertexColor, float uvTwist = 0f, float extrudeShapeScale = 1f, AnimationCurve extrudeShapeScaleCurve = null, float sectionLength = 0f, bool caps = false, bool recalculateNormal = true, bool revertFaces = false)
       private void OnDrawGizmosSelected()
       private void Start()
       public Vector3 GetPositionByOffset(float offset, out Quaternion rotation)
   20 ¸ö Field:
-      public Vector3 position
-      public Quaternion rotation
-      public Vector3 tangent
-      public Vector3 rotationalAxisVector
-      public Vector3 normal
-      public Vector2 uv
       public MeshFilter meshFilter
       public ShapeProvider splineShapeProvider
       public ShapeProvider extrudeShapeProvider
@@ -28,7 +22,13 @@ public class PipeRenderer: MonoBehaviour
       public bool recalculateNormal
       public bool revertFaces
       public bool drawSplinePoints
-      public OrientedPoint[] splineInUse
+      public PipeRenderer.OrientedPoint[] splineInUse
+      public Vector3 position
+      public Quaternion rotation
+      public Vector3 tangent
+      public Vector3 rotationalAxisVector
+      public Vector3 normal
+      public Vector2 uv
   2 ¸ö Property:
-      public OrientedPoint[] extrudeShape
-      public OrientedPoint[] splineShape
+      public PipeRenderer.OrientedPoint[] extrudeShape
+      public PipeRenderer.OrientedPoint[] splineShape

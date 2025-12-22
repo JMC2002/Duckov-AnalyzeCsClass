@@ -21,6 +21,21 @@ public class UIInputManager: MonoBehaviour
       private void UnBind(InputAction inputAction, Action<InputAction.CallbackContext> action)
       internal static void NotifyShortcutInput(int index)
   32 ¸ö Field:
+      public static event Action<UIInputEventData> OnNavigate
+      public static event Action<UIInputEventData> OnConfirm
+      public static event Action<UIInputEventData> OnToggleIndicatorHUD
+      public static event Action<UIInputEventData> OnCancelEarly
+      public static event Action<UIInputEventData> OnCancel
+      public static event Action<UIInputEventData> OnFastPick
+      public static event Action<UIInputEventData> OnDropItem
+      public static event Action<UIInputEventData> OnUseItem
+      public static event Action<UIInputEventData> OnToggleCameraMode
+      public static event Action<UIInputEventData> OnWishlistHoveringItem
+      public static event Action<UIInputEventData> OnNextPage
+      public static event Action<UIInputEventData> OnPreviousPage
+      public static event Action<UIInputEventData> OnLockInventoryIndex
+      public static event Action<UIInputEventData, int> OnShortcutInput
+      public static event Action<InputAction.CallbackContext> OnInteractInputContext
       private static bool instantiated
       private InputAction inputActionNavigate
       private InputAction inputActionConfirm
@@ -38,21 +53,6 @@ public class UIInputManager: MonoBehaviour
       private InputAction inputActionPreviousPage
       private InputAction inputActionLockInventoryIndex
       private InputAction inputActionInteract
-      public static event Action<UIInputEventData> OnNavigate
-      public static event Action<UIInputEventData> OnConfirm
-      public static event Action<UIInputEventData> OnToggleIndicatorHUD
-      public static event Action<UIInputEventData> OnCancelEarly
-      public static event Action<UIInputEventData> OnCancel
-      public static event Action<UIInputEventData> OnFastPick
-      public static event Action<UIInputEventData> OnDropItem
-      public static event Action<UIInputEventData> OnUseItem
-      public static event Action<UIInputEventData> OnToggleCameraMode
-      public static event Action<UIInputEventData> OnWishlistHoveringItem
-      public static event Action<UIInputEventData> OnNextPage
-      public static event Action<UIInputEventData> OnPreviousPage
-      public static event Action<UIInputEventData> OnLockInventoryIndex
-      public static event Action<UIInputEventData, int> OnShortcutInput
-      public static event Action<InputAction.CallbackContext> OnInteractInputContext
   7 ¸ö Property:
       public static UIInputManager Instance
       public static bool Ctrl

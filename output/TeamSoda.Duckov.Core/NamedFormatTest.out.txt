@@ -6,9 +6,9 @@ public class NamedFormatTest: MonoBehaviour
       private void Test()
       private void Test2()
   6 ¸ö Field:
-      public string textA
-      public string textB
       public string format
       public string format2
-      public Content content
+      public NamedFormatTest.Content content
       private int loopCount
+      public string textA
+      public string textB

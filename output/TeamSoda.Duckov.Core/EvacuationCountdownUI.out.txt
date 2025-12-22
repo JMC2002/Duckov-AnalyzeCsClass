@@ -5,8 +5,8 @@ public class EvacuationCountdownUI: MonoBehaviour
       private string ToDigitString(float number)
       private void Update()
       private void Refresh()
-      private async UniTask Hide()
-      private async UniTask Show(CountDownArea target)
+      private UniTask Hide()
+      private UniTask Show(CountDownArea target)
       public static void Request(CountDownArea target)
       public static void Release(CountDownArea target)
   5 ¸ö Field:

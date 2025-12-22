@@ -1,0 +1,10 @@
+namespace Duckov.UI.Animations
+public class Revolver: MonoBehaviour
+	
+  2 ¸ö Method:
+      private void Update()
+      private void OnDrawGizmosSelected()
+  3 ¸ö Field:
+      public Vector3 pivot
+      public Vector3 axis
+      public float rPM

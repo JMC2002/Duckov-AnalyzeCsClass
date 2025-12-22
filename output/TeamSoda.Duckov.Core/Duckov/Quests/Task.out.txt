@@ -1,0 +1,27 @@
+namespace Duckov.Quests
+public abstract class Task: MonoBehaviour, ISaveDataProvider
+	
+  9 ¸ö Method:
+      public virtual void Interact()
+      public bool IsFinished()
+      protected abstract bool CheckFinished()
+      public abstract object GenerateSaveData()
+      public abstract void SetupSaveData(object data)
+      protected void ReportStatusChanged()
+      internal void Init()
+      protected virtual void OnInit()
+      internal void ForceFinish()
+  3 ¸ö Field:
+      private Quest master
+      private int id
+      private bool forceFinish
+  9 ¸ö Property:
+      public Quest Master
+      public int ID
+      public virtual string Description
+      public virtual string[] ExtraDescriptsions
+      public virtual Sprite Icon
+      public virtual bool Interactable
+      public virtual bool PossibleValidInteraction
+      public virtual bool NeedInspection
+      public virtual string InteractText

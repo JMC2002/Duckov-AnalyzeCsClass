@@ -4,19 +4,16 @@ public class CharacterRandomPreset: ScriptableObject
       private struct SetCharacterStatInfo
   4 个 Method:
       public Sprite GetCharacterIcon()
-      public async UniTask<CharacterMainControl> CreateCharacterAsync(Vector3 pos, Vector3 dir, int relatedScene, CharacterSpawnerGroup group, bool isLeader)
-      private async UniTask<List<Item>> GenerateItems()
-      private async UniTask AddBullet(CharacterMainControl character)
-  80 个 Field:
-      public string statName
-      public Vector2 statBaseValue
+      public UniTask<CharacterMainControl> CreateCharacterAsync(Vector3 pos, Vector3 dir, int relatedScene, CharacterSpawnerGroup group, bool isLeader)
+      private UniTask<List<Item>> GenerateItems()
+      private UniTask AddBullet(CharacterMainControl character)
+  78 个 Field:
       public string nameKey
       public AudioManager.VoiceType voiceType
       public AudioManager.FootStepMaterialType footstepMaterialType
       public bool dropBoxOnDead
       public InteractableLootbox lootBoxPrefab
       public List<AISpecialAttachmentBase> specialAttachmentBases
-      public GameObject spawnFx
       public Teams team
       public bool showName
       private CharacterIconTypes characterIconType
@@ -75,12 +72,11 @@ public class CharacterRandomPreset: ScriptableObject
       public List<Buff.BuffExclusiveTags> buffResist
       public float elementFactor_Physics
       public float elementFactor_Fire
-      public float elementFactor_Ice
       public float elementFactor_Poison
       public float elementFactor_Electricity
       public float elementFactor_Space
       public float elementFactor_Ghost
-      private List<SetCharacterStatInfo> setStats
+      private List<CharacterRandomPreset.SetCharacterStatInfo> setStats
       public float hasCashChance
       public Vector2Int cashRange
       private List<RandomItemGenerateDescription> itemsToGenerate
@@ -88,6 +84,8 @@ public class CharacterRandomPreset: ScriptableObject
       private Tag[] bulletExclusiveTags
       private ItemFilter bulletFilter
       private Vector2 bulletCountRange
+      public string statName
+      public Vector2 statBaseValue
   3 个 Property:
       public string Name
       public string DisplayName

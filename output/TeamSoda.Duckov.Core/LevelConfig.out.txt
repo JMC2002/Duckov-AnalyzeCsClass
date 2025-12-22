@@ -3,7 +3,7 @@ public class LevelConfig: MonoBehaviour
   2 个 Method:
       private void Awake()
       private static void SetInstance()
-  12 个 Field:
+  11 个 Field:
       private static LevelConfig instance
       private bool isBaseLevel
       private bool isRaidMap
@@ -12,15 +12,13 @@ public class LevelConfig: MonoBehaviour
       private bool savePet
       private int minExitCount
       private int maxExitCount
-      private Seasons season
       public TimeOfDayConfig timeOfDayConfig
       private float lootBoxHighQualityChanceMultiplier
       private float lootboxItemCountMultiplier
-  11 个 Property:
+  10 个 Property:
       public static LevelConfig Instance
       public static bool SaveCharacter
       public static bool SavePet
-      public static Seasons Season
       public float LootBoxQualityLowPercent
       public float LootboxItemCountMultiplier
       public static bool IsBaseLevel

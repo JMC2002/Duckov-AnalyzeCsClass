@@ -4,8 +4,8 @@ public class ConfirmDialogue: MonoBehaviour
       private void Awake()
       private void OnCanceled()
       private void OnConfirmed()
-      public async UniTask<bool> Execute()
-      private async UniTask<bool> DoExecute()
+      public UniTask<bool> Execute()
+      private UniTask<bool> DoExecute()
       internal void SkipHide()
   6 ¸ö Field:
       private FadeGroup fadeGroup

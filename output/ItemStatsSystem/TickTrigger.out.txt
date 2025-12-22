@@ -1,0 +1,17 @@
+namespace ItemStatsSystem
+public class TickTrigger: EffectTrigger, IUpdatable
+	
+  4 ¸ö Method:
+      private void OnEnable()
+      private new void OnDisable()
+      private void UpdateBuffer()
+      public void OnUpdate()
+  5 ¸ö Field:
+      private float period
+      private bool allowMultipleTrigger
+      private float buffer
+      private float _currentPeriod
+      private float _factor
+  2 ¸ö Property:
+      public override string DisplayName
+      private float Factor

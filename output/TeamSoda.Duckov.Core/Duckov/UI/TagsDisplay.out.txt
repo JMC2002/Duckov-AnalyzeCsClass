@@ -1,0 +1,12 @@
+namespace Duckov.UI
+public class TagsDisplay: MonoBehaviour
+	
+  3 ¸ö Method:
+      private void Awake()
+      public void Setup(Item item)
+      internal void Clear()
+  2 ¸ö Field:
+      private TagsDisplayEntry entryTemplate
+      private PrefabPool<TagsDisplayEntry> _entryPool
+  1 ¸ö Property:
+      private PrefabPool<TagsDisplayEntry> EntryPool

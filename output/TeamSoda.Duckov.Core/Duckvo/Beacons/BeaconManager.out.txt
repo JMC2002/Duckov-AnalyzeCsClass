@@ -1,0 +1,23 @@
+namespace Duckvo.Beacons
+public class BeaconManager: MonoBehaviour
+	
+  2 个 ClassLike:
+      public struct BeaconStatus
+      public struct Data
+  6 个 Method:
+      private void Awake()
+      private void OnDestroy()
+      public void Load()
+      public void Save()
+      public static void UnlockBeacon(string id, int index)
+      public static bool GetBeaconUnlocked(string id, int index)
+  5 个 Field:
+      private BeaconManager.Data data
+      public static Action<string, int> OnBeaconUnlocked
+      public string beaconID
+      public int beaconIndex
+      public List<BeaconManager.BeaconStatus> entries
+  1 个 Property:
+      public static BeaconManager Instance
+  1 个 Constant:
+      private const string SaveKey

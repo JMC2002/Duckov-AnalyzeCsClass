@@ -47,6 +47,19 @@ public class CharacterInputControl: MonoBehaviour
       internal static InputAction GetInputAction(string name)
       public static bool GetChangeBulletTypeWasPressed()
   46 ¸ö Field:
+      public InputManager inputManager
+      private bool runInput
+      private bool adsInput
+      private bool aimDown
+      private Vector2 mousePos
+      private Vector2 mouseDelta
+      private bool mouseKeyboardTriggerInput
+      private bool mouseKeyboardTriggerReleaseThisFrame
+      private bool mouseKeyboardTriggerInputThisFrame
+      private CharacterMainControl character
+      private CharacterInputControl.InputActionReferences inputActions
+      private float scollY
+      private int scollYZeroFrames
       public InputAction MoveAxis
       public InputAction Run
       public InputAction Aim
@@ -80,19 +93,6 @@ public class CharacterInputControl: MonoBehaviour
       public InputAction ItemShortcut_Melee
       public InputAction MouseDelta
       public InputAction SwitchBulletType
-      public InputManager inputManager
-      private bool runInput
-      private bool adsInput
-      private bool aimDown
-      private Vector2 mousePos
-      private Vector2 mouseDelta
-      private bool mouseKeyboardTriggerInput
-      private bool mouseKeyboardTriggerReleaseThisFrame
-      private bool mouseKeyboardTriggerInputThisFrame
-      private CharacterMainControl character
-      private InputActionReferences inputActions
-      private float scollY
-      private int scollYZeroFrames
   3 ¸ö Property:
       public static CharacterInputControl Instance
       private PlayerInput PlayerInput

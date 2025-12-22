@@ -13,7 +13,7 @@ public class CameraModeController: MonoBehaviour
       private void OnCameraModeActivated()
       public static void OpenFolder()
       private void OnCameraModeDeactivated()
-      private async UniTaskVoid Shot()
+      private UniTaskVoid Shot()
   30 ¸ö Field:
       public CinemachineVirtualCamera vCam
       private bool actived

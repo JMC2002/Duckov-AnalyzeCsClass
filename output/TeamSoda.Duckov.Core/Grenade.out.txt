@@ -1,18 +1,17 @@
 public class Grenade: MonoBehaviour
 
-  11 个 Method:
+  10 个 Method:
       private void OnCollisionEnter(Collision collision)
       public void BindAgent(ItemAgent _agent)
       private void Update()
       private void Explode()
-      private async UniTask DestroyOverTime()
-      private void OnDestroy()
-      private async UniTask ActiveLandmine()
+      private UniTask DestroyOverTime()
+      private UniTask ActiveLandmine()
       private void OnLinemineTriggerd()
       public void SetWeaponIdInfo(int typeId)
       public void Launch(Vector3 startPoint, Vector3 velocity, CharacterMainControl fromCharacter, bool canHurtSelf)
-      private async UniTask IgnoreCollisionForSeconds(Collider col1, Collider col2, float ignoreTime)
-  32 个 Field:
+      private UniTask IgnoreCollisionForSeconds(Collider col1, Collider col2, float ignoreTime)
+  31 个 Field:
       public bool hasCollideSound
       public string collideSound
       public int makeSoundCount
@@ -44,6 +43,5 @@ public class Grenade: MonoBehaviour
       private bool exploded
       private bool canHurtSelf
       private bool collide
-      private bool destroied
   1 个 Property:
       private bool needCustomFx

@@ -1,6 +1,6 @@
 namespace ItemStatsSystem
 public class OnShootAttackTrigger: EffectTrigger
-
+	
   6 ¸ö Method:
       private void OnEnable()
       protected override void OnDisable()

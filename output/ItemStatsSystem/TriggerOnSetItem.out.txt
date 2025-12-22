@@ -1,0 +1,5 @@
+namespace ItemStatsSystem
+public class TriggerOnSetItem: EffectTrigger
+	
+  1 ¸ö Method:
+      protected override void OnMasterSetTargetItem(Effect effect, Item item)

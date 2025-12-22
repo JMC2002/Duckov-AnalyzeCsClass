@@ -1,16 +1,15 @@
 public class ADSAimMarker: MonoBehaviour
 
-  9 个 Method:
+  8 个 Method:
       public void CollectCrosshairs()
       private void Awake()
-      private bool LockTraceTarget()
       private void LateUpdate()
       public void SetAimMarkerPos(Vector3 pos)
       public void OnShoot()
       public void SetScatter(float _currentScatter, float _minScatter)
       public void SetAdsValue(float _adsValue)
       private void SetSniperRenderer()
-  23 个 Field:
+  21 个 Field:
       public ADSAimMarker selfPrefab
       public bool hideNormalCrosshair
       public AimMarker parentAimMarker
@@ -31,8 +30,6 @@ public class ADSAimMarker: MonoBehaviour
       private float scatter
       private float minScatter
       private RectTransform selfRect
-      private ItemAgent_Gun gun
-      private Camera camera
       private int sniperCenterShaderHash
   1 个 Property:
       public float CanvasAlpha

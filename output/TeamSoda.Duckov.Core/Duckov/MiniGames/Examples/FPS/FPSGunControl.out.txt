@@ -1,0 +1,16 @@
+namespace Duckov.MiniGames.Examples.FPS
+public class FPSGunControl: MiniGameBehaviour
+	
+  5 ¸ö Method:
+      protected override void OnEnable()
+      protected override void OnUpdate(float deltaTime)
+      private void UpdateGunPhysicsStatus(float deltaTime)
+      private void SetGun(FPSGun gunInstance)
+      private void SetupGunData()
+  3 ¸ö Field:
+      private Camera mainCamera
+      private Transform gunParent
+      private FPSGun gun
+  2 ¸ö Property:
+      public FPSGun Gun
+      public float ScatterAngle

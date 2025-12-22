@@ -1,0 +1,22 @@
+namespace Duckov.UI
+public static class ItemUIUtilities
+  5 ¸ö Method:
+      public static void Select(ItemDisplay itemDisplay)
+      public static void RaiseOrphan(Item orphan)
+      public static void NotifyPutItem(Item item, bool pickup = false)
+      public static string GetPropertiesDisplayText(this Item item)
+      public static List<ValueTuple<string, string, Polarity>> GetPropertyValueTextPair(this Item item)
+  7 ¸ö Field:
+      public static event Action OnSelectionChanged
+      public static event Action<Item> OnOrphanRaised
+      public static event Action<Item, bool> OnPutItem
+      private static ItemDisplay selectedItemDisplay
+      private static bool cacheGunSelected
+      private static int selectedItemTypeID
+      private static ItemMetaData cachedSelectedItemMeta
+  5 ¸ö Property:
+      public static ItemDisplay SelectedItemDisplayRaw
+      public static ItemDisplay SelectedItemDisplay
+      public static Item SelectedItem
+      public static bool IsGunSelected
+      public static string SelectedItemCaliber

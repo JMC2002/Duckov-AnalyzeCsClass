@@ -1,0 +1,26 @@
+namespace Duckov.Utilities
+ 
+  9 ¸ö Method:
+      public T Get(Transform setParent = null)
+      public void Release(T item)
+      private T CreateInstance()
+      private void OnGet(T item)
+      private void OnRelease(T item)
+      private void OnDestroy(T item)
+      public void ReleaseAll()
+      public T Find(Predicate<T> predicate)
+      public int ReleaseAll(Predicate<T> predicate)
+  11 ¸ö Field:
+      public readonly T Prefab
+      public Transform poolParent
+      private Action<T> onGet
+      private Action<T> onRelease
+      private Action<T> onDestroy
+      private Action<T> onCreate
+      public readonly bool CollectionCheck
+      public readonly int DefaultCapacity
+      public readonly int MaxSize
+      private readonly ObjectPool<T> pool
+      private List<T> activeObjects
+  1 ¸ö Property:
+      public ReadOnlyCollection<T> ActiveEntries

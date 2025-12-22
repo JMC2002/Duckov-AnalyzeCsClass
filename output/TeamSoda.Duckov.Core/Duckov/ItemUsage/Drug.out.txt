@@ -1,0 +1,17 @@
+namespace Duckov.ItemUsage
+public class Drug: UsageBehavior
+	
+  4 ¸ö Method:
+      public override bool CanBeUsed(Item item, object user)
+      protected override void OnUse(Item item, object user)
+      private bool CheckCanHeal(CharacterMainControl character)
+      private void Heal(CharacterMainControl character, Item selfItem, float _healValue)
+  6 ¸ö Field:
+      public int healValue
+      public string healValueDescriptionKey
+      public string durabilityUsageDescriptionKey
+      public bool useDurability
+      public float durabilityUsage
+      public bool canUsePart
+  1 ¸ö Property:
+      public override UsageBehavior.DisplaySettingsData DisplaySettings

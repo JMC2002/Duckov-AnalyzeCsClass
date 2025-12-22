@@ -3,7 +3,7 @@ public class Button_LoadMainMenu: MonoBehaviour
   3 ¸ö Method:
       private void Awake()
       private void BeginQuitting()
-      private async UniTask QuitTask()
+      private UniTask QuitTask()
   3 ¸ö Field:
       private Button button
       private ConfirmDialogue dialogue

@@ -1,0 +1,9 @@
+namespace Duckov.Quests.Conditions
+public class RequireFormulaUnlocked: Condition
+	
+  1 ¸ö Method:
+      public override bool Evaluate()
+  3 ¸ö Field:
+      private int itemID
+      private string formulaID
+      public Item setFromItem

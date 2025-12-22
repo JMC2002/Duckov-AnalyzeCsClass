@@ -1,0 +1,15 @@
+namespace ItemStatsSystem
+public abstract class UsageBehavior: MonoBehaviour
+	
+  1 个 ClassLike:
+      public struct DisplaySettingsData
+  3 个 Method:
+      public abstract bool CanBeUsed(Item item, object user)
+      protected abstract void OnUse(Item item, object user)
+      public void Use(Item item, object user)
+  2 个 Field:
+      public bool display
+      public string description
+  2 个 Property:
+      public virtual UsageBehavior.DisplaySettingsData DisplaySettings
+      public string Description

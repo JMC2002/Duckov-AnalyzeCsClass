@@ -1,0 +1,20 @@
+namespace ItemStatsSystem
+public class StatCollection: ItemComponent, ICollection<Stat>, IEnumerable<Stat>, IEnumerable
+	
+  10 ¸ö Method:
+      public Stat GetStat(int hash)
+      public Stat GetStat(string key)
+      private void BuildDictionary()
+      internal override void OnInitialize()
+      public IEnumerator<Stat> GetEnumerator()
+      public void Add(Stat item)
+      public void Clear()
+      public bool Contains(Stat item)
+      public void CopyTo(Stat[] array, int arrayIndex)
+      public bool Remove(Stat item)
+  1 ¸ö Field:
+      private Dictionary<int, Stat> _cachedStatsDictionary
+  3 ¸ö Property:
+      private Dictionary<int, Stat> statsDictionary
+      public int Count
+      public bool IsReadOnly

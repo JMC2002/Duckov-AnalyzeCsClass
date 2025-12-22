@@ -1,0 +1,10 @@
+namespace Duckov.UI.BarDisplays
+public class BarDisplayController: MonoBehaviour
+	
+  1 ¸ö Method:
+      protected void Refresh()
+  1 ¸ö Field:
+      private BarDisplay bar
+  2 ¸ö Property:
+      protected virtual float Current
+      protected virtual float Max

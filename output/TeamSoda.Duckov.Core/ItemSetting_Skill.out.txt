@@ -8,5 +8,5 @@ public class ItemSetting_Skill: ItemSettingBase
       private void OnDestroy()
       public override void SetMarkerParam(Item selfItem)
   2 ¸ö Field:
-      public OnReleaseAction onRelease
+      public ItemSetting_Skill.OnReleaseAction onRelease
       public SkillBase Skill

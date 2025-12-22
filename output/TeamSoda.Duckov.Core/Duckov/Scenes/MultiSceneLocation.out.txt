@@ -1,0 +1,16 @@
+namespace Duckov.Scenes
+public struct MultiSceneLocation
+  3 ¸ö Method:
+      public Transform GetLocationTransform()
+      public bool TryGetLocationPosition(out Vector3 result)
+      internal string GetDisplayName()
+  3 ¸ö Field:
+      private string sceneID
+      private string locationName
+      private string displayName
+  5 ¸ö Property:
+      public Transform LocationTransform
+      public string SceneID
+      public SceneReference Scene
+      public string LocationName
+      public string DisplayName

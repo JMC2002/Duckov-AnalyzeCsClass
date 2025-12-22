@@ -1,0 +1,16 @@
+namespace ItemStatsSystem
+public class ItemAgent: MonoBehaviour
+	
+  1 个 ClassLike:
+      public enum AgentTypes
+  4 个 Method:
+      public void Initialize(Item item, ItemAgent.AgentTypes _agentType)
+      protected virtual void OnDestroy()
+      private void OnUnplugedFromSlot(Item item)
+      protected virtual void OnInitialize()
+  2 个 Field:
+      private Item item
+      protected ItemAgent.AgentTypes agentType
+  2 个 Property:
+      public ItemAgent.AgentTypes AgentType
+      public Item Item

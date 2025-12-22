@@ -6,6 +6,9 @@ public static class RaidUtilities
       public static void NotifyDead()
       public static void NotifyEnd()
   13 ¸ö Field:
+      public static event Action<RaidUtilities.RaidInfo> OnNewRaid
+      public static event Action<RaidUtilities.RaidInfo> OnRaidDead
+      public static event Action<RaidUtilities.RaidInfo> OnRaidEnd
       public bool valid
       public uint ID
       public bool dead
@@ -16,10 +19,7 @@ public static class RaidUtilities
       public long expOnBegan
       public long expOnEnd
       public long expGained
-      public static event Action<RaidInfo> OnNewRaid
-      public static event Action<RaidInfo> OnRaidDead
-      public static event Action<RaidInfo> OnRaidEnd
   1 ¸ö Property:
-      public static RaidInfo CurrentRaid
+      public static RaidUtilities.RaidInfo CurrentRaid
   1 ¸ö Constant:
       private const string SaveID

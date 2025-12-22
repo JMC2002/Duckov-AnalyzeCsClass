@@ -1,6 +1,6 @@
 namespace Duckov
 public class CursorManager: MonoBehaviour
-
+	
   10 ¸ö Method:
       public static void Register(ICursorDataProvider dataProvider)
       public static bool Unregister(ICursorDataProvider dataProvider)

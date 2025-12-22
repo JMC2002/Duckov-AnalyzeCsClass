@@ -1,0 +1,16 @@
+namespace Duckov.MiniGames.Utilities
+public class ControllerPickupAnimation: MonoBehaviour
+	
+  2 ¸ö Method:
+      public UniTask PickUp(Transform endTransform)
+      public UniTask PutDown()
+  5 ¸ö Field:
+      private Transform restTransform
+      private Transform controllerTransform
+      private float transitionTime
+      private AnimationCurve pickupCurve
+      private int activeToken
+  3 ¸ö Property:
+      private AnimationCurve pickupRotCurve
+      private AnimationCurve pickupPosCurve
+      private AnimationCurve putDownCurve

@@ -1,0 +1,7 @@
+namespace ItemStatsSystem
+public class LogItemNameAction: EffectAction
+	
+  1 ¸ö Method:
+      protected override void OnTriggeredPositive()
+  1 ¸ö Property:
+      public override string DisplayName

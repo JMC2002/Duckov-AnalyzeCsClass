@@ -1,0 +1,9 @@
+namespace MiniLocalizor
+public class DataEntry
+  1 ¸ö Method:
+      public bool IsNewerThan(string version)
+  4 ¸ö Property:
+      public string key
+      public string value
+      public string version
+      public string sheet

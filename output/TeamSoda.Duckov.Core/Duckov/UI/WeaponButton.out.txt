@@ -1,0 +1,34 @@
+namespace Duckov.UI
+public class WeaponButton: MonoBehaviour, IPointerClickHandler, IEventSystemHandler
+	
+  12 ¸ö Method:
+      private void Awake()
+      private void OnDestroy()
+      private void RegisterStaticEvents()
+      private void UnregisterStaticEvents()
+      private void OnMainCharacterChangeHoldItemAgent(CharacterMainControl control, DuckovItemAgent agent)
+      private void OnLevelInitialized()
+      private void Initialize(CharacterMainControl character)
+      private void RegisterEvents()
+      private void UnregisterEvents()
+      private void OnSlotContentChanged(Slot slot)
+      private void Refresh()
+      public void OnPointerClick(PointerEventData eventData)
+  12 ¸ö Field:
+      public static event Action<WeaponButton> OnWeaponButtonSelected
+      private string targetSlotKey
+      private GameObject displayParent
+      private Image icon
+      private TrueShadow iconShadow
+      private GameObject selectionFrame
+      public UnityEvent<WeaponButton> onClick
+      public UnityEvent<WeaponButton> onRefresh
+      public UnityEvent<WeaponButton> onSelected
+      private CharacterMainControl _character
+      private Slot _targetSlot
+      private bool isBeingDestroyed
+  4 ¸ö Property:
+      private CharacterMainControl Character
+      private Slot TargetSlot
+      private Item TargetItem
+      private bool IsSelected

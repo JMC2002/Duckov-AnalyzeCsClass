@@ -7,7 +7,7 @@ public class ATMPanel_DrawPanel: MonoBehaviour
       private void OnQuitButtonClicked()
       private void OnMoneyChanged(long arg1, long arg2)
       private void OnConfirmButtonClicked()
-      private async UniTask DrawTask(long value)
+      private UniTask DrawTask(long value)
       private void OnInputValueChanged(string v)
       private void Refresh()
       internal void Show()

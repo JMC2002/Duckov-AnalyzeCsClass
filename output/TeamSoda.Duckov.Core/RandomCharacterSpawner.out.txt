@@ -6,8 +6,8 @@ public class RandomCharacterSpawner: CharacterSpawnerComponentBase
       private void OnDestroy()
       private CharacterRandomPresetInfo GetAPresetByWeight()
       public override void StartSpawn()
-      private async UniTaskVoid CreateAsync()
-      private async UniTask<CharacterMainControl> CreateAt(Vector3 point, int scene, CharacterSpawnerGroup group, bool isLeader)
+      private UniTaskVoid CreateAsync()
+      private UniTask<CharacterMainControl> CreateAt(Vector3 point, int scene, CharacterSpawnerGroup group, bool isLeader)
       private void OnDrawGizmos()
   17 ¸ö Field:
       public Points spawnPoints
@@ -27,7 +27,6 @@ public class RandomCharacterSpawner: CharacterSpawnerComponentBase
       private int currentSpawnedCount
       private bool destroied
       public string gizmosTag
-  3 ¸ö Property:
+  2 ¸ö Property:
       private float minDistanceToMainCharacter
-      private float maxDistanceToMainCharacter
       private int scene

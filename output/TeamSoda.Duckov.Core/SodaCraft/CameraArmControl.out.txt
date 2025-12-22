@@ -1,6 +1,6 @@
 namespace SodaCraft
 public class CameraArmControl: VolumeComponent
-
+	
   2 ¸ö Method:
       public bool IsActive()
       public override void Override(VolumeComponent state, float interpFactor)

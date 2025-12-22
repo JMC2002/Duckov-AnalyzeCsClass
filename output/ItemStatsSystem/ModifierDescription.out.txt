@@ -1,0 +1,34 @@
+namespace ItemStatsSystem
+public class ModifierDescription
+  7 ¸ö Method:
+      public Modifier CreateModifier(object source)
+      public void ReapplyModifier(ModifierDescriptionCollection collection)
+      public Item GetTargetItem()
+      public static ModifierDescription FromString(string str)
+      internal void Release()
+      public override string ToString()
+      public string GetDisplayValueString(string format = "0.##")
+  11 ¸ö Field:
+      private ModifierDescriptionCollection collection
+      private ModifierTarget target
+      private bool enableInInventory
+      private string key
+      private bool display
+      private ModifierType type
+      private float value
+      private bool overrideOrder
+      private int order
+      private Modifier activeModifier
+      private static Regex reg
+  11 ¸ö Property:
+      private Item Master
+      private StringList referenceStatKeys
+      private string displayNamekey
+      private int ResultOrder
+      public string Key
+      public ModifierType Type
+      public float Value
+      public bool IsOverrideOrder
+      public int Order
+      public bool Display
+      public string DisplayName

@@ -1,0 +1,30 @@
+namespace Duckov.UI.DialogueBubbles
+public class DialogueBubble: MonoBehaviour, IPointerClickHandler, IEventSystemHandler
+	
+  9 ¸ö Method:
+      private void LateUpdate()
+      private void UpdatePosition()
+      public UniTask Show(string text, Transform target, float yOffset = -1f, bool needInteraction = false, bool skippable = false, float speed = -1f, float duration = 2f)
+      public UniTask ShowTask(string text, Transform target, float yOffset = -1f, bool needInteraction = false, bool skippable = false, float speed = -1f, float duration = 2f)
+      private UniTask WaitForInteraction(int currentToken)
+      public void Interact()
+      private UniTask Hide()
+      public void OnPointerClick(PointerEventData eventData)
+      private void Awake()
+  13 ¸ö Field:
+      private FadeGroup fadeGroup
+      private TextMeshProUGUI text
+      private float defaultSpeed
+      private float sustainDuration
+      private float defaultYOffset
+      private GameObject interactIndicator
+      private bool interacted
+      private bool animating
+      private int taskToken
+      private Transform target
+      private float _yOffset
+      private float screenYOffset
+      private UniTask task
+  2 ¸ö Property:
+      public Transform Target
+      private float YOffset

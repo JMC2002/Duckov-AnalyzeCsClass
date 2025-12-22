@@ -1,0 +1,16 @@
+namespace Duckov.Utilities
+public class TagCollection: ICollection<Tag>, IEnumerable<Tag>, IEnumerable
+	
+  9 ¸ö Method:
+      public bool Check(ICollection<Tag> requireTags, ICollection<Tag> excludeTags)
+      public void Add(Tag item)
+      public void Clear()
+      public bool Contains(Tag item)
+      public bool Contains(string tagName)
+      public void CopyTo(Tag[] array, int arrayIndex)
+      public IEnumerator<Tag> GetEnumerator()
+      public bool Remove(Tag item)
+      public Tag Get(int index)
+  2 ¸ö Property:
+      public int Count
+      public bool IsReadOnly

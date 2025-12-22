@@ -1,0 +1,21 @@
+namespace Duckov.UI
+public class BlackScreen: MonoBehaviour
+	
+  7 ¸ö Method:
+      private void Awake()
+      private void SetFadeCurve(AnimationCurve curve)
+      private void SetCircleFade(float circleFade)
+      private UniTask LShowAndReturnTask(AnimationCurve animationCurve = null, float circleFade = 0f, float duration = -1f)
+      private UniTask LHideAndReturnTask(AnimationCurve animationCurve = null, float circleFade = 0f, float duration = -1f)
+      public static UniTask ShowAndReturnTask(AnimationCurve animationCurve = null, float circleFade = 0f, float duration = 0.5f)
+      public static UniTask HideAndReturnTask(AnimationCurve animationCurve = null, float circleFade = 0f, float duration = 0.5f)
+  7 ¸ö Field:
+      private FadeGroup fadeGroup
+      private MaterialPropertyFade fadeElement
+      private Image fadeImage
+      private float defaultDuration
+      private AnimationCurve defaultShowCurve
+      private AnimationCurve defaultHideCurve
+      private int taskCounter
+  1 ¸ö Property:
+      public static BlackScreen Instance

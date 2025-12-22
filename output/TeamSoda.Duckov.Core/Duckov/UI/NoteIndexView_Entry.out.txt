@@ -1,0 +1,22 @@
+namespace Duckov.UI
+public class NoteIndexView_Entry: MonoBehaviour, IPointerClickHandler, IEventSystemHandler
+	
+  8 ¸ö Method:
+      private void OnEnable()
+      private void OnDisable()
+      private void OnNoteStatusChanged(string key)
+      private void RefreshNotReadIndicator()
+      internal void NotifySelectedDisplayingNoteChanged(string displayingNote)
+      private void RefreshHighlight()
+      internal void Setup(Note note, Action<NoteIndexView_Entry> onClicked, Func<string> getDisplayingNote, int index)
+      public void OnPointerClick(PointerEventData eventData)
+  7 ¸ö Field:
+      private GameObject highlightIndicator
+      private TextMeshProUGUI titleText
+      private TextMeshProUGUI indexText
+      private GameObject notReadIndicator
+      private Note note
+      private Action<NoteIndexView_Entry> onClicked
+      private Func<string> getDisplayingNote
+  1 ¸ö Property:
+      public string key

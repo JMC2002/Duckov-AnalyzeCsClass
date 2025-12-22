@@ -1,6 +1,6 @@
 namespace Dialogues
 public class LocalizedStatementSequence: DTNode
-
+	
   4 ¸ö Method:
       protected override Status OnExecute(Component agent, IBlackboard bb)
       private void Begin()

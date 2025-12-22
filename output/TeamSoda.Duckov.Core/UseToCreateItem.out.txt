@@ -5,13 +5,13 @@ public class UseToCreateItem: UsageBehavior
   4 ¸ö Method:
       public override bool CanBeUsed(Item item, object user)
       protected override void OnUse(Item item, object user)
-      private async UniTask Generate(int typeID, CharacterMainControl character)
+      private UniTask Generate(int typeID, CharacterMainControl character)
       private void OnValidate()
   5 ¸ö Field:
-      public int itemTypeID
-      private RandomContainer<Entry> entries
+      private RandomContainer<UseToCreateItem.Entry> entries
       public string descKey
       public string notificationKey
       private bool running
+      public int itemTypeID
   1 ¸ö Property:
-      public override DisplaySettingsData DisplaySettings
+      public override UsageBehavior.DisplaySettingsData DisplaySettings

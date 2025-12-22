@@ -1,6 +1,6 @@
 namespace EventReports
 public class BDSManager: MonoBehaviour
-
+	
   19 个 ClassLike:
       private enum EventName
       private struct CheatModeStatusChangeContext
@@ -21,11 +21,7 @@ public class BDSManager: MonoBehaviour
       private struct EvacuationEventData
       private struct SessionInfo
       public struct PlayerInfo
-  48 个 Method:
-      public static PlayerStatus CreateFromCurrent()
-      public static PlayerInfo GetCurrent()
-      public static string GetCurrentJson()
-      public string ToJson()
+  47 个 Method:
       private void Awake()
       private void Start()
       private void OnDestroy()
@@ -48,7 +44,6 @@ public class BDSManager: MonoBehaviour
       private void OnBuildingDestroyed(int guid, BuildingInfo info)
       private void OnLevelChanged(int from, int to)
       private void OnHealthDead(Health health, DamageInfo info)
-      static string GetPresetName(Health health2)
       private void OnFormulaUnlocked(string formulaID)
       private void OnItemCrafted(CraftingFormula formula, Item item)
       private void OnItemPurchased(StockShop shop, Item item)
@@ -67,10 +62,19 @@ public class BDSManager: MonoBehaviour
       private void OnNewRaid(RaidUtilities.RaidInfo info)
       private void OnSaveDeleted()
       private void OnGameStarted()
-      private void ReportCustomEvent(EventName eventName, StrJson customParameters)
-      private void ReportCustomEvent<T>(EventName eventName, T customParameters)
-      private void ReportCustomEvent(EventName eventName, string customParameters = "")
+      private void ReportCustomEvent(BDSManager.EventName eventName, StrJson customParameters)
+      private void ReportCustomEvent<T>(BDSManager.EventName eventName, T customParameters)
+      private void ReportCustomEvent(BDSManager.EventName eventName, string customParameters = "")
+      public static BDSManager.PlayerStatus CreateFromCurrent()
+      public static BDSManager.PlayerInfo GetCurrent()
+      public static string GetCurrentJson()
+      public string ToJson()
   59 个 Field:
+      private float lastTimeHeartbeat
+      private int sessionID
+      private DateTime sessionStartTime
+      private BDSManager.SessionInfo sessionInfo
+      public static Action<string, string> OnReportCustomEvent
       public bool cheatModeActive
       public string interactGameObjectName
       public string typeName
@@ -111,7 +115,7 @@ public class BDSManager: MonoBehaviour
       public EvacuationInfo evacuationInfo
       public string mapID
       public RaidUtilities.RaidInfo raidInfo
-      public PlayerStatus playerStatus
+      public BDSManager.PlayerStatus playerStatus
       public int startCount
       public bool isFirstTimeStart
       public int session_id
@@ -125,10 +129,5 @@ public class BDSManager: MonoBehaviour
       public string b_tour_indicator
       public string b_zone_id
       public string b_sdk_uid
-      private float lastTimeHeartbeat
-      private int sessionID
-      private DateTime sessionStartTime
-      private SessionInfo sessionInfo
-      public static Action<string, string> OnReportCustomEvent
   1 个 Property:
       private float TimeSinceLastHeartbeat

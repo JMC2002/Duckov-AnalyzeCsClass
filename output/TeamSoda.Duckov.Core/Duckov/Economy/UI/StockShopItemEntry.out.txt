@@ -1,0 +1,35 @@
+namespace Duckov.Economy.UI
+public class StockShopItemEntry: MonoBehaviour, IPointerClickHandler, IEventSystemHandler
+	
+  15 ¸ö Method:
+      private void Awake()
+      private void OnItemDisplayPointerClick(ItemDisplay display, PointerEventData data)
+      public Item GetItem()
+      internal void Setup(StockShopView master, StockShop.Entry entry)
+      private void RegisterEvents()
+      private void UnregisterEvents()
+      private void OnMasterSelectionChanged()
+      private void OnTargetStockChanged(StockShop.Entry entry)
+      public bool IsUnlocked()
+      private void Refresh()
+      public void OnPointerClick(PointerEventData eventData)
+      public void Punch()
+      private void OnEnable()
+      private void OnDisable()
+      private void OnItemUnlockStateChanged(int itemTypeID)
+  12 ¸ö Field:
+      private string moneyFormat
+      private ItemDisplay itemDisplay
+      private TextMeshProUGUI priceText
+      private GameObject selectionIndicator
+      private GameObject lockedIndicator
+      private GameObject waitingForUnlockIndicator
+      private GameObject outOfStockIndicator
+      private float punchDuration
+      private float selectionRingPunchScale
+      private float iconPunchScale
+      private StockShopView master
+      private StockShop.Entry target
+  2 ¸ö Property:
+      private StockShop stockShop
+      public StockShop.Entry Target

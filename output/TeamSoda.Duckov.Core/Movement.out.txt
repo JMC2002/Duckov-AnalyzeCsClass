@@ -8,11 +8,11 @@ public class Movement: MonoBehaviour
       public void SetAimDirectionToTarget(Vector3 targetPoint, Transform aimHandler)
       public void SetPushCharacter(bool push)
       private void UpdateAiming()
-      public void UpdateMovement()
+      public unsafe void UpdateMovement()
       private void Update()
-      public void ForceSetPosition(Vector3 Pos)
-      private void UpdateNormalMove()
-      private void UpdateForceMove()
+      public unsafe void ForceSetPosition(Vector3 Pos)
+      private unsafe void UpdateNormalMove()
+      private unsafe void UpdateForceMove()
       public void ForceTurnTo(Vector3 direction)
       private void UpdateRotation(float deltaTime)
       public void ForceSetAimDirectionToAimPoint()
@@ -29,11 +29,10 @@ public class Movement: MonoBehaviour
       private Vector3 currentMoveDirectionXZ
       public bool forceMove
       public Vector3 forceMoveVelocity
-  18 ¸ö Property:
+  17 ¸ö Property:
       public float walkSpeed
       public float originWalkSpeed
       public float runSpeed
-      public float originRunSpeed
       public float walkAcc
       public float runAcc
       public float turnSpeed
@@ -47,6 +46,6 @@ public class Movement: MonoBehaviour
       private bool checkCanRun
       public Vector3 CurrentMoveDirectionXZ
       public Transform rotationRoot
-      public Vector3 Velocity
+      public unsafe Vector3 Velocity
   1 ¸ö Constant:
       private const float movingInputThreshold

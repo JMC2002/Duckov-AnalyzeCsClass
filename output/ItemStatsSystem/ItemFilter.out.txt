@@ -1,0 +1,12 @@
+namespace ItemStatsSystem
+public struct ItemFilter
+  2 ¸ö Method:
+      public override int GetHashCode()
+      public override string ToString()
+  6 ¸ö Field:
+      public Tag[] requireTags
+      public Tag[] excludeTags
+      public int minQuality
+      public int maxQuality
+      public string caliber
+      private static StringBuilder sb

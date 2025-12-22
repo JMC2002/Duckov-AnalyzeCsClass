@@ -1,2 +1,5 @@
 public interface IItemDragSource: IBeginDragHandler, IEventSystemHandler, IEndDragHandler, IDragHandler
 
+  2 ¸ö Field:
+      public static event Action<Item> OnStartDragItem
+      public static event Action<Item> OnEndDragItem

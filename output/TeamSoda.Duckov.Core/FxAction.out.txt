@@ -5,7 +5,7 @@ public class FxAction: EffectAction
   1 ¸ö Method:
       protected override void OnTriggered(bool positive)
   3 ¸ö Field:
-      public Sockets socket
+      public FxAction.Sockets socket
       public GameObject fxPfb
       private CharacterMainControl _mainControl
   1 ¸ö Property:

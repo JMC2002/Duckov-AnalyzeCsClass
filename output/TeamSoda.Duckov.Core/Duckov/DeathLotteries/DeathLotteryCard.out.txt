@@ -1,0 +1,24 @@
+namespace Duckov.DeathLotteries
+public class DeathLotteryCard: MonoBehaviour, IPointerClickHandler, IEventSystemHandler, IPointerEnterHandler, IPointerExitHandler
+	
+  7 ¸ö Method:
+      public void OnPointerClick(PointerEventData eventData)
+      public void Setup(DeathLotteryVIew master, int index)
+      public void NotifyFacing(bool uncovered)
+      private void Refresh()
+      private void Awake()
+      public void OnPointerEnter(PointerEventData eventData)
+      public void OnPointerExit(PointerEventData eventData)
+  9 ¸ö Field:
+      private CardDisplay cardDisplay
+      private ItemDisplay itemDisplay
+      private CostDisplay costDisplay
+      private GameObject freeIndicator
+      private FadeGroup costFade
+      private GameObject selectedIndicator
+      private DeathLotteryVIew master
+      private int index
+      private Item targetItem
+  2 ¸ö Property:
+      public int Index
+      private bool Selected

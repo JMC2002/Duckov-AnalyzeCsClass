@@ -6,13 +6,13 @@ public class InteractablePickup: InteractableBase
       protected override void OnInteractStart(CharacterMainControl character)
       public void Throw(Vector3 direction, float randomAngle)
       protected override void OnDestroy()
-      private async UniTaskVoid DestroyRigidbody()
+      private UniTaskVoid DestroyRigidbody()
   6 ¸ö Field:
+      public static event Action<InteractablePickup, CharacterMainControl> OnPickupSuccess
       private DuckovItemAgent itemAgent
       public SpriteRenderer sprite
       private Rigidbody rb
       private Vector3 throwStartPoint
       private bool destroied
-      public static event Action<InteractablePickup, CharacterMainControl> OnPickupSuccess
   1 ¸ö Property:
       public DuckovItemAgent ItemAgent

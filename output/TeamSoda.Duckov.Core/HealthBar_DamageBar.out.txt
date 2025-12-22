@@ -2,7 +2,7 @@ public class HealthBar_DamageBar: MonoBehaviour
 
   2 ¸ö Method:
       private void Awake()
-      public async UniTask Animate(float damageBarPostion, float damageBarWidth, Action onComplete)
+      public UniTask Animate(float damageBarPostion, float damageBarWidth, Action onComplete)
   6 ¸ö Field:
       internal RectTransform rectTransform
       internal Image image

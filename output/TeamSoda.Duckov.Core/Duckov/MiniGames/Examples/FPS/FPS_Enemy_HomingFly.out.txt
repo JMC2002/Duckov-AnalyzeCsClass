@@ -1,0 +1,16 @@
+namespace Duckov.MiniGames.Examples.FPS
+public class FPS_Enemy_HomingFly: MiniGameBehaviour
+	
+  6 ¸ö Method:
+      private void Awake()
+      private void OnDead(FPSHealth health)
+      protected override void OnUpdate(float deltaTime)
+      private void UpdateIdle(float deltaTime)
+      private void UpdateDead(float deltaTime)
+      private void UpdateHoming(float deltaTime)
+  2 ¸ö Field:
+      private Rigidbody rigidbody
+      private FPSHealth health
+  2 ¸ö Property:
+      private bool CanSeeTarget
+      private bool Dead

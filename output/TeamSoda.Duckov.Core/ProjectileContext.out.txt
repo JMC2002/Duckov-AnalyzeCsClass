@@ -1,8 +1,6 @@
 public struct ProjectileContext
-  31 ¸ö Field:
+  28 ¸ö Field:
       public Vector3 direction
-      public CharacterMainControl traceTarget
-      public float traceAbility
       public bool firstFrameCheck
       public Vector3 firstFrameCheckStartPoint
       public float halfDamageDistance
@@ -21,7 +19,6 @@ public struct ProjectileContext
       public float element_Electricity
       public float element_Space
       public float element_Ghost
-      public float element_Ice
       public CharacterMainControl fromCharacter
       public float gravity
       public float explosionRange

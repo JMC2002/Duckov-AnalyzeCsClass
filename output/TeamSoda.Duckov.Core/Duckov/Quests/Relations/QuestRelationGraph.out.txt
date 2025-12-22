@@ -1,0 +1,18 @@
+namespace Duckov.Quests.Relations
+public class QuestRelationGraph: Graph
+	
+  4 ¸ö Method:
+      public QuestRelationNode GetNode(int questID)
+      public List<int> GetRequiredIDs(int targetID)
+      protected override void OnGraphValidate()
+      internal void CheckDuplicates()
+  1 ¸ö Field:
+      public static int selectedQuestID
+  7 ¸ö Property:
+      public override Type baseNodeType
+      public override bool requiresAgent
+      public override bool requiresPrimeNode
+      public override bool isTree
+      public override PlanarDirection flowDirection
+      public override bool allowBlackboardOverrides
+      public override bool canAcceptVariableDrops

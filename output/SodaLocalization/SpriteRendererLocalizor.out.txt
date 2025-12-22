@@ -1,0 +1,17 @@
+namespace SodaCraft.Localizations
+public class SpriteRendererLocalizor: MonoBehaviour
+	
+  1 ¸ö ClassLike:
+      private struct LanguageSpritePair
+  6 ¸ö Method:
+      private void Awake()
+      private void OnDestroy()
+      private void Start()
+      private void OnSetLanguage(SystemLanguage language)
+      private void Refresh()
+      private void OnValidate()
+  4 ¸ö Field:
+      private List<SpriteRendererLocalizor.LanguageSpritePair> entries
+      private SpriteRenderer spriteRenderer
+      public SystemLanguage language
+      public Sprite sprite

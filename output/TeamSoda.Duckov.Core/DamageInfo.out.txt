@@ -1,6 +1,5 @@
 public struct DamageInfo
-  2 ¸ö Method:
-      public void AddElementFactor(ElementTypes _type, float _factor)
+  1 ¸ö Method:
       public string GenerateDescription()
   21 ¸ö Field:
       public DamageTypes damageType

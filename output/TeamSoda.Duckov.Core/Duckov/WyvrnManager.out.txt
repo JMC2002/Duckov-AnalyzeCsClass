@@ -1,6 +1,6 @@
 namespace Duckov
 public class WyvrnManager: MonoBehaviour
-
+	
   5 ¸ö Method:
       private void Awake()
       private void OnDestroy()

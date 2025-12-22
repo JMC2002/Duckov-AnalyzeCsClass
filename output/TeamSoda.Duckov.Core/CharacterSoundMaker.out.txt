@@ -2,18 +2,14 @@ public class CharacterSoundMaker: MonoBehaviour
 
   1 个 ClassLike:
       public enum FootStepTypes
-  2 个 Method:
+  1 个 Method:
       private void Update()
-      private void RefreshMultiplier()
-  8 个 Field:
+  5 个 Field:
       public CharacterMainControl characterMainControl
       private float moveSoundTimer
       public float walkSoundFrequence
       public float runSoundFrequence
-      public static Action<Vector3, FootStepTypes, CharacterMainControl> OnFootStepSound
-      private float moveAnimationValue
-      private float runMultiplier
-      private float walkMultiplier
+      public static Action<Vector3, CharacterSoundMaker.FootStepTypes, CharacterMainControl> OnFootStepSound
   2 个 Property:
       public float walkSoundDistance
       public float runSoundDistance

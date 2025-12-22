@@ -1,0 +1,58 @@
+namespace Duckov.Buildings.UI
+public class BuilderView: View, IPointerClickHandler, IEventSystemHandler
+	
+  1 个 ClassLike:
+      private enum Mode
+  28 个 Method:
+      public void SetupAndShow(BuildingArea targetArea)
+      protected override void Awake()
+      private void OnRecycleRequested(BuildingBtnEntry entry)
+      protected override void OnDestroy()
+      private void OnBuildingListChanged()
+      private void OnButtonSelected(BuildingBtnEntry entry)
+      private void NotifyCostNotEnough(BuildingBtnEntry entry)
+      private void SetMode(BuilderView.Mode mode)
+      private void OnExitMode(BuilderView.Mode mode)
+      public void BeginPlacing(BuildingInfo info)
+      public void BeginDestroying()
+      private void SetupPreview(Building previewBuilding)
+      private void OnExitPlacing()
+      private void Update()
+      private unsafe void UpdateContextMenuIndicator()
+      private void UpdateNone()
+      private void UpdateDestroying()
+      private void ConfirmDestroy()
+      private void ConfirmPlacement()
+      private void UpdatePlacing()
+      private void ShowPreview(Vector2Int coord)
+      public bool TryGetPointingCoord(out Vector2Int coord, Building previewBuilding = null)
+      private bool IsValidPlacement(Vector2Int dimensions, BuildingRotation rotation, Vector2Int coord)
+      protected override void OnOpen()
+      protected override void OnClose()
+      private void UpdateCamera()
+      public void OnPointerClick(PointerEventData eventData)
+      public static void Show(BuildingArea target)
+  21 个 Field:
+      private FadeGroup fadeGroup
+      private BuildingSelectionPanel selectionPanel
+      private BuildingContextMenu contextMenu
+      private GameObject placingModeInputIndicator
+      private RectTransform followCursorUI
+      private FadeGroup hoveringBuildingFadeGroup
+      private CinemachineVirtualCamera vcam
+      private float cameraSpeed
+      private float pitch
+      private float cameraDistance
+      private float yaw
+      private Vector3 cameraCursor
+      private BuildingInfo placingBuildingInfo
+      private InputActionReference input_Rotate
+      private InputActionReference input_RequestContextMenu
+      private InputActionReference input_MoveCamera
+      private GridDisplay gridDisplay
+      private BuildingArea targetArea
+      private BuilderView.Mode mode
+      private Building previewBuilding
+      private BuildingRotation previewRotation
+  1 个 Property:
+      public static BuilderView Instance

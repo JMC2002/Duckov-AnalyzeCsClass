@@ -1,0 +1,46 @@
+namespace Duckov.Economy
+public class EconomyManager: MonoBehaviour, ISaveDataProvider
+	
+  1 个 ClassLike:
+      public struct SaveData
+  16 个 Method:
+      private void Awake()
+      private void OnCollectSaveData()
+      private void OnSetSaveFile()
+      private void Load()
+      private void Save()
+      private void OnDestroy()
+      private static bool Pay(long amount, bool accountAvaliable = true, bool cashAvaliale = true)
+      public static bool Pay(Cost cost, bool accountAvaliable = true, bool cashAvaliale = true)
+      public static bool IsEnough(Cost cost, bool accountAvaliable = true, bool cashAvaliale = true)
+      public static bool Add(long amount)
+      public static bool IsWaitingForUnlockConfirm(int itemTypeID)
+      public static bool IsUnlocked(int itemTypeID)
+      public static void Unlock(int itemTypeID, bool needConfirm = true, bool showUI = true)
+      public static void ConfirmUnlock(int itemTypeID)
+      public object GenerateSaveData()
+      public void SetupSaveData(object rawData)
+  13 个 Field:
+      public static event Action OnEconomyManagerLoaded
+      public static event Action<long, long> OnMoneyChanged
+      public static event Action<int> OnItemUnlockStateChanged
+      public static event Action<long> OnMoneyPaid
+      public static event Action<Cost> OnCostPaid
+      private string itemUnlockNotificationTextMainFormat
+      private string itemUnlockNotificationTextSubFormat
+      private long money
+      private List<int> unlockedItemIds
+      private List<int> unlockesWaitingForConfirm
+      public long money
+      public int[] unlockedItems
+      public int[] unlockesWaitingForConfirm
+  6 个 Property:
+      public static string ItemUnlockNotificationTextMainFormat
+      public static string ItemUnlockNotificationTextSubFormat
+      public static EconomyManager Instance
+      public static long Money
+      public static long Cash
+      public ReadOnlyCollection<int> UnlockedItemIds
+  2 个 Constant:
+      private const string saveKey
+      public const int CashItemID

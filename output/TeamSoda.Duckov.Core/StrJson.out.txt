@@ -6,6 +6,6 @@ public class StrJson
       public static StrJson Create(params string[] contentPairs)
       public override string ToString()
   3 ¸ö Field:
+      public List<StrJson.Entry> entries
       public string key
       public string value
-      public List<Entry> entries

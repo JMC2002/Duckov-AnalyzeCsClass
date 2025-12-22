@@ -1,0 +1,11 @@
+namespace Duckov.MiniGames.GoldMiner
+public class EagleEyePotionDisplay: MonoBehaviour
+	
+  3 ¸ö Method:
+      private void Awake()
+      private void OnEarlyLevelPlayTick(GoldMiner miner)
+      private void OnInteract(NavEntry entry)
+  3 ¸ö Field:
+      private GoldMiner master
+      private TextMeshProUGUI amountText
+      private NavEntry navEntry

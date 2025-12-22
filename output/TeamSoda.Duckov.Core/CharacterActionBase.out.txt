@@ -3,7 +3,7 @@ public abstract class CharacterActionBase: MonoBehaviour
   1 ¸ö ClassLike:
       public enum ActionPriorities
   14 ¸ö Method:
-      public abstract ActionPriorities ActionPriority()
+      public abstract CharacterActionBase.ActionPriorities ActionPriority()
       public abstract bool CanMove()
       public abstract bool CanRun()
       public abstract bool CanUseHand()

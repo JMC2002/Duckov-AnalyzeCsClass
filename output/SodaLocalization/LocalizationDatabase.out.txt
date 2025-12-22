@@ -1,0 +1,14 @@
+namespace SodaCraft.Localizations
+public class LocalizationDatabase: ScriptableObject
+	
+  4 ¸ö Method:
+      public LanguageSettings GetEntry(SystemLanguage language)
+      internal LanguageSettings GetDefaultEntry()
+      public string[] GetLanguageDisplayNameList()
+      internal SystemLanguage GetLanguageByIndex(int index)
+  2 ¸ö Field:
+      private static LocalizationDatabase _instance
+      private List<LanguageSettings> _e
+  2 ¸ö Property:
+      public static LocalizationDatabase Instance
+      private List<LanguageSettings> Entries

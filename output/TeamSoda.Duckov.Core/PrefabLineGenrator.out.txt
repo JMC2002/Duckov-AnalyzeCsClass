@@ -4,24 +4,24 @@ public class PrefabLineGenrator: MonoBehaviour, IOnPointsChanged
       public struct SapwnInfo
       public struct PrefabPair
   2 ¸ö Method:
-      public GameObject GetRandomPrefab()
       public void OnPointsChanged()
+      public GameObject GetRandomPrefab()
   16 ¸ö Field:
-      public List<PrefabPair> prefabs
-      public float rotateOffset
-      public float flatten
-      public Vector3 posOffset
-      public GameObject prefab
-      public float weight
       private float prefabLength
-      public SapwnInfo spawnPrefab
-      public SapwnInfo startPrefab
-      public SapwnInfo endPrefab
+      public PrefabLineGenrator.SapwnInfo spawnPrefab
+      public PrefabLineGenrator.SapwnInfo startPrefab
+      public PrefabLineGenrator.SapwnInfo endPrefab
       private Points points
       private List<BoxCollider> colliderObjects
       private float updateTick
       private float lastModifyTime
       private bool dirty
       public List<Vector3> searchedPointsLocalSpace
+      public List<PrefabLineGenrator.PrefabPair> prefabs
+      public float rotateOffset
+      public float flatten
+      public Vector3 posOffset
+      public GameObject prefab
+      public float weight
   1 ¸ö Property:
       private List<Vector3> originPoints

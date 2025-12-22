@@ -1,0 +1,40 @@
+namespace Duckov.MiniGames.Examples.FPS
+public class FPSGun: MiniGameBehaviour
+	
+  1 个 ClassLike:
+      public struct Pose
+  10 个 Method:
+      private void Fire()
+      private void DoFireAnimation()
+      private void DoCast()
+      private void HandleBulletTracer(RaycastHit castInfo)
+      private void HandleNormalHit(FPSDamageInfo info)
+      internal void SetTrigger(bool value)
+      internal void Setup(Camera mainCamera, Transform gunParent)
+      protected override void OnUpdate(float deltaTime)
+      private void UpdateGunPhysicsStatus(float deltaTime)
+      public static FPSGun.Pose Extraterpolate(FPSGun.Pose poseA, FPSGun.Pose poseB, float t)
+  21 个 Field:
+      private float fireRate
+      private bool auto
+      private Transform muzzle
+      private ParticleSystem muzzleFlash
+      private ParticleSystem bulletTracer
+      private LayerMask castLayers
+      private ParticleSystem normalHitFXPrefab
+      private float minScatterAngle
+      private float maxScatterAngle
+      private float scatterIncrementPerShot
+      private float scatterDecayRate
+      private Transform graphicsTransform
+      private FPSGun.Pose idlePose
+      private FPSGun.Pose recoilPose
+      private float scatterStatus
+      private float coolDown
+      private Camera mainCamera
+      private bool trigger
+      private bool justPressedTrigger
+      private Vector3 localPosition
+      private Quaternion localRotation
+  1 个 Property:
+      public float ScatterAngle

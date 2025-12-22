@@ -1,0 +1,22 @@
+namespace Duckov.Quests.UI
+public class QuestCompletePanel: MonoBehaviour
+	
+  6 ¸ö Method:
+      private void Awake()
+      private void TakeAll()
+      public void Skip()
+      public UniTask Show(Quest quest)
+      private UniTask WaitForEndOfInteraction()
+      private void SetupContent(Quest quest)
+  8 ¸ö Field:
+      private FadeGroup mainFadeGroup
+      private TextMeshProUGUI questNameText
+      private RewardEntry rewardEntryTemplate
+      private Button skipButton
+      private Button takeAllButton
+      private PrefabPool<RewardEntry> _rewardEntryPool
+      private Quest target
+      private bool skipClicked
+  2 ¸ö Property:
+      private PrefabPool<RewardEntry> RewardEntryPool
+      public Quest Target

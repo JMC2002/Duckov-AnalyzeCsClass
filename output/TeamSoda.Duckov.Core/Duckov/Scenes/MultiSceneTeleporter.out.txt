@@ -1,0 +1,22 @@
+namespace Duckov.Scenes
+public class MultiSceneTeleporter: InteractableBase
+	
+  7 个 Method:
+      protected override void Awake()
+      private void OnDrawGizmosSelected()
+      public void DoTeleport()
+      protected override bool IsInteractable()
+      private UniTask TeleportTask()
+      protected override void OnInteractStart(CharacterMainControl interactCharacter)
+      protected override void OnInteractFinished()
+  3 个 Field:
+      private MultiSceneLocation target
+      private bool teleportOnTriggerEnter
+      private static float timeWhenTeleportFinished
+  4 个 Property:
+      protected override bool ShowUnityEvents
+      public MultiSceneLocation Target
+      private static float TimeSinceTeleportFinished
+      private static bool Teleportable
+  1 个 Constant:
+      private const float CoolDown

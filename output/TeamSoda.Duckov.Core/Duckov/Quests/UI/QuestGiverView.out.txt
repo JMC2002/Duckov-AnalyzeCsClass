@@ -1,0 +1,60 @@
+namespace Duckov.Quests.UI
+public class QuestGiverView: View, ISingleSelectionMenu<QuestEntry>, IQuestSortable
+	
+  22 ¸ö Method:
+      protected override void OnOpen()
+      protected override void OnClose()
+      private void OnDisable()
+      private void OnQuestStatusChanged(Quest quest)
+      protected override void Awake()
+      private void OnInteractButtonClicked()
+      private void ShowCompleteUI(Quest quest)
+      private void OnTabChanged(QuestGiverTabs tabs)
+      protected override void OnDestroy()
+      private void OnQuestListChanged(QuestManager manager)
+      public void Setup(QuestGiver target)
+      private void RefreshList()
+      private void RefreshRedDots()
+      private bool AnyUninspectedActiveQuest()
+      private bool AnyUninspectedAvaliableQuest()
+      private List<Quest> GetQuestsToShow()
+      private void RefreshDetails()
+      private void RefreshInteractButton()
+      public QuestEntry GetSelection()
+      public bool SetSelection(QuestEntry selection)
+      private void RefreshEntries()
+      internal override void TryQuit()
+  26 ¸ö Field:
+      private FadeGroup fadeGroup
+      private RectTransform questEntriesParent
+      private QuestCompletePanel questCompletePanel
+      private QuestGiverTabs tabs
+      private QuestEntry entryPrefab
+      private GameObject entryPlaceHolder
+      private QuestViewDetails details
+      private Button btn_Interact
+      private TextMeshProUGUI btnText
+      private Image btnImage
+      private string btnText_AcceptQuest
+      private string btnText_CompleteQuest
+      private Color interactableBtnImageColor
+      private Color uninteractableBtnImageColor
+      private GameObject uninspectedAvaliableRedDot
+      private GameObject activeRedDot
+      private string sfx_AcceptQuest
+      private string sfx_CompleteQuest
+      private Quest.SortingMode _sortingMode
+      private bool _sortRevert
+      private PrefabPool<QuestEntry> _entryPool
+      private QuestGiver target
+      private QuestEntry selectedQuestEntry
+      private UniTask completeUITask
+      private bool btnAcceptQuest
+      private bool btnCompleteQuest
+  6 ¸ö Property:
+      public static QuestGiverView Instance
+      public string BtnText_CompleteQuest
+      public string BtnText_AcceptQuest
+      public Quest.SortingMode SortingMode
+      public bool SortRevert
+      private PrefabPool<QuestEntry> EntryPool

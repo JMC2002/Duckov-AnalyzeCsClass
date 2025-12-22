@@ -1,0 +1,74 @@
+namespace Duckov.Buildings
+public class BuildingManager: MonoBehaviour
+	
+  4 个 ClassLike:
+      public class BuildingTokenAmountEntry
+      public class BuildingAreaData
+      public class BuildingData
+      private struct SaveData
+  36 个 Method:
+      private static int GenerateBuildingGUID(string buildingID)
+      public int GetTokenAmount(string id)
+      private void SetTokenAmount(string id, int amount)
+      private void AddToken(string id, int amount = 1)
+      private bool PayToken(string id)
+      public static Vector2Int[] GetOccupyingCoords(Vector2Int dimensions, BuildingRotation rotations, Vector2Int coord)
+      public BuildingManager.BuildingAreaData GetOrCreateArea(string id)
+      public BuildingManager.BuildingAreaData GetArea(string id)
+      private void CleanupAndSort()
+      public static BuildingInfo GetBuildingInfo(string id)
+      public static bool Any(string id, bool includeTokens = false)
+      public static bool Any(Func<BuildingManager.BuildingData, bool> predicate)
+      public static int GetBuildingAmount(string id)
+      private void Awake()
+      private void OnDestroy()
+      private void OnCollectSaveData()
+      private void Load()
+      private void Save()
+      internal static BuildingManager.BuildingAreaData GetAreaData(string areaID)
+      internal static BuildingManager.BuildingAreaData GetOrCreateAreaData(string areaID)
+      internal static BuildingManager.BuildingData GetBuildingData(int guid, string areaID = null)
+      internal static BuildingBuyAndPlaceResults BuyAndPlace(string areaID, string id, Vector2Int coord, BuildingRotation rotation)
+      internal static bool DestroyBuilding(int guid, string areaID = null)
+      internal static bool TryGetBuildingDataAndAreaData(int guid, out BuildingManager.BuildingData buildingData, out BuildingManager.BuildingAreaData areaData, string areaID = null)
+      internal static UniTask<bool> ReturnBuilding(int guid, string areaID = null)
+      internal static UniTask<int> ReturnBuildings(string areaID = null, params int[] buildings)
+      internal static UniTask<int> ReturnBuildingsOfType(string buildingID, string areaID = null)
+      public bool Any(string buildingID)
+      public bool Add(string buildingID, BuildingRotation rotation, Vector2Int coord, int guid = -1)
+      public bool Remove(int buildingGUID)
+      public bool Remove(BuildingManager.BuildingData building)
+      public BuildingManager.BuildingData GetBuildingAt(Vector2Int coord)
+      public HashSet<Vector2Int> GetAllOccupiedCoords()
+      public bool Collide(Vector2Int dimensions, BuildingRotation rotation, Vector2Int coord)
+      internal bool Any(Func<BuildingManager.BuildingData, bool> predicate)
+      internal Vector3 GetTransformPosition()
+  15 个 Field:
+      public static event Action OnBuildingListChanged
+      public static event Action<int> OnBuildingBuilt
+      public static event Action<int> OnBuildingDestroyed
+      public static event Action<int, BuildingInfo> OnBuildingBuiltComplex
+      public static event Action<int, BuildingInfo> OnBuildingDestroyedComplex
+      private static bool returningBuilding
+      public string id
+      public int amount
+      private string areaID
+      private int guid
+      private string id
+      private Vector2Int coord
+      private BuildingRotation rotation
+      public List<BuildingManager.BuildingAreaData> data
+      public List<BuildingManager.BuildingTokenAmountEntry> tokenAmounts
+  10 个 Property:
+      public static BuildingManager Instance
+      public List<BuildingManager.BuildingAreaData> Areas
+      public string AreaID
+      public List<BuildingManager.BuildingData> Buildings
+      public int GUID
+      public string ID
+      public Vector2Int Dimensions
+      public Vector2Int Coord
+      public BuildingRotation Rotation
+      public BuildingInfo Info
+  1 个 Constant:
+      private const string SaveKey

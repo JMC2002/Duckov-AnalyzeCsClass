@@ -9,7 +9,7 @@ public class InputRebinder: MonoBehaviour
       public static void Save()
       public static void Clear()
       private static void Rebind(string name, int index, string[] excludes = null)
-      public static async UniTask<bool> RebindAsync(string name, int index, string[] excludes = null, bool save = false)
+      public static UniTask<bool> RebindAsync(string name, int index, string[] excludes = null, bool save = false)
       public static void ClearRebind(string name)
       private static void OnCancel(InputActionRebindingExtensions.RebindingOperation operation)
       private static void OnComplete(InputActionRebindingExtensions.RebindingOperation operation)

@@ -1,0 +1,28 @@
+namespace Duckov.Quests.UI
+public class TaskEntry: MonoBehaviour, IPoolable, IPointerClickHandler, IEventSystemHandler
+	
+  10 ¸ö Method:
+      private void Awake()
+      private void OnInteractionButtonClicked()
+      public void NotifyPooled()
+      public void NotifyReleased()
+      internal void Setup(Task target)
+      private void Refresh()
+      private void RegisterEvents()
+      private void UnregisterEvents()
+      private void OnTargetStatusChanged(Task task)
+      public void OnPointerClick(PointerEventData eventData)
+  11 ¸ö Field:
+      private Image statusIcon
+      private Image taskIcon
+      private TextMeshProUGUI description
+      private Button interactionButton
+      private GameObject targetNotInteractablePlaceHolder
+      private TextMeshProUGUI interactionText
+      private TextMeshProUGUI interactionPlaceHolderText
+      private Sprite unsatisfiedIcon
+      private Sprite satisfiedIcon
+      private bool interactable
+      private Task target
+  1 ¸ö Property:
+      public bool Interactable

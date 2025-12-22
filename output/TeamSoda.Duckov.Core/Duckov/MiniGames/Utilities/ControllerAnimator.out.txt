@@ -1,0 +1,41 @@
+namespace Duckov.MiniGames.Utilities
+public class ControllerAnimator: MonoBehaviour
+	
+  16 ¸ö Method:
+      private void OnEnable()
+      private void OnDisable()
+      private void OnMiniGameInput(MiniGame game, MiniGame.MiniGameInputEventContext context)
+      private void HandleInput(MiniGame.MiniGameInputEventContext context)
+      private void HandleAxisEvent(MiniGame.MiniGameInputEventContext context)
+      private void HandleButtonEvent(MiniGame.MiniGameInputEventContext context)
+      private void PlayAxisPressReleaseFX(MiniGame.Button button, bool pressing)
+      private void ApplyTorque(float x, float y)
+      private void ApplyTorque(Vector2 torque)
+      private void HandleBtnPushRest(Transform btnTrans, bool pressed)
+      internal void SetConsole(GamingConsole master)
+      private void RefreshAll()
+      private void RestAll()
+      private void SetAxis(Vector2 axis)
+      private void Push(Transform btnTransform)
+      private void Rest(Transform btnTransform)
+  20 ¸ö Field:
+      private GamingConsole master
+      public Transform mainTransform
+      public Transform btn_A
+      public Transform btn_B
+      public Transform btn_Start
+      public Transform btn_Select
+      public Transform btn_Axis
+      public Transform fxPos_Up
+      public Transform fxPos_Right
+      public Transform fxPos_Down
+      public Transform fxPos_Left
+      private float transitionDuration
+      private float axisAmp
+      private float btnDepth
+      private float torqueStrength
+      private float torqueDuration
+      private int torqueVibrato
+      private float torqueElasticity
+      private ParticleSystem buttonPressFX
+      private ParticleSystem buttonRestFX

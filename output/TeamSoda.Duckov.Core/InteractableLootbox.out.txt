@@ -19,6 +19,8 @@ public class InteractableLootbox: InteractableBase
       private void CreateLocalInventory()
       public static InteractableLootbox CreateFromItem(Item item, Vector3 position, Quaternion rotation, bool moveToMainScene = true, InteractableLootbox prefab = null, bool filterDontDropOnDead = false)
   14 ¸ö Field:
+      public static event Action<InteractableLootbox> OnStartLoot
+      public static event Action<InteractableLootbox> OnStopLoot
       public bool useDefaultInteractName
       private bool showSortButton
       private bool usePages
@@ -30,9 +32,7 @@ public class InteractableLootbox: InteractableBase
       private Item inspectingItem
       private float inspectTime
       private float inspectTimer
-      private LootBoxStates lootState
-      public static event Action<InteractableLootbox> OnStartLoot
-      public static event Action<InteractableLootbox> OnStopLoot
+      private InteractableLootbox.LootBoxStates lootState
   7 ¸ö Property:
       public bool ShowSortButton
       public bool UsePages

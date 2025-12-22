@@ -1,0 +1,9 @@
+namespace Duckov.Utilities
+public static class RandomUtilities
+  6 ¸ö Method:
+      public static void RandomizeOrder<T>(this List<T> list)
+      public static T GetRandom<T>(this IList<T> list)
+      public static T GetRandom<T>(this IList<T> list, System.Random rng)
+      public static T[] GetRandomSubSet<T>(this IList<T> list, int amount)
+      public static T GetRandom<T>(this T[] array)
+      public static T GetRandomWeighted<T>(this IList<T> list, Func<T, float> weightFunction, float lowPercent = 0f)

@@ -1,14 +1,12 @@
 namespace SodaCraft
 public class TimeOfDayPost: VolumeComponent, IPostProcessComponent
-
+	
   3 ¸ö Method:
       public bool IsActive()
       public bool IsTileCompatible()
       public override void Override(VolumeComponent state, float interpFactor)
-  6 ¸ö Field:
+  4 ¸ö Field:
       public BoolParameter enable
       public ClampedFloatParameter nightViewAngleFactor
       public ClampedFloatParameter nightViewDistanceFactor
       public ClampedFloatParameter nightSenseRangeFactor
-      public ClampedFloatParameter coldLevel
-      public ClampedFloatParameter heatLevel

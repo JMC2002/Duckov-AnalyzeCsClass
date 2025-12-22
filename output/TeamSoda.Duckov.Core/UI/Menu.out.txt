@@ -1,6 +1,6 @@
 namespace UI
 public class Menu: MonoBehaviour
-
+	
   12 ¸ö Method:
       private void SetFocused(bool value)
       public MenuItem GetSelected()

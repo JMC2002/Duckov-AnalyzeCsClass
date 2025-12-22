@@ -9,11 +9,11 @@ public class CostTaker: InteractableBase
       public static void Unregister(CostTaker costTaker)
       public void SetCost(Cost cost)
   5 ¸ö Field:
+      public static event Action<CostTaker> OnCostTakerRegistered
+      public static event Action<CostTaker> OnCostTakerUnregistered
       private Cost cost
       public UnityEvent<CostTaker> onPayedUnityEvent
       private static ReadOnlyCollection<CostTaker> _activeCostTakers_ReadOnly
-      public static event Action<CostTaker> OnCostTakerRegistered
-      public static event Action<CostTaker> OnCostTakerUnregistered
   2 ¸ö Property:
       public Cost Cost
       public static ReadOnlyCollection<CostTaker> ActiveCostTakers

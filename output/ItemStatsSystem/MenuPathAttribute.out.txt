@@ -1,0 +1,5 @@
+namespace ItemStatsSystem
+public class MenuPathAttribute: Attribute
+	
+  1 ¸ö Field:
+      public string path

@@ -5,12 +5,12 @@ public class SimpleTeleporter: InteractableBase
   4 ¸ö Method:
       protected override void Awake()
       protected override void OnInteractFinished()
-      private async UniTask Teleport(CharacterMainControl targetCharacter)
-      private async UniTask VolumeFx(bool show, float time)
+      private UniTask Teleport(CharacterMainControl targetCharacter)
+      private UniTask VolumeFx(bool show, float time)
   8 ¸ö Field:
       public Transform target
       private Transform selfTeleportPoint
-      private TransitionTypes transitionType
+      private SimpleTeleporter.TransitionTypes transitionType
       public float transitionTime
       private float delay
       public Volume teleportVolume
